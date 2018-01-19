@@ -1,0 +1,49 @@
+.topbar {
+  width: 100%;
+  height: 60px;
+  background: #ffcf20;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.topbar-title {
+  position: relative;
+  font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 0 0 0 28px;
+  float: left;
+  font-size: 28px;
+  line-height: 58px;
+  text-transform: uppercase;
+  height: 100%;
+  box-sizing: border-box;
+  text-shadow: 0 1px 0 #ffe37e;
+  color: #000000;
+  text-decoration: none;
+}
+.topbar-title--current::after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 4px;
+  background: #000000;
+}
+.topbar-title-count {
+  font-family: inherit;
+  opacity: 0.4;
+}
+.topbar-search {
+  position: absolute;
+  width: 300px;
+  height: 32px;
+  border: 0;
+  background: #262626;
+  border-radius: 16px;
+  text-indent: 16px;
+  font-size: 13px;
+  color: #ffffff;
+  top: 14px;
+  right: 28px;
+}

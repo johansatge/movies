@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movies 🎥</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="<%= assets.styles %>" rel="stylesheet">
+    <link href="<%= manifest %>" rel="manifest">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="topbar">
+      <a href="#" class="topbar-title topbar-title--current">
+        <span class="topbar-title-count" data-js-movies-count><%= movies.length %></span> Movies
+      </a>
+      <a href="stats/" class="topbar-title">
+        Stats
+      </a>
+      <input data-js-search class="topbar-search" placeholder="Search movie..." value="">
+    </div>
+    <div class="movies">
+      <% movies.forEach((movie) => { %>
+        <a
+          class="movie"
+          target="_blank"
+          href="https://www.themoviedb.org/movie/<%= movie.tmdb_id %>"
+          data-js-movie
+          data-js-movie-rating="<%= movie.rating %>"
+          data-js-movie-title="<%= movie.title %> <%= movie.original_title %>"
+          data-js-movie-director="<%= movie.director %>"
+          data-js-movie-cast="<%= movie.cast.join(',') %>"
+          data-js-movie-release="<%= movie.release_date.substring(0, 4) %>"
+          data-js-lazy-load="<%= movie.posters['342'] %>"
+        >
+          <div class="movie-rating">
+            ★ <%= movie.rating %>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+    <script src="<%= assets.moviesScripts %>"></script>
+    <script>
+    Scripts.movies.init()
+</script>
+  </body>
+</html>

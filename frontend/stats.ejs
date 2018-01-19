@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stats 🎥</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="../<%= assets.styles %>" rel="stylesheet">
+    <link href="../<%= manifest %>" rel="manifest">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="topbar">
+      <a href=".." class="topbar-title">
+        <span class="topbar-title-count"><%= moviesCount %></span> Movies
+      </a>
+      <a href="#" class="topbar-title topbar-title--current">
+        Stats
+      </a>
+    </div>
+    <div class="stats">
+      <h2 class="stat-heading">
+        Movies by rating
+      </h2>
+      <div class="stat-graph">
+        <canvas data-js-stats-movies-by-rating></canvas>
+      </div>
+      <h2 class="stat-heading">
+        Movies by release year
+      </h2>
+      <div class="stat-graph">
+        <canvas data-js-stats-movies-by-release-years></canvas>
+      </div>
+      <h2 class="stat-heading">
+        Movies by date seen
+      </h2>
+      <div class="stat-graph">
+        <canvas data-js-stats-movies-by-month></canvas>
+      </div>
+      <h2 class="stat-heading">
+        Most seen actors
+      </h2>
+      <div class="stat-table">
+        <table cellspacing="0" cellpadding="0" data-js-stats-actors-list></table>
+        <button class="stat-more" data-js-stats-more-actors>More...</button>
+      </div>
+      <h2 class="stat-heading">
+        Most seen directors
+      </h2>
+      <div class="stat-table">
+        <table cellspacing="0" cellpadding="0" data-js-stats-directors-list></table>
+        <button class="stat-more" data-js-stats-more-directors>More...</button>
+      </div>
+    </div>
+    <script src="../<%= assets.statsScripts %>"></script>
+    <script>
+      Scripts.stats.init({
+        moviesByRating : <%- JSON.stringify(ratings) %>,
+        moviesByMonth : <%- JSON.stringify(months) %>,
+        moviesByReleaseYears : <%- JSON.stringify(releaseYears) %>,
+      },
+      <%- JSON.stringify(actors) %>,
+      <%- JSON.stringify(directors) %>)
+    </script>
+  </body>
+</html>

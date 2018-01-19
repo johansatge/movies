@@ -1,0 +1,60 @@
+.stats {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding: 60px 0 0 0;
+}
+.stat-graph {
+  position: relative;
+  margin: 20px;
+  background: #343434;
+  height: 300px;
+  padding: 20px 10px 10px 5px;
+}
+.stat-graph canvas {
+  background: #343434;
+}
+.stat-heading {
+  color: #efefef;
+  margin: 20px;
+  font-size: 22px;
+}
+.stat-table {
+  position: relative;
+  margin: 20px;
+  background: #343434;
+  color: #efefef;
+  font-size: 14px;
+  padding: 20px 15px 20px 15px;
+}
+.stat-table table {
+  width: 100%;
+  border: 1px solid #4a4a4a;
+  border-bottom: 0;
+  border-right: 0;
+}
+.stat-table table tr td {
+  border-bottom: 1px solid #4a4a4a;
+  border-right: 1px solid #4a4a4a;
+  padding: 6px 12px 6px 12px;
+}
+.stat-table table tr.stat-table-row--alt td {
+  background: #3b3b3b;
+}
+.stat-table a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+.stat-more {
+  display: inline-block;
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, sans-serif;
+  color: #fff;
+  background: #5d5d5d;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 12px 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 15px 0 0 0;
+}

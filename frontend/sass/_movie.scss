@@ -1,0 +1,28 @@
+.movies {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding: 60px 0 0 0;
+}
+.movie {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  text-decoration: none;
+}
+.movie-rating {
+  position: absolute;
+  display: block;
+  right: 8px;
+  bottom: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: Open Sans Condensed, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 3px 10px 5px 8px;
+  border-radius: 4px;
+}
