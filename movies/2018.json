@@ -191,5 +191,36 @@
       "Kyle Donaldson",
       "Addison Gosselin"
     ]
+  },
+  {
+    "title": "Death Wish",
+    "original_title": "Death Wish",
+    "watch_date": "2018-01-20",
+    "rating": 5,
+    "release_date": "1974-07-24",
+    "director": "Michael Winner",
+    "tmdb_id": 13939,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg",
+      "original": "https://image.tmdb.org/t/p/original/3PKm5qtlxxIX7WEmWkCub6PCFSX.jpg"
+    },
+    "cast": [
+      "Charles Bronson",
+      "Hope Lange",
+      "Vincent Gardenia",
+      "Steven Keats",
+      "William Redfield",
+      "Stuart Margolin",
+      "Stephen Elliott",
+      "Kathleen Tolan",
+      "Jeff Goldblum",
+      "Robert Kya-Hill",
+      "Marcia Jean Kurtz"
+    ]
   }
 ]
