@@ -100,7 +100,7 @@ function initChart(node, type, labels, data, onClick) {
         {
           data,
           backgroundColor: 'rgba(255, 255, 255, 0.2)',
-          borderColor: 'rgba(255, 255, 255, 1)',
+          borderColor: 'rgba(255, 255, 255, 0.8)',
           borderWidth: 1,
         },
       ],
@@ -116,6 +116,25 @@ function initChart(node, type, labels, data, onClick) {
           {
             ticks: {
               beginAtZero: true,
+              fontColor: '#ffffff',
+              fontFamily: 'Open Sans',
+              fontSize: 12,
+            },
+            gridLines: {
+              color: 'rgba(0, 0, 0, 0.2)',
+            },
+          },
+        ],
+        xAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              fontColor: '#ffffff',
+              fontFamily: 'Open Sans',
+              fontSize: 11,
+            },
+            gridLines: {
+              color: 'rgba(0, 0, 0, 0.2)',
             },
           },
         ],

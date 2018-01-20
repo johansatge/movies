@@ -10,6 +10,7 @@
   background: #343434;
   height: 300px;
   padding: 20px 10px 10px 5px;
+  border-radius: 3px;
 }
 .stat-graph canvas {
   background: #343434;
@@ -17,7 +18,8 @@
 .stat-heading {
   color: #efefef;
   margin: 20px;
-  font-size: 22px;
+  font-size: 26px;
+  font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .stat-table {
   position: relative;
@@ -26,6 +28,7 @@
   color: #efefef;
   font-size: 14px;
   padding: 20px 15px 20px 15px;
+  border-radius: 3px;
 }
 .stat-table table {
   width: 100%;
@@ -57,4 +60,22 @@
   border-radius: 3px;
   cursor: pointer;
   margin: 15px 0 0 0;
+}
+@media screen and (max-width: 650px) {
+  .stats {
+    padding: 52px 0 0 0;
+  }
+  .stat-heading {
+    margin: 15px;
+    font-size: 22px;
+  }
+  .stat-graph {
+    margin: 15px;
+    padding: 15px 10px 15px 5px;
+  }
+  .stat-table {
+    margin: 15px;
+    color: #efefef;
+    padding: 15px 15px 15px 15px;
+  }
 }
