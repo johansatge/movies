@@ -16,6 +16,16 @@ cd movies
 npm install
 ```
 
+## Local server
+
+Run:
+
+```shell
+npm run server
+```
+
+Then, navigate to [`localhost:5000`](http://localhost:5000/).
+
 ## Adding a movie
 
 Run:

@@ -5,7 +5,6 @@
   "private": true,
   "scripts": {
     "import": "node import.js",
-    "build": "node build.js",
     "server": "node server.js",
     "checkstyle": "eslint ."
   },

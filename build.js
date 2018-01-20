@@ -8,6 +8,10 @@ const webpack = require('webpack')
 const webpackConfig = require('./frontend/webpack.config.js')
 const stats = require('./stats.js')
 
+module.exports = {
+  buildApp,
+}
+
 const state = {
   distDir: path.join(__dirname, '.dist'),
   movies: null,
@@ -52,24 +56,18 @@ const state = {
   logoFilename: null,
 }
 
-cleanDist()
-  .then(readMovies)
-  .then(buildAssets)
-  .then(copyLogo)
-  .then(writeMoviesManifest)
-  .then(renderMoviesHtml)
-  .then(writeStatsManifest)
-  .then(renderStatsHtml)
-  .then(writeMoviesHtml)
-  .then(writeStatsHtml)
-  .then(() => {
-    log('Done')
-    process.exit(0)
-  })
-  .catch((error) => {
-    log(error.message)
-    process.exit(1)
-  })
+function buildApp() {
+  return cleanDist()
+    .then(readMovies)
+    .then(buildAssets)
+    .then(copyLogo)
+    .then(writeMoviesManifest)
+    .then(renderMoviesHtml)
+    .then(writeStatsManifest)
+    .then(renderStatsHtml)
+    .then(writeMoviesHtml)
+    .then(writeStatsHtml)
+}
 
 function log(message) {
   console.log(message) // eslint-disable-line no-console
