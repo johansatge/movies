@@ -14,6 +14,8 @@ git clone git@github.com:johansatge/movies.git
 cd movies
 # Install the dependencies
 npm install
+# Create .env file with an TMDB API key
+echo "TMDB_API_KEY=xxx" > .env
 ```
 
 ## Local server
