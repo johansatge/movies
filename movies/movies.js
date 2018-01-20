@@ -13,16 +13,11 @@ function getByWatchDate() {
       const fileReaders = files.map((file) => promisify(fs.readFile)(path.join(__dirname, file), 'utf8'))
       Promise.all(fileReaders)
         .then((moviesByYear) => {
-          resolve(sortMoviesByWatchDate(moviesByYear))
+          let movies = []
+          moviesByYear.forEach((json) => (movies = movies.concat(JSON.parse(json))))
+          resolve(movies.reverse())
         })
         .catch(reject)
     })
   })
-}
-
-function sortMoviesByWatchDate(moviesByYear) {
-  let movies = []
-  moviesByYear.forEach((json) => (movies = movies.concat(JSON.parse(json))))
-  movies.sort((a, b) => (a.watch_date < b.watch_date ? 1 : a.watch_date > b.watch_date ? -1 : 0))
-  return movies
 }

@@ -10,9 +10,8 @@ function extract(movies) {
   const directors = {}
   movies.forEach((movie) => {
     ratings[movie.rating] = typeof ratings[movie.rating] === 'undefined' ? 1 : (ratings[movie.rating] += 1)
-    const month = movie.watch_date.substring(0, 7)
-    if (month !== '2011-10') {
-      // @todo move movies with unknown date somewhere else
+    const month = movie.watch_date ? movie.watch_date.substring(0, 7) : null
+    if (month) {
       months[month] = typeof months[month] === 'undefined' ? 1 : (months[month] += 1)
     }
     const releaseYear = movie.release_date.substring(0, 4)

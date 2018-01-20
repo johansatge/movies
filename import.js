@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 const fs = require('fs-extra')
+const movies = require('./movies/movies.js')
 const path = require('path')
 const request = require('request')
 
@@ -63,23 +64,20 @@ function getAndShowMatchingMovies() {
 }
 
 function askMovieSelection() {
-  // @todo handle number validation
   return readInput('Select a movie: ').then((input) => {
     movieSelection = parseInt(input)
   })
 }
 
 function askMovieRating() {
-  // @todo handle format
   return readInput('Rating (0-10): ').then((input) => {
     movieData.rating = parseInt(input)
   })
 }
 
 function askMovieWatchDate() {
-  // @todo handle format
-  return readInput('Watch date (YYYY-MM-DD): ').then((input) => {
-    movieData.watch_date = input
+  return readInput('Watch date (YYYY-MM-DD or empty if unknown): ').then((input) => {
+    movieData.watch_date = input.length > 0 ? input : null
   })
 }
 
@@ -108,7 +106,8 @@ function getSelectedMovieDetails() {
 
 function writeMovie() {
   return new Promise((resolve, reject) => {
-    const filePath = path.join(__dirname, 'movies', `${movieData.watch_date.substring(0, 4)}.json`)
+    const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '_unsorted.json'
+    const filePath = path.join(__dirname, 'movies', fileName)
     fs.readFile(filePath, 'utf8', (error, contents) => {
       if (error) {
         return reject(new Error(`Could not read ${filePath} (${error.message})`))
