@@ -1,7 +1,6 @@
 require('dotenv').config()
 
 const fs = require('fs-extra')
-const movies = require('./movies/movies.js')
 const path = require('path')
 const request = require('request')
 
@@ -10,15 +9,15 @@ let matchingMovies = null
 let apiConfiguration = null
 let movieSelection = null
 let movieData = {
-  tmdb_id: null,
   title: null,
   original_title: null,
-  release_date: null,
-  posters: {},
-  cast: null,
-  director: null,
   watch_date: null,
   rating: null,
+  release_date: null,
+  director: null,
+  tmdb_id: null,
+  posters: {},
+  cast: null,
 }
 
 askMovieSearchTerm()

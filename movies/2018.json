@@ -1,9 +1,12 @@
 [
   {
-    "tmdb_id": 324552,
     "title": "John Wick: Chapter 2",
     "original_title": "John Wick: Chapter 2",
+    "watch_date": "2018-01-07",
+    "rating": 6,
     "release_date": "2017-02-08",
+    "director": "Chad Stahelski",
+    "tmdb_id": 324552,
     "posters": {
       "92": "https://image.tmdb.org/t/p/w92/zkXnKIwX5pYorKJp2fjFSfNyKT0.jpg",
       "154": "https://image.tmdb.org/t/p/w154/zkXnKIwX5pYorKJp2fjFSfNyKT0.jpg",
@@ -68,16 +71,16 @@
       "Nobuya Shimamoto",
       "Oleg Prudius",
       "Alex Ziwak"
-    ],
-    "director": "Chad Stahelski",
-    "watch_date": "2018-01-07",
-    "rating": 6
+    ]
   },
   {
-    "tmdb_id": 479040,
     "title": "Acts of Violence",
     "original_title": "Acts of Violence",
+    "watch_date": "2018-01-13",
+    "rating": 3,
     "release_date": "2018-01-12",
+    "director": "Brett Donowho",
+    "tmdb_id": 479040,
     "posters": {
       "92": "https://image.tmdb.org/t/p/w92/pK9CugRd3DIP0THBH8WlGrvk5vy.jpg",
       "154": "https://image.tmdb.org/t/p/w154/pK9CugRd3DIP0THBH8WlGrvk5vy.jpg",
@@ -121,16 +124,16 @@
       "Laura Allen",
       "Victoria Borbridge",
       "Martin Blencowe"
-    ],
-    "director": "Brett Donowho",
-    "watch_date": "2018-01-13",
-    "rating": 3
+    ]
   },
   {
-    "tmdb_id": 351460,
     "title": "Death Note",
     "original_title": "Death Note",
+    "watch_date": "2018-01-16",
+    "rating": 3,
     "release_date": "2017-08-25",
+    "director": "Adam Wingard",
+    "tmdb_id": 351460,
     "posters": {
       "92": "https://image.tmdb.org/t/p/w92/fJAvGOitU8y53ByeHnM4avtKFaG.jpg",
       "154": "https://image.tmdb.org/t/p/w154/fJAvGOitU8y53ByeHnM4avtKFaG.jpg",
@@ -187,9 +190,6 @@
       "Juanpaolo Mercado",
       "Kyle Donaldson",
       "Addison Gosselin"
-    ],
-    "director": "Adam Wingard",
-    "watch_date": "2018-01-16",
-    "rating": 3
+    ]
   }
 ]
