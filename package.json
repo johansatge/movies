@@ -4,8 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "import": "node import.js",
-    "server": "node server.js",
+    "import": "node scripts/import.js",
+    "server": "node scripts/server.js",
     "checkstyle": "eslint ."
   },
   "repository": {

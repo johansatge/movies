@@ -2,10 +2,10 @@ const checksum = require('checksum')
 const ejs = require('ejs')
 const fs = require('fs-extra')
 const minify = require('html-minifier').minify
-const movies = require('./movies/movies.js')
+const movies = require('../movies/movies.js')
 const path = require('path')
 const webpack = require('webpack')
-const webpackConfig = require('./frontend/webpack.config.js')
+const webpackConfig = require('../frontend/webpack.config.js')
 const stats = require('./stats.js')
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
 }
 
 const state = {
-  distDir: path.join(__dirname, '.dist'),
+  distDir: path.join(__dirname, '..', '.dist'),
   movies: null,
   moviesHtml: null,
   statsHtml: null,
@@ -40,7 +40,7 @@ const state = {
     display: 'standalone',
     background_color: '#000000',
     description: 'A big movies list with stats',
-    start_url: null,
+    start_url: '/',
     icons: [
       {
         src: null,
@@ -51,8 +51,7 @@ const state = {
     orientation: 'any',
     theme_color: '#ffcf20',
   },
-  moviesManifest: null,
-  statsManifest: null,
+  manifestFile: null,
   logoFilename: null,
 }
 
@@ -61,9 +60,8 @@ function buildApp() {
     .then(readMovies)
     .then(buildAssets)
     .then(copyLogo)
-    .then(writeMoviesManifest)
+    .then(writeManifest)
     .then(renderMoviesHtml)
-    .then(writeStatsManifest)
     .then(renderStatsHtml)
     .then(writeMoviesHtml)
     .then(writeStatsHtml)
@@ -124,43 +122,33 @@ function copyLogo() {
   })
 }
 
-function writeMoviesManifest() {
-  log('Writing manifest for index.html')
-  state.manifest.icons[0].src = state.logoFilename
-  state.manifest.start_url = '/'
+function writeManifest() {
+  log('Writing manifest')
+  state.manifest.icons[0].src = `/${state.logoFilename}`
   const json = JSON.stringify(state.manifest)
-  state.moviesManifest = `manifest.${checksum(json)}.json`
-  return fs.outputFile(path.join(state.distDir, state.moviesManifest), json, 'utf8')
+  state.manifestFile = `manifest.${checksum(json)}.json`
+  return fs.outputFile(path.join(state.distDir, state.manifestFile), json, 'utf8')
 }
 
 function renderMoviesHtml() {
   log('Rendering index.html')
   return new Promise((resolve) => {
-    fs.readFile(path.join(__dirname, 'frontend', 'movies.ejs'), 'utf8', (error, ejsTemplate) => {
+    fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8', (error, ejsTemplate) => {
       state.moviesHtml = ejs.render(ejsTemplate, {
         movies: state.movies,
         ratings: state.stats.ratings,
         assets: state.assets,
-        manifest: state.moviesManifest,
+        manifest: state.manifestFile,
       })
       resolve()
     })
   })
 }
 
-function writeStatsManifest() {
-  log('Writing manifest for stats/index.html')
-  state.manifest.icons[0].src = `../${state.logoFilename}`
-  state.manifest.start_url = '../'
-  const json = JSON.stringify(state.manifest)
-  state.statsManifest = `manifest.${checksum(json)}.json`
-  return fs.outputFile(path.join(state.distDir, state.statsManifest), json, 'utf8')
-}
-
 function renderStatsHtml() {
   log('Rendering stats/index.html')
   return new Promise((resolve) => {
-    fs.readFile(path.join(__dirname, 'frontend', 'stats.ejs'), 'utf8', (error, ejsTemplate) => {
+    fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8', (error, ejsTemplate) => {
       state.statsHtml = ejs.render(ejsTemplate, {
         moviesCount: state.movies.length,
         ratings: state.stats.ratings,
@@ -169,7 +157,7 @@ function renderStatsHtml() {
         actors: state.stats.actors,
         directors: state.stats.directors,
         assets: state.assets,
-        manifest: state.statsManifest,
+        manifest: state.manifestFile,
       })
       resolve()
     })

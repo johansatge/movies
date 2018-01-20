@@ -1,13 +1,13 @@
 const fs = require('fs')
 
 const files = [
-  'movies/2011.json',
+  'movies/_unsorted.json',
   'movies/2012.json',
   'movies/2013.json',
   'movies/2014.json',
   'movies/2015.json',
   'movies/2016.json',
-  'movies/2017.json',
+  'movies/2018.json',
 ]
 
 files.forEach((filePath) => {

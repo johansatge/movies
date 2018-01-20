@@ -106,7 +106,7 @@ function getSelectedMovieDetails() {
 function writeMovie() {
   return new Promise((resolve, reject) => {
     const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '_unsorted.json'
-    const filePath = path.join(__dirname, 'movies', fileName)
+    const filePath = path.join(__dirname, '..', 'movies', fileName)
     fs.readFile(filePath, 'utf8', (error, contents) => {
       if (error) {
         return reject(new Error(`Could not read ${filePath} (${error.message})`))
