@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const build = require('./build.js')
 const compression = require('compression')
 const express = require('express')

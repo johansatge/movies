@@ -14,8 +14,9 @@ git clone git@github.com:johansatge/movies.git
 cd movies
 # Install the dependencies
 npm install
-# Create .env file with an TMDB API key
+# Create .env file with an TMDB API key and the deployment URL
 echo "TMDB_API_KEY=xxx" > .env
+echo "DEPLOY_URL=xxx" >> .env
 ```
 
 ## Local server
@@ -40,4 +41,10 @@ Answer the questions. Then, commit the updated JSON file.
 
 ## Deployment
 
-> To be done
+Run:
+
+```shell
+npm run deploy
+```
+
+To build the project and rsync it.

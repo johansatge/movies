@@ -6,6 +6,7 @@
   "scripts": {
     "import": "node scripts/import.js",
     "server": "node scripts/server.js",
+    "deploy": "node scripts/deploy.js",
     "checkstyle": "eslint ."
   },
   "repository": {
