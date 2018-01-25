@@ -49,19 +49,27 @@ const state = {
         sizes: '256x256',
         type: 'image/png',
       },
+      {
+        src: null,
+        sizes: '512x512',
+        type: 'image/png',
+      },
     ],
     orientation: 'any',
     theme_color: '#ffcf20',
   },
   manifestFile: null,
-  logoFilename: null,
+  logos: {
+    x256: null,
+    x512: null,
+  },
 }
 
 function buildApp() {
   return cleanDist()
     .then(readMovies)
     .then(buildAssets)
-    .then(copyLogo)
+    .then(copyLogos)
     .then(writeManifest)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
@@ -111,16 +119,20 @@ function buildAssets() {
   })
 }
 
-function copyLogo() {
-  log('Writing logo')
+function copyLogos() {
+  log('Writing logos')
+  return Promise.all([copyLogo('x256'), copyLogo('x512')])
+}
+
+function copyLogo(size) {
   return new Promise((resolve, reject) => {
-    const src = path.join('frontend', 'logo.png')
+    const src = path.join('frontend', `logo-${size}.png`)
     checksum.file(src, (error, hash) => {
       if (error) {
         return reject(error)
       }
-      state.logoFilename = `logo.${hash}.png`
-      const dest = path.join(state.distDir, state.logoFilename)
+      state.logos[size] = `logo.${size}.${hash}.png`
+      const dest = path.join(state.distDir, state.logos[size])
       fs
         .copy(src, dest)
         .then(resolve)
@@ -131,7 +143,8 @@ function copyLogo() {
 
 function writeManifest() {
   log('Writing manifest')
-  state.manifest.icons[0].src = `/${state.logoFilename}`
+  state.manifest.icons[0].src = `/${state.logos.x256}`
+  state.manifest.icons[1].src = `/${state.logos.x512}`
   const json = JSON.stringify(state.manifest)
   state.manifestFile = `manifest.${checksum(json)}.json`
   return fs.outputFile(path.join(state.distDir, state.manifestFile), json, 'utf8')
