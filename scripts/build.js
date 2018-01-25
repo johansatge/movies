@@ -18,8 +18,10 @@ const state = {
   moviesHtml: null,
   statsHtml: null,
   assets: {
-    scripts: null,
-    styles: null,
+    moviesScripts: null,
+    statsScripts: null,
+    moviesStyles: null,
+    statsStyles: null,
   },
   htmlMinifyConfig: {
     caseSensitive: true,
@@ -85,7 +87,7 @@ function readMovies() {
 }
 
 function buildAssets() {
-  log('Building assets')
+  log('Building CSS & JS assets')
   return new Promise((resolve, reject) => {
     webpackConfig.output.path = state.distDir
     webpack(webpackConfig, (error, stats) => {
@@ -98,8 +100,13 @@ function buildAssets() {
       }
       state.assets.moviesScripts = info.assetsByChunkName.movies
       state.assets.statsScripts = info.assetsByChunkName.stats
-      state.assets.styles = info.assetsByChunkName.styles[1] // @todo fix this ugly thing
-      resolve()
+      const moviesStylesPath = path.join(state.distDir, info.assetsByChunkName.moviesStyles)
+      const statsStylesPath = path.join(state.distDir, info.assetsByChunkName.statsStyles)
+      state.assets.moviesStyles = require(moviesStylesPath)
+      state.assets.statsStyles = require(statsStylesPath)
+      Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
+        .then(resolve)
+        .catch(reject)
     })
   })
 }

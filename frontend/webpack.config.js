@@ -1,23 +1,19 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-
-const extractPlugin = new ExtractTextPlugin({
-  filename: 'styles.[chunkhash].css',
-})
 
 module.exports = {
   entry: {
     movies: path.join(__dirname, 'js', 'movies.js'),
     stats: path.join(__dirname, 'js', 'stats.js'),
-    styles: path.join(__dirname, 'sass', 'styles.scss'),
+    moviesStyles: path.join(__dirname, 'sass', 'movies.scss'),
+    statsStyles: path.join(__dirname, 'sass', 'stats.scss'),
   },
   output: {
     filename: '[name].[chunkhash].js',
     library: ['Scripts', '[name]'],
-    libraryTarget: 'var',
+    libraryTarget: 'umd',
   },
-  plugins: [extractPlugin, new UglifyJSPlugin()],
+  plugins: [new UglifyJSPlugin()],
   module: {
     rules: [
       {
@@ -30,17 +26,15 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: extractPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                minimize: true,
-              },
+        use: [
+          {
+            loader: 'css-loader',
+            options: {
+              minimize: true,
             },
-            'sass-loader',
-          ],
-        }),
+          },
+          'sass-loader',
+        ],
       },
     ],
   },
