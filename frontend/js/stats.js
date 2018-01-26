@@ -106,6 +106,7 @@ function initChart(node, type, labels, data, onClick) {
       ],
     },
     options: {
+      animation: false,
       legend: {
         display: false,
       },

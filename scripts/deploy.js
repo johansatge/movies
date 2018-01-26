@@ -31,7 +31,7 @@ function deployApp() {
       '--delete',
       '--chmod=u=rwX,g=rX',
       '--exclude=.DS_Store',
-      path.join(__dirname, '..', '.dist'),
+      path.join(__dirname, '..', '.dist') + '/',
       deployUrl,
     ].join(' ')
     exec(deployCommand, (error, stdout) => {
