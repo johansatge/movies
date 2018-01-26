@@ -1,11 +1,16 @@
 /* global document */
 
+require('es6-promise').polyfill()
+
+import axios from 'axios'
 import Chart from 'chart.js'
 
 export {init}
 
 const state = {
-  actors: null,
+  actors: [],
+  actorsFiles: null,
+  actorsCount: null,
   directors: null,
 }
 
@@ -14,8 +19,9 @@ const nodeDirectorsList = document.querySelector('[data-js-stats-directors-list]
 const nodeMoreActorsButton = document.querySelector('[data-js-stats-more-actors]')
 const nodeMoreDirectorsButton = document.querySelector('[data-js-stats-more-directors]')
 
-function init(stats, actors, directors) {
-  state.actors = actors
+function init(stats, actorsFiles, actorsCount, directors) {
+  state.actorsFiles = actorsFiles
+  state.actorsCount = actorsCount
   state.directors = directors
   nodeMoreActorsButton.addEventListener('click', addActors)
   nodeMoreDirectorsButton.addEventListener('click', addDirectors)
@@ -44,21 +50,47 @@ function init(stats, actors, directors) {
 }
 
 function addActors() {
-  const actors = state.actors.splice(0, 20)
-  const html = actors.map((actor, index) => {
-    return `
-    <tr class="${index % 2 === 0 ? 'stat-table-row--alt' : ''}">
-      <td><a href="../#actor:${actor.label}">${actor.label}</a></td>
-      <td>${actor.count}</td>
-    </tr>
-    `
+  nodeMoreActorsButton.disabled = true
+  getActors().then(() => {
+    const actors = state.actors.splice(0, 20)
+    state.actorsCount -= actors.length
+    const html = actors.map((actor, index) => {
+      return `
+        <tr class="${index % 2 === 0 ? 'stat-table-row--alt' : ''}">
+          <td><a href="../#actor:${actor.label}">${actor.label}</a></td>
+          <td>${actor.count}</td>
+        </tr>
+        `
+    })
+    nodeActorsList.innerHTML += html.join('')
+    if (state.actors.length === 0 && state.actorsFiles.length === 0) {
+      nodeMoreActorsButton.style.display = 'none'
+    } else {
+      nodeMoreActorsButton.innerHTML = `${state.actorsCount} more...`
+      nodeMoreActorsButton.disabled = false
+    }
   })
-  nodeActorsList.innerHTML += html.join('')
-  if (state.actors.length > 0) {
-    nodeMoreActorsButton.innerHTML = `${state.actors.length} more...`
-  } else {
-    nodeMoreActorsButton.style.display = 'none'
-  }
+}
+
+function getActors() {
+  return new Promise((resolve, reject) => {
+    if (state.actors.length > 0) {
+      return resolve()
+    }
+    axios({
+      url: state.actorsFiles.splice(0, 1),
+      method: 'get',
+      json: true,
+    })
+      .then((response) => {
+        if (response.data) {
+          state.actors = state.actors.concat(response.data)
+          return resolve()
+        }
+        reject(new Error('Empty actors response'))
+      })
+      .catch(reject)
+  })
 }
 
 function addDirectors() {

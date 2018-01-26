@@ -63,6 +63,8 @@ const state = {
     x256: null,
     x512: null,
   },
+  actorsFiles: null,
+  actorsCount: null,
 }
 
 function buildApp() {
@@ -71,6 +73,7 @@ function buildApp() {
     .then(buildAssets)
     .then(copyLogos)
     .then(writeManifest)
+    .then(writeActors)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
     .then(writeMoviesHtml)
@@ -150,6 +153,21 @@ function writeManifest() {
   return fs.outputFile(path.join(state.distDir, state.manifestFile), json, 'utf8')
 }
 
+function writeActors() {
+  log('Writing actors')
+  const writers = []
+  state.actorsFiles = []
+  state.actorsCount = state.stats.actors.length
+  while (state.stats.actors.length > 0) {
+    const actors = state.stats.actors.splice(0, 1000)
+    const json = JSON.stringify(actors)
+    const jsonFilename = `/actors/${checksum(json)}.json`
+    state.actorsFiles.push(jsonFilename)
+    writers.push(fs.outputFile(path.join(state.distDir, jsonFilename), json, 'utf8'))
+  }
+  return Promise.resolve()
+}
+
 function renderMoviesHtml() {
   log('Rendering index.html')
   return new Promise((resolve) => {
@@ -174,7 +192,8 @@ function renderStatsHtml() {
         ratings: state.stats.ratings,
         months: state.stats.months,
         releaseYears: state.stats.releaseYears,
-        actors: state.stats.actors,
+        actorsFiles: state.actorsFiles,
+        actorsCount: state.actorsCount,
         directors: state.stats.directors,
         assets: state.assets,
         manifest: state.manifestFile,
