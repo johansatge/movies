@@ -3,6 +3,7 @@
 const nodeMovies = document.querySelectorAll('[data-js-movie]')
 const nodeMoviesCount = document.querySelector('[data-js-movies-count]')
 const nodeSearchInput = document.querySelector('[data-js-search]')
+const nodeNoResults = document.querySelector('[data-js-no-results]')
 
 export {init}
 
@@ -61,6 +62,7 @@ function filterMovies() {
     }
   }
   nodeMoviesCount.innerHTML = visibleMovies
+  nodeNoResults.style.display = visibleMovies > 0 ? 'none' : 'block'
   lazyLoad()
 }
 
