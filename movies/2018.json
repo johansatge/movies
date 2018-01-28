@@ -222,5 +222,42 @@
       "Robert Kya-Hill",
       "Marcia Jean Kurtz"
     ]
+  },
+  {
+    "title": "Death Wish 2",
+    "original_title": "Death Wish 2",
+    "watch_date": "2018-01-21",
+    "rating": 4,
+    "release_date": "1982-02-20",
+    "director": "Michael Winner",
+    "tmdb_id": 14373,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg",
+      "original": "https://image.tmdb.org/t/p/original/cD0RZPk8IE1FiJphsKdlBxnTzRt.jpg"
+    },
+    "cast": [
+      "Charles Bronson",
+      "Jill Ireland",
+      "Vincent Gardenia",
+      "J. D. Cannon",
+      "Robin Sherwood",
+      "Laurence Fishburne",
+      "Anthony Franciosa",
+      "Ben Frank",
+      "Silvana Gallardo",
+      "Robert F. Lyons",
+      "Michael Prince",
+      "Drew Snyder",
+      "Paul Lambert",
+      "Thomas F. Duffy",
+      "Kevyn Major Howard",
+      "Stuart K. Robinson",
+      "Charles Cyphers"
+    ]
   }
 ]
