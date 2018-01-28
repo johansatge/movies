@@ -18,8 +18,10 @@ const state = {
   moviesHtml: null,
   statsHtml: null,
   assets: {
-    moviesScripts: null,
-    statsScripts: null,
+    moviesScript: null,
+    statsScript: null,
+    polyfillsScript: null,
+    serviceWorkerScript: null,
     moviesStyles: null,
     statsStyles: null,
   },
@@ -114,8 +116,10 @@ function buildAssets() {
       if (stats.hasErrors()) {
         return reject(new Error(info.errors[0]))
       }
-      state.assets.moviesScripts = info.assetsByChunkName.movies
-      state.assets.statsScripts = info.assetsByChunkName.stats
+      state.assets.moviesScript = info.assetsByChunkName.movies
+      state.assets.statsScript = info.assetsByChunkName.stats
+      state.assets.polyfillsScript = info.assetsByChunkName.polyfills
+      state.assets.serviceWorkerScript = info.assetsByChunkName.serviceworker
       const moviesStylesPath = path.join(state.distDir, info.assetsByChunkName.moviesStyles)
       const statsStylesPath = path.join(state.distDir, info.assetsByChunkName.statsStyles)
       state.assets.moviesStyles = require(moviesStylesPath)

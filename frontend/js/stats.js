@@ -1,7 +1,5 @@
 /* global document */
 
-require('es6-promise').polyfill()
-
 import axios from 'axios'
 import Chart from 'chart.js'
 

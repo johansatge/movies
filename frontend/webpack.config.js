@@ -5,6 +5,8 @@ module.exports = {
   entry: {
     movies: path.join(__dirname, 'js', 'movies.js'),
     stats: path.join(__dirname, 'js', 'stats.js'),
+    polyfills: path.join(__dirname, 'js', 'polyfills.js'),
+    serviceworker: path.join(__dirname, 'js', 'serviceworker.js'),
     moviesStyles: path.join(__dirname, 'sass', 'movies.scss'),
     statsStyles: path.join(__dirname, 'sass', 'stats.scss'),
   },

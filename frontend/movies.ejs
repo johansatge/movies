@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Movies 🎥</title>
+    <title>Movies</title>
     <style><%- assets.moviesStyles %></style>
     <link href="<%= manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
@@ -50,8 +50,14 @@
       <% }) %>
     </div>
     <div class="no-results" data-js-no-results>No results</div>
-    <script src="<%= assets.moviesScripts %>"></script>
+    <script src="<%= assets.polyfillsScript %>"></script>
+    <script src="<%= assets.moviesScript %>"></script>
     <script>Scripts.movies.init()</script>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('<%= assets.serviceWorkerScript %>', {scope: '.'})
+      }
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700" rel="stylesheet">
   </body>
 </html>
