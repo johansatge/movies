@@ -36,6 +36,11 @@
 }
 .topbar-search {
   float: right;
+  position: relative;
+}
+.topbar-search-input {
+  position: relative;
+  z-index: 1;
   width: 300px;
   height: 32px;
   border: 0;
@@ -44,8 +49,33 @@
   text-indent: 16px;
   font-size: 13px;
   color: #ffffff;
-  top: 14px;
-  right: 28px;
+}
+.topbar-search-help {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  line-height: 80px;
+}
+.topbar-search-help::after {
+  position: absolute;
+  content: '?';
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  right: 8px;
+  background: #7a7a7a;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 20px;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 650px) {

@@ -22,7 +22,10 @@
       <a href="http://github.com/johansatge/movies" class="topbar-title">
         About
       </a>
-      <input data-js-search class="topbar-search" placeholder="Search movie..." value="">
+      <label class="topbar-search">
+        <input data-js-search class="topbar-search-input" placeholder="Search movie..." value="">
+        <a class="topbar-search-help" href="http://github.com/johansatge/movies/#advanced-search" target="_blank" rel="noopener">Help</a>
+      </label>
     </div>
     <div class="movies">
       <% movies.forEach((movie) => { %>
