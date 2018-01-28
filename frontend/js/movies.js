@@ -19,7 +19,7 @@ function initMoviesGrid() {
 }
 
 function setMoviesGrid() {
-  const targetWidth = 200
+  const targetWidth = 160
   const windowWidth = window.innerWidth - 1
   for (let index = 0; index < nodeMovies.length; index += 1) {
     const count = windowWidth / targetWidth
