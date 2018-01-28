@@ -4,6 +4,13 @@ A list of movies I have watched, with ratings and stats.
 
 _This app uses the [TMDb API](https://developers.themoviedb.org/) but is not endorsed or certified by [TMDb](https://www.themoviedb.org/)._
 
+* [Features](#features)
+  * [Advanced search](#advanced-search)
+* [Installation](#installation)
+* [Local server](#local-server)
+* [Adding a movie](#adding-a-movie)
+* [Deployment](#deployment)
+
 ## Features
 
 * Movies list with ratings
