@@ -8,25 +8,31 @@ import Chart from 'chart.js'
 export {init}
 
 const state = {
-  actors: [],
-  actorsFiles: null,
-  actorsCount: null,
-  directors: null,
+  actors: {
+    items: [],
+    files: null,
+    count: 0,
+    nodeList: document.querySelector('[data-js-stats-actors-list]'),
+    nodeButton: document.querySelector('[data-js-stats-more-actors]'),
+  },
+  directors: {
+    items: [],
+    files: null,
+    count: 0,
+    nodeList: document.querySelector('[data-js-stats-directors-list]'),
+    nodeButton: document.querySelector('[data-js-stats-more-directors]'),
+  },
 }
 
-const nodeActorsList = document.querySelector('[data-js-stats-actors-list]')
-const nodeDirectorsList = document.querySelector('[data-js-stats-directors-list]')
-const nodeMoreActorsButton = document.querySelector('[data-js-stats-more-actors]')
-const nodeMoreDirectorsButton = document.querySelector('[data-js-stats-more-directors]')
-
-function init(stats, actorsFiles, actorsCount, directors) {
-  state.actorsFiles = actorsFiles
-  state.actorsCount = actorsCount
-  state.directors = directors
-  nodeMoreActorsButton.addEventListener('click', addActors)
-  nodeMoreDirectorsButton.addEventListener('click', addDirectors)
-  addActors()
-  addDirectors()
+function init(stats) {
+  state.actors.files = stats.actorsFiles
+  state.actors.count = stats.actorsCount
+  state.directors.files = stats.directorsFiles
+  state.directors.count = stats.directorsCount
+  state.actors.nodeButton.addEventListener('click', addActorsDirectors.bind(null, 'actors'))
+  state.directors.nodeButton.addEventListener('click', addActorsDirectors.bind(null, 'directors'))
+  addActorsDirectors('actors')
+  addActorsDirectors('directors')
   initChart(
     document.querySelector('[data-js-stats-movies-by-rating]').getContext('2d'),
     'bar',
@@ -49,66 +55,48 @@ function init(stats, actorsFiles, actorsCount, directors) {
   )
 }
 
-function addActors() {
-  nodeMoreActorsButton.disabled = true
-  getActors().then(() => {
-    const actors = state.actors.splice(0, 20)
-    state.actorsCount -= actors.length
-    const html = actors.map((actor, index) => {
+function addActorsDirectors(type) {
+  state[type].nodeButton.disabled = true
+  getActorsDirectors(type).then(() => {
+    const items = state[type].items.splice(0, 20)
+    state[type].count -= items.length
+    const html = items.map((item, index) => {
       return `
         <tr class="${index % 2 === 0 ? 'stat-table-row--alt' : ''}">
-          <td><a href="../#actor:${actor.label}">${actor.label}</a></td>
-          <td>${actor.count}</td>
+          <td><a href="../#${type.replace(/s$/, '')}:${item.label}">${item.label}</a></td>
+          <td>${item.count}</td>
         </tr>
         `
     })
-    nodeActorsList.innerHTML += html.join('')
-    if (state.actors.length === 0 && state.actorsFiles.length === 0) {
-      nodeMoreActorsButton.style.display = 'none'
+    state[type].nodeList.innerHTML += html.join('')
+    if (state[type].items.length === 0 && state[type].files.length === 0) {
+      state[type].nodeButton.style.display = 'none'
     } else {
-      nodeMoreActorsButton.innerHTML = `${state.actorsCount} more...`
-      nodeMoreActorsButton.disabled = false
+      state[type].nodeButton.innerHTML = `${state[type].count} more...`
+      state[type].nodeButton.disabled = false
     }
   })
 }
 
-function getActors() {
+function getActorsDirectors(type) {
   return new Promise((resolve, reject) => {
-    if (state.actors.length > 0) {
+    if (state[type].items.length > 0) {
       return resolve()
     }
     axios({
-      url: state.actorsFiles.splice(0, 1),
+      url: state[type].files.splice(0, 1),
       method: 'get',
       json: true,
     })
       .then((response) => {
         if (response.data) {
-          state.actors = state.actors.concat(response.data)
+          state[type].items = state[type].items.concat(response.data)
           return resolve()
         }
-        reject(new Error('Empty actors response'))
+        reject(new Error('Empty response'))
       })
       .catch(reject)
   })
-}
-
-function addDirectors() {
-  const directors = state.directors.splice(0, 20)
-  const html = directors.map((director, index) => {
-    return `
-    <tr class="${index % 2 === 0 ? 'stat-table-row--alt' : ''}">
-      <td><a href="../#director:${director.label}">${director.label}</a></td>
-      <td>${director.count}</td>
-    </tr>
-    `
-  })
-  nodeDirectorsList.innerHTML += html.join('')
-  if (state.directors.length > 0) {
-    nodeMoreDirectorsButton.innerHTML = `${state.directors.length} more...`
-  } else {
-    nodeMoreDirectorsButton.style.display = 'none'
-  }
 }
 
 function onRatingClick(evt, items) {

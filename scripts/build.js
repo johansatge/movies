@@ -65,6 +65,8 @@ const state = {
   },
   actorsFiles: null,
   actorsCount: null,
+  directorsFiles: null,
+  directorsCount: null,
 }
 
 function buildApp() {
@@ -74,6 +76,7 @@ function buildApp() {
     .then(copyLogos)
     .then(writeManifest)
     .then(writeActors)
+    .then(writeDirectors)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
     .then(writeMoviesHtml)
@@ -168,6 +171,21 @@ function writeActors() {
   return Promise.resolve()
 }
 
+function writeDirectors() {
+  log('Writing directors')
+  const writers = []
+  state.directorsFiles = []
+  state.directorsCount = state.stats.directors.length
+  while (state.stats.directors.length > 0) {
+    const directors = state.stats.directors.splice(0, 500)
+    const json = JSON.stringify(directors)
+    const jsonFilename = `/directors/${checksum(json)}.json`
+    state.directorsFiles.push(jsonFilename)
+    writers.push(fs.outputFile(path.join(state.distDir, jsonFilename), json, 'utf8'))
+  }
+  return Promise.resolve()
+}
+
 function renderMoviesHtml() {
   log('Rendering index.html')
   return new Promise((resolve) => {
@@ -194,7 +212,8 @@ function renderStatsHtml() {
         releaseYears: state.stats.releaseYears,
         actorsFiles: state.actorsFiles,
         actorsCount: state.actorsCount,
-        directors: state.stats.directors,
+        directorsFiles: state.directorsFiles,
+        directorsCount: state.directorsCount,
         assets: state.assets,
         manifest: state.manifestFile,
       })

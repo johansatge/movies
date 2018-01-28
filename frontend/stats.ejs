@@ -61,10 +61,11 @@
         moviesByRating : <%- JSON.stringify(ratings) %>,
         moviesByMonth : <%- JSON.stringify(months) %>,
         moviesByReleaseYears : <%- JSON.stringify(releaseYears) %>,
-      },
-      <%- JSON.stringify(actorsFiles) %>,
-      <%- actorsCount %>,
-      <%- JSON.stringify(directors) %>)
+        actorsFiles : <%- JSON.stringify(actorsFiles) %>,
+        actorsCount : <%- actorsCount %>,
+        directorsFiles : <%- JSON.stringify(directorsFiles) %>,
+        directorsCount : <%- directorsCount %>,
+      })
     </script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700" rel="stylesheet">
   </body>
