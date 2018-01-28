@@ -59,6 +59,7 @@ const state = {
     theme_color: '#ffcf20',
   },
   manifestFile: null,
+  faviconFile: null,
   logos: {
     x256: null,
     x512: null,
@@ -74,6 +75,7 @@ function buildApp() {
     .then(readMovies)
     .then(buildAssets)
     .then(copyLogos)
+    .then(copyFavicon)
     .then(writeManifest)
     .then(writeActors)
     .then(writeDirectors)
@@ -147,6 +149,24 @@ function copyLogo(size) {
   })
 }
 
+function copyFavicon() {
+  log('Writing favicon')
+  return new Promise((resolve, reject) => {
+    const src = path.join('frontend', 'favicon.png')
+    checksum.file(src, (error, hash) => {
+      if (error) {
+        return reject(error)
+      }
+      state.faviconFile = `favicon.${hash}.png`
+      const dest = path.join(state.distDir, state.faviconFile)
+      fs
+        .copy(src, dest)
+        .then(resolve)
+        .catch(reject)
+    })
+  })
+}
+
 function writeManifest() {
   log('Writing manifest')
   state.manifest.icons[0].src = `/${state.logos.x256}`
@@ -195,6 +215,7 @@ function renderMoviesHtml() {
         ratings: state.stats.ratings,
         assets: state.assets,
         manifest: state.manifestFile,
+        favicon: state.faviconFile,
       })
       resolve()
     })
@@ -216,6 +237,7 @@ function renderStatsHtml() {
         directorsCount: state.directorsCount,
         assets: state.assets,
         manifest: state.manifestFile,
+        favicon: state.faviconFile,
       })
       resolve()
     })
