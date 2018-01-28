@@ -93,14 +93,23 @@ function movieMatchesFilters(nodeMovie, filters) {
 
 function extractSearchFilters() {
   const allowedTypes = ['rating', 'actor', 'director', 'title', 'release']
+  const defaultType = 'title'
   const searchTerms = nodeSearchInput.value.split(';').map((term) => term.trim())
   const filters = []
   searchTerms.forEach((term) => {
+    if (term.length === 0) {
+      return
+    }
     const termParts = term.split(':')
     if (allowedTypes.includes(termParts[0]) && termParts[1] && termParts[1].length > 0) {
       filters.push({
         type: termParts[0],
         value: termParts[1],
+      })
+    } else {
+      filters.push({
+        type: defaultType,
+        value: term,
       })
     }
   })
