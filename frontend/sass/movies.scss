@@ -44,4 +44,7 @@
   .movies {
     padding: 95px 0 0 0;
   }
+  [data-js-search-hidden] .movies {
+    padding: 52px 0 0 0;
+  }
 }

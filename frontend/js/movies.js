@@ -1,8 +1,10 @@
 /* global window, document */
 
+const nodeBody = document.body
 const nodeMovies = document.querySelectorAll('[data-js-movie]')
 const nodeMoviesCount = document.querySelector('[data-js-movies-count]')
 const nodeSearchInput = document.querySelector('[data-js-search]')
+const nodeSearchToggle = document.querySelector('[data-js-search-toggle]')
 const nodeNoResults = document.querySelector('[data-js-no-results]')
 
 export {init}
@@ -44,6 +46,15 @@ function initSearchFilter() {
     filterMovies()
   }
   nodeSearchInput.addEventListener('input', filterMovies)
+  nodeSearchToggle.addEventListener('click', toggleSearch)
+}
+
+function toggleSearch() {
+  if (nodeBody.dataset.jsSearchHidden) {
+    delete nodeBody.dataset.jsSearchHidden
+  } else {
+    nodeBody.dataset.jsSearchHidden = true
+  }
 }
 
 function filterMovies() {
