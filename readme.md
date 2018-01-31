@@ -1,3 +1,5 @@
+![movies](movies.png)
+
 # Movies 🎥
 
 A list of movies I have watched, with ratings and stats.
