@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: url('/fonts/opensans-condensedbold.woff2') format('woff2'),
+    url('/fonts/opensans-condensedbold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/opensans-regular.woff2') format('woff2'), url('/fonts/opensans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$fontTitle: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+$fontBody: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;

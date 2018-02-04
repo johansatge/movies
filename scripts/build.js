@@ -78,6 +78,7 @@ function buildApp() {
     .then(buildAssets)
     .then(copyLogos)
     .then(copyFavicon)
+    .then(copyFonts)
     .then(writeManifest)
     .then(writeActors)
     .then(writeDirectors)
@@ -168,6 +169,16 @@ function copyFavicon() {
         .then(resolve)
         .catch(reject)
     })
+  })
+}
+
+function copyFonts() {
+  log('Writing fonts')
+  return new Promise((resolve, reject) => {
+    fs
+      .copy(path.join('frontend', 'fonts'), path.join(state.distDir, 'fonts'))
+      .then(resolve)
+      .catch(reject)
   })
 }
 

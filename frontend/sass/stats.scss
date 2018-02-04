@@ -1,3 +1,4 @@
+@import 'fonts';
 @import 'reset';
 @import 'topbar';
 
@@ -22,7 +23,7 @@
   color: #efefef;
   margin: 20px;
   font-size: 26px;
-  font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: $fontTitle;
 }
 .stat-table {
   position: relative;
@@ -54,11 +55,11 @@
 }
 .stat-more {
   display: inline-block;
-  font-family: 'Open Sans', Helvetica Neue, Helvetica, sans-serif;
+  font-family: $fontBody;
   color: #fff;
   background: #5d5d5d;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   padding: 5px 12px 6px 12px;
   border-radius: 3px;
   cursor: pointer;
