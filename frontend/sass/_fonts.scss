@@ -1,14 +1,13 @@
 @font-face {
   font-family: 'Open Sans Condensed';
-  src: url('/fonts/opensans-condensedbold.woff2') format('woff2'),
-    url('/fonts/opensans-condensedbold.woff') format('woff');
+  src: url('/__opensans-condensedbold.woff2__') format('woff2'), url('/__opensans-condensedbold.woff__') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/opensans-regular.woff2') format('woff2'), url('/fonts/opensans-regular.woff') format('woff');
+  src: url('/__opensans-regular.woff2__') format('woff2'), url('/__opensans-regular.woff__') format('woff');
   font-weight: normal;
   font-style: normal;
 }

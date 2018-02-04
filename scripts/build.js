@@ -1,6 +1,7 @@
 const checksum = require('checksum')
 const ejs = require('ejs')
 const fs = require('fs-extra')
+const glob = require('glob')
 const minify = require('html-minifier').minify
 const movies = require('../movies/movies.js')
 const path = require('path')
@@ -60,6 +61,7 @@ const state = {
     orientation: 'any',
     theme_color: '#ffcf20',
   },
+  fontFiles: {},
   manifestFile: null,
   faviconFile: null,
   logos: {
@@ -175,10 +177,32 @@ function copyFavicon() {
 function copyFonts() {
   log('Writing fonts')
   return new Promise((resolve, reject) => {
-    fs
-      .copy(path.join('frontend', 'fonts'), path.join(state.distDir, 'fonts'))
-      .then(resolve)
-      .catch(reject)
+    glob(path.join('frontend', 'fonts', '*.{woff,woff2}'), (error, files) => {
+      if (error) {
+        return reject(error)
+      }
+      Promise.all(files.map((file) => copyFont(file)))
+        .then(resolve)
+        .catch(reject)
+    })
+  })
+}
+
+function copyFont(file) {
+  return new Promise((resolve, reject) => {
+    checksum.file(file, (error, hash) => {
+      if (error) {
+        return reject(error)
+      }
+      const pathParts = path.parse(file)
+      const id = `${pathParts.name}${pathParts.ext}`
+      state.fontFiles[id] = `${pathParts.name}.${hash}${pathParts.ext}`
+      const dest = path.join(state.distDir, state.fontFiles[id])
+      fs
+        .copy(file, dest)
+        .then(resolve)
+        .catch(reject)
+    })
   })
 }
 
@@ -261,12 +285,19 @@ function renderStatsHtml() {
 
 function writeMoviesHtml() {
   log('Writing index.html')
-  const html = minify(state.moviesHtml, state.htmlMinifyConfig)
+  const html = minify(replaceFonts(state.moviesHtml), state.htmlMinifyConfig)
   return fs.outputFile(path.join(state.distDir, 'index.html'), html, 'utf8')
 }
 
 function writeStatsHtml() {
   log('Writing stats/index.html')
-  const html = minify(state.statsHtml, state.htmlMinifyConfig)
+  const html = minify(replaceFonts(state.statsHtml), state.htmlMinifyConfig)
   return fs.outputFile(path.join(state.distDir, 'stats', 'index.html'), html, 'utf8')
+}
+
+function replaceFonts(html) {
+  Object.keys(state.fontFiles).forEach((id) => {
+    html = html.replace(`/__${id}__`, `/${state.fontFiles[id]}`)
+  })
+  return html
 }
