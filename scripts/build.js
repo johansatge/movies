@@ -110,7 +110,9 @@ function readMovies() {
 function buildAssets() {
   log('Building CSS & JS assets')
   return new Promise((resolve, reject) => {
-    webpackConfig.output.path = state.distDir
+    webpackConfig.forEach((config) => {
+      config.output.path = state.distDir
+    })
     webpack(webpackConfig, (error, stats) => {
       const info = stats.toJson()
       if (error) {
@@ -119,14 +121,17 @@ function buildAssets() {
       if (stats.hasErrors()) {
         return reject(new Error(info.errors[0]))
       }
-      state.assets.moviesScript = info.assetsByChunkName.movies
-      state.assets.statsScript = info.assetsByChunkName.stats
-      state.assets.polyfillsScript = info.assetsByChunkName.polyfills
-      state.assets.serviceWorkerScript = info.assetsByChunkName.serviceworker
-      const moviesStylesPath = path.join(state.distDir, info.assetsByChunkName.moviesStyles)
-      const statsStylesPath = path.join(state.distDir, info.assetsByChunkName.statsStyles)
-      state.assets.moviesStyles = require(moviesStylesPath)
-      state.assets.statsStyles = require(statsStylesPath)
+      if (info.warnings.length > 0) {
+        console.log(info.warnings.join('\n')) // eslint-disable-line no-console
+      }
+      state.assets.moviesScript = info.children[0].assetsByChunkName.movies
+      state.assets.statsScript = info.children[0].assetsByChunkName.stats
+      state.assets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
+      state.assets.serviceWorkerScript = info.children[0].assetsByChunkName.serviceworker
+      const moviesStylesPath = path.join(state.distDir, info.children[1].assetsByChunkName.moviesStyles)
+      const statsStylesPath = path.join(state.distDir, info.children[1].assetsByChunkName.statsStyles)
+      state.assets.moviesStyles = require(moviesStylesPath).toString()
+      state.assets.statsStyles = require(statsStylesPath).toString()
       Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
         .then(resolve)
         .catch(reject)
