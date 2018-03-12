@@ -1,12 +1,13 @@
 const checksum = require('checksum')
 const ejs = require('ejs')
+const frontendConfig = require('../frontend/config.js')
 const fs = require('fs-extra')
 const glob = require('glob')
 const minify = require('html-minifier').minify
 const movies = require('../movies/movies.js')
 const path = require('path')
+const promisify = require('util').promisify
 const webpack = require('webpack')
-const webpackConfig = require('../frontend/webpack.config.js')
 const stats = require('./stats.js')
 
 module.exports = {
@@ -14,64 +15,24 @@ module.exports = {
 }
 
 const state = {
-  distDir: path.join(__dirname, '..', '.dist'),
-  movies: null,
-  moviesHtml: null,
-  statsHtml: null,
-  assets: {
+  outputDir: path.join(__dirname, '..', '.dist'),
+  compiledAssets: {
     moviesScript: null,
     statsScript: null,
     polyfillsScript: null,
     serviceWorkerScript: null,
     moviesStyles: null,
     statsStyles: null,
+    manifest: null,
+    favicon: null,
   },
-  htmlMinifyConfig: {
-    caseSensitive: true,
-    collapseWhitespace: true,
-    conservativeCollapse: true,
-    html5: true,
-    minifyCSS: false,
-    minifyJS: false,
-    removeAttributeQuotes: false,
-    removeComments: true,
-    removeEmptyAttributes: true,
-    removeScriptTypeAttributes: true,
-    useShortDoctype: true,
-  },
-  manifest: {
-    name: 'Movies',
-    short_name: 'Movies',
-    display: 'standalone',
-    background_color: '#000000',
-    description: 'A big movies list with stats',
-    start_url: '/',
-    icons: [
-      {
-        src: null,
-        sizes: '256x256',
-        type: 'image/png',
-      },
-      {
-        src: null,
-        sizes: '512x512',
-        type: 'image/png',
-      },
-    ],
-    orientation: 'any',
-    theme_color: '#ffcf20',
-  },
+  movies: null,
   fontFiles: {},
-  manifestFile: null,
-  faviconFile: null,
-  logos: {
-    x256: null,
-    x512: null,
-  },
   actorsFiles: null,
   actorsCount: null,
   directorsFiles: null,
   directorsCount: null,
+  stats: null,
 }
 
 function buildApp() {
@@ -86,8 +47,6 @@ function buildApp() {
     .then(writeDirectors)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
-    .then(writeMoviesHtml)
-    .then(writeStatsHtml)
 }
 
 function log(message) {
@@ -95,8 +54,8 @@ function log(message) {
 }
 
 function cleanDist() {
-  log(`Cleaning ${state.distDir}`)
-  return fs.emptyDir(state.distDir)
+  log(`Cleaning ${state.outputDir}`)
+  return fs.emptyDir(state.outputDir)
 }
 
 function readMovies() {
@@ -109,115 +68,79 @@ function readMovies() {
 
 function buildAssets() {
   log('Building CSS & JS assets')
-  return new Promise((resolve, reject) => {
-    webpackConfig.forEach((config) => {
-      config.output.path = state.distDir
-    })
-    webpack(webpackConfig, (error, stats) => {
-      const info = stats.toJson()
-      if (error) {
-        return reject(error)
-      }
-      if (stats.hasErrors()) {
-        return reject(new Error(info.errors[0]))
-      }
-      if (info.warnings.length > 0) {
-        console.log(info.warnings.join('\n')) // eslint-disable-line no-console
-      }
-      state.assets.moviesScript = info.children[0].assetsByChunkName.movies
-      state.assets.statsScript = info.children[0].assetsByChunkName.stats
-      state.assets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
-      state.assets.serviceWorkerScript = info.children[0].assetsByChunkName.serviceworker
-      const moviesStylesPath = path.join(state.distDir, info.children[1].assetsByChunkName.moviesStyles)
-      const statsStylesPath = path.join(state.distDir, info.children[1].assetsByChunkName.statsStyles)
-      state.assets.moviesStyles = require(moviesStylesPath).toString()
-      state.assets.statsStyles = require(statsStylesPath).toString()
-      Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
-        .then(resolve)
-        .catch(reject)
-    })
+  frontendConfig.webpack.forEach((config) => {
+    config.output.path = state.outputDir
   })
+  return promisify(webpack)(frontendConfig.webpack)
+    .then((stats) => {
+      const info = stats.toJson()
+      if (stats.hasErrors()) {
+        throw new Error(info.errors[0])
+      }
+      state.compiledAssets.moviesScript = info.children[0].assetsByChunkName.movies
+      state.compiledAssets.statsScript = info.children[0].assetsByChunkName.stats
+      state.compiledAssets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
+      state.compiledAssets.serviceWorkerScript = info.children[0].assetsByChunkName.serviceworker
+      const moviesStylesPath = path.join(state.outputDir, info.children[1].assetsByChunkName.moviesStyles)
+      const statsStylesPath = path.join(state.outputDir, info.children[1].assetsByChunkName.statsStyles)
+      state.compiledAssets.moviesStyles = require(moviesStylesPath).toString()
+      state.compiledAssets.statsStyles = require(statsStylesPath).toString()
+      return Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
+    })
+    .catch((error) => {
+      log(error.message)
+      process.exit(1)
+    })
 }
 
 function copyLogos() {
   log('Writing logos')
-  return Promise.all([copyLogo('x256'), copyLogo('x512')])
+  return Promise.all([copyLogo('256'), copyLogo('512')])
 }
 
 function copyLogo(size) {
-  return new Promise((resolve, reject) => {
-    const src = path.join('frontend', `logo-${size}.png`)
-    checksum.file(src, (error, hash) => {
-      if (error) {
-        return reject(error)
-      }
-      state.logos[size] = `logo.${size}.${hash}.png`
-      const dest = path.join(state.distDir, state.logos[size])
-      fs
-        .copy(src, dest)
-        .then(resolve)
-        .catch(reject)
+  const src = path.join('frontend', `logo-${size}.png`)
+  return promisify(checksum.file)(src).then((hash) => {
+    const filename = `logo.${size}.${hash}.png`
+    frontendConfig.manifest.icons.push({
+      src: `/${filename}`,
+      sizes: `${size}x${size}`,
+      type: 'image/png',
     })
+    return fs.copy(src, path.join(state.outputDir, filename))
   })
 }
 
 function copyFavicon() {
   log('Writing favicon')
-  return new Promise((resolve, reject) => {
-    const src = path.join('frontend', 'favicon.png')
-    checksum.file(src, (error, hash) => {
-      if (error) {
-        return reject(error)
-      }
-      state.faviconFile = `favicon.${hash}.png`
-      const dest = path.join(state.distDir, state.faviconFile)
-      fs
-        .copy(src, dest)
-        .then(resolve)
-        .catch(reject)
-    })
+  const src = path.join('frontend', 'favicon.png')
+  return promisify(checksum.file)(src).then((hash) => {
+    state.compiledAssets.favicon = `favicon.${hash}.png`
+    return fs.copy(src, path.join(state.outputDir, state.compiledAssets.favicon))
   })
 }
 
 function copyFonts() {
   log('Writing fonts')
-  return new Promise((resolve, reject) => {
-    glob(path.join('frontend', 'fonts', '*.{woff,woff2}'), (error, files) => {
-      if (error) {
-        return reject(error)
-      }
-      Promise.all(files.map((file) => copyFont(file)))
-        .then(resolve)
-        .catch(reject)
-    })
+  return promisify(glob)(path.join('frontend', 'fonts', '*.{woff,woff2}')).then((files) => {
+    return Promise.all(files.map((file) => copyFont(file)))
   })
 }
 
 function copyFont(file) {
-  return new Promise((resolve, reject) => {
-    checksum.file(file, (error, hash) => {
-      if (error) {
-        return reject(error)
-      }
-      const pathParts = path.parse(file)
-      const id = `${pathParts.name}${pathParts.ext}`
-      state.fontFiles[id] = `${pathParts.name}.${hash}${pathParts.ext}`
-      const dest = path.join(state.distDir, state.fontFiles[id])
-      fs
-        .copy(file, dest)
-        .then(resolve)
-        .catch(reject)
-    })
+  return promisify(checksum.file)(file).then((hash) => {
+    const pathParts = path.parse(file)
+    const id = `${pathParts.name}${pathParts.ext}`
+    state.fontFiles[id] = `${pathParts.name}.${hash}${pathParts.ext}`
+    return fs.copy(file, path.join(state.outputDir, state.fontFiles[id]))
   })
 }
 
 function writeManifest() {
   log('Writing manifest')
-  state.manifest.icons[0].src = `/${state.logos.x256}`
-  state.manifest.icons[1].src = `/${state.logos.x512}`
-  const json = JSON.stringify(state.manifest)
-  state.manifestFile = `manifest.${checksum(json)}.json`
-  return fs.outputFile(path.join(state.distDir, state.manifestFile), json, 'utf8')
+  const json = JSON.stringify(frontendConfig.manifest)
+  state.compiledAssets.manifest = `manifest.${checksum(json)}.json`
+  return fs.outputFile(path.join(state.outputDir, state.compiledAssets.manifest), json, 'utf8')
 }
 
 function writeActors() {
@@ -230,9 +153,9 @@ function writeActors() {
     const json = JSON.stringify(actors)
     const jsonFilename = `/actors/${checksum(json)}.json`
     state.actorsFiles.push(jsonFilename)
-    writers.push(fs.outputFile(path.join(state.distDir, jsonFilename), json, 'utf8'))
+    writers.push(fs.outputFile(path.join(state.outputDir, jsonFilename), json, 'utf8'))
   }
-  return Promise.resolve()
+  return Promise.all(writers)
 }
 
 function writeDirectors() {
@@ -245,59 +168,41 @@ function writeDirectors() {
     const json = JSON.stringify(directors)
     const jsonFilename = `/directors/${checksum(json)}.json`
     state.directorsFiles.push(jsonFilename)
-    writers.push(fs.outputFile(path.join(state.distDir, jsonFilename), json, 'utf8'))
+    writers.push(fs.outputFile(path.join(state.outputDir, jsonFilename), json, 'utf8'))
   }
-  return Promise.resolve()
+  return Promise.all(writers)
 }
 
 function renderMoviesHtml() {
   log('Rendering index.html')
-  return new Promise((resolve) => {
-    fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8', (error, ejsTemplate) => {
-      state.moviesHtml = ejs.render(ejsTemplate, {
-        movies: state.movies,
-        ratings: state.stats.ratings,
-        assets: state.assets,
-        manifest: state.manifestFile,
-        favicon: state.faviconFile,
-      })
-      resolve()
+  return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
+    const html = ejs.render(ejsTemplate, {
+      movies: state.movies,
+      ratings: state.stats.ratings,
+      assets: state.compiledAssets,
     })
+    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
+    return fs.outputFile(path.join(state.outputDir, 'index.html'), minifiedHtml, 'utf8')
   })
 }
 
 function renderStatsHtml() {
   log('Rendering stats/index.html')
-  return new Promise((resolve) => {
-    fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8', (error, ejsTemplate) => {
-      state.statsHtml = ejs.render(ejsTemplate, {
-        moviesCount: state.movies.length,
-        ratings: state.stats.ratings,
-        months: state.stats.months,
-        releaseYears: state.stats.releaseYears,
-        actorsFiles: state.actorsFiles,
-        actorsCount: state.actorsCount,
-        directorsFiles: state.directorsFiles,
-        directorsCount: state.directorsCount,
-        assets: state.assets,
-        manifest: state.manifestFile,
-        favicon: state.faviconFile,
-      })
-      resolve()
+  return fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8').then((ejsTemplate) => {
+    const html = ejs.render(ejsTemplate, {
+      moviesCount: state.movies.length,
+      ratings: state.stats.ratings,
+      months: state.stats.months,
+      releaseYears: state.stats.releaseYears,
+      actorsFiles: state.actorsFiles,
+      actorsCount: state.actorsCount,
+      directorsFiles: state.directorsFiles,
+      directorsCount: state.directorsCount,
+      assets: state.compiledAssets,
     })
+    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
+    return fs.outputFile(path.join(state.outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
   })
-}
-
-function writeMoviesHtml() {
-  log('Writing index.html')
-  const html = minify(replaceFonts(state.moviesHtml), state.htmlMinifyConfig)
-  return fs.outputFile(path.join(state.distDir, 'index.html'), html, 'utf8')
-}
-
-function writeStatsHtml() {
-  log('Writing stats/index.html')
-  const html = minify(replaceFonts(state.statsHtml), state.htmlMinifyConfig)
-  return fs.outputFile(path.join(state.distDir, 'stats', 'index.html'), html, 'utf8')
 }
 
 function replaceFonts(html) {
