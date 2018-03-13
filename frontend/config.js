@@ -2,19 +2,6 @@ const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
-  manifest: {
-    name: 'Movies',
-    short_name: 'Movies',
-    display: 'standalone',
-    background_color: '#000000',
-    description: 'A big movies list with stats',
-    start_url: '/',
-    icons: [
-      /*Filled when building the app */
-    ],
-    orientation: 'any',
-    theme_color: '#ffcf20',
-  },
   htmlMinify: {
     caseSensitive: true,
     collapseWhitespace: true,

@@ -34,16 +34,15 @@ const state = {
   directorsFiles: null,
   stats: null,
 }
-// @todo use the same helper to write all the hashified files?
 
 function buildApp() {
   return cleanDist()
-    .then(readMovies)
     .then(buildAssets)
-    .then(copyLogos)
-    .then(copyFavicon)
-    .then(copyFonts)
+    .then(writeLogos)
+    .then(writeFavicon)
+    .then(writeFonts)
     .then(writeManifest)
+    .then(readMovies)
     .then(writeActors)
     .then(writeDirectors)
     .then(renderMoviesHtml)
@@ -58,14 +57,6 @@ function log(message) {
 function cleanDist() {
   log(`Cleaning ${state.outputDir}`)
   return fs.emptyDir(state.outputDir)
-}
-
-function readMovies() {
-  log('Reading movies list')
-  return movies.getByWatchDate().then((list) => {
-    state.movies = list
-    state.stats = stats.extract(list)
-  })
 }
 
 function buildAssets() {
@@ -95,54 +86,64 @@ function buildAssets() {
     })
 }
 
-function copyLogos() {
+function writeLogos() {
   log('Writing logos')
-  return Promise.all([copyLogo('256'), copyLogo('512')])
+  return Promise.all([writeLogo('256'), writeLogo('512')])
 }
 
-function copyLogo(size) {
-  const src = path.join('frontend', `logo-${size}.png`)
-  return promisify(checksum.file)(src).then((hash) => {
-    const filename = `logo.${size}.${hash}.png`
+function writeLogo(size) {
+  return writeFileWithHash(path.join('frontend', `logo-${size}.png`)).then((filename) => {
     frontendConfig.manifest.icons.push({
       src: `/${filename}`,
       sizes: `${size}x${size}`,
       type: 'image/png',
     })
-    return fs.copy(src, path.join(state.outputDir, filename))
   })
 }
 
-function copyFavicon() {
+function writeFavicon() {
   log('Writing favicon')
-  const src = path.join('frontend', 'favicon.png')
-  return promisify(checksum.file)(src).then((hash) => {
-    state.compiledAssets.favicon = `favicon.${hash}.png`
-    return fs.copy(src, path.join(state.outputDir, state.compiledAssets.favicon))
+  return writeFileWithHash(path.join('frontend', 'favicon.png')).then((filename) => {
+    state.compiledAssets.favicon = filename
   })
 }
 
-function copyFonts() {
+function writeFonts() {
   log('Writing fonts')
   return promisify(glob)(path.join('frontend', 'fonts', '*.{woff,woff2}')).then((files) => {
-    return Promise.all(files.map((file) => copyFont(file)))
-  })
-}
-
-function copyFont(file) {
-  return promisify(checksum.file)(file).then((hash) => {
-    const pathParts = path.parse(file)
-    const id = `${pathParts.name}${pathParts.ext}`
-    state.compiledAssets.fonts[id] = `${pathParts.name}.${hash}${pathParts.ext}`
-    return fs.copy(file, path.join(state.outputDir, state.compiledAssets.fonts[id]))
+    return Promise.all(
+      files.map((file) =>
+        writeFileWithHash(file).then((filename) => {
+          state.compiledAssets.fonts[path.parse(file).base] = filename
+        })
+      )
+    )
   })
 }
 
 function writeManifest() {
   log('Writing manifest')
-  const json = JSON.stringify(frontendConfig.manifest)
-  state.compiledAssets.manifest = `manifest.${checksum(json)}.json`
-  return fs.outputFile(path.join(state.outputDir, state.compiledAssets.manifest), json, 'utf8')
+  return writeFileWithHash(path.join('frontend', 'manifest.json')).then((filename) => {
+    state.compiledAssets.manifest = filename
+  })
+}
+
+function writeFileWithHash(filePath) {
+  return promisify(checksum.file)(filePath).then((hash) => {
+    const pathParts = path.parse(filePath)
+    const filename = `${pathParts.name}.${hash}${pathParts.ext}`
+    return fs.copy(filePath, path.join(state.outputDir, filename)).then(() => {
+      return filename
+    })
+  })
+}
+
+function readMovies() {
+  log('Reading movies list')
+  return movies.getByWatchDate().then((list) => {
+    state.movies = list
+    state.stats = stats.extract(list)
+  })
 }
 
 function writeActors() {
