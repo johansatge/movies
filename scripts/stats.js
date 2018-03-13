@@ -21,13 +21,16 @@ function extract(movies) {
     })
     directors[movie.director] = typeof directors[movie.director] === 'undefined' ? 1 : (directors[movie.director] += 1)
   })
-  return {
+  const stats = {
     ratings: objectStatToArray(ratings, 'label', 'asc'),
     months: objectStatToArray(months).reverse(),
     releaseYears: objectStatToArray(releaseYears, 'label', 'asc'),
     actors: objectStatToArray(actors, 'count', 'desc'),
     directors: objectStatToArray(directors, 'count', 'desc'),
   }
+  stats.actorsCount = stats.actors.length
+  stats.directorsCount = stats.directors.length
+  return stats
 }
 
 function objectStatToArray(stats, sortBy = null, sortOrder = null) {

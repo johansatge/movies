@@ -14,6 +14,8 @@ module.exports = {
   buildApp,
 }
 
+const startTime = new Date().getTime()
+
 const state = {
   outputDir: path.join(__dirname, '..', '.dist'),
   compiledAssets: {
@@ -25,15 +27,14 @@ const state = {
     statsStyles: null,
     manifest: null,
     favicon: null,
+    fonts: {},
   },
   movies: null,
-  fontFiles: {},
   actorsFiles: null,
-  actorsCount: null,
   directorsFiles: null,
-  directorsCount: null,
   stats: null,
 }
+// @todo use the same helper to write all the hashified files?
 
 function buildApp() {
   return cleanDist()
@@ -47,6 +48,7 @@ function buildApp() {
     .then(writeDirectors)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
+    .then(outputBuildDuration)
 }
 
 function log(message) {
@@ -131,8 +133,8 @@ function copyFont(file) {
   return promisify(checksum.file)(file).then((hash) => {
     const pathParts = path.parse(file)
     const id = `${pathParts.name}${pathParts.ext}`
-    state.fontFiles[id] = `${pathParts.name}.${hash}${pathParts.ext}`
-    return fs.copy(file, path.join(state.outputDir, state.fontFiles[id]))
+    state.compiledAssets.fonts[id] = `${pathParts.name}.${hash}${pathParts.ext}`
+    return fs.copy(file, path.join(state.outputDir, state.compiledAssets.fonts[id]))
   })
 }
 
@@ -147,7 +149,6 @@ function writeActors() {
   log('Writing actors')
   const writers = []
   state.actorsFiles = []
-  state.actorsCount = state.stats.actors.length
   while (state.stats.actors.length > 0) {
     const actors = state.stats.actors.splice(0, 1000)
     const json = JSON.stringify(actors)
@@ -162,7 +163,6 @@ function writeDirectors() {
   log('Writing directors')
   const writers = []
   state.directorsFiles = []
-  state.directorsCount = state.stats.directors.length
   while (state.stats.directors.length > 0) {
     const directors = state.stats.directors.splice(0, 500)
     const json = JSON.stringify(directors)
@@ -195,9 +195,9 @@ function renderStatsHtml() {
       months: state.stats.months,
       releaseYears: state.stats.releaseYears,
       actorsFiles: state.actorsFiles,
-      actorsCount: state.actorsCount,
+      actorsCount: state.stats.actorsCount,
       directorsFiles: state.directorsFiles,
-      directorsCount: state.directorsCount,
+      directorsCount: state.stats.directorsCount,
       assets: state.compiledAssets,
     })
     const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
@@ -206,8 +206,12 @@ function renderStatsHtml() {
 }
 
 function replaceFonts(html) {
-  Object.keys(state.fontFiles).forEach((id) => {
-    html = html.replace(`/__${id}__`, `/${state.fontFiles[id]}`)
+  Object.keys(state.compiledAssets.fonts).forEach((id) => {
+    html = html.replace(`/__${id}__`, `/${state.compiledAssets.fonts[id]}`)
   })
   return html
+}
+
+function outputBuildDuration() {
+  log(`Built in ${(new Date().getTime() - startTime) / 1000}s`)
 }
