@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
     <title>Movies</title>
-    <style><%- assets.moviesStyles %></style>
-    <link href="<%= assets.manifest %>" rel="manifest">
+    <style><%- moviesStyles %></style>
+    <link href="<%= manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#ffcf20">
-    <link rel="icon" type="image/png" href="<%= assets.favicon %>">
+    <link rel="icon" type="image/png" href="<%= favicon %>">
   </head>
   <body>
     <div class="topbar topbar--search">
@@ -50,12 +50,12 @@
       <% }) %>
     </div>
     <div class="no-results" data-js-no-results>No results</div>
-    <script src="<%= assets.polyfillsScript %>"></script>
-    <script src="<%= assets.moviesScript %>"></script>
+    <script src="<%= polyfillsScript %>"></script>
+    <script src="<%= moviesScript %>"></script>
     <script>Scripts.movies.init()</script>
     <script>
       if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('<%= assets.serviceWorkerScript %>', {scope: '.'})
+        navigator.serviceWorker.register('<%= serviceWorkerScript %>', {scope: '.'})
       }
     </script>
   </body>

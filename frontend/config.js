@@ -1,7 +1,17 @@
 const path = require('path')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
+  manifest: {
+    name: 'Movies',
+    short_name: 'Movies',
+    display: 'standalone',
+    background_color: '#000000',
+    description: 'A big movies list with stats',
+    start_url: '/',
+    icons: [],
+    orientation: 'any',
+    theme_color: '#ffcf20',
+  },
   htmlMinify: {
     caseSensitive: true,
     collapseWhitespace: true,
@@ -35,7 +45,6 @@ module.exports = {
         library: ['Scripts', '[name]'],
         libraryTarget: 'var',
       },
-      plugins: [new UglifyJSPlugin()],
       module: {
         rules: [
           {
@@ -63,6 +72,7 @@ module.exports = {
         rules: [
           {
             test: /\.scss$/,
+            include: [path.join(__dirname, 'sass')],
             use: [
               {
                 loader: 'css-loader',
