@@ -35,6 +35,65 @@
   font-family: inherit;
   opacity: 0.6;
 }
+.topbar-offline {
+  position: relative;
+  width: 18px;
+  height: 32px;
+  display: none;
+}
+[data-js-with-sw] .topbar-offline {
+  display: inline-block;
+}
+.topbar-offline::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 3px;
+  top: 8px;
+  left: 7px;
+  height: 14px;
+  background: #262626;
+  border-radius: 1px;
+}
+.topbar-offline::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 100%;
+  bottom: 5px;
+  height: 3px;
+  background: #262626;
+  border-radius: 1px;
+}
+.topbar-offline-button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.topbar-offline-button::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 8px;
+  top: 16px;
+  left: 1px;
+  transform: rotate(45deg);
+  height: 3px;
+  background: #262626;
+  border-radius: 1px;
+}
+.topbar-offline-button::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 8px;
+  top: 16px;
+  left: 8px;
+  transform: rotate(-45deg);
+  height: 3px;
+  background: #262626;
+  border-radius: 1px;
+}
 .topbar-search {
   float: right;
   position: relative;
@@ -112,7 +171,7 @@
   height: 3px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 680px) {
   .topbar {
     height: 52px;
     padding: 10px 15px 0 15px;
