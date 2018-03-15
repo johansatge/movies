@@ -1,7 +1,8 @@
 /* global self, caches, fetch, Response, Headers */
 
-// @todo generate this automatically
-// @todo have a key for each asset type (webpack asset, external images...)
+// @todo have a key (md5) for each asset type:
+// - assets (md5 of the assets generated on build)
+// - html & images (md5 of the list of movies objects)
 const cacheVersion = 'v4::'
 
 self.addEventListener('install', onInstall)
@@ -79,12 +80,13 @@ function fetchAndCache(request) {
     })
     .catch((error) => {
       debug(`could not fetch ${request.url} (${error.message})`)
-      return unavailableResponse()
+      return unavailableResponse(error.message)
     })
 }
 
-function unavailableResponse() {
-  return new Response('<h1>Service unavailable</h1>', {
+function unavailableResponse(message) {
+  const body = ['<h1>Service unavailable</h1>', `<h2>${message}</h2>`]
+  return new Response(body.join('\n'), {
     status: 503,
     statusText: 'Service unavailable',
     headers: new Headers({

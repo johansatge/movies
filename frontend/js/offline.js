@@ -27,12 +27,15 @@ function isServiceWorkerAvailable() {
 
 function onSaveOffline() {
   nodeOverlay.style.display = 'block'
-
+  // @todo
+  // - get generated assets list from the build
+  // - get images list (by parsing the movies list in the DOM)
+  // - push each item in the cache (fetch then cache.put) && update the progressbar
   console.log('@todo save offline', nodeProgressBar)
 }
 
 function onCancelOffline() {
   nodeOverlay.style.display = 'none'
-
+  // @todo cancel the recursive download started in onSaveOffline
   console.log('@todo cancel offline')
 }
