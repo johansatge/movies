@@ -1,5 +1,7 @@
 /* global window, document */
 
+import {init as initOffline} from './offline.js'
+
 const nodeBody = document.body
 const nodeMovies = document.querySelectorAll('[data-js-movie]')
 const nodeMoviesCount = document.querySelector('[data-js-movies-count]')
@@ -14,6 +16,7 @@ function init() {
   initSearchFilter()
   filterMovies()
   initLazyLoad()
+  initOffline()
 }
 
 function initMoviesGrid() {
