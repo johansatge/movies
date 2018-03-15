@@ -12,6 +12,15 @@
     <link rel="icon" type="image/png" href="<%= favicon %>">
   </head>
   <body>
+    <div class="offline-overlay" data-js-overlay-offline>
+      <div class="offline-title">Downloading</div>
+      <div class="offline-progressbar">
+        <div class="offline-progressbar-progress" data-js-progress-offline></div>
+      </div>
+      <div class="offline-actions">
+        <button class="offline-button" data-js-cancel-offline>Cancel</button>
+      </div>
+    </div>
     <div class="topbar topbar--search">
       <a href="#" class="topbar-title topbar-title--current">
         <span class="topbar-title-count" data-js-movies-count><%= movies.length %></span> Movies
