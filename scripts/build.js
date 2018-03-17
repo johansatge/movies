@@ -175,10 +175,7 @@ function buildServiceWorker() {
 function renderMoviesHtml() {
   log('Rendering index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
-    buildState.offlineAssets = {
-      app: getAppAssetsList(),
-      movies: getMoviesAssetsList(),
-    }
+    buildState.offlineAssets = [...getAppAssetsList(), ...getMoviesAssetsList()]
     const html = ejs.render(ejsTemplate, buildState)
     const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
     return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')

@@ -17,6 +17,7 @@ function onInstall(evt) {
   evt.waitUntil(Promise.resolve().then(() => debug('installed')))
 }
 
+// @todo also clean base cache if movies or app have changed (html)
 function onActivate(evt) {
   debug('activating')
   evt.waitUntil(
