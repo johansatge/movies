@@ -30,9 +30,9 @@ function buildApp() {
     .then(writeActors)
     .then(writeDirectors)
     .then(buildFrontendAssets)
-    .then(buildServiceWorker)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
+    .then(buildServiceWorker)
     .then(outputBuildDuration)
     .catch((error) => {
       log(error.message)
@@ -160,6 +160,34 @@ function buildFrontendAssets() {
   })
 }
 
+function renderMoviesHtml() {
+  log('Rendering index.html')
+  return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
+    buildState.offlineAssets = [...getBaseAssetsList(), ...getAppAssetsList(), ...getMoviesAssetsList()]
+    const html = ejs.render(ejsTemplate, buildState)
+    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
+    buildState.moviesHtmlHash = checksum(minifiedHtml)
+    return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
+  })
+}
+
+function renderStatsHtml() {
+  log('Rendering stats/index.html')
+  return fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8').then((ejsTemplate) => {
+    const html = ejs.render(ejsTemplate, buildState)
+    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
+    buildState.statsHtmlHash = checksum(minifiedHtml)
+    return fs.outputFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
+  })
+}
+
+function replaceFonts(html) {
+  Object.keys(buildState.fonts).forEach((id) => {
+    html = html.replace(`/__${id}__`, `/${buildState.fonts[id]}`)
+  })
+  return html
+}
+
 function buildServiceWorker() {
   log('Building service worker')
   const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheTypes())
@@ -172,30 +200,8 @@ function buildServiceWorker() {
   })
 }
 
-function renderMoviesHtml() {
-  log('Rendering index.html')
-  return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
-    buildState.offlineAssets = [...getAppAssetsList(), ...getMoviesAssetsList()]
-    const html = ejs.render(ejsTemplate, buildState)
-    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
-    return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
-  })
-}
-
-function renderStatsHtml() {
-  log('Rendering stats/index.html')
-  return fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8').then((ejsTemplate) => {
-    const html = ejs.render(ejsTemplate, buildState)
-    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
-    return fs.outputFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
-  })
-}
-
-function replaceFonts(html) {
-  Object.keys(buildState.fonts).forEach((id) => {
-    html = html.replace(`/__${id}__`, `/${buildState.fonts[id]}`)
-  })
-  return html
+function getBaseAssetsList() {
+  return ['/', '/index.html', '/stats/', '/stats/index.html']
 }
 
 function getAppAssetsList() {
@@ -205,20 +211,26 @@ function getAppAssetsList() {
 }
 
 function getMoviesAssetsList() {
-  const baseAssets = ['/', '/index.html', '/stats/', '/stats/index.html']
-  return [...baseAssets, ...buildState.actorsFiles, ...buildState.directorsFiles]
+  return [...buildState.actorsFiles, ...buildState.directorsFiles]
 }
 
 function getServiceWorkerCacheTypes() {
   const appAssets = getAppAssetsList()
+  const appHash = checksum(JSON.stringify(appAssets))
   const moviesAssets = getMoviesAssetsList()
+  const moviesHash = checksum(JSON.stringify(appAssets))
+  const baseHash = checksum(buildState.moviesHtmlHash + buildState.statsHtmlHash)
   return [
     {
-      name: `app-${checksum(JSON.stringify(appAssets))}`,
+      name: `base-${baseHash}-${appHash}-${moviesHash}`,
+      matches: [/^\/$/, /^\/index\.html$/, /^\/stats\/$/, /^\/stats\/index\.html$/],
+    },
+    {
+      name: `app-${appHash}`,
       matches: appAssets,
     },
     {
-      name: `movies-${checksum(JSON.stringify(moviesAssets))}`,
+      name: `movies-${moviesHash}`,
       matches: [...moviesAssets, /image\.tmdb\.org/],
     },
   ]

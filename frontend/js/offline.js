@@ -16,7 +16,6 @@ let offlineAssets = null
 let isSavingOffline = false
 
 export function init(assets) {
-  // @todo init on service worker activation
   if (!navigator || !navigator.serviceWorker || !navigator.serviceWorker.controller) {
     return
   }

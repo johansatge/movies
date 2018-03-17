@@ -17,7 +17,6 @@ function onInstall(evt) {
   evt.waitUntil(Promise.resolve().then(() => debug('installed')))
 }
 
-// @todo also clean base cache if movies or app have changed (html)
 function onActivate(evt) {
   debug('activating')
   evt.waitUntil(
@@ -67,7 +66,7 @@ function getCacheNameForRequest(request) {
 }
 
 function fetchAndCache(request) {
-  return fetch(request, {mode: 'no-cors'})
+  return fetchResource(request)
     .then((response) => {
       debug(`fetched ${request.url} from network`)
       const cachedResponse = response.clone()
@@ -83,6 +82,11 @@ function fetchAndCache(request) {
       debug(`could not fetch ${request.url} (${error.message})`)
       return unavailableResponse(error.message)
     })
+}
+
+function fetchResource(request) {
+  const swDomain = `${self.location.protocol}//${self.location.hostname}`
+  return request.url.search(swDomain) === 0 ? fetch(request) : fetch(request, {mode: 'no-cors'})
 }
 
 function unavailableResponse(message) {
