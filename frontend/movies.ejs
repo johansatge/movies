@@ -32,7 +32,7 @@
       <a href="#" class="topbar-title topbar-title--current">
         <span class="topbar-title-count" data-js-movies-count><%= movies.length %></span> Movies
       </a>
-      <a href="stats/" class="topbar-title">
+      <a href="stats" class="topbar-title">
         Stats
       </a>
       <a href="http://github.com/johansatge/movies" class="topbar-title">
@@ -79,7 +79,7 @@
     </script>
     <script>
       if (navigator && navigator.serviceWorker) {
-        navigator.serviceWorker.register('<%= serviceWorkerScript %>', {scope: '/'})
+        navigator.serviceWorker.register('serviceworker.js', {scope: '/'})
       }
     </script>
   </body>

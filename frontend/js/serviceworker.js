@@ -1,9 +1,6 @@
-/* global self, caches, fetch, Response, Headers */
+/* global self, caches, fetch, Response, Headers, OFFLINE_CACHE_STORES */
 
-// @todo have a key (md5) for each asset type:
-// - assets (md5 of the assets generated on build)
-// - html & images & actors & directors (md5 of the list of movies objects)
-const cacheVersion = 'v4::'
+const cacheStores = OFFLINE_CACHE_STORES
 
 self.addEventListener('install', onInstall)
 self.addEventListener('activate', onActivate)
@@ -17,13 +14,7 @@ function debug(message) {
 
 function onInstall(evt) {
   debug('installing')
-  evt.waitUntil(
-    caches
-      .open(`${cacheVersion}base`)
-      .then((cache) => cache.addAll(['/', 'index.html']))
-      .then(() => debug('installed'))
-      .catch((error) => debug(`could not install (${error.message})`))
-  )
+  evt.waitUntil(Promise.resolve().then(() => debug('installed')))
 }
 
 function onActivate(evt) {
@@ -38,9 +29,10 @@ function onActivate(evt) {
 }
 
 function cleanCacheKeys(keys) {
-  debug(`cleaning cache (version: ${cacheVersion}) (keys: ${keys.join(',')})`)
+  const cacheNames = cacheStores.map((store) => store.name)
+  debug(`cleaning cache (worker cacheNames: ${cacheNames.join(',')}) (local cacheNames: ${keys.join(',')})`)
   return Promise.all(
-    keys.filter((key) => !key.startsWith(cacheVersion)).map((key) => {
+    keys.filter((key) => !cacheNames.includes(key)).map((key) => {
       debug(`deleting cache (${key})`)
       caches.delete(key)
     })
@@ -66,15 +58,29 @@ function onFetch(evt) {
   )
 }
 
+function getCacheNameForRequest(request) {
+  for (let storeIndex = 0; storeIndex < cacheStores.length; storeIndex += 1) {
+    const store = cacheStores[storeIndex]
+    for (let matchIndex = 0; matchIndex < store.matches.length; matchIndex += 1) {
+      const matcher = store.matches[matchIndex]
+      if (request.url.search(matcher) > -1) {
+        return store.name
+      }
+    }
+  }
+  return 'default'
+}
+
 function fetchAndCache(request) {
   return fetch(request, {mode: 'no-cors'})
     .then((response) => {
       debug(`fetched ${request.url} from network`)
       const cachedResponse = response.clone()
+      const cacheName = getCacheNameForRequest(request)
       caches
-        .open(cacheVersion + 'pages')
+        .open(cacheName)
         .then((cache) => cache.put(request, cachedResponse))
-        .then(() => debug(`stored ${request.url} in cache`))
+        .then(() => debug(`stored ${request.url} in cache (${cacheName})`))
         .catch((error) => debug(`could not store ${request.url} in cache (${error.message})`))
       return response
     })

@@ -14,13 +14,14 @@ module.exports = {
   buildApp,
 }
 
-const buildState = {}
+const buildState = {
+  assets: {},
+}
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
 
 function buildApp() {
   return cleanDist()
-    .then(buildAssets)
     .then(writeLogos)
     .then(writeFavicon)
     .then(writeFonts)
@@ -28,6 +29,8 @@ function buildApp() {
     .then(readMovies)
     .then(writeActors)
     .then(writeDirectors)
+    .then(buildFrontendAssets)
+    .then(buildServiceWorker)
     .then(renderMoviesHtml)
     .then(renderStatsHtml)
     .then(outputBuildDuration)
@@ -44,29 +47,6 @@ function log(message) {
 function cleanDist() {
   log(`Cleaning ${outputDir}`)
   return fs.emptyDir(outputDir)
-}
-
-function buildAssets() {
-  log('Building CSS & JS assets')
-  frontendConfig.webpack.forEach((config) => {
-    config.output.path = outputDir
-  })
-  return promisify(webpack)(frontendConfig.webpack).then((stats) => {
-    const info = stats.toJson()
-    if (stats.hasErrors()) {
-      throw new Error(info.errors[0])
-    }
-    buildState.assets = {}
-    buildState.assets.moviesScript = info.children[0].assetsByChunkName.movies
-    buildState.assets.statsScript = info.children[0].assetsByChunkName.stats
-    buildState.assets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
-    buildState.serviceWorkerScript = info.children[0].assetsByChunkName.serviceworker
-    const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
-    const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
-    buildState.moviesStyles = require(moviesStylesPath).toString()
-    buildState.statsStyles = require(statsStylesPath).toString()
-    return Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
-  })
 }
 
 function writeLogos() {
@@ -158,10 +138,44 @@ function writeDirectors() {
   return Promise.all(writers)
 }
 
+function buildFrontendAssets() {
+  log('Building CSS & JS assets')
+  const webpackConfig = frontendConfig.webpackFrontend(getServiceWorkerCacheStores())
+  webpackConfig.forEach((config) => {
+    config.output.path = outputDir
+  })
+  return promisify(webpack)(webpackConfig).then((stats) => {
+    const info = stats.toJson()
+    if (stats.hasErrors()) {
+      throw new Error(info.errors[0])
+    }
+    buildState.assets.moviesScript = info.children[0].assetsByChunkName.movies
+    buildState.assets.statsScript = info.children[0].assetsByChunkName.stats
+    buildState.assets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
+    const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
+    const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
+    buildState.moviesStyles = require(moviesStylesPath).toString()
+    buildState.statsStyles = require(statsStylesPath).toString()
+    return Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
+  })
+}
+
+function buildServiceWorker() {
+  log('Building service worker')
+  const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheStores())
+  webpackConfig.output.path = outputDir
+  return promisify(webpack)(webpackConfig).then((stats) => {
+    const info = stats.toJson()
+    if (stats.hasErrors()) {
+      throw new Error(info.errors[0])
+    }
+  })
+}
+
 function renderMoviesHtml() {
   log('Rendering index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
-    buildState.offlineAssets = getOfflineAssetsList()
+    buildState.offlineAssets = [...getAppAssetsList(), ...getMoviesAssetsList()]
     const html = ejs.render(ejsTemplate, buildState)
     const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
     return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
@@ -184,11 +198,30 @@ function replaceFonts(html) {
   return html
 }
 
-function getOfflineAssetsList() {
-  const baseAssets = ['/', '/index.html', '/stats/', '/stats', '/stats/index.html']
+function getAppAssetsList() {
   const frontAssets = Object.keys(buildState.assets).map((name) => buildState.assets[name])
   const fontAssets = Object.keys(buildState.fonts).map((name) => buildState.fonts[name])
-  return [...baseAssets, ...frontAssets, ...fontAssets, ...buildState.actorsFiles, ...buildState.directorsFiles]
+  return [...frontAssets, ...fontAssets]
+}
+
+function getMoviesAssetsList() {
+  const baseAssets = ['/', '/index.html', '/stats', '/stats/index.html']
+  return [...baseAssets, ...buildState.actorsFiles, ...buildState.directorsFiles]
+}
+
+function getServiceWorkerCacheStores() {
+  const appAssets = getAppAssetsList()
+  const moviesAssets = getMoviesAssetsList()
+  return [
+    {
+      name: `app-${checksum(JSON.stringify(appAssets))}`,
+      matches: appAssets,
+    },
+    {
+      name: `movies-${checksum(JSON.stringify(moviesAssets))}`,
+      matches: [...moviesAssets, /image\.tmdb\.org/],
+    },
+  ]
 }
 
 function outputBuildDuration() {
