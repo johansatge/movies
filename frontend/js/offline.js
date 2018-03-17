@@ -21,7 +21,7 @@ export function init(assets) {
   }
   offlineAssets = assets
   for (let index = 0; index < nodeImages.length; index += 1) {
-    offlineAssets.push(nodeImages[index].dataset.jsLazyLoadUrl)
+    offlineAssets.movies.push(nodeImages[index].dataset.jsLazyLoadUrl)
   }
   nodeBody.dataset.jsWithSw = true
   nodeSaveButton.addEventListener('click', onSaveOffline)
@@ -42,7 +42,7 @@ function isServiceWorkerAvailable() {
 function onSaveOffline() {
   nodeProgressBar.style.width = '0'
   nodeOverlayProgress.style.display = 'block'
-  const assetsToSave = offlineAssets.slice(0)
+  const assetsToSave = [...offlineAssets.app, ...offlineAssets.movies]
   isSavingOffline = true
   recursiveFetchAndCache(assetsToSave, (error) => {
     isSavingOffline = false
@@ -66,7 +66,7 @@ function recursiveFetchAndCache(assets, callback) {
   // @todo use the right cache name
   caches.open('offline').then((cache) => {
     cache
-      .addAll(urls)
+      .addAll(urls) // @todo no-cors parameter
       .then(() => {
         nodeProgressBar.style.width = `${(offlineAssets.length - assets.length) * 100 / offlineAssets.length}%`
         if (assets.length > 0) {

@@ -140,7 +140,7 @@ function writeDirectors() {
 
 function buildFrontendAssets() {
   log('Building CSS & JS assets')
-  const webpackConfig = frontendConfig.webpackFrontend(getServiceWorkerCacheStores())
+  const webpackConfig = frontendConfig.webpackFrontend()
   webpackConfig.forEach((config) => {
     config.output.path = outputDir
   })
@@ -162,7 +162,7 @@ function buildFrontendAssets() {
 
 function buildServiceWorker() {
   log('Building service worker')
-  const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheStores())
+  const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheTypes())
   webpackConfig.output.path = outputDir
   return promisify(webpack)(webpackConfig).then((stats) => {
     const info = stats.toJson()
@@ -175,7 +175,10 @@ function buildServiceWorker() {
 function renderMoviesHtml() {
   log('Rendering index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
-    buildState.offlineAssets = [...getAppAssetsList(), ...getMoviesAssetsList()]
+    buildState.offlineAssets = {
+      app: getAppAssetsList(),
+      movies: getMoviesAssetsList(),
+    }
     const html = ejs.render(ejsTemplate, buildState)
     const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
     return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
@@ -205,11 +208,11 @@ function getAppAssetsList() {
 }
 
 function getMoviesAssetsList() {
-  const baseAssets = ['/', '/index.html', '/stats', '/stats/index.html']
+  const baseAssets = ['/', '/index.html', '/stats/', '/stats/index.html']
   return [...baseAssets, ...buildState.actorsFiles, ...buildState.directorsFiles]
 }
 
-function getServiceWorkerCacheStores() {
+function getServiceWorkerCacheTypes() {
   const appAssets = getAppAssetsList()
   const moviesAssets = getMoviesAssetsList()
   return [

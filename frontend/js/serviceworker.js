@@ -1,6 +1,6 @@
-/* global self, caches, fetch, Response, Headers, OFFLINE_CACHE_STORES */
+/* global self, caches, fetch, Response, Headers, OFFLINE_CACHE_TYPES */
 
-const cacheStores = OFFLINE_CACHE_STORES
+const cacheTypes = OFFLINE_CACHE_TYPES
 
 self.addEventListener('install', onInstall)
 self.addEventListener('activate', onActivate)
@@ -29,7 +29,7 @@ function onActivate(evt) {
 }
 
 function cleanCacheKeys(keys) {
-  const cacheNames = cacheStores.map((store) => store.name)
+  const cacheNames = cacheTypes.map((store) => store.name)
   debug(`cleaning cache (worker cacheNames: ${cacheNames.join(',')}) (local cacheNames: ${keys.join(',')})`)
   return Promise.all(
     keys.filter((key) => !cacheNames.includes(key)).map((key) => {
@@ -59,16 +59,10 @@ function onFetch(evt) {
 }
 
 function getCacheNameForRequest(request) {
-  for (let storeIndex = 0; storeIndex < cacheStores.length; storeIndex += 1) {
-    const store = cacheStores[storeIndex]
-    for (let matchIndex = 0; matchIndex < store.matches.length; matchIndex += 1) {
-      const matcher = store.matches[matchIndex]
-      if (request.url.search(matcher) > -1) {
-        return store.name
-      }
-    }
-  }
-  return 'default'
+  const store = cacheTypes.find((store) => {
+    return store.matches.find((match) => request.url.search(match) > -1)
+  })
+  return store ? store.name : 'default'
 }
 
 function fetchAndCache(request) {

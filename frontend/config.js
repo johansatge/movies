@@ -84,7 +84,7 @@ module.exports = {
       },
     ]
   },
-  webpackServiceWorker: (cacheStores) => {
+  webpackServiceWorker: (cacheTypes) => {
     return {
       mode: 'production',
       entry: {
@@ -108,7 +108,7 @@ module.exports = {
       },
       plugins: [
         new webpack.DefinePlugin({
-          OFFLINE_CACHE_STORES: JSON.stringify(cacheStores),
+          OFFLINE_CACHE_TYPES: JSON.stringify(cacheTypes),
         }),
       ],
     }
