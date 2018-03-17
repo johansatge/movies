@@ -56,9 +56,10 @@ function buildAssets() {
     if (stats.hasErrors()) {
       throw new Error(info.errors[0])
     }
-    buildState.moviesScript = info.children[0].assetsByChunkName.movies
-    buildState.statsScript = info.children[0].assetsByChunkName.stats
-    buildState.polyfillsScript = info.children[0].assetsByChunkName.polyfills
+    buildState.assets = {}
+    buildState.assets.moviesScript = info.children[0].assetsByChunkName.movies
+    buildState.assets.statsScript = info.children[0].assetsByChunkName.stats
+    buildState.assets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
     buildState.serviceWorkerScript = info.children[0].assetsByChunkName.serviceworker
     const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
     const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
@@ -86,7 +87,7 @@ function writeLogo(size) {
 function writeFavicon() {
   log('Writing favicon')
   return writeFileWithHash(path.join('frontend', 'favicon.png')).then((filename) => {
-    buildState.favicon = filename
+    buildState.assets.favicon = filename
   })
 }
 
@@ -117,8 +118,8 @@ function writeFileWithHash(filePath) {
 function writeManifest() {
   log('Writing manifest')
   const json = JSON.stringify(frontendConfig.manifest)
-  buildState.manifest = `manifest.${checksum(json)}.json`
-  return fs.outputFile(path.join(outputDir, buildState.manifest), json, 'utf8')
+  buildState.assets.manifest = `manifest.${checksum(json)}.json`
+  return fs.outputFile(path.join(outputDir, buildState.assets.manifest), json, 'utf8')
 }
 
 function readMovies() {
@@ -160,6 +161,7 @@ function writeDirectors() {
 function renderMoviesHtml() {
   log('Rendering index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
+    buildState.offlineAssets = getOfflineAssetsList()
     const html = ejs.render(ejsTemplate, buildState)
     const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
     return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
@@ -180,6 +182,13 @@ function replaceFonts(html) {
     html = html.replace(`/__${id}__`, `/${buildState.fonts[id]}`)
   })
   return html
+}
+
+function getOfflineAssetsList() {
+  const baseAssets = ['/', '/index.html', '/stats/', '/stats', '/stats/index.html']
+  const frontAssets = Object.keys(buildState.assets).map((name) => buildState.assets[name])
+  const fontAssets = Object.keys(buildState.fonts).map((name) => buildState.fonts[name])
+  return [...baseAssets, ...frontAssets, ...fontAssets, ...buildState.actorsFiles, ...buildState.directorsFiles]
 }
 
 function outputBuildDuration() {

@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <title>Stats</title>
     <style><%- statsStyles %></style>
-    <link href="../<%= manifest %>" rel="manifest">
+    <link href="../<%= assets.manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="../<%= favicon %>">
+    <link rel="icon" type="image/png" href="../<%= assets.favicon %>">
   </head>
   <body>
     <div class="topbar">
@@ -56,8 +56,8 @@
         <button class="stat-more" data-js-stats-more-directors>More...</button>
       </div>
     </div>
-    <script src="../<%= polyfillsScript %>"></script>
-    <script src="../<%= statsScript %>"></script>
+    <script src="../<%= assets.polyfillsScript %>"></script>
+    <script src="../<%= assets.statsScript %>"></script>
     <script>
       Scripts.stats.init({
         moviesByRating : <%- JSON.stringify(stats.ratings) %>,

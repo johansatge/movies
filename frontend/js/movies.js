@@ -11,12 +11,12 @@ const nodeNoResults = document.querySelector('[data-js-no-results]')
 
 export {init}
 
-function init() {
+function init({offlineAssets}) {
   initMoviesGrid()
   initSearchFilter()
   filterMovies()
   initLazyLoad()
-  initOffline()
+  initOffline(offlineAssets)
 }
 
 function initMoviesGrid() {
@@ -146,7 +146,7 @@ function lazyLoad() {
       needsLazyLoad = true
     }
     if (needsLazyLoad) {
-      const src = image.dataset.jsLazyLoad
+      const src = image.dataset.jsLazyLoadUrl
       image.style.backgroundImage = `url(${src})`
       delete image.dataset.jsLazyLoad
     }

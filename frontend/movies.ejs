@@ -6,19 +6,26 @@
     <meta charset="utf-8">
     <title>Movies</title>
     <style><%- moviesStyles %></style>
-    <link href="<%= manifest %>" rel="manifest">
+    <link href="<%= assets.manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#ffcf20">
-    <link rel="icon" type="image/png" href="<%= favicon %>">
+    <link rel="icon" type="image/png" href="<%= assets.favicon %>">
   </head>
   <body>
-    <div class="offline-overlay" data-js-overlay-offline>
-      <div class="offline-title">Downloading</div>
+    <div class="offline-progress-overlay" data-js-offline-progress-overlay>
+      <div class="offline-progress-title">Downloading</div>
       <div class="offline-progressbar">
         <div class="offline-progressbar-progress" data-js-progress-offline></div>
       </div>
-      <div class="offline-actions">
-        <button class="offline-button" data-js-cancel-offline>Cancel</button>
+      <div class="offline-progress-actions">
+        <button class="offline-progress-button" data-js-cancel-offline>Cancel</button>
+      </div>
+    </div>
+    <div class="offline-message-overlay" data-js-offline-message-overlay>
+      <div class="offline-message-window">
+        <span class="offline-message-icon"></span>
+        <div class="offline-message-content" data-js-offline-message-content></div>
+        <button class="offline-message-button" data-js-offline-message-confirm>Ok</button>
       </div>
     </div>
     <div class="topbar topbar--search">
@@ -53,7 +60,8 @@
           data-js-movie-director="<%= movie.director %>"
           data-js-movie-cast="<%= movie.cast.join(',') %>"
           data-js-movie-release="<%= movie.release_date.substring(0, 4) %>"
-          data-js-lazy-load="<%= movie.posters['342'] %>"
+          data-js-lazy-load
+          data-js-lazy-load-url="<%= movie.posters['342'] %>"
         >
           <div class="movie-rating">
             ★ <%= movie.rating %>
@@ -62,9 +70,13 @@
       <% }) %>
     </div>
     <div class="no-results" data-js-no-results>No results</div>
-    <script src="<%= polyfillsScript %>"></script>
-    <script src="<%= moviesScript %>"></script>
-    <script>Scripts.movies.init()</script>
+    <script src="<%= assets.polyfillsScript %>"></script>
+    <script src="<%= assets.moviesScript %>"></script>
+    <script>
+      Scripts.movies.init({
+        offlineAssets : <%- JSON.stringify(offlineAssets) %>,
+      })
+    </script>
     <script>
       if (navigator && navigator.serviceWorker) {
         navigator.serviceWorker.register('<%= serviceWorkerScript %>', {scope: '/'})

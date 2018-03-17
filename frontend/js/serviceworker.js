@@ -2,7 +2,7 @@
 
 // @todo have a key (md5) for each asset type:
 // - assets (md5 of the assets generated on build)
-// - html & images (md5 of the list of movies objects)
+// - html & images & actors & directors (md5 of the list of movies objects)
 const cacheVersion = 'v4::'
 
 self.addEventListener('install', onInstall)
@@ -67,7 +67,7 @@ function onFetch(evt) {
 }
 
 function fetchAndCache(request) {
-  return fetch(request)
+  return fetch(request, {mode: 'no-cors'})
     .then((response) => {
       debug(`fetched ${request.url} from network`)
       const cachedResponse = response.clone()
