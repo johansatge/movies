@@ -10,6 +10,8 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = "script-src 'self' 'unsafe-inline'"
+
+[[headers]]
   for = "/serviceworker.js"
   [headers.values]
     Cache-Control = "no-cache, no-store, must-revalidate, max-age=0"
