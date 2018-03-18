@@ -2,7 +2,7 @@
 
 # Movies 🎥
 
-A list of movies I have watched, with ratings and stats.
+A list of movies I have watched, with ratings, stats, and offline support.
 
 _This app uses the [TMDb API](https://developers.themoviedb.org/) but is not endorsed or certified by [TMDb](https://www.themoviedb.org/)._
 
@@ -15,6 +15,7 @@ _This app uses the [TMDb API](https://developers.themoviedb.org/) but is not end
 
 ## Features
 
+* Full offline support
 * Movies list with ratings
 * Most used ratings
 * Movies by release year
@@ -44,9 +45,10 @@ git clone git@github.com:johansatge/movies.git
 cd movies
 # Install the dependencies
 npm install
-# Create .env file with an TMDB API key and the deployment URL
+# Create .env file with a TMDB API key:
 echo "TMDB_API_KEY=xxx" > .env
-echo "DEPLOY_URL=xxx" >> .env
+# And the deployment URL:
+echo "DEPLOY_URL=user@rsync.keycdn.com:destinationDir/" >> .env
 ```
 
 ## Local server

@@ -41,7 +41,7 @@
   height: 32px;
   display: none;
 }
-[data-js-with-sw] .topbar-offline {
+[data-js-has-service-worker] .topbar-offline {
   display: inline-block;
 }
 .topbar-offline::before {

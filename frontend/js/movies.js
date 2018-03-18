@@ -15,7 +15,7 @@ function init({offlineAssets}) {
   initMoviesGrid()
   initSearchFilter()
   filterMovies()
-  initLazyLoad()
+  initLazyLoadImages()
   initOffline(offlineAssets)
 }
 
@@ -36,10 +36,10 @@ function setMoviesGrid() {
   }
 }
 
-function initLazyLoad() {
-  window.addEventListener('scroll', lazyLoad)
-  window.addEventListener('resize', lazyLoad)
-  lazyLoad()
+function initLazyLoadImages() {
+  window.addEventListener('scroll', lazyLoadImages)
+  window.addEventListener('resize', lazyLoadImages)
+  lazyLoadImages()
 }
 
 function initSearchFilter() {
@@ -77,7 +77,7 @@ function filterMovies() {
   }
   nodeMoviesCount.innerHTML = visibleMovies
   nodeNoResults.style.display = visibleMovies > 0 ? 'none' : 'block'
-  lazyLoad()
+  lazyLoadImages()
 }
 
 function movieMatchesFilters(nodeMovie, filters) {
@@ -132,7 +132,7 @@ function extractSearchFilters() {
   return filters
 }
 
-function lazyLoad() {
+function lazyLoadImages() {
   const images = document.querySelectorAll('[data-js-lazy-load]')
   const windowHeight = window.innerHeight
   for (let index = 0; index < images.length; index += 1) {

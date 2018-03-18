@@ -2,6 +2,10 @@ module.exports = {
   extract,
 }
 
+/**
+ * Extract meaningful stats from a list of movies,
+ * and return them to be used in the build script
+ */
 function extract(movies) {
   const ratings = {}
   const months = {}

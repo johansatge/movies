@@ -7,6 +7,9 @@ module.exports = {
   getByWatchDate,
 }
 
+/**
+ * Get all the registered movies in a unique array, with the most recent first
+ */
 function getByWatchDate() {
   return new Promise((resolve, reject) => {
     glob('*.json', {cwd: __dirname}, (error, files) => {

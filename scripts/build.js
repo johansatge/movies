@@ -44,16 +44,25 @@ function log(message) {
   console.log(message) // eslint-disable-line no-console
 }
 
+/**
+ * Clean destination directory
+ */
 function cleanDist() {
   log(`Cleaning ${outputDir}`)
   return fs.emptyDir(outputDir)
 }
 
+/**
+ * Write logo with hashes
+ */
 function writeLogos() {
   log('Writing logos')
   return Promise.all([writeLogo('256'), writeLogo('512')])
 }
 
+/**
+ * Write a logo in the destination dir and add it to the manifest
+ */
 function writeLogo(size) {
   return writeFileWithHash(path.join('frontend', `logo-${size}.png`)).then((filename) => {
     frontendConfig.manifest.icons.push({
@@ -64,6 +73,9 @@ function writeLogo(size) {
   })
 }
 
+/**
+ * Write the favicon and keep its name for later use in the HTML templates
+ */
 function writeFavicon() {
   log('Writing favicon')
   return writeFileWithHash(path.join('frontend', 'favicon.png')).then((filename) => {
@@ -71,6 +83,9 @@ function writeFavicon() {
   })
 }
 
+/**
+ * Write the fonts and keep their names for later use in the HTML templates
+ */
 function writeFonts() {
   log('Writing fonts')
   return promisify(glob)(path.join('frontend', 'fonts', '*.{woff,woff2}')).then((files) => {
@@ -85,6 +100,9 @@ function writeFonts() {
   })
 }
 
+/**
+ * Write a file in the destination dir and add its checksum in its name
+ */
 function writeFileWithHash(filePath) {
   return promisify(checksum.file)(filePath).then((hash) => {
     const pathParts = path.parse(filePath)
@@ -95,6 +113,9 @@ function writeFileWithHash(filePath) {
   })
 }
 
+/**
+ * Write the manifest and keep its name for later use in the HTML templates
+ */
 function writeManifest() {
   log('Writing manifest')
   const json = JSON.stringify(frontendConfig.manifest)
@@ -102,6 +123,9 @@ function writeManifest() {
   return fs.outputFile(path.join(outputDir, buildState.assets.manifest), json, 'utf8')
 }
 
+/**
+ * Read & parse movies stats from the JSON files
+ */
 function readMovies() {
   log('Reading movies list')
   return movies.getByWatchDate().then((list) => {
@@ -110,6 +134,9 @@ function readMovies() {
   })
 }
 
+/**
+ * Write actors files for frontend JSON calls
+ */
 function writeActors() {
   log('Writing actors')
   const writers = []
@@ -124,6 +151,9 @@ function writeActors() {
   return Promise.all(writers)
 }
 
+/**
+ * Write directors files for frontend JSON calls
+ */
 function writeDirectors() {
   log('Writing directors')
   const writers = []
@@ -138,6 +168,10 @@ function writeDirectors() {
   return Promise.all(writers)
 }
 
+/**
+ * Build frontend with webpack (JS & CSS)
+ * The CSS is extracted to be inlined in the HTML
+ */
 function buildFrontendAssets() {
   log('Building CSS & JS assets')
   const webpackConfig = frontendConfig.webpackFrontend()
@@ -160,10 +194,13 @@ function buildFrontendAssets() {
   })
 }
 
+/**
+ * Render EJS movies page to HTML
+ */
 function renderMoviesHtml() {
   log('Rendering index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
-    buildState.offlineAssets = [...getBaseAssetsList(), ...getAppAssetsList(), ...getMoviesAssetsList()]
+    buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
     const html = ejs.render(ejsTemplate, buildState)
     const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
     buildState.moviesHtmlHash = checksum(minifiedHtml)
@@ -171,6 +208,9 @@ function renderMoviesHtml() {
   })
 }
 
+/**
+ * Render EJS stats page to HTML
+ */
 function renderStatsHtml() {
   log('Rendering stats/index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8').then((ejsTemplate) => {
@@ -181,6 +221,9 @@ function renderStatsHtml() {
   })
 }
 
+/**
+ * Replace fonts URLs in the inlined CSS
+ */
 function replaceFonts(html) {
   Object.keys(buildState.fonts).forEach((id) => {
     html = html.replace(`/__${id}__`, `/${buildState.fonts[id]}`)
@@ -188,6 +231,10 @@ function replaceFonts(html) {
   return html
 }
 
+/**
+ * Build service worker with webpack
+ * It needs a list of caches
+ */
 function buildServiceWorker() {
   log('Building service worker')
   const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheTypes())
@@ -200,35 +247,49 @@ function buildServiceWorker() {
   })
 }
 
-function getBaseAssetsList() {
-  return ['/', '/index.html', '/stats/', '/stats/index.html']
-}
-
-function getAppAssetsList() {
+/**
+ * Get assets list by "type", to be used:
+ * - in the frontend, when downloading the app to offline
+ * - in the service worker, to associate a cache type to a request
+ */
+function getAssetsList(type) {
   const frontAssets = Object.keys(buildState.assets).map((name) => buildState.assets[name])
   const fontAssets = Object.keys(buildState.fonts).map((name) => buildState.fonts[name])
-  return [...frontAssets, ...fontAssets]
+  const assets = {
+    base: ['/', '/index.html', '/stats/', '/stats/index.html'],
+    app: [...frontAssets, ...fontAssets],
+    movies: [...buildState.actorsFiles, ...buildState.directorsFiles],
+  }
+  return assets[type]
 }
 
-function getMoviesAssetsList() {
-  return [...buildState.actorsFiles, ...buildState.directorsFiles]
-}
-
+/**
+ * Cache types to be used in the service worker
+ * Each type has a name with the hash of the current associated files,
+ * and a list of matchers (filenames or regexs)
+ *
+ * If a file is modified (for instance, a JS) the associated caches will be renamed (base and app),
+ * and the obsolete ones will be cleaned by the up-to-date service worker
+ */
 function getServiceWorkerCacheTypes() {
-  const appAssets = getAppAssetsList()
+  const appAssets = getAssetsList('app')
   const appHash = checksum(JSON.stringify(appAssets))
-  const moviesAssets = getMoviesAssetsList()
+  const moviesAssets = getAssetsList('movies')
   const moviesHash = checksum(JSON.stringify(appAssets))
   const baseHash = checksum(buildState.moviesHtmlHash + buildState.statsHtmlHash)
   return [
+    // Base assets (HTML pages basically), to be updated as soon as there is an app update
+    // We can't use getAssetsList('base') here because it would match unwanted resources
     {
       name: `base-${baseHash}-${appHash}-${moviesHash}`,
       matches: [/^\/$/, /^\/index\.html$/, /^\/stats\/$/, /^\/stats\/index\.html$/],
     },
+    // App assets (JS files, fonts...)
     {
       name: `app-${appHash}`,
       matches: appAssets,
     },
+    // Movies-related assets (images & JSON resources for the stats page)
     {
       name: `movies-${moviesHash}`,
       matches: [...moviesAssets, /image\.tmdb\.org/],
