@@ -7,7 +7,6 @@
     "import": "node scripts/import.js",
     "build": "node scripts/build.js",
     "server": "node scripts/build.js && node scripts/server.js",
-    "deploy": "node scripts/build.js && node scripts/deploy.js",
     "checkstyle": "eslint ."
   },
   "repository": {

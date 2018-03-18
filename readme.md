@@ -11,7 +11,7 @@ _This app uses the [TMDb API](https://developers.themoviedb.org/) but is not end
 * [Installation](#installation)
 * [Local server](#local-server)
 * [Adding a movie](#adding-a-movie)
-* [Deployment](#deployment)
+* [Build and deployment](#build-and-deployment)
 
 ## Features
 
@@ -71,7 +71,7 @@ npm run import
 
 Answer the questions. Then, commit the updated JSON file.
 
-## Build & deployment
+## Build and deployment
 
 Run:
 
@@ -79,12 +79,6 @@ Run:
 npm run build
 ```
 
-To build the project only.
+To build the project in the `.dist` directory.
 
-Run:
-
-```shell
-npm run deploy
-```
-
-To build the project and rsync it on `DEPLOY_URL`.
+The deployment is handled by [Netlify](https://www.netlify.com/), when pushing updates on `master`.
