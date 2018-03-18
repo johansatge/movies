@@ -1,12 +1,9 @@
 require('dotenv').config()
 
-const build = require('./build.js')
 const exec = require('child_process').exec
 const path = require('path')
 
-build
-  .buildApp()
-  .then(deployApp)
+deployApp()
   .then(() => {
     console.log('Deployed') // eslint-disable-line no-console
   })

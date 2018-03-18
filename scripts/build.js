@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const checksum = require('checksum')
 const ejs = require('ejs')
 const frontendConfig = require('../frontend/config.js')
@@ -10,35 +12,29 @@ const promisify = require('util').promisify
 const webpack = require('webpack')
 const stats = require('./stats.js')
 
-module.exports = {
-  buildApp,
-}
-
 const buildState = {
   assets: {},
 }
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
 
-function buildApp() {
-  return cleanDist()
-    .then(writeLogos)
-    .then(writeFavicon)
-    .then(writeFonts)
-    .then(writeManifest)
-    .then(readMovies)
-    .then(writeActors)
-    .then(writeDirectors)
-    .then(buildFrontendAssets)
-    .then(renderMoviesHtml)
-    .then(renderStatsHtml)
-    .then(buildServiceWorker)
-    .then(outputBuildDuration)
-    .catch((error) => {
-      log(error.message)
-      process.exit(1)
-    })
-}
+cleanDist()
+  .then(writeLogos)
+  .then(writeFavicon)
+  .then(writeFonts)
+  .then(writeManifest)
+  .then(readMovies)
+  .then(writeActors)
+  .then(writeDirectors)
+  .then(buildFrontendAssets)
+  .then(renderMoviesHtml)
+  .then(renderStatsHtml)
+  .then(buildServiceWorker)
+  .then(outputBuildDuration)
+  .catch((error) => {
+    log(error.message)
+    process.exit(1)
+  })
 
 function log(message) {
   console.log(message) // eslint-disable-line no-console

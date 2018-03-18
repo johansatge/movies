@@ -71,7 +71,15 @@ npm run import
 
 Answer the questions. Then, commit the updated JSON file.
 
-## Deployment
+## Build & deployment
+
+Run:
+
+```shell
+npm run build
+```
+
+To build the project only.
 
 Run:
 
