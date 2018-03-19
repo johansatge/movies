@@ -43,7 +43,7 @@ function onActivate(evt) {
  * Check the given keys against the list of possible cache names and delete the non-relevant ones
  */
 function cleanCacheKeys(keys) {
-  const cacheNames = cacheTypes.map((store) => store.name)
+  const cacheNames = cacheTypes.map((type) => type.name)
   debug(`cleaning cache (worker cacheNames: ${cacheNames.join(',')}) (local cacheNames: ${keys.join(',')})`)
   return Promise.all(
     keys.filter((key) => !cacheNames.includes(key)).map((key) => {
@@ -113,9 +113,9 @@ function fetchResource(request) {
  * Find the right cache depending on the request URL
  */
 function getCacheNameForRequest(request) {
-  const store = cacheTypes.find((store) => {
-    return store.matches.find((match) => {
-      const url = new URL(request.url)
+  const url = new URL(request.url)
+  const type = cacheTypes.find((type) => {
+    return type.matches.find((match) => {
       if (match.type === 'domain' && url.hostname === match.value) {
         return true
       }
@@ -125,7 +125,7 @@ function getCacheNameForRequest(request) {
       return false
     })
   })
-  return store ? store.name : 'default'
+  return type ? type.name : 'default'
 }
 
 /**
