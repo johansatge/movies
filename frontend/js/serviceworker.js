@@ -1,4 +1,4 @@
-/* global self, caches, fetch, Response, Headers, OFFLINE_CACHE_TYPES */
+/* global self, caches, fetch, Response, Headers, URL, OFFLINE_CACHE_TYPES */
 
 /**
  * Populated on build (see webpack config)
@@ -114,7 +114,16 @@ function fetchResource(request) {
  */
 function getCacheNameForRequest(request) {
   const store = cacheTypes.find((store) => {
-    return store.matches.find((match) => request.url.search(match) > -1)
+    return store.matches.find((match) => {
+      const url = new URL(request.url)
+      if (match.type === 'domain' && url.hostname === match.value) {
+        return true
+      }
+      if (match.type === 'path' && url.pathname === match.value) {
+        return true
+      }
+      return false
+    })
   })
   return store ? store.name : 'default'
 }

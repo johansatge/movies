@@ -61,6 +61,7 @@ function writeLogos() {
  */
 function writeLogo(size) {
   return writeFileWithHash(path.join('frontend', `logo-${size}.png`)).then((filename) => {
+    buildState.assets[`logo-${size}`] = `/${filename}`
     frontendConfig.manifest.icons.push({
       src: `/${filename}`,
       sizes: `${size}x${size}`,
@@ -75,7 +76,7 @@ function writeLogo(size) {
 function writeFavicon() {
   log('Writing favicon')
   return writeFileWithHash(path.join('frontend', 'favicon.png')).then((filename) => {
-    buildState.assets.favicon = filename
+    buildState.assets.favicon = `/${filename}`
   })
 }
 
@@ -85,11 +86,10 @@ function writeFavicon() {
 function writeFonts() {
   log('Writing fonts')
   return promisify(glob)(path.join('frontend', 'fonts', '*.{woff,woff2}')).then((files) => {
-    buildState.fonts = {}
     return Promise.all(
       files.map((file) =>
         writeFileWithHash(file).then((filename) => {
-          buildState.fonts[path.parse(file).base] = filename
+          buildState.assets[path.parse(file).base] = `/${filename}`
         })
       )
     )
@@ -115,8 +115,9 @@ function writeFileWithHash(filePath) {
 function writeManifest() {
   log('Writing manifest')
   const json = JSON.stringify(frontendConfig.manifest)
-  buildState.assets.manifest = `manifest.${checksum(json)}.json`
-  return fs.outputFile(path.join(outputDir, buildState.assets.manifest), json, 'utf8')
+  const filename = `manifest.${checksum(json)}.json`
+  buildState.assets.manifest = `/${filename}`
+  return fs.outputFile(path.join(outputDir, filename), json, 'utf8')
 }
 
 /**
@@ -179,9 +180,9 @@ function buildFrontendAssets() {
     if (stats.hasErrors()) {
       throw new Error(info.errors[0])
     }
-    buildState.assets.moviesScript = info.children[0].assetsByChunkName.movies
-    buildState.assets.statsScript = info.children[0].assetsByChunkName.stats
-    buildState.assets.polyfillsScript = info.children[0].assetsByChunkName.polyfills
+    buildState.assets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
+    buildState.assets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
+    buildState.assets.polyfillsScript = `/${info.children[0].assetsByChunkName.polyfills}`
     const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
     const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
     buildState.moviesStyles = require(moviesStylesPath).toString()
@@ -198,7 +199,7 @@ function renderMoviesHtml() {
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
     buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
     const html = ejs.render(ejsTemplate, buildState)
-    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
+    const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
     buildState.moviesHtmlHash = checksum(minifiedHtml)
     return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
   })
@@ -211,18 +212,18 @@ function renderStatsHtml() {
   log('Rendering stats/index.html')
   return fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8').then((ejsTemplate) => {
     const html = ejs.render(ejsTemplate, buildState)
-    const minifiedHtml = minify(replaceFonts(html), frontendConfig.htmlMinify)
+    const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
     buildState.statsHtmlHash = checksum(minifiedHtml)
     return fs.outputFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
   })
 }
 
 /**
- * Replace fonts URLs in the inlined CSS
+ * Replace assets URLs (fonts, actually) in the inlined CSS
  */
-function replaceFonts(html) {
-  Object.keys(buildState.fonts).forEach((id) => {
-    html = html.replace(`/__${id}__`, `/${buildState.fonts[id]}`)
+function replaceAssets(html) {
+  Object.keys(buildState.assets).forEach((id) => {
+    html = html.replace(`/__${id}__`, buildState.assets[id])
   })
   return html
 }
@@ -249,11 +250,9 @@ function buildServiceWorker() {
  * - in the service worker, to associate a cache type to a request
  */
 function getAssetsList(type) {
-  const frontAssets = Object.keys(buildState.assets).map((name) => buildState.assets[name])
-  const fontAssets = Object.keys(buildState.fonts).map((name) => buildState.fonts[name])
   const assets = {
     base: ['/', '/index.html', '/stats/', '/stats/index.html'],
-    app: [...frontAssets, ...fontAssets],
+    app: Object.keys(buildState.assets).map((name) => buildState.assets[name]),
     movies: [...buildState.actorsFiles, ...buildState.directorsFiles],
   }
   return assets[type]
@@ -271,24 +270,36 @@ function getServiceWorkerCacheTypes() {
   const appAssets = getAssetsList('app')
   const appHash = checksum(JSON.stringify(appAssets))
   const moviesAssets = getAssetsList('movies')
-  const moviesHash = checksum(JSON.stringify(appAssets))
-  const baseHash = checksum(buildState.moviesHtmlHash + buildState.statsHtmlHash)
+  const moviesHash = checksum(JSON.stringify(moviesAssets))
+  const htmlHash = checksum(buildState.moviesHtmlHash + buildState.statsHtmlHash)
   return [
     // Base assets (HTML pages basically), to be updated as soon as there is an app update
     // We can't use getAssetsList('base') here because it would match unwanted resources
     {
-      name: `base-${baseHash}-${appHash}-${moviesHash}`,
-      matches: [/^\/$/, /^\/index\.html$/, /^\/stats\/$/, /^\/stats\/index\.html$/],
+      name: `base-${htmlHash}-${appHash}-${moviesHash}`,
+      matches: [
+        {type: 'path', value: '/'},
+        {type: 'path', value: '/index.html'},
+        {type: 'path', value: '/stats/'},
+        {type: 'path', value: '/stats/index.html'},
+      ],
     },
     // App assets (JS files, fonts...)
     {
       name: `app-${appHash}`,
-      matches: appAssets,
+      matches: appAssets.map((asset) => {
+        return {type: 'path', value: asset}
+      }),
     },
     // Movies-related assets (images & JSON resources for the stats page)
     {
       name: `movies-${moviesHash}`,
-      matches: [...moviesAssets, /image\.tmdb\.org/],
+      matches: [
+        ...moviesAssets.map((asset) => {
+          return {type: 'path', value: asset}
+        }),
+        {type: 'domain', value: 'image.tmdb.org'},
+      ],
     },
   ]
 }
