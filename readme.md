@@ -47,8 +47,6 @@ cd movies
 npm install
 # Create .env file with a TMDB API key:
 echo "TMDB_API_KEY=xxx" > .env
-# And the deployment URL:
-echo "DEPLOY_URL=user@rsync.keycdn.com:destinationDir/" >> .env
 ```
 
 ## Local server
