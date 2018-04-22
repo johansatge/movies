@@ -1208,5 +1208,36 @@
       "Bernardo Santos",
       "Christian Wolf-La'Moy "
     ]
+  },
+  {
+    "title": "Rurouni Kenshin",
+    "original_title": "るろうに剣心",
+    "watch_date": "2018-04-22",
+    "rating": 7,
+    "release_date": "2012-08-25",
+    "director": "Keishi Otomo",
+    "tmdb_id": 127533,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/rmBUaljPj6SJVArR68fHl41oJU4.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/rmBUaljPj6SJVArR68fHl41oJU4.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/rmBUaljPj6SJVArR68fHl41oJU4.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/rmBUaljPj6SJVArR68fHl41oJU4.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/rmBUaljPj6SJVArR68fHl41oJU4.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/rmBUaljPj6SJVArR68fHl41oJU4.jpg",
+      "original": "https://image.tmdb.org/t/p/original/rmBUaljPj6SJVArR68fHl41oJU4.jpg"
+    },
+    "cast": [
+      "Takeru Satoh",
+      "Emi Takei",
+      "Kôji Kikkawa",
+      "Yu Aoi",
+      "Munetaka Aoki",
+      "Go Ayano",
+      "Genki Sudo",
+      "Taketo Tanaka",
+      "Eiji Okuda",
+      "Yosuke Eguchi",
+      "Teruyuki Kagawa"
+    ]
   }
 ]
