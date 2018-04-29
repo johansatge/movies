@@ -1377,5 +1377,38 @@
       "François Bredon",
       "Cédric Chevalme"
     ]
+  },
+  {
+    "title": "Rurouni Kenshin: Kyoto Inferno",
+    "original_title": "るろうに剣心 京都大火編",
+    "watch_date": "2018-04-29",
+    "rating": 6,
+    "release_date": "2014-08-01",
+    "director": "Keishi Otomo",
+    "tmdb_id": 221731,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg",
+      "original": "https://image.tmdb.org/t/p/original/4gZDhfUrX4cyPJRoK6YgcpxBoZi.jpg"
+    },
+    "cast": [
+      "Takeru Satoh",
+      "Yu Aoi",
+      "Tatsuya Fujiwara",
+      "Yusuke Iseya",
+      "Emi Takei",
+      "Yosuke Eguchi",
+      "Munetaka Aoki",
+      "Ryunosuke Kamiki",
+      "Tao Tsuchiya",
+      "Min Tanaka",
+      "Kazufumi Miyazawa",
+      "Yukiyoshi Ozawa",
+      "Kenichi Takito"
+    ]
   }
 ]
