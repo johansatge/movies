@@ -1410,5 +1410,36 @@
       "Yukiyoshi Ozawa",
       "Kenichi Takito"
     ]
+  },
+  {
+    "title": "Rurouni Kenshin: The Legend Ends",
+    "original_title": "るろうに剣心　伝説の最期編",
+    "watch_date": "2018-05-06",
+    "rating": 7,
+    "release_date": "2014-09-13",
+    "director": "Keishi Otomo",
+    "tmdb_id": 221732,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg",
+      "original": "https://image.tmdb.org/t/p/original/91Dbqsf3jz0O3Pjq8gmNLABKiN3.jpg"
+    },
+    "cast": [
+      "Takeru Satoh",
+      "Emi Takei",
+      "Munetaka Aoki",
+      "Tatsuya Fujiwara",
+      "Ryunosuke Kamiki",
+      "Yu Aoi",
+      "Yusuke Iseya",
+      "Yosuke Eguchi",
+      "Min Tanaka",
+      "Masaharu Fukuyama",
+      "Tao Tsuchiya"
+    ]
   }
 ]
