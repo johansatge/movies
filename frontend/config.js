@@ -48,7 +48,7 @@ module.exports = {
               include: [path.join(__dirname, 'js')],
               loader: 'babel-loader',
               options: {
-                presets: ['es2015'],
+                presets: ['env'],
               },
             },
           ],
