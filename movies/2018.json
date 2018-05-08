@@ -1518,5 +1518,50 @@
       "Masaharu Fukuyama",
       "Tao Tsuchiya"
     ]
+  },
+  {
+    "title": "Mr. Right",
+    "original_title": "Mr. Right",
+    "watch_date": "2018-05-08",
+    "rating": 3,
+    "release_date": "2016-02-29",
+    "director": "Paco Cabezas",
+    "tmdb_id": 333385,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg",
+      "original": "https://image.tmdb.org/t/p/original/y1VT2NoBOx3aC2exhkyN9AGUkMR.jpg"
+    },
+    "cast": [
+      "Sam Rockwell",
+      "Anna Kendrick",
+      "Tim Roth",
+      "James Ransone",
+      "Anson Mount",
+      "Michael Eklund",
+      "RZA",
+      "Katie Nehra",
+      "Jaiden Kaine",
+      "Douglas M. Griffin",
+      "Luis Da Silva Jr.",
+      "Elena Sanchez",
+      "Garrett Kruithof",
+      "Christopher Matthew Cook",
+      "Ross Gallo",
+      "Wendy McColm",
+      "Jimmy Gonzales",
+      "Kelly Connolly",
+      "Gigi Johnson",
+      "Jonathan Billions",
+      "Cooper Dodson",
+      "Alec Rayme",
+      "Sue Rock",
+      "Marcus M. Mauldin",
+      "Bradley Gallo"
+    ]
   }
 ]
