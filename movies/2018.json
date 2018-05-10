@@ -1563,5 +1563,51 @@
       "Marcus M. Mauldin",
       "Bradley Gallo"
     ]
+  },
+  {
+    "title": "Annihilation",
+    "original_title": "Annihilation",
+    "watch_date": "2018-05-10",
+    "rating": 7,
+    "release_date": "2018-02-22",
+    "director": "Alex Garland",
+    "tmdb_id": 300668,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg",
+      "original": "https://image.tmdb.org/t/p/original/d3qcpfNwbAMCNqWDHzPQsUYiUgS.jpg"
+    },
+    "cast": [
+      "Natalie Portman",
+      "Jennifer Jason Leigh",
+      "Tessa Thompson",
+      "Gina Rodriguez",
+      "Oscar Isaac",
+      "Tuva Novotny",
+      "Benedict Wong",
+      "Sonoya Mizuno",
+      "David Gyasi",
+      "John Schwab",
+      "Sammy Hayman",
+      "Josh Danford",
+      "Kristen McGarrity",
+      "Kola Bokinni",
+      "Crystal Clarke",
+      "Bern Collaco",
+      "Kumud Pant",
+      "Cosmo Jarvis",
+      "Honey Holmes",
+      "Annarie Boor",
+      "Mairead Armstrong",
+      "Matthew Simpson",
+      "Hiten Patel",
+      "Odette Michell",
+      "Daniel Prewitt",
+      "Miroslav Zaruba"
+    ]
   }
 ]
