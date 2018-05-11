@@ -57,6 +57,8 @@ function cleanCacheKeys(keys) {
  * On fetch, try to serve the resource from cache
  * In parallel, fetch the resource and cache it
  * This may be called when loading pages or when downloading the app offline
+ * (When dowloading offline, a #nocache string is prepended to each URL, and the network is always called)
+ * (This is to avoid having a working progressbar when offline but hitting an existing cache)
  */
 function onFetch(evt) {
   debug(`requesting ${evt.request.url}`)
@@ -67,7 +69,8 @@ function onFetch(evt) {
   evt.respondWith(
     caches.match(evt.request).then((cachedResource) => {
       const fetchResource = fetchAndCache(evt.request)
-      if (cachedResource) {
+      const canUseCache = evt.request.url.search(/#nocache$/) === -1
+      if (cachedResource && canUseCache) {
         debug(`serving ${evt.request.url} from cache`)
         return cachedResource
       }
@@ -95,7 +98,7 @@ function fetchAndCache(request) {
     })
     .catch((error) => {
       debug(`could not fetch ${request.url} (${error.message})`)
-      return unavailableResponse(error.message)
+      return error
     })
 }
 
@@ -126,18 +129,4 @@ function getCacheNameForRequest(request) {
     })
   })
   return type ? type.name : 'default'
-}
-
-/**
- * 503 response when the network is not available
- */
-function unavailableResponse(message) {
-  const body = ['<h1>Service unavailable</h1>', `<h2>${message}</h2>`]
-  return new Response(body.join('\n'), {
-    status: 503,
-    statusText: 'Service unavailable',
-    headers: new Headers({
-      'Content-Type': 'text/html; charset=utf-8',
-    }),
-  })
 }
