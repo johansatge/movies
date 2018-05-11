@@ -68,8 +68,8 @@ function onFetch(evt) {
   }
   evt.respondWith(
     caches.match(evt.request).then((cachedResource) => {
-      const fetchResource = fetchAndCache(evt.request)
       const canUseCache = evt.request.url.search(/#nocache$/) === -1
+      const fetchResource = fetchAndCache(evt.request, !canUseCache)
       if (cachedResource && canUseCache) {
         debug(`serving ${evt.request.url} from cache`)
         return cachedResource
@@ -82,19 +82,29 @@ function onFetch(evt) {
 
 /**
  * Fetch the given request and cache it in the right location
+ * When browsing the app, caching is not mandatory so we return the response and cache it in parallel
+ * When dowloading offline we need caching, so potential caching errors will be sent back instead of the response
+ * @todo this could always return a response with a right HTTP code
+ * (to be handled client-side when loading the page or downloading for offline, and avoid generic "fetch failed" errors)
  */
-function fetchAndCache(request) {
+function fetchAndCache(request, cacheIsMandatory) {
   return fetchResource(request)
     .then((response) => {
       debug(`fetched ${request.url} from network`)
       const cachedResponse = response.clone()
       const cacheName = getCacheNameForRequest(request)
-      caches
+      const cacheProcess = caches
         .open(cacheName)
         .then((cache) => cache.put(request, cachedResponse))
-        .then(() => debug(`stored ${request.url} in cache (${cacheName})`))
-        .catch((error) => debug(`could not store ${request.url} in cache (${error.message})`))
-      return response
+        .then(() => {
+          debug(`stored ${request.url} in cache (${cacheName})`)
+          return response
+        })
+        .catch((error) => {
+          debug(`could not store ${request.url} in cache (${error.message})`)
+          return error
+        })
+      return cacheIsMandatory ? cacheProcess : response
     })
     .catch((error) => {
       debug(`could not fetch ${request.url} (${error.message})`)
