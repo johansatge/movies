@@ -35,7 +35,7 @@ export function init(assets) {
  */
 function getImagesFromDom() {
   const images = []
-  for (let index = 0; index < nodeImages.length; index += 1) {
+  for (let index = 0; index < Math.min(nodeImages.length, 100); index += 1) {
     images.push(nodeImages[index].dataset.jsLazyLoadUrl)
   }
   return images
@@ -73,7 +73,6 @@ function recursiveFetch(assets, callback) {
       }
     })
     .catch((error) => {
-      console.log('ERROR', error)
       callback(new Error(`Could not download offline resources (${error.message})`))
     })
 }

@@ -1,4 +1,4 @@
-/* global self, caches, fetch, Response, Headers, URL, OFFLINE_CACHE_TYPES */
+/* global self, caches, fetch, URL, OFFLINE_CACHE_TYPES */
 
 /**
  * Populated on build (see webpack config)
