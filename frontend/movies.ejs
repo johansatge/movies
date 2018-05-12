@@ -60,11 +60,13 @@
           data-js-movie-director="<%= movie.director %>"
           data-js-movie-cast="<%= movie.cast.join(',') %>"
           data-js-movie-release="<%= movie.release_date.substring(0, 4) %>"
-          data-js-lazy-load
-          data-js-lazy-load-url="<%= movie.posters['342'] %>"
         >
+          <div class="movie-bg" data-js-lazy-load data-js-lazy-load-url="<%= movie.posters['342'] %>"></div>
           <div class="movie-rating">
             ★ <%= movie.rating %>
+          </div>
+          <div class="movie-title">
+            <%= movie.title %>
           </div>
         </a>
       <% }) %>
