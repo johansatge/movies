@@ -12,6 +12,8 @@ const nodeOverlayMessage = document.querySelector('[data-js-offline-message-over
 const nodeOverlayMessageContent = document.querySelector('[data-js-offline-message-content]')
 const nodeConfirmButton = document.querySelector('[data-js-offline-message-confirm]')
 
+const nodeRefresh = document.querySelector('[data-js-refresh]')
+
 let offlineAssets = null
 let isSavingOffline = false
 
@@ -28,6 +30,19 @@ export function init(assets) {
   nodeSaveButton.addEventListener('click', onSaveOffline)
   nodeCancelButton.addEventListener('click', onCancelOffline)
   nodeConfirmButton.addEventListener('click', onConfirmOffline)
+  // navigator.serviceWorker.addEventListener('message', onWorkerMessage)
+}
+
+/**
+ * Reception of worker messages (with postMessage)
+ */
+function onWorkerMessage(evt) {
+  console.log(evt)
+  const data = JSON.parse(evt.data)
+  console.log(data)
+  if (data.action && data.action === 'cacheCleaned') {
+    nodeRefresh.style.display = 'block'
+  }
 }
 
 /**

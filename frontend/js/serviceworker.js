@@ -26,31 +26,38 @@ function onInstall(evt) {
 }
 
 /**
- * Clean obsolete caches on activation
+ * Clean obsolete caches on activation and inform the clients if needed
  */
 function onActivate(evt) {
   debug('activating')
   evt.waitUntil(
     caches
       .keys()
-      .then(cleanCacheKeys)
+      .then(cleanCache)
+      // @todo: for some reason, here the number of clients is always 0
+      // even by adding a self.clients.claim() after the cache has been cleaned
+      .then((deletedCaches) => (deletedCaches.length > 0 ? sendToClients({action: 'cacheCleaned'}) : Promise.resolve()))
       .then(() => debug('activated'))
-      .catch((error) => debug(`could not active (${error.message})`))
+      .catch((error) => debug(`could not activate (${error.message})`))
   )
 }
 
 /**
  * Check the given keys against the list of possible cache names and delete the non-relevant ones
  */
-function cleanCacheKeys(keys) {
+function cleanCache(keys) {
   const cacheNames = cacheTypes.map((type) => type.name)
   debug(`cleaning cache (worker cacheNames: ${cacheNames.join(',')}) (local cacheNames: ${keys.join(',')})`)
+  let deletedCaches = []
   return Promise.all(
     keys.filter((key) => !cacheNames.includes(key)).map((key) => {
       debug(`deleting cache (${key})`)
+      deletedCaches.push(key)
       caches.delete(key)
     })
-  )
+  ).then(() => {
+    return deletedCaches
+  })
 }
 
 /**
@@ -154,4 +161,19 @@ function getCacheNameForRequest(request) {
     })
   })
   return type ? type.name : 'default'
+}
+
+/**
+ * Send a payload to connected clients
+ */
+function sendToClients(data) {
+  const message = JSON.stringify(data)
+  return self.clients.matchAll({includeUncontrolled: true}).then((all) => {
+    debug(`sending ${message} to ${all.length} clients`)
+    return Promise.all(
+      all.map((client) => {
+        return client.postMessage(message)
+      })
+    )
+  })
 }
