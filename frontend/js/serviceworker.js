@@ -1,4 +1,4 @@
-/* global self, caches, fetch, URL, OFFLINE_CACHE_TYPES */
+/* global self, caches, fetch, URL, Headers, Response, OFFLINE_CACHE_TYPES */
 
 /**
  * Populated on build (see webpack config)
@@ -57,7 +57,7 @@ function cleanCacheKeys(keys) {
  * On fetch, try to serve the resource from cache
  * In parallel, fetch the resource and cache it
  * This may be called when loading pages or when downloading the app offline
- * (When dowloading offline, a #nocache string is prepended to each URL, and the network is always called)
+ * (When dowloading offline, a #nocache string is prepended to each URL, so the network is always called)
  * (This is to avoid having a working progressbar when offline but hitting an existing cache)
  */
 function onFetch(evt) {
@@ -69,13 +69,13 @@ function onFetch(evt) {
   evt.respondWith(
     caches.match(evt.request).then((cachedResource) => {
       const canUseCache = evt.request.url.search(/#nocache$/) === -1
-      const fetchResource = fetchAndCache(evt.request, !canUseCache)
+      const fetchAndCacheResource = fetchAndCache(evt.request, !canUseCache)
       if (cachedResource && canUseCache) {
         debug(`serving ${evt.request.url} from cache`)
         return cachedResource
       }
       debug(`serving ${evt.request.url} from network`)
-      return fetchResource
+      return fetchAndCacheResource
     })
   )
 }
@@ -84,8 +84,9 @@ function onFetch(evt) {
  * Fetch the given request and cache it in the right location
  * When browsing the app, caching is not mandatory so we return the response and cache it in parallel
  * When dowloading offline we need caching, so potential caching errors will be sent back instead of the response
- * @todo this could always return a response with a right HTTP code
- * (to be handled client-side when loading the page or downloading for offline, and avoid generic fetch() errors)
+ * The return value is always a Response object so that
+ * - the frontend can display a meaningful error (when dowloading for offline)
+ * - the browser doesn't complain (Chrome for instance: "an object that was not a Response was passed to respondWith()")
  */
 function fetchAndCache(request, cacheIsMandatory) {
   return fetchResource(request)
@@ -102,13 +103,13 @@ function fetchAndCache(request, cacheIsMandatory) {
         })
         .catch((error) => {
           debug(`could not store ${request.url} in cache (${error.message})`)
-          return error
+          return unavailableResponse('Could not store resource')
         })
       return cacheIsMandatory ? cacheProcess : response
     })
     .catch((error) => {
       debug(`could not fetch ${request.url} (${error.message})`)
-      return error
+      return unavailableResponse('Could not fetch resource')
     })
 }
 
@@ -120,6 +121,20 @@ function fetchAndCache(request, cacheIsMandatory) {
 function fetchResource(request) {
   const swDomain = `${self.location.protocol}//${self.location.hostname}`
   return request.url.search(swDomain) === 0 ? fetch(request) : fetch(request, {mode: 'no-cors'})
+}
+
+/**
+ * 503 response to send when a fetch request fails
+ */
+function unavailableResponse(message) {
+  const body = ['<h1>Service unavailable</h1>', `<h2>${message}</h2>`]
+  return new Response(body.join('\n'), {
+    status: 503,
+    statusText: `Service unavailable (${message})`,
+    headers: new Headers({
+      'Content-Type': 'text/html; charset=utf-8',
+    }),
+  })
 }
 
 /**

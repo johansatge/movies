@@ -63,9 +63,9 @@ function recursiveFetch(assets, callback) {
   const urls = assets.splice(0, 20)
   Promise.all(urls.map((url) => fetch(`${url}#nocache`, {mode: 'no-cors'})))
     .then((responses) => {
-      const gotError = responses.find((response) => response.type !== 'opaque' && !response.ok)
-      if (gotError) {
-        throw new Error('Fetch failed')
+      const error = responses.find((response) => response.type !== 'opaque' && !response.ok)
+      if (error) {
+        throw new Error(error.statusText)
       }
       nodeProgressBar.style.width = `${(offlineAssets.length - assets.length) * 100 / offlineAssets.length}%`
       if (assets.length > 0) {
@@ -74,9 +74,7 @@ function recursiveFetch(assets, callback) {
         callback(null)
       }
     })
-    .catch((error) => {
-      callback(new Error(`Could not download offline resources (${error.message})`))
-    })
+    .catch(callback)
 }
 
 /**
