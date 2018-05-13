@@ -1609,5 +1609,41 @@
       "Daniel Prewitt",
       "Miroslav Zaruba"
     ]
+  },
+  {
+    "title": "Life",
+    "original_title": "Life",
+    "watch_date": "2018-05-12",
+    "rating": 7,
+    "release_date": "2017-03-22",
+    "director": "Daniel Espinosa",
+    "tmdb_id": 395992,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg",
+      "original": "https://image.tmdb.org/t/p/original/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg"
+    },
+    "cast": [
+      "Jake Gyllenhaal",
+      "Rebecca Ferguson",
+      "Ryan Reynolds",
+      "Hiroyuki Sanada",
+      "Ariyon Bakare",
+      "Olga Dihovichnaya",
+      "Alexandre Nguyen",
+      "Hiu Woong-Sin",
+      "Camiel Warren-Taylor",
+      "Naoko Mori",
+      "Elizabeth Vargas",
+      "David Muir",
+      "Allen McLean",
+      "Jesus Del Orden",
+      "Haruka Kuroda",
+      "Leila Grace"
+    ]
   }
 ]

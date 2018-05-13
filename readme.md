@@ -59,6 +59,8 @@ npm run server
 
 Then, navigate to [`localhost:5000`](http://localhost:5000/).
 
+:warning: _Note the local server currently doesn't support livereload._
+
 ## Adding a movie
 
 Run:
