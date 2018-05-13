@@ -53,7 +53,7 @@ function cleanDist() {
  */
 function writeLogos() {
   log('Writing logos')
-  return Promise.all([writeLogo('256'), writeLogo('512')])
+  return writeLogo('256').then(() => writeLogo('512'))
 }
 
 /**
@@ -252,7 +252,9 @@ function buildServiceWorker() {
 function getAssetsList(type) {
   const assets = {
     base: ['/', '/index.html', '/stats/', '/stats/index.html'],
-    app: Object.keys(buildState.assets).map((name) => buildState.assets[name]),
+    app: Object.keys(buildState.assets)
+      .map((name) => buildState.assets[name])
+      .sort(),
     movies: [...buildState.actorsFiles, ...buildState.directorsFiles],
   }
   return assets[type]
