@@ -55,8 +55,6 @@ function onSaveOffline() {
 /**
  * Recursively fetch all the assets (and let the service worker cache them automatically)
  * Items are fetch by packets of 20, and progressbar is updated accordingly
- * @todo check what to do on error (quota exceeded, no network...)
- * It would be better to not fail if there is only 1 resource missing...
  */
 function recursiveFetch(assets, callback) {
   if (!isSavingOffline) {
@@ -64,7 +62,11 @@ function recursiveFetch(assets, callback) {
   }
   const urls = assets.splice(0, 20)
   Promise.all(urls.map((url) => fetch(`${url}#nocache`, {mode: 'no-cors'})))
-    .then(() => {
+    .then((responses) => {
+      const gotError = responses.find((response) => response.type !== 'opaque' && !response.ok)
+      if (gotError) {
+        throw new Error('Fetch failed')
+      }
       nodeProgressBar.style.width = `${(offlineAssets.length - assets.length) * 100 / offlineAssets.length}%`
       if (assets.length > 0) {
         recursiveFetch(assets, callback)

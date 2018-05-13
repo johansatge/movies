@@ -85,7 +85,7 @@ function onFetch(evt) {
  * When browsing the app, caching is not mandatory so we return the response and cache it in parallel
  * When dowloading offline we need caching, so potential caching errors will be sent back instead of the response
  * @todo this could always return a response with a right HTTP code
- * (to be handled client-side when loading the page or downloading for offline, and avoid generic "fetch failed" errors)
+ * (to be handled client-side when loading the page or downloading for offline, and avoid generic fetch() errors)
  */
 function fetchAndCache(request, cacheIsMandatory) {
   return fetchResource(request)
