@@ -1723,5 +1723,54 @@
       "Lina Shekhovtsova",
       "Rose Bianco"
     ]
+  },
+  {
+    "title": "Pacific Rim: Uprising",
+    "original_title": "Pacific Rim: Uprising",
+    "watch_date": "2018-05-20",
+    "rating": 5,
+    "release_date": "2018-03-21",
+    "director": "Steven S. DeKnight",
+    "tmdb_id": 268896,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      "original": "https://image.tmdb.org/t/p/original/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg"
+    },
+    "cast": [
+      "John Boyega",
+      "Scott Eastwood",
+      "Cailee Spaeny",
+      "Jing Tian",
+      "Rinko Kikuchi",
+      "Burn Gorman",
+      "Idris Elba",
+      "Adria Arjona",
+      "Zhang Jin",
+      "Charlie Day",
+      "Madeleine McGraw",
+      "Karan Brar",
+      "Ivanna Sakhno",
+      "Mackenyu Arata",
+      "Wesley Wong",
+      "Levi Meaden",
+      "Rahart Adams",
+      "Zhu Zhu",
+      "Nick E. Tarabay",
+      "Dustin Clare",
+      "Daniel Feuerriegel",
+      "Lily Ji",
+      "Shyrley Rodriguez",
+      "Ellen McLain",
+      "Sam Kalidi",
+      "Jamie Slater",
+      "Yingying Lan",
+      "Chen Zitong",
+      "Yongchen Qian"
+    ]
   }
 ]
