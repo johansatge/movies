@@ -116,7 +116,7 @@ function extractSearchFilters() {
     if (term.length === 0) {
       return
     }
-    const termParts = term.split(':')
+    const termParts = term.toLowerCase().split(':')
     if (allowedTypes.includes(termParts[0]) && termParts[1] && termParts[1].length > 0) {
       filters.push({
         type: termParts[0],
