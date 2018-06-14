@@ -1899,5 +1899,47 @@
       "John Cenatiempo",
       "Nick Nolte"
     ]
+  },
+  {
+    "title": "The Happening",
+    "original_title": "The Happening",
+    "watch_date": "2018-06-14",
+    "rating": 5,
+    "release_date": "2008-06-11",
+    "director": "M. Night Shyamalan",
+    "tmdb_id": 8645,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg",
+      "original": "https://image.tmdb.org/t/p/original/c8Asvr5ORuL9NtaTGZZJsq4heDf.jpg"
+    },
+    "cast": [
+      "Mark Wahlberg",
+      "Zooey Deschanel",
+      "John Leguizamo",
+      "Spencer Breslin",
+      "Betty Buckley",
+      "Ashlyn Sanchez",
+      "Robert Bailey Jr.",
+      "Frank Collison",
+      "Jeremy Strong",
+      "Alan Ruck",
+      "Victoria Clark",
+      "M. Night Shyamalan",
+      "Alison Folland",
+      "Kristen Connolly",
+      "Cornell Womack",
+      "Roberto Lombardi",
+      "Brian Anthony Wilson",
+      "Kerry O'Malley",
+      "Traci Law",
+      "William James Kelly",
+      "Art Lyle",
+      "Mara Hobel"
+    ]
   }
 ]
