@@ -1860,5 +1860,44 @@
       "AJ Bowen",
       "Candice Patton"
     ]
+  },
+  {
+    "title": "Run All Night",
+    "original_title": "Run All Night",
+    "watch_date": "2018-06-13",
+    "rating": 6,
+    "release_date": "2015-03-11",
+    "director": "Jaume Collet-Serra",
+    "tmdb_id": 241554,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg",
+      "original": "https://image.tmdb.org/t/p/original/aqNJrAxudMRNo8jg3HOUQqdl2xr.jpg"
+    },
+    "cast": [
+      "Liam Neeson",
+      "Ed Harris",
+      "Joel Kinnaman",
+      "Boyd Holbrook",
+      "Bruce McGill",
+      "Génesis Rodríguez",
+      "Vincent D'Onofrio",
+      "Lois Smith",
+      "Common",
+      "Beau Knapp",
+      "Patricia Kalember",
+      "Daniel Stewart Sherman",
+      "James Martinez",
+      "Radivoje Bukvić",
+      "Tony Naumovski",
+      "Holt McCallany",
+      "Malcolm Goodwin",
+      "John Cenatiempo",
+      "Nick Nolte"
+    ]
   }
 ]
