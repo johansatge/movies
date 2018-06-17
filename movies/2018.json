@@ -2118,5 +2118,46 @@
       "Roberto Campanella",
       "Kate Moyer"
     ]
+  },
+  {
+    "title": "Les Tuche 3",
+    "original_title": "Les Tuche 3",
+    "watch_date": "2018-06-17",
+    "rating": 4,
+    "release_date": "2018-01-31",
+    "director": "Olivier Baroux",
+    "tmdb_id": 424619,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg",
+      "original": "https://image.tmdb.org/t/p/original/9IcXXWC1aenAY0LrDowsBFMRTrp.jpg"
+    },
+    "cast": [
+      "Jean-Paul Rouve",
+      "Isabelle Nanty",
+      "Claire Nadeau",
+      "Sarah Stern",
+      "Pierre Lottin",
+      "Théo Fernandez",
+      "Scali Delpeyrat",
+      "Nicolas Maury",
+      "Philippe Magnan",
+      "Stéphan Wojtowicz",
+      "Philippe Vieux",
+      "Yann Papin",
+      "Eric Kara",
+      "Olivier Baroux",
+      "Mathilde Ripley",
+      "Lou Gala",
+      "François Bureloup",
+      "Lionel Cecilio",
+      "Ralph Amoussou",
+      "John Sehil",
+      "Marvin Beyster"
+    ]
   }
 ]
