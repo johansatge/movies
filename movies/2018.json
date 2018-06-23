@@ -2159,5 +2159,53 @@
       "John Sehil",
       "Marvin Beyster"
     ]
+  },
+  {
+    "title": "Blade Runner 2049",
+    "original_title": "Blade Runner 2049",
+    "watch_date": "2018-06-23",
+    "rating": 9,
+    "release_date": "2017-10-04",
+    "director": "Denis Villeneuve",
+    "tmdb_id": 335984,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "original": "https://image.tmdb.org/t/p/original/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+    },
+    "cast": [
+      "Ryan Gosling",
+      "Ana de Armas",
+      "Robin Wright",
+      "Sylvia Hoeks",
+      "Harrison Ford",
+      "Mackenzie Davis",
+      "Jared Leto",
+      "Carla Juri",
+      "Lennie James",
+      "Dave Bautista",
+      "David Dastmalchian",
+      "Barkhad Abdi",
+      "Hiam Abbass",
+      "Wood Harris",
+      "Edward James Olmos",
+      "Tómas Lemarquis",
+      "Sallie Harmsen",
+      "Sean Young",
+      "Loren Peta",
+      "Mark Arnold",
+      "Krista Kosonen",
+      "Elarica Johnson",
+      "Kingston Taylor",
+      "David Benson",
+      "Ben Thompson",
+      "Suzie Kennedy",
+      "Stephen Triffitt",
+      "Ellie Wright"
+    ]
   }
 ]
