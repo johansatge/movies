@@ -2207,5 +2207,42 @@
       "Stephen Triffitt",
       "Ellie Wright"
     ]
+  },
+  {
+    "title": "Jurassic World: Fallen Kingdom",
+    "original_title": "Jurassic World: Fallen Kingdom",
+    "watch_date": "2018-07-04",
+    "rating": 6,
+    "release_date": "2018-06-06",
+    "director": "Juan Antonio Bayona",
+    "tmdb_id": 351286,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+      "original": "https://image.tmdb.org/t/p/original/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg"
+    },
+    "cast": [
+      "Chris Pratt",
+      "Bryce Dallas Howard",
+      "Isabella Sermon",
+      "Rafe Spall",
+      "James Cromwell",
+      "Justice Smith",
+      "Daniella Pineda",
+      "Geraldine Chaplin",
+      "Ted Levine",
+      "Toby Jones",
+      "BD Wong",
+      "Jeff Goldblum",
+      "Michael Papajohn",
+      "Robert Emms",
+      "Charlie Rawes",
+      "Daniel Stisen",
+      "Kamil Lemieszewski"
+    ]
   }
 ]
