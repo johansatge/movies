@@ -2308,5 +2308,42 @@
       "Kiera Bell",
       "Samantha Russell"
     ]
+  },
+  {
+    "title": "C'est la vie!",
+    "original_title": "Le Sens de la fête",
+    "watch_date": "2018-07-10",
+    "rating": 8,
+    "release_date": "2017-10-04",
+    "director": "Olivier Nakache",
+    "tmdb_id": 432068,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg",
+      "original": "https://image.tmdb.org/t/p/original/hLmrNU3fheH2j8BYVw3gCfyKFek.jpg"
+    },
+    "cast": [
+      "Jean-Pierre Bacri",
+      "Gilles Lellouche",
+      "Jean-Paul Rouve",
+      "Vincent Macaigne",
+      "Alban Ivanov",
+      "Eye Haidara",
+      "Suzanne Clément",
+      "Hélène Vincent",
+      "Benjamin Lavernhe",
+      "Judith Chemla",
+      "William Lebghil",
+      "Kevin Azais",
+      "Antoine Chappey",
+      "Basky Manmathan",
+      "Khereddine Ennasri",
+      "Gabriel Naccache",
+      "Nicky Marbot"
+    ]
   }
 ]
