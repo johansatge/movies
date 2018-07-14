@@ -2345,5 +2345,54 @@
       "Gabriel Naccache",
       "Nicky Marbot"
     ]
+  },
+  {
+    "title": "Return of the Hero",
+    "original_title": "Le retour du héros",
+    "watch_date": "2018-07-13",
+    "rating": 6,
+    "release_date": "2018-02-14",
+    "director": "Laurent Tirard",
+    "tmdb_id": 457435,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg",
+      "original": "https://image.tmdb.org/t/p/original/7kNyyQHdosdRvCkI8ndPPV3rMmp.jpg"
+    },
+    "cast": [
+      "Jean Dujardin",
+      "Mélanie Laurent",
+      "Christophe Montenez",
+      "Fabienne Galula",
+      "Noémie Merlant",
+      "Féodor Atkine",
+      "Evelyne Buyle",
+      "Aurélie Boquien",
+      "Christian Bujeau",
+      "Laurent Bateau",
+      "Jean-Michel Lahmi",
+      "Michèle Clément",
+      "Virgil Canteloup",
+      "Marion Henin",
+      "Nicolas Guillot",
+      "Fred Tousch",
+      "Bruno Paviot",
+      "Laurent Saint-Gérard",
+      "Audrey Quoturi",
+      "Hugues Martel",
+      "Guillaume Denaiffe",
+      "Magali Léon",
+      "Yannik Mazzilli",
+      "Guillaume Roland",
+      "Christophe Clausier",
+      "Gaëlle Jeantet",
+      "Grégoire Vigneron",
+      "Mathilde Roehrich",
+      "Sandrine Ferraro"
+    ]
   }
 ]
