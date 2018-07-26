@@ -2394,5 +2394,35 @@
       "Mathilde Roehrich",
       "Sandrine Ferraro"
     ]
+  },
+  {
+    "title": "A Quiet Place",
+    "original_title": "A Quiet Place",
+    "watch_date": "2018-07-24",
+    "rating": 8,
+    "release_date": "2018-04-03",
+    "director": "John Krasinski",
+    "tmdb_id": 447332,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "original": "https://image.tmdb.org/t/p/original/nAU74GmpUk7t5iklEp3bufwDq4n.jpg"
+    },
+    "cast": [
+      "Emily Blunt",
+      "John Krasinski",
+      "Millicent Simmonds",
+      "Noah Jupe",
+      "Cade Woodward",
+      "Leon Russom",
+      "Doris McCarthy",
+      "Evangelina Cavoli",
+      "Ezekiel Cavoli",
+      "Rhoda Pell"
+    ]
   }
 ]
