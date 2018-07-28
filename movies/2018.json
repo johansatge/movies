@@ -2424,5 +2424,40 @@
       "Ezekiel Cavoli",
       "Rhoda Pell"
     ]
+  },
+  {
+    "title": "One Crazy Summer",
+    "original_title": "One Crazy Summer",
+    "watch_date": "2018-07-28",
+    "rating": 5,
+    "release_date": "1986-08-08",
+    "director": "Savage Steve Holland",
+    "tmdb_id": 18282,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg",
+      "original": "https://image.tmdb.org/t/p/original/fFqMnlM6C2wLLbtno6LO5PtuRO6.jpg"
+    },
+    "cast": [
+      "John Cusack",
+      "Demi Moore",
+      "Bobcat Goldthwait",
+      "Tom Villard",
+      "Jeremy Piven",
+      "Billie Bird",
+      "Curtis Armstrong",
+      "Joe Flaherty",
+      "Mark Metcalf",
+      "William Hickey",
+      "Taylor Negron",
+      "Rich Little",
+      "John Matuszak",
+      "Joel Murray",
+      "Kimberly Foster"
+    ]
   }
 ]
