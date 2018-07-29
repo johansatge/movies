@@ -38,6 +38,11 @@
       "Conrad Bergschneider",
       "Chantelle Jewkes",
       "Lindsay Stewart"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -102,6 +107,11 @@
       "Brian Mashburn",
       "Kay Hanley",
       "Michael Eisenstein"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -135,6 +145,13 @@
       "Rachael Leigh Cook",
       "Jason Segel",
       "Rick Gomez"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -184,6 +201,11 @@
       "Robert Bear",
       "Lonzo Liggins",
       "Priscilla Poland"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -225,6 +247,12 @@
       "Beatriz Yuste",
       "Danny Lima",
       "Angela Seto"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -298,6 +326,11 @@
       "Candus Churchill",
       "Luis Javier",
       "Sean Tyson"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -331,6 +364,10 @@
       "Helen Carey",
       "Jack Gilpin",
       "Ben Campbell"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -373,6 +410,11 @@
       "Jukka Hiltunen",
       "David Schneider",
       "Toby Sedgwick"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -408,6 +450,11 @@
       "Ilyssa Fradin",
       "Staci Lynn Fletcher",
       "Lucas Fleischer"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -472,6 +519,9 @@
       "Billy Lockwood",
       "J. Nathan Simmons",
       "Art Usher"
+    ],
+    "genres": [
+      "Western"
     ]
   },
   {
@@ -501,6 +551,13 @@
       "Firmine Richard",
       "Danielle Darrieux",
       "Dominique Lamure"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Music",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -540,6 +597,10 @@
       "Alexandra Ansidei",
       "Cécile Breccia",
       "Ana Bara"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -598,6 +659,10 @@
       "Yvonne Thomas",
       "Holly Pitrago",
       "Isadore Rosenfeld"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -637,6 +702,10 @@
       "Philip Stone",
       "David Prowse",
       "Michael Gover"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -672,6 +741,11 @@
       "Deborah Drakeford",
       "Bill MacDonald",
       "Aidan Devine"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -700,6 +774,9 @@
       "Line Renaud",
       "Michel Vuillermoz",
       "Didier Flamand"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -735,6 +812,10 @@
       "Jean Franval",
       "Pierre Collet",
       "Arlette Balkis"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -797,6 +878,11 @@
       "Lou-Anne Ronchi",
       "Elke Ritschel",
       "Mayako Torigai"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -850,6 +936,9 @@
       "Steve Little",
       "Greg Sestero",
       "Sara Jean Underwood"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -895,6 +984,9 @@
       "Russell Steinberg",
       "Eric Schaeffer",
       "Amy Landis"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -926,6 +1018,13 @@
       "Jessica Boyde",
       "Aurélien Wiik",
       "Philippe Magnan"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Mystery",
+      "Romance"
     ]
   },
   {
@@ -961,6 +1060,11 @@
       "Glenda Braganza",
       "Henri Pardo",
       "Leni Parker"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -1016,6 +1120,11 @@
       "Simone Sault",
       "Dale Mercer",
       "Cortney Palm"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -1051,6 +1160,13 @@
       "Dink Trout",
       "Doris Lloyd",
       "James MacDonald"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Music"
     ]
   },
   {
@@ -1081,6 +1197,10 @@
       "Bolaji Badejo",
       "Helen Horton",
       "Eddie Powell"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -1127,6 +1247,12 @@
       "Eddie Powell",
       "James Remar",
       "Jay Benedict"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -1187,6 +1313,9 @@
       "David C. Fisher",
       "Tom Miller",
       "Bruce Cohen"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -1260,6 +1389,9 @@
       "Selwyn Ward",
       "Denney Pierce",
       "Glendon Rich"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -1295,6 +1427,10 @@
       "Ty O'Neal",
       "Joe Stevens",
       "Barry Tubb"
+    ],
+    "genres": [
+      "Action",
+      "Western"
     ]
   },
   {
@@ -1358,6 +1494,10 @@
       "Casey Erklin",
       "Casey Affleck",
       "Hilary Angelo"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -1397,6 +1537,11 @@
       "Patricia Gage",
       "Krista Sutton",
       "Catherine Black"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -1449,6 +1594,12 @@
       "Brenda Palmer",
       "Daniel Roche",
       "David Michôd"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -1483,6 +1634,11 @@
       "James Gammon",
       "Tom Bower",
       "Ariadna Gil"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Western"
     ]
   },
   {
@@ -1515,6 +1671,11 @@
       "Toshiyuki Morikawa",
       "Ryûji Nakagi",
       "Ikuo Nishikawa"
+    ],
+    "genres": [
+      "Action",
+      "Animation",
+      "Science Fiction"
     ]
   },
   {
@@ -1547,6 +1708,12 @@
       "Naoko Kouda",
       "Yūji Kishi",
       "Miyuki Sawashiro"
+    ],
+    "genres": [
+      "Action",
+      "Animation",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -1599,6 +1766,11 @@
       "Dylan Charles",
       "Lee Nicholas Harris",
       "Stephanie Street"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -1630,6 +1802,9 @@
       "Karina Marimon",
       "Agathe Teyssier",
       "Anna Sherbinina"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -1709,6 +1884,11 @@
       "Sybelle Silverphoenix",
       "Stream",
       "Christina Vinsick"
+    ],
+    "genres": [
+      "Drama",
+      "Family",
+      "Music"
     ]
   },
   {
@@ -1756,6 +1936,11 @@
       "Carrie Fisher",
       "Christian Slater",
       "Christian Slater"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Science Fiction"
     ]
   },
   {
@@ -1859,6 +2044,12 @@
       "Richard Whiteside",
       "Nikie Zambo",
       "Julene Renee"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -1930,6 +2121,12 @@
       "Huey Lewis",
       "Tom Tangen",
       "Arthur Tovey"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Science Fiction"
     ]
   },
   {
@@ -2005,6 +2202,12 @@
       "Donald Fullilove",
       "Annette May",
       "Mary Ellen Trainor"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Science Fiction"
     ]
   },
   {
@@ -2079,6 +2282,12 @@
       "Dorothy Hack",
       "Dusty Hill",
       "Marion Tumen"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Science Fiction"
     ]
   },
   {
@@ -2131,6 +2340,12 @@
       "Fawn Reed",
       "Joey Romano",
       "Sam Ayers"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -2168,6 +2383,12 @@
       "Marek Vašut",
       "Petr Jákl ml.",
       "Ammar Daraiseh"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Thriller"
     ]
   },
   {
@@ -2233,6 +2454,9 @@
       "Jennifer Holloway",
       "Joanna Theobalds",
       "Christina Gabrielle"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -2270,6 +2494,12 @@
       "Yomo Tlazotlalli",
       "Humberto Elizondo",
       "Justo Martínez"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Western"
     ]
   },
   {
@@ -2300,6 +2530,11 @@
       "Steve Baldocchi",
       "Chris Heebink",
       "James With"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -2339,6 +2574,10 @@
       "Richard Durden",
       "Sam Douglas",
       "Steve Plytas"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy"
     ]
   },
   {
@@ -2472,6 +2711,11 @@
       "Philip Harvey",
       "Russell Wilcox",
       "Ray Donn"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -2584,6 +2828,11 @@
       "Mitsuaki Tachikawa",
       "Tetsu Masuda",
       "Takashi Taniguchi"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -2621,6 +2870,11 @@
       "Byrne Piven",
       "Gregory Sporleder",
       "Octavia Spencer"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy"
     ]
   },
   {
@@ -2653,6 +2907,9 @@
       "Bavo Smets",
       "Ron Cornet",
       "Katrien Pierlet"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -2703,6 +2960,11 @@
       "Fredrik Hiller",
       "Kevin Dorman",
       "Richard Burns"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
     ]
   },
   {
@@ -2766,6 +3028,11 @@
       "Jake Brake",
       "L.C. Holt",
       "Will Thomas"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
     ]
   },
   {
@@ -2799,6 +3066,10 @@
       "Nick Fenton",
       "Min Windle",
       "Ian Harcourt"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -2848,6 +3119,10 @@
       "Anne Bergstedt Jordanova",
       "Daralina Komar",
       "Tim Lacatena"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -2899,6 +3174,11 @@
       "Steve Pope",
       "Robert Reiter",
       "Alexis Rhee"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -2944,6 +3224,11 @@
       "Antonia Christy",
       "Gregory Finnegan",
       "Taylor James"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -2986,6 +3271,11 @@
       "Grant Swanby",
       "Adetokumboh M'Cormack",
       "Tyrone Keogh"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -3040,6 +3330,10 @@
       "Pamela Abdy",
       "Kevin Chapman",
       "Daniel Escobar"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -3074,6 +3368,9 @@
       "Ken Hudson Campbell",
       "Richard Roundtree",
       "Bob Gunton"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -3114,6 +3411,11 @@
       "Annabelle Wallis",
       "Xanthe Elbrick",
       "Michael Stuhlbarg"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -3144,6 +3446,11 @@
       "Fabien Ara",
       "Anna Sherbinina",
       "Pom Klementieff"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -3183,6 +3490,12 @@
       "Mark Webber",
       "Homer Murray",
       "Larry Fessenden"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Mystery",
+      "Romance"
     ]
   },
   {
@@ -3267,6 +3580,10 @@
       "Patrick Michael Strange",
       "Kevin Tan",
       "Jacqueline Wright"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -3303,6 +3620,11 @@
       "Roger Dumas",
       "Clovis Cornillac",
       "Jocelyn Quivrin"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -3379,6 +3701,11 @@
       "Jack Gordon",
       "Ben Uttley",
       "Patrick Monckeberg"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -3422,6 +3749,10 @@
       "Cameron De Palma",
       "Mike Towers",
       "Glen Vance"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -3491,6 +3822,12 @@
       "Douglas Keever",
       "Vanness Wu",
       "Sherry Lynn"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -3534,6 +3871,11 @@
       "Keeley Hazell",
       "Samantha Bloom",
       "Emilia Fenton"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -3633,6 +3975,11 @@
       "Victor Sobchak",
       "Valarie Trapp",
       "Greg Bennett"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -3667,6 +4014,10 @@
       "François Duhamel",
       "Michael Forest",
       "Lauren Birkell"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -3706,6 +4057,14 @@
       "Houchu Ohtsuka",
       "Megumi Hayashibara",
       "Tomomichi Nishimura"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -3740,6 +4099,9 @@
       "Inga R. Wilson",
       "Mike Birbiglia",
       "Seth Morris"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -3779,6 +4141,10 @@
       "John Churchill",
       "Greg Collins",
       "Esther Mercado"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -3831,6 +4197,12 @@
       "Oscar James",
       "Annette Badland",
       "Débora Monteiro"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -3867,6 +4239,13 @@
       "Sean Whalen",
       "Melissa McCarthy",
       "Jerry Trimble"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -3960,6 +4339,12 @@
       "Paul Warren",
       "Yana Yanezic",
       "Rebecca Howard"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -4004,6 +4389,12 @@
       "Beau Holden",
       "Trey Burvant",
       "Daniel Newman"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Thriller"
     ]
   },
   {
@@ -4051,6 +4442,10 @@
       "Graziella Moretto",
       "Tulé Peak",
       "Kikito Junqueira"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -4095,6 +4490,12 @@
       "James Earl Jones",
       "Jason Sandler",
       "Billy Slaughter"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -4130,6 +4531,11 @@
       "Ralph Waite",
       "Paul Winfield",
       "Trey Brownell"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -4207,6 +4613,11 @@
       "Chris Spinelli",
       "Andrew Trujillo",
       "Maria Zambrana"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -4247,6 +4658,11 @@
       "Inmo Yuon",
       "Angelo Tiffe",
       "Jason Statham"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -4285,6 +4701,12 @@
       "Sam Douglas",
       "Angel Garnica",
       "Mark De Alessandro"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -4374,6 +4796,11 @@
       "Raw Leiba",
       "Radka Petkova",
       "Paul Stefanov"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -4418,6 +4845,10 @@
       "Brandi Burkhardt",
       "Clea Lewis",
       "Scott Evans"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -4544,6 +4975,11 @@
       "Holly Cross Vagley",
       "Eric Alan Wendell",
       "Delaney Williams"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Science Fiction"
     ]
   },
   {
@@ -4618,6 +5054,12 @@
       "Michael Neal Powell",
       "Kelly Ruble",
       "Charlene Adams Upton"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller",
+      "Western"
     ]
   },
   {
@@ -4686,6 +5128,11 @@
       "Jacki R. Chan",
       "Rick Shuster",
       "Ted Garcia"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -4723,6 +5170,11 @@
       "Jo Prestia",
       "Cyril Raffaelli",
       "Mylène Jampanoï"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -4755,6 +5207,12 @@
       "Yan Hai",
       "De Ming Wang",
       "Li Li"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -4795,6 +5253,10 @@
       "Shannon Cusack",
       "Gary Cole",
       "Kristy Wu"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -4830,6 +5292,11 @@
       "David Nelson",
       "Patricia Hearst",
       "Willem Dafoe"
+    ],
+    "genres": [
+      "Comedy",
+      "Music",
+      "Romance"
     ]
   },
   {
@@ -4857,6 +5324,11 @@
       "Julian Richings",
       "Wayne Robson",
       "Maurice Dean Wint"
+    ],
+    "genres": [
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -4889,6 +5361,11 @@
       "Philip Akin",
       "Paul Robbins",
       "Andrew Scorer"
+    ],
+    "genres": [
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -4908,7 +5385,21 @@
       "780": "https://image.tmdb.org/t/p/w780/8JGOTkKOCqSfAwIMPQKF0K44lUW.jpg",
       "original": "https://image.tmdb.org/t/p/original/8JGOTkKOCqSfAwIMPQKF0K44lUW.jpg"
     },
-    "cast": ["Chow Yun-fat", "Gong Li", "Jay Chou", "Liu Ye", "Qin Jun-Jie", "Li Man", "Ni Dahong", "Chen Jin"]
+    "cast": [
+      "Chow Yun-fat",
+      "Gong Li",
+      "Jay Chou",
+      "Liu Ye",
+      "Qin Jun-Jie",
+      "Li Man",
+      "Ni Dahong",
+      "Chen Jin"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ]
   },
   {
     "title": "DOA: Dead or Alive",
@@ -4946,6 +5437,11 @@
       "Robin Shou",
       "Anna Bolt",
       "Martin Crewes"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -5023,6 +5519,11 @@
       "Bill Costner",
       "Jim Wilson",
       "William Rossman"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Western"
     ]
   },
   {
@@ -5116,6 +5617,13 @@
       "Sandra Teles",
       "Nancy Wetzel",
       "Patrick Williams"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Fantasy",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -5153,6 +5661,12 @@
       "Jamison Jones",
       "William Utay",
       "Eloy Casados"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -5194,6 +5708,12 @@
       "Ken Foree",
       "Natalie Brown",
       "Phillip MacKenzie"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Horror"
     ]
   },
   {
@@ -5238,6 +5758,10 @@
       "Anton Stepanenko",
       "Sergey Trofimov",
       "Aleksey Chadov"
+    ],
+    "genres": [
+      "Fantasy",
+      "Horror"
     ]
   },
   {
@@ -5267,6 +5791,12 @@
       "Bo Dietl",
       "Dana Delany",
       "Henry Strozier"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -5302,6 +5832,9 @@
       "George Martin",
       "Alexandra Powers",
       "Lara Flynn Boyle"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -5331,6 +5864,9 @@
       "Gary Tiplady",
       "Gérard Darmon",
       "Stomy Bugsy"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -5364,6 +5900,11 @@
       "Robert LaSardo",
       "Robin Shou",
       "John Fallon"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -5398,6 +5939,12 @@
       "Dennis Keiffer",
       "Freddy Bouciegues",
       "Leigh Whannell"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -5436,6 +5983,11 @@
       "Sabrina Geerinckx",
       "Tajsha Thomas",
       "Frank Welker"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -5475,6 +6027,10 @@
       "David Morrissey",
       "David Oyelowo",
       "Jennifer Joan Taylor"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -5511,6 +6067,11 @@
       "David Alvarado",
       "Angela Lanza",
       "Elizabeth Rodriguez"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -5555,6 +6116,11 @@
       "Trina Parks",
       "Valerie Perrine",
       "Cassandra Peterson"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -5591,6 +6157,11 @@
       "Gregory Nicotero",
       "Boyd Banks",
       "Alan van Sprang"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -5627,6 +6198,9 @@
       "Steven Boyer",
       "Sharon Wilkins",
       "Christopher Atwood"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -5668,6 +6242,11 @@
       "Mark Dymond",
       "Vincent Wong",
       "Deborah Moore"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -5735,6 +6314,10 @@
       "Terri Lynn Doss",
       "Charlie Picerni",
       "Mark Winn"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -5801,6 +6384,10 @@
       "Rob Steinberg",
       "Robert Sacchi",
       "Amanda Hillwood"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -5838,6 +6425,10 @@
       "Mischa Hausserman",
       "Michael Cristofer",
       "Tony Halme"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -5867,6 +6458,9 @@
       "Florence Foresti",
       "Marie Kremer",
       "Catherine Hosmalin"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -5935,6 +6529,11 @@
       "Don Siegel",
       "Kristoffer Tabori",
       "Tony Dario"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -5972,6 +6571,9 @@
       "Forbes March",
       "Deryck Whibley",
       "Tabitha Taylor"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -6004,6 +6606,11 @@
       "Pierre-Marie Mosconi",
       "Johnny Amaro",
       "Rim'k"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -6067,6 +6674,9 @@
       "Johnny Selema",
       "Neill Blomkamp",
       "Trevor Coppola"
+    ],
+    "genres": [
+      "Science Fiction"
     ]
   },
   {
@@ -6112,6 +6722,11 @@
       "Stephane Vigroux",
       "Jérôme Paquatte",
       "Lyes Salem"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -6147,6 +6762,11 @@
       "Kevin Quinn",
       "Suzanne Rico",
       "Kent Shocknek"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -6186,6 +6806,10 @@
       "Jan Kounen",
       "Roland Amstutz",
       "Arnaud Arbessier"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -6221,6 +6845,9 @@
       "Alexander Conti",
       "William Christopher Ellis",
       "Michael States Jr."
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -6250,6 +6877,9 @@
       "Steve Krikris",
       "Sissy Petropoulou",
       "Alexander Voulgaris"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -6280,6 +6910,10 @@
       "Al Sapienza",
       "Karen LeBlanc",
       "Eugene Clark"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -6326,6 +6960,10 @@
       "Tabitha Brownstone",
       "Domino Harvey",
       "Charles Paraventi"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -6356,6 +6994,9 @@
       "Aïssa Maïga",
       "Flore Vannier-Moreau",
       "Blandine Pélissier"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -6405,6 +7046,11 @@
       "Seth Rogen",
       "Mark Hoffman",
       "Jerry Trainor"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Mystery"
     ]
   },
   {
@@ -6436,6 +7082,11 @@
       "Eunice Gayson",
       "Lois Maxwell",
       "Peter Burton"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -6474,6 +7125,9 @@
       "Sandra Kovacicova",
       "Kyle Cohen",
       "Thom Baker"
+    ],
+    "genres": [
+      "Fantasy"
     ]
   },
   {
@@ -6509,6 +7163,13 @@
       "Richard Blake",
       "Julian Sedgwick",
       "Megumi Seki"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -6548,6 +7209,12 @@
       "Michael Dobson",
       "Ty Olsson",
       "Michael Daingerfield"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -6583,6 +7250,10 @@
       "Tino Wong Cheung",
       "San Kuai",
       "Hsu Hsia"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -6653,6 +7324,10 @@
       "Joseph O'Brien",
       "Sarah Reagin",
       "Scott M. Yaffee"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -6753,6 +7428,9 @@
       "Craig Patterson",
       "Josh Shipley",
       "John Yost"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -6791,6 +7469,11 @@
       "Sylvia Jefferies",
       "Maureen Brennan",
       "Brandi Coleman"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -6824,6 +7507,12 @@
       "Richard Swingler",
       "Frank Toth",
       "Pat Welsh"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -6864,6 +7553,11 @@
       "Nicol Paone",
       "Dariush Kashani",
       "Nathan Geist"
+    ],
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -6903,6 +7597,11 @@
       "Elisa Lasowski",
       "Alice Henley",
       "Tony Cook"
+    ],
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -6978,6 +7677,9 @@
       "Alexandra Swarens",
       "Micah Van Hove",
       "Julianne Celeste"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -7066,6 +7768,11 @@
       "Arlene Tai",
       "Rayder Woods",
       "Ralph Moratz"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "History"
     ]
   },
   {
@@ -7114,6 +7821,11 @@
       "Kathy Lockwood",
       "Nick Carter",
       "Tim Rerucha"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -7155,6 +7867,11 @@
       "Nathaniel Arcand",
       "Jana Mitsoula",
       "Ben Affleck"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -7188,6 +7905,11 @@
       "Tim Devitt",
       "Loudon Wainwright III",
       "Jim Fitzpatrick"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -7252,6 +7974,11 @@
       "Nancy Yee",
       "Christopher Lawrence",
       "Tom Sizemore"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -7293,6 +8020,11 @@
       "Ravin J. Ganatra",
       "Rhydian Jai-Persad",
       "Hari Dhillon"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Romance"
     ]
   },
   {
@@ -7331,6 +8063,11 @@
       "Jill Latiano",
       "Irina Voronina",
       "Britten Kelley"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -7370,6 +8107,11 @@
       "David Hemmings",
       "Brian Conley",
       "Anatole Taubman"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -7405,6 +8147,12 @@
       "Steve Speirs",
       "Caroline Chikezie",
       "Richard Rifkin"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -7444,6 +8192,11 @@
       "Paul Litowsky",
       "Amir Ali Said",
       "Lauren Adler"
+    ],
+    "genres": [
+      "Drama",
+      "Romance",
+      "Science Fiction"
     ]
   },
   {
@@ -7486,6 +8239,9 @@
       "Dominic Raacke",
       "Walter Sittler",
       "Ellen Savaria"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -7516,6 +8272,12 @@
       "Jean-Pierre Castaldi",
       "Liliana Komorowska",
       "Klaus Löwitsch"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -7543,6 +8305,10 @@
       "Hélène de Fougerolles",
       "Jacques Frantz",
       "Gérald Laroche"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -7586,6 +8352,10 @@
       "Joe Lo Truglio",
       "Clark Sanchez",
       "Danny McBride"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -7625,6 +8395,12 @@
       "Sam Rubin",
       "G. Michael Gray",
       "Patrick Stoner"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -7693,6 +8469,12 @@
       "Alexandra Castro",
       "Jaimie Sullivan",
       "Leigh Folsom Boyd"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -7749,6 +8531,11 @@
       "Andy Rosa Adler",
       "Eva Mendes",
       "Michelle Rodriguez"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -7789,6 +8576,12 @@
       "Buzz Belmondo",
       "Ski Carr",
       "Jim Gaines"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -7817,6 +8610,9 @@
       "Jérôme Le Banner",
       "Jean Benguigui",
       "Niels Schneider"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -7876,6 +8672,9 @@
       "Dominique Besnehard",
       "Pierre Héros",
       "Henri de Turenne"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -7942,6 +8741,10 @@
       "Cheng Yong",
       "Shu Jian",
       "Gao Yuntong"
+    ],
+    "genres": [
+      "Action",
+      "Drama"
     ]
   },
   {
@@ -7976,6 +8779,9 @@
       "Larry \"Flash\" Jenkins",
       "Charlie Sheen",
       "Richard Edson"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -8073,6 +8879,9 @@
       "Alekxia Valdez",
       "Michael Zagst",
       "Gökhan Öncel"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -8092,7 +8901,15 @@
       "780": "https://image.tmdb.org/t/p/w780/nQHG3CiqjLsu9JahA66FI6WcUBQ.jpg",
       "original": "https://image.tmdb.org/t/p/original/nQHG3CiqjLsu9JahA66FI6WcUBQ.jpg"
     },
-    "cast": ["Yang Dong-geun", "Aya Hirayama", "Masaya Kato"]
+    "cast": [
+      "Yang Dong-geun",
+      "Aya Hirayama",
+      "Masaya Kato"
+    ],
+    "genres": [
+      "Action",
+      "Drama"
+    ]
   },
   {
     "title": "Final Balance",
@@ -8111,7 +8928,20 @@
       "780": "https://image.tmdb.org/t/p/w780/o6NBR3VHf6xY082R1EkEj5HTTdE.jpg",
       "original": "https://image.tmdb.org/t/p/original/o6NBR3VHf6xY082R1EkEj5HTTdE.jpg"
     },
-    "cast": ["Jean-Paul Rouve", "Claude Brasseur", "Olivier Gourmet", "Marie Kremer", "Gilles Cohen", "Affif Ben Badra"]
+    "cast": [
+      "Jean-Paul Rouve",
+      "Claude Brasseur",
+      "Olivier Gourmet",
+      "Marie Kremer",
+      "Gilles Cohen",
+      "Affif Ben Badra"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ]
   },
   {
     "title": "Finding Nemo",
@@ -8156,6 +8986,10 @@
       "Erik Per Sullivan",
       "John Ratzenberger",
       "Sherry Lynn"
+    ],
+    "genres": [
+      "Animation",
+      "Family"
     ]
   },
   {
@@ -8199,6 +9033,12 @@
       "Bruce Greenwood",
       "Donald Adams",
       "Gary Hetherington"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller",
+      "War"
     ]
   },
   {
@@ -8235,6 +9075,12 @@
       "Paul Kynman",
       "Tom Lucy",
       "Richard Claxton"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -8268,6 +9114,10 @@
       "Nicholas Turturro",
       "Paul Campbell",
       "Retta"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -8303,6 +9153,12 @@
       "Miles Richardson",
       "John Motson",
       "Douglas Weston"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -8363,6 +9219,11 @@
       "Evelyn Drogue",
       "Sheena Easton",
       "Eva Rueber-Staier"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -8422,6 +9283,9 @@
       "Rafael López",
       "José Félix Montoya",
       "Aldo Ricci"
+    ],
+    "genres": [
+      "Western"
     ]
   },
   {
@@ -8471,6 +9335,11 @@
       "Ken Drury",
       "Struan Rodger",
       "Polly Kemp"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -8510,6 +9379,9 @@
       "Maurice Aufair",
       "Jean-Marc Henchoz",
       "Doris Thomas"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -8546,6 +9418,10 @@
       "Grace Phipps",
       "Charlie B. Brown",
       "Mary Elizabeth Pohl"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -8611,6 +9487,11 @@
       "Gordon Sterne",
       "Nikki Van der Zyl",
       "Bedri Çavusoglu"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -8640,6 +9521,9 @@
       "Adam Johnson",
       "Chris York",
       "Peder Melhuse"
+    ],
+    "genres": [
+      "Thriller"
     ]
   },
   {
@@ -8698,6 +9582,10 @@
       "Vivian Kubrick",
       "David Palffy",
       "John Ward"
+    ],
+    "genres": [
+      "Drama",
+      "War"
     ]
   },
   {
@@ -8733,6 +9621,9 @@
       "Timm Sharp",
       "David Herman",
       "Gian Franco Tordi"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -8763,6 +9654,11 @@
       "Susanne C. Hanke",
       "Linda Moran",
       "Siobhan Fallon"
+    ],
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -8806,6 +9702,12 @@
       "Brendan Fraser",
       "Frederic Doss",
       "Peter Breitmayer"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -8854,6 +9756,11 @@
       "James Roday",
       "Samuel Witwer",
       "Lloyd Kaufman"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -8886,6 +9793,12 @@
       "Ernest Borgnine",
       "Tony Shalhoub",
       "Una Damon"
+    ],
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -8932,6 +9845,9 @@
       "Derek Theler",
       "Kristen Schaal",
       "Meghan Markle"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -8977,6 +9893,10 @@
       "Jerry Sturiano",
       "Alfred Nittoli",
       "Sharon Angela"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -9016,6 +9936,12 @@
       "Rebel Wilson",
       "Daniel Fredericsen",
       "Mathew Wilkinson"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -9047,6 +9973,11 @@
       "Bob Ruggiero",
       "Jamie Giddens",
       "Alex Dimitriades"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -9085,6 +10016,10 @@
       "Les Bradford",
       "David Bonfadini",
       "Dwight Ketchum"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -9116,6 +10051,12 @@
       "David Andriole",
       "Chris Yen",
       "Patrick Treadway"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -9174,6 +10115,11 @@
       "Norman Campbell Rees",
       "Steve Saunders",
       "Brian Smyj"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -9205,6 +10151,12 @@
       "Devon Bostick",
       "Melanie Tonello",
       "Andrew Chalmers"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -9303,6 +10255,11 @@
       "Al Sapienza",
       "Stoney Westmoreland",
       "Ed Wheeler"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -9331,6 +10288,9 @@
       "Katheryn Winnick",
       "August Schellenberg",
       "Crystal Lowe"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -9371,6 +10331,11 @@
       "Minnie Driver",
       "Michelle Arthur",
       "Ravil Isyanov"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -9429,6 +10394,11 @@
       "John McCarthy",
       "Lenny Rabbin",
       "Raymond Young"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -9468,6 +10438,10 @@
       "Alfonso Santagata",
       "Ronghua Zhang",
       "Giovanni Venosa"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -9503,6 +10477,11 @@
       "Slaine",
       "Matthew Maher",
       "Trudi Goodman"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
     ]
   },
   {
@@ -9574,6 +10553,9 @@
       "Paul McGillicuddy",
       "Stephen Trouskie",
       "Elisabeth Anne Hughes"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -9731,6 +10713,10 @@
       "Frank Cassini",
       "Anthony Caso",
       "Lisa Bostnar"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -9762,6 +10748,10 @@
       "Matthew G. Taylor",
       "Andrea Sheldon",
       "Bronwen Mantel"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -9790,6 +10780,10 @@
       "Kate Herriot",
       "Troy Skog",
       "Malcolm Stewart"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -9861,6 +10855,9 @@
       "Darline Bucchare",
       "Arnold Montey",
       "Jeffrey Scott Basham"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -9899,6 +10896,11 @@
       "Corey Feldman",
       "Edward Andrews",
       "Jonathan Banks"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Horror"
     ]
   },
   {
@@ -10071,6 +11073,12 @@
       "Mary Pitt",
       "Janice Luey",
       "Dondraico Johnson"
+    ],
+    "genres": [
+      "Comedy",
+      "Family",
+      "Music",
+      "Romance"
     ]
   },
   {
@@ -10124,6 +11132,10 @@
       "Mark Simich",
       "Nancy Grace",
       "Brad Leland"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy"
     ]
   },
   {
@@ -10162,6 +11174,11 @@
       "Joel Basman",
       "Martin Wuttke",
       "Aldo Maland"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -10215,6 +11232,12 @@
       "Ajay Naidu",
       "Kelly Piper",
       "Judie Aronson"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -10234,7 +11257,17 @@
       "780": "https://image.tmdb.org/t/p/w780/1xInhmQVOOVS7xFT5DthpIwUTDI.jpg",
       "original": "https://image.tmdb.org/t/p/original/1xInhmQVOOVS7xFT5DthpIwUTDI.jpg"
     },
-    "cast": ["Patrick Wilson", "Ellen Page", "Sandra Oh", "Odessa Rae", "G.J. Echternkamp"]
+    "cast": [
+      "Patrick Wilson",
+      "Ellen Page",
+      "Sandra Oh",
+      "Odessa Rae",
+      "G.J. Echternkamp"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
+    ]
   },
   {
     "title": "Harold & Kumar Escape from Guantanamo Bay",
@@ -10273,6 +11306,10 @@
       "D'Anthony Palms",
       "Marisa Belinda",
       "Jimmy Lee Jr."
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -10310,6 +11347,10 @@
       "Ryan Reynolds",
       "Christopher Meloni",
       "Boyd Banks"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -10391,6 +11432,11 @@
       "Alfred Burke",
       "Peter O'Farrell",
       "Violet Columbus"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -10495,6 +11541,11 @@
       "Graham Duff",
       "Domhnall Gleeson",
       "Carolyn Pickles"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -10617,6 +11668,11 @@
       "Sean Biggerstaff",
       "Leslie Phillips",
       "Graham Duff"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -10703,6 +11759,11 @@
       "Alan Watt",
       "Adrian Rawlins",
       "Paschal Friel"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -10772,6 +11833,11 @@
       "Suzanne Toase",
       "Rod Hunt",
       "Elarica Gallacher"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -10872,6 +11938,12 @@
       "Miles Jupp",
       "Jamie Wolpert",
       "Daisy Haggard"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Mystery"
     ]
   },
   {
@@ -10950,6 +12022,11 @@
       "Zoe Sugg",
       "Jimmy Vee",
       "Kieri Kennedy"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -11021,6 +12098,11 @@
       "Kandice Morris",
       "Lewis Barnshaw",
       "Violet Columbus"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -11071,6 +12153,10 @@
       "Clémentine Niewdanski",
       "Hélène Liber",
       "Cathy Darietto"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -11105,6 +12191,11 @@
       "Fraser Ayres",
       "Nicholas Tennant",
       "Jack Gordon"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -11146,6 +12237,11 @@
       "Jim Howick",
       "Rory Copus",
       "Santiago Segura"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -11177,6 +12273,11 @@
       "Seth MacFarlane",
       "Anna Walton",
       "Brian Steele"
+    ],
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -11213,6 +12314,10 @@
       "Guy Boyd",
       "Peter Appel",
       "David Bishins"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -11240,6 +12345,11 @@
       "Justin Blanckaert",
       "Raphaël Lenglet",
       "Guilhem Simon"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -11267,6 +12377,11 @@
       "Andrei Finti",
       "Oana Pellea",
       "Marco Claudiu Pascu"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -11303,6 +12418,11 @@
       "Christopher Malcolm",
       "Frank Dux",
       "Ian Reddington"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -11339,6 +12459,10 @@
       "Franck Crombet",
       "Éric Houzelot",
       "Louise Germaine"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -11376,6 +12500,11 @@
       "Navia Nguyen",
       "Matt Malloy",
       "Beau Sia"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -11407,6 +12536,12 @@
       "Eriq Ebouaney",
       "Joe Sheridan",
       "James Faulkner"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -11442,6 +12577,11 @@
       "Dash Mihok",
       "Jeffrey DeMunn",
       "Joe Spano"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -11492,6 +12632,12 @@
       "George Lucas",
       "Jimmy Buffett",
       "Dante Basco"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -11532,6 +12678,10 @@
       "Barry Livingston",
       "Celia Finkelstein",
       "P. J. Byrne"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -11597,6 +12747,11 @@
       "Joe Cornish",
       "Chris Waitt",
       "Colin Michael Carmichael"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -11634,6 +12789,11 @@
       "Mark Arnott",
       "Ryan Cutrona",
       "Bill Laimbeer"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "War"
     ]
   },
   {
@@ -11668,6 +12828,11 @@
       "Ryan Stiles",
       "Rosemary Johnston",
       "Martin Sheen"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "War"
     ]
   },
   {
@@ -11706,6 +12871,11 @@
       "Josh Heald",
       "Charlie McDermott",
       "Amber Hay"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -11741,6 +12911,10 @@
       "Emma Lung",
       "Andy Anderson",
       "Kendal Rae"
+    ],
+    "genres": [
+      "Drama",
+      "Horror"
     ]
   },
   {
@@ -11779,6 +12953,11 @@
       "Jesse Corti",
       "Toni Kallen",
       "Kevin Rankin"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -11828,6 +13007,10 @@
       "Séverine Vincent",
       "Jean-François Kopf",
       "Roger Dumas"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -11860,6 +13043,11 @@
       "Bouli Lanners",
       "Serge Larivière",
       "Selma El Mouissi"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -11893,6 +13081,13 @@
       "Pedro Mojica",
       "Marin Ireland",
       "Alexander DiPersia"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -11962,6 +13157,12 @@
       "Zoe Simek",
       "Michelle Vezzani",
       "Morgan Wolk"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -12003,6 +13204,10 @@
       "Tiffany Lyndall-Knight",
       "Aaron Douglas",
       "Angela Moore"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction"
     ]
   },
   {
@@ -12030,6 +13235,12 @@
       "Tetta Sugimoto",
       "Megumi Yokoyama",
       "Riki Takeuchi"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History"
     ]
   },
   {
@@ -12069,6 +13280,12 @@
       "Mitzi McCall",
       "Dann Fink",
       "Sherry Lynn"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -12142,6 +13359,11 @@
       "Earl Mann",
       "Sara Rue",
       "Evan Miller"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -12186,6 +13408,11 @@
       "Susan Ateh",
       "Ciarán Hinds",
       "Matt Smith"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -12235,6 +13462,13 @@
       "Nicolas Clerc",
       "Jean-Michel Dagory",
       "Marc Raducci"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -12324,6 +13558,11 @@
       "Erick Avari",
       "Brent Spiner",
       "James Wong"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -12382,6 +13621,10 @@
       "Kevin Collins",
       "Robert Baker",
       "Steven A. Miller"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
     ]
   },
   {
@@ -12415,6 +13658,10 @@
       "Molly Bryant",
       "Dale Waddington",
       "Rick Williamson"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -12499,6 +13746,11 @@
       "Julian Niccolini",
       "Ed Crescimanni",
       "Brad Leland"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -12528,6 +13780,12 @@
       "James Frain",
       "Dwayne Adway",
       "Tyson Beckford"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -12561,6 +13819,11 @@
       "Tenma Shibuya",
       "Li Qi-Long",
       "Li Ze"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "History"
     ]
   },
   {
@@ -12591,6 +13854,11 @@
       "Kent Cheng",
       "Christian Kang Bachini",
       "Ashton Chen"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "History"
     ]
   },
   {
@@ -12698,6 +13966,11 @@
       "George F. Watson",
       "David Zyler",
       "Nick W. Nicholson"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -12833,6 +14106,11 @@
       "Peter Sebastian Wrobel",
       "Maria Zambrana",
       "Nick W. Nicholson"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -12865,6 +14143,12 @@
       "Hellal",
       "Nato",
       "Fesche"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -12913,6 +14197,10 @@
       "Ato Blankson-Wood",
       "Ben Folstein",
       "Stewart Steinberg"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -12965,6 +14253,11 @@
       "Mary Ann Schmidt",
       "Glendon Rich",
       "Ellis E. Williams"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -13003,6 +14296,10 @@
       "Woody Jeffreys",
       "Kevin McNulty",
       "Amanda Crew"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -13049,6 +14346,13 @@
       "Billy Blair",
       "Maureen Brennan",
       "Joseph Billingiere"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Thriller",
+      "Western"
     ]
   },
   {
@@ -13102,6 +14406,11 @@
       "Falko Schilling",
       "David Szehi",
       "Tom Woodruff Jr."
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -13143,6 +14452,11 @@
       "Tony Nappo",
       "Clark Beasley Jr.",
       "Valentino Visentini"
+    ],
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -13190,6 +14504,10 @@
       "Gary Rodriguez",
       "Brian Smrz",
       "Robert 'Bobby Z' Zajonc"
+    ],
+    "genres": [
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -13252,6 +14570,11 @@
       "Ingrid Coree",
       "Lee Burns",
       "Amita Balla"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -13285,6 +14608,11 @@
       "Kendra Torgan",
       "Lucy Blair",
       "Darryl Henriques"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -13335,6 +14663,10 @@
       "Moet Meira",
       "Peter Maloney",
       "Lance E. Nichols"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -13381,6 +14713,10 @@
       "Jason Flemyng",
       "Adrian Martinez",
       "Joe Bacino"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -13437,6 +14773,10 @@
       "Naomi Kusumi",
       "Hikaru Midorikawa",
       "Issei Takahashi"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -13483,6 +14823,12 @@
       "Grant Krause",
       "Jeff Chase",
       "Jim Porterfield"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -13529,6 +14875,11 @@
       "Graham McTavish",
       "Owen Teale",
       "Elliot Henderson-Boyle"
+    ],
+    "genres": [
+      "Adventure",
+      "History",
+      "War"
     ]
   },
   {
@@ -13582,6 +14933,11 @@
       "Joe Folau",
       "Chic Littlewood",
       "Samuel Taylor"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -13622,6 +14978,13 @@
       "Michael Shaeffer",
       "Ulrich Thomsen",
       "Angus Wright"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History",
+      "War"
     ]
   },
   {
@@ -13664,6 +15027,11 @@
       "Stephanie Pearson",
       "Judie Aronson",
       "Lela Edgar"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Mystery"
     ]
   },
   {
@@ -13703,6 +15071,10 @@
       "Nilaja Sun",
       "Jerrell Lee Wesley",
       "Adam Gregory"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -13740,6 +15112,12 @@
       "Yuen Cheung-Yan",
       "Feng Xiaogang",
       "Kai Shi Chen"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Fantasy"
     ]
   },
   {
@@ -13759,7 +15137,17 @@
       "780": "https://image.tmdb.org/t/p/w780/9zrlCkhOjJr12B0sTGiag40Xd4W.jpg",
       "original": "https://image.tmdb.org/t/p/original/9zrlCkhOjJr12B0sTGiag40Xd4W.jpg"
     },
-    "cast": ["Jean Dujardin", "Pascal Elbé", "Caterina Murino", "Claude Brasseur", "François Levantal"]
+    "cast": [
+      "Jean Dujardin",
+      "Pascal Elbé",
+      "Caterina Murino",
+      "Claude Brasseur",
+      "François Levantal"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
+    ]
   },
   {
     "title": "L'entente cordiale",
@@ -13792,6 +15180,9 @@
       "Michèle Laroque",
       "Paul Barrett",
       "Jake Broder"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -13864,6 +15255,10 @@
       "Mathieu Archer",
       "Alexis Dupuy",
       "Michèle Amiel"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -13904,6 +15299,9 @@
       "Laurent Labasse",
       "Choukri Gabteni",
       "Karin Viard"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -13923,7 +15321,17 @@
       "780": "https://image.tmdb.org/t/p/w780/wu9xzmhgJSBc7NcqL9gH589o5IL.jpg",
       "original": "https://image.tmdb.org/t/p/original/wu9xzmhgJSBc7NcqL9gH589o5IL.jpg"
     },
-    "cast": ["Eric Judor", "Ramzy Bedia", "Marina Foïs", "Serge Riaboukine", "Michel Puterflam", "Omar Sy"]
+    "cast": [
+      "Eric Judor",
+      "Ramzy Bedia",
+      "Marina Foïs",
+      "Serge Riaboukine",
+      "Michel Puterflam",
+      "Omar Sy"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   },
   {
     "title": "Labyrinth",
@@ -13950,6 +15358,12 @@
       "Edouard Montoute",
       "Tomer Sisley",
       "Jean-Henri Compère"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -13993,6 +15407,12 @@
       "Sylvano Clarke",
       "Anna Maria Everett",
       "Olegar Fedoro"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Thriller"
     ]
   },
   {
@@ -14030,6 +15450,11 @@
       "Maria Canals-Barrera",
       "Rita Wilson",
       "Randall Park"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -14070,6 +15495,11 @@
       "Brooke Stacy Mills",
       "Patrick McDade",
       "Richard Barlow"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -14108,6 +15538,11 @@
       "Jason Flemyng",
       "Nathalie Lunghi",
       "Rab Affleck"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -14143,6 +15578,9 @@
       "Josh Stamberg",
       "Yancey Arias",
       "Willa Holland"
+    ],
+    "genres": [
+      "Horror"
     ]
   },
   {
@@ -14202,6 +15640,11 @@
       "David Gregg",
       "Didier Legros",
       "Hervé Husson"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -14239,6 +15682,9 @@
       "David Clarke",
       "Joel Antunes da Silva",
       "Marc Rioufol"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -14283,6 +15729,11 @@
       "Dean Satriano",
       "Rachel Hroncich",
       "Deborah L. Mazor"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
     ]
   },
   {
@@ -14323,6 +15774,10 @@
       "Bill McGough",
       "Bert Matias",
       "Miguel Nino"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -14356,6 +15811,9 @@
       "Krista Allen",
       "Justin Cooper",
       "Christopher Mayer"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -14422,6 +15880,11 @@
       "Eddie Edenfield",
       "Jeff Moldovan",
       "Carl Ciarfalio"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -14458,6 +15921,11 @@
       "Cindy Katz",
       "Brian Anthony Wilson",
       "Rebecca Dayan"
+    ],
+    "genres": [
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -14486,6 +15954,12 @@
       "Peter Berg",
       "Derek Luke",
       "Jennifer Sommerfeld"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History"
     ]
   },
   {
@@ -14539,6 +16013,12 @@
       "Stanley Zana",
       "Gaston Dolle",
       "Louis Becker"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Family"
     ]
   },
   {
@@ -14587,6 +16067,10 @@
       "Joan Scheckel",
       "Mel Rodriguez",
       "Casandra Ashe"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -14634,6 +16118,10 @@
       "Jean-Claude Cotillard",
       "Pierre-Benoist Varoclier",
       "Benoît Petitjean"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -14677,6 +16165,10 @@
       "Nadine Ellis",
       "Tim Russ",
       "Clay Cullen"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -14712,6 +16204,11 @@
       "Lon Satton",
       "Madeline Smith",
       "Roy Stewart"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -14759,6 +16256,10 @@
       "Rob Brydon",
       "Alan Ford",
       "Andrew Tiernan"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -14786,6 +16287,9 @@
       "Yolande Moreau",
       "Bouli Lanners",
       "Bruno Lochet"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -14828,6 +16332,10 @@
       "Tony Way",
       "Daniel Ryan",
       "Gregory Foreman"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -14868,6 +16376,11 @@
       "Kobus Marx",
       "Stephan De Abreu",
       "Jeremy Crutchley"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -14908,6 +16421,9 @@
       "Sofía Vergara",
       "Jeremy Renner",
       "Shea Whigham"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -14950,6 +16466,9 @@
       "Lisle Wilkerson",
       "Nancy Steiner",
       "Kazuo Yamada"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -15018,6 +16537,11 @@
       "Richard Curtis",
       "Olivia Olson",
       "Laura Rees"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -15055,6 +16579,12 @@
       "Sam Jaeger",
       "Danny Aiello",
       "Jennifer Miller"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -15104,6 +16634,11 @@
       "Alicia Rachel Marek",
       "Roland Ruiz",
       "Nina Leon"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Thriller"
     ]
   },
   {
@@ -15142,6 +16677,12 @@
       "Howard Eynon",
       "Max Fairchild",
       "John Farndale"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -15180,6 +16721,12 @@
       "Kristoffer Greaves",
       "Max Fairchild",
       "Tyler Coppin"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -15216,6 +16763,11 @@
       "Samuel Ball",
       "Erica Cerra",
       "Anita Brown"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -15248,6 +16800,12 @@
       "Angelina Peláez",
       "Gustavo Sánchez Parra",
       "Charles Paraventi"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -15290,6 +16848,11 @@
       "Christina Applegate",
       "Joseph Moynihan",
       "Tommy Bush"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -15336,6 +16899,10 @@
       "John DeSantis",
       "Ousmane Thiam",
       "Thierry Segall"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -15372,6 +16939,9 @@
       "Rob Moran",
       "Nikki Tyler-Flynn",
       "Steve Tyler"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -15416,6 +16986,10 @@
       "Adam Fogerty",
       "Rocky Marshall",
       "Elwin 'Chopper' David"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -15452,6 +17026,12 @@
       "Allisyn Ashley Arm",
       "Alisan Porter",
       "Christina Wun"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Science Fiction"
     ]
   },
   {
@@ -15485,6 +17065,10 @@
       "Thomas Lennon",
       "Kimberly Campbell",
       "Marianne Muellerleile"
+    ],
+    "genres": [
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -15524,6 +17108,12 @@
       "Patrick Michael Buckley",
       "Barry Shabaka Henley",
       "Ana Cristina Oliveira"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -15557,6 +17147,11 @@
       "Philippe Girard",
       "Thérèse Roussel",
       "Alix Poisson"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -15595,6 +17190,11 @@
       "Shannon Whirry",
       "Suzanne Kent",
       "Lauren Gallagher"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -15638,6 +17238,12 @@
       "Cameron Diaz",
       "William Mapother",
       "Jason Antoon"
+    ],
+    "genres": [
+      "Action",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -15688,6 +17294,11 @@
       "Helen Lindsay",
       "John Knoll",
       "Rolf Saxon"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -15725,6 +17336,11 @@
       "Kim Fleming",
       "Anthony Hopkins",
       "Christian Manon"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -15769,6 +17385,11 @@
       "Sasha Alexander",
       "Tracy Middendorf",
       "Aaron Paul"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -15801,6 +17422,11 @@
       "Kateri Walker",
       "John D. Montoya",
       "Bill Flynn"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -15839,6 +17465,10 @@
       "Jenny Wade",
       "Amber Mead",
       "Gian Franco Tordi"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -15858,7 +17488,18 @@
       "780": "https://image.tmdb.org/t/p/w780/lfwDoVtWElt1ecLv9NrQryOn6Rl.jpg",
       "original": "https://image.tmdb.org/t/p/original/lfwDoVtWElt1ecLv9NrQryOn6Rl.jpg"
     },
-    "cast": ["Whitney Able", "Scoot McNairy", "Annalee Jefferies", "Kevon Kane", "Fernando Lara"]
+    "cast": [
+      "Whitney Able",
+      "Scoot McNairy",
+      "Annalee Jefferies",
+      "Kevon Kane",
+      "Fernando Lara"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Thriller"
+    ]
   },
   {
     "title": "Monsters, Inc.",
@@ -15931,6 +17572,11 @@
       "Wallace Shawn",
       "Daniel Gerson",
       "David Silverman"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -15961,6 +17607,10 @@
       "Malcolm Stewart",
       "Robin Chalk",
       "Matt Berry"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -16000,6 +17650,12 @@
       "Mike Marshall",
       "Douglas Lambert",
       "Arthur Howard"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -16120,6 +17776,10 @@
       "Albin Pahernik",
       "Aurel Verne",
       "Kip Gamblin"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -16161,6 +17821,12 @@
       "Ron Bottitta",
       "Peter Lavin",
       "Greg Ellis"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -16189,6 +17855,10 @@
       "Steve Pemberton",
       "Jean Rochefort",
       "Michel Winogradoff"
+    ],
+    "genres": [
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -16222,6 +17892,12 @@
       "Jason Lewis",
       "Lindsay Crouse",
       "Megan Brown"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -16267,6 +17943,11 @@
       "Sharon Lockwood",
       "Jim Cullen",
       "Joe Bellan"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
     ]
   },
   {
@@ -16299,6 +17980,10 @@
       "Joanna Gleason",
       "Cherene Snow",
       "William Abadie"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -16357,6 +18042,12 @@
       "John Travis",
       "Heidi Albertsen",
       "Adriana Alveario"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -16429,6 +18120,12 @@
       "Ben Homewood",
       "Michael McCafferty",
       "Hans Georg Struhar"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -16496,6 +18193,11 @@
       "Jim Carrane",
       "Robert Swan",
       "Louis Lombardi"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -16553,6 +18255,11 @@
       "John Stephen Hill",
       "Christopher Malcolm",
       "Marsha A. Hunt"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -16603,6 +18310,11 @@
       "Lisa Joyner",
       "Dean Cudworth",
       "Chris Palermo"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -16636,6 +18348,10 @@
       "Tim Wilde",
       "Heinrich Giskes",
       "Sebastian Kroehnert"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -16694,6 +18410,12 @@
       "Hoang Dang-Vu",
       "Paul Leonard",
       "Alexander Yassin"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -16731,6 +18453,11 @@
       "Doris Hargrave",
       "Gene Jones",
       "Caleb Landry Jones"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -16750,7 +18477,17 @@
       "780": "https://image.tmdb.org/t/p/w780/cOUvF7SgljMXevnQVLYWHpwxEh7.jpg",
       "original": "https://image.tmdb.org/t/p/original/cOUvF7SgljMXevnQVLYWHpwxEh7.jpg"
     },
-    "cast": ["Kurt McKinney", "Jean-Claude Van Damme", "J.W. Fails", "Kathie Sileno", "Tai Chung Kim", "Kent Lipham"]
+    "cast": [
+      "Kurt McKinney",
+      "Jean-Claude Van Damme",
+      "J.W. Fails",
+      "Kathie Sileno",
+      "Tai Chung Kim",
+      "Kent Lipham"
+    ],
+    "genres": [
+      "Action"
+    ]
   },
   {
     "title": "O Brother, Where Art Thou?",
@@ -16793,6 +18530,11 @@
       "Quinn Gasaway",
       "Lee Weaver",
       "Stephen Root"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -16828,6 +18570,12 @@
       "Abdellah Moundy",
       "Eric Prat",
       "Richard Sammel"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -16862,6 +18610,12 @@
       "Jean-Louis Barcelona",
       "Jan Oliver Schroeder",
       "Guillaume Schiffman"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -16906,6 +18660,10 @@
       "Shane West",
       "Joe La Due",
       "Topher Grace"
+    ],
+    "genres": [
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -16955,6 +18713,10 @@
       "Mattia Sbragia",
       "Nuccio Siano",
       "Topher Grace"
+    ],
+    "genres": [
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -17058,6 +18820,11 @@
       "Peter Edmund",
       "Ray Charles",
       "Talib Johnny"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -17101,6 +18868,11 @@
       "Anouska Hempel",
       "Ingrid Back",
       "Helena Ronee"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -17132,6 +18904,11 @@
       "Willem Dafoe",
       "Marco Leonardi",
       "Troy Robinson"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery"
     ]
   },
   {
@@ -17185,6 +18962,9 @@
       "Renato Pinciroli",
       "Claudio Mancini",
       "Conrado San Martín"
+    ],
+    "genres": [
+      "Western"
     ]
   },
   {
@@ -17218,6 +18998,10 @@
       "Pornpimol Chookanthong",
       "Udom Chouncheun",
       "Boonsri Yindee"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -17253,6 +19037,9 @@
       "Cliff Saunders",
       "Patricia Stutz",
       "Julian Richings"
+    ],
+    "genres": [
+      "Western"
     ]
   },
   {
@@ -17297,6 +19084,11 @@
       "Luis Olivia",
       "Ferelith Young",
       "Andrew Shaver"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -17347,6 +19139,10 @@
       "Billy Drago",
       "Jeffrey Josephson",
       "John Dennis Johnston"
+    ],
+    "genres": [
+      "Romance",
+      "Western"
     ]
   },
   {
@@ -17398,6 +19194,11 @@
       "Federico Luppi",
       "Chicho Campillo",
       "Pablo Adán"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "War"
     ]
   },
   {
@@ -17434,6 +19235,11 @@
       "Victor Thrash",
       "Ken Turner",
       "Nicole Kidman"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -17469,6 +19275,11 @@
       "Claire Maurier",
       "Claude Gensac",
       "Éric Naggar"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -17506,6 +19317,11 @@
       "Steven Spielberg",
       "Jennifer Granger",
       "Mia Stallard"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -17534,6 +19350,10 @@
       "Paul Wesley",
       "Agnes Bruckner",
       "B.J. Britt"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -17645,6 +19465,11 @@
       "Izaak Smith",
       "Morgan Tanner",
       "Teya Wild"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -17685,6 +19510,10 @@
       "Ashlynn Brooke",
       "Genevieve Alexandra",
       "Bria Roberts"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -17739,6 +19568,11 @@
       "Keith Richards",
       "Hakeem Kae-Kazim",
       "Ghassan Massoud"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -17792,6 +19626,11 @@
       "Ho-Kwan Tse",
       "Peter Donald Badalamenti II",
       "Christopher S. Capp"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -17848,6 +19687,11 @@
       "Daniel Ings",
       "LeJon",
       "Siegfried Peters"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -17938,6 +19782,11 @@
       "Paul Gagné",
       "Joe Grisaffi",
       "James McAuley"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -17973,6 +19822,11 @@
       "Ric Anderson",
       "Vic Wilson",
       "Angela Moore"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -18009,6 +19863,11 @@
       "Quentin Tarantino",
       "Bruce Willis",
       "Troy Robinson"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -18044,6 +19903,11 @@
       "Patrice Guillain",
       "Max Morel",
       "Brice Fournier"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -18104,6 +19968,10 @@
       "Steffen Mennekes",
       "Reese Alexander",
       "Tony Alcantar"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -18136,6 +20004,12 @@
       "Brian Steele",
       "Derek Mears",
       "Mahershala Ali"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -18167,6 +20041,13 @@
       "Christopher Plummer",
       "Alan Dale",
       "Marilyn Brett"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -18201,6 +20082,12 @@
       "Thomas DuPont",
       "Farzana Dua Elahe",
       "Ambika Jois"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -18235,6 +20122,11 @@
       "Mitsuko Mori",
       "Hisaya Morishige",
       "Takako Fuji"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Fantasy"
     ]
   },
   {
@@ -18304,6 +20196,11 @@
       "Lili Taylor",
       "Stephen Spencer",
       "Rick Uecker"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "History"
     ]
   },
   {
@@ -18378,6 +20275,10 @@
       "Devan Richardson",
       "Ani Sava",
       "Philip Ettington"
+    ],
+    "genres": [
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -18430,6 +20331,12 @@
       "Jesús Ochoa",
       "Simon Kassianides",
       "Brendan O'Hea"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -18463,6 +20370,9 @@
       "Virginie Cohen",
       "Louis Becker",
       "Jean-Paul Lilienfeld"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -18482,7 +20392,17 @@
       "780": "https://image.tmdb.org/t/p/w780/x2iu4GA0e7mkzTBjVaXimLQJJrt.jpg",
       "original": "https://image.tmdb.org/t/p/original/x2iu4GA0e7mkzTBjVaXimLQJJrt.jpg"
     },
-    "cast": ["Patrick Timsit", "José Garcia", "Marianne Denicourt", "Elise Tielrooy", "Gérard Rinaldi"]
+    "cast": [
+      "Patrick Timsit",
+      "José Garcia",
+      "Marianne Denicourt",
+      "Elise Tielrooy",
+      "Gérard Rinaldi"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
   },
   {
     "title": "RED",
@@ -18531,6 +20451,13 @@
       "Joe Chrest",
       "Tara Yelland",
       "Tony De Santis"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -18568,6 +20495,13 @@
       "Blake Clark",
       "Keith Campbell",
       "Beth Grant"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Western"
     ]
   },
   {
@@ -18614,6 +20548,12 @@
       "Toprak Sergen",
       "Nüvit Candaner",
       "Emrah Özertem"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -18649,6 +20589,11 @@
       "Chris Kelly",
       "Ben Thornton",
       "Alice Krige"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -18684,6 +20629,12 @@
       "John Leguizamo",
       "Daniel Lévesque",
       "Max Turnbull"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -18731,6 +20682,10 @@
       "Gregg Bello",
       "Shaun O'Hagan",
       "Jimmie Ray Weeks"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -18750,7 +20705,15 @@
       "780": "https://image.tmdb.org/t/p/w780/zQVGXqTf8ICMP8hsnZjUjWHD82U.jpg",
       "original": "https://image.tmdb.org/t/p/original/zQVGXqTf8ICMP8hsnZjUjWHD82U.jpg"
     },
-    "cast": ["Clovis Cornillac", "Mélanie Laurent", "Tchéky Karyo", "Xavier Gallais"]
+    "cast": [
+      "Clovis Cornillac",
+      "Mélanie Laurent",
+      "Tchéky Karyo",
+      "Xavier Gallais"
+    ],
+    "genres": [
+      "Thriller"
+    ]
   },
   {
     "title": "Reservoir Dogs",
@@ -18785,6 +20748,10 @@
       "David Steen",
       "Tony Cosmo",
       "Stevo Polyi"
+    ],
+    "genres": [
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -18827,6 +20794,11 @@
       "James Purefoy",
       "Michaela Dicker",
       "Jason Isaacs"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -18870,6 +20842,12 @@
       "Mika Nakashima",
       "Takato Yamashita",
       "Hiromi Okuyama"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -19018,6 +20996,11 @@
       "Toby Philpott",
       "David Alan Barclay",
       "Larry Ward"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -19052,6 +21035,11 @@
       "Masaya Takahashi",
       "Shugo Oshinari",
       "Kanata Hongo"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -19083,6 +21071,11 @@
       "Luigi Proietti",
       "Nils Tavernier",
       "Jean-Claude Frissung"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -19123,6 +21116,12 @@
       "Brian Hibbard",
       "Bruce Wang",
       "Vincent Riotta"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -19176,6 +21175,12 @@
       "Katarzyna Wolejnio",
       "Kimberly Dorsey",
       "Kimberly Magness"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -19224,6 +21229,12 @@
       "Tracy Spiridakos",
       "Chris Shields",
       "Lauren Watson"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -19261,6 +21272,10 @@
       "Jessica Cauffiel",
       "Patricia Gaul",
       "Mary Lynn Rajskub"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -19313,6 +21328,11 @@
       "Harry Groener",
       "Peggy Roeder",
       "James Greene"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -19367,6 +21387,11 @@
       "Giannina Facio",
       "Ralph Ineson",
       "Jake Curran"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -19438,6 +21463,11 @@
       "Laird Stuart",
       "Neil Summers",
       "Edward Edwards"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -19478,6 +21508,12 @@
       "Stanley Tucci",
       "Al Roker",
       "Jay Leno"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Science Fiction"
     ]
   },
   {
@@ -19515,6 +21551,11 @@
       "Charlotte Armer",
       "Ludacris",
       "Geoff Bell"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -19564,6 +21605,9 @@
       "Joshua L.K. Patterson",
       "Peter Salett",
       "Jorma Taccone"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -19591,6 +21635,9 @@
       "Louis Morissette",
       "Maxim Roy",
       "Gilles Pelletier"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -19634,6 +21681,12 @@
       "Michael Cassidy",
       "Vince Deadrick Sr.",
       "Jos Laniado"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -19668,6 +21721,10 @@
       "John Candy",
       "Jonathan Hilario",
       "Tom Milanovich"
+    ],
+    "genres": [
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -19710,6 +21767,13 @@
       "Michael Ross",
       "Gaspard Augé",
       "Pedro Winter"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Mystery"
     ]
   },
   {
@@ -19744,6 +21808,10 @@
       "Aurélien Recoing",
       "Vincent Moscato",
       "Ticky Holgado"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -19787,6 +21855,11 @@
       "Hans Paetsch",
       "Peter Pauli",
       "Wolfgang Becker"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -19824,6 +21897,11 @@
       "Lindsey Ginter",
       "Octavia Spencer",
       "Noel Gugliemi"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -19886,6 +21964,11 @@
       "James Nuciforo",
       "Tika Sumpter",
       "David Agranov"
+    ],
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -19916,6 +21999,9 @@
       "Michel Blanc",
       "Martin Lamotte",
       "Jacques François"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -19953,6 +22039,11 @@
       "Mouloud Achour",
       "Tarubi",
       "Mokobé Traoré"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -19987,6 +22078,9 @@
       "James Van Der Beek",
       "Kurt Fuller",
       "Lochlyn Munro"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -20025,6 +22119,9 @@
       "James DeBello",
       "Beetlejuice",
       "Vitamin C"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -20070,6 +22167,9 @@
       "D. L. Hughley",
       "Ja Rule",
       "George Carlin"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -20110,6 +22210,9 @@
       "Phil McGraw",
       "Cloris Leachman",
       "Charlie Sheen"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -20129,7 +22232,16 @@
       "780": "https://image.tmdb.org/t/p/w780/lwLEd5bex3PGWptQvrZQ671uWz4.jpg",
       "original": "https://image.tmdb.org/t/p/original/lwLEd5bex3PGWptQvrZQ671uWz4.jpg"
     },
-    "cast": ["Théo Frilet", "Valentine Catzéflis", "Michel Blanc", "Bernadette Lafont", "Arthur Dupont"]
+    "cast": [
+      "Théo Frilet",
+      "Valentine Catzéflis",
+      "Michel Blanc",
+      "Bernadette Lafont",
+      "Arthur Dupont"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   },
   {
     "title": "Scott Pilgrim vs. the World",
@@ -20179,6 +22291,11 @@
       "Thomas Jane",
       "Clifton Collins Jr",
       "Bill Hader"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
     ]
   },
   {
@@ -20208,6 +22325,10 @@
       "Jason Cavalier",
       "Ron White",
       "Charles Edwin Powell"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -20239,6 +22360,11 @@
       "Angie Harmon",
       "Tom Noonan",
       "Jimmi Simpson"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Western"
     ]
   },
   {
@@ -20270,6 +22396,11 @@
       "Juli Drajkó",
       "Judit Viktor",
       "Sándor Boros"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -20301,6 +22432,11 @@
       "Charlie McDermott",
       "Andrea Anders",
       "Shelly Frasier"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -20346,6 +22482,11 @@
       "Rick Aiello",
       "Annaleigh Ashford",
       "Gilbert Cruz"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -20378,6 +22519,12 @@
       "Vanessa Williams",
       "Lee Tergesen",
       "Gordon Parks"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -20416,6 +22563,11 @@
       "Daphne Korol",
       "David Sparrow",
       "Katya Virshilas"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -20455,6 +22607,10 @@
       "Laura Kightlinger",
       "Fawn Irish",
       "Danny Murphy"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -20497,6 +22653,10 @@
       "Mark Donovan",
       "Trisha Goddard",
       "Jeremy Thompson"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -20540,6 +22700,10 @@
       "Dave Buzzotta",
       "Chris Owen",
       "Michael Milhoan"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -20615,6 +22779,12 @@
       "Ben Cartwright",
       "William Atkinson",
       "Tom Watt"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Mystery"
     ]
   },
   {
@@ -20653,6 +22823,9 @@
       "Kazuo Kitamura",
       "Houka Kinoshita",
       "Yutaka Matsushige"
+    ],
+    "genres": [
+      "Action"
     ]
   },
   {
@@ -20689,6 +22862,13 @@
       "Zak Santiago",
       "Michael-Ann Connor",
       "Roberto Lombardi"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -20722,6 +22902,9 @@
       "Axelle Laffont",
       "Cathy Guetta",
       "Ronaldinho Gaúcho"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -20771,6 +22954,13 @@
       "Elisa Gabrielli",
       "Gary A. Hecker",
       "Frank Welker"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -20808,6 +22998,10 @@
       "Roberto Campanella",
       "Maxine Dumont",
       "Christopher Britton"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
     ]
   },
   {
@@ -20880,6 +23074,11 @@
       "Evelyn Hurley",
       "Jason McDonald",
       "Clark Middleton"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -20923,6 +23122,12 @@
       "Tony Maudsley",
       "Jamie Foreman",
       "Philip Martin Brown"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -20957,6 +23162,11 @@
       "Jenna Fischer",
       "Lloyd Kaufman",
       "Nicholas Podbrey"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -21000,6 +23210,13 @@
       "Sarah Michelle Gellar",
       "Christina Ricci",
       "Dick Miller"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -21050,6 +23267,13 @@
       "David Proval",
       "Jason Bateman",
       "Lorna Scott"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -21128,6 +23352,10 @@
       "Andrew Shield",
       "Elwin 'Chopper' David",
       "Guy Ritchie"
+    ],
+    "genres": [
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -21174,6 +23402,11 @@
       "Robert Russell",
       "Curtis Matthew",
       "Samuel Roukin"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -21218,6 +23451,11 @@
       "Jasson Finney",
       "Kyle Allatt",
       "Joti Nagra"
+    ],
+    "genres": [
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -21296,6 +23534,11 @@
       "Cece Tsou",
       "Michael N. Fujimoto",
       "Richard Gelb"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime"
     ]
   },
   {
@@ -21328,6 +23571,10 @@
       "James Pickens Jr.",
       "Michael Keys Hall",
       "Ralph Tabakin"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -21419,6 +23666,10 @@
       "Sean Valla",
       "Philip Ng",
       "Pete Macnamara"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy"
     ]
   },
   {
@@ -21447,6 +23698,11 @@
       "Stephanie Baird",
       "Brandon McGibbon",
       "Amanda Brugel"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -21481,6 +23737,11 @@
       "Adam Scarimbolo",
       "Chance Kelly",
       "Seamus Boyle"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
     ]
   },
   {
@@ -21528,6 +23789,10 @@
       "Aaron Rota",
       "Kelsey McIlroy",
       "Jeremy Crittenden"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -21716,6 +23981,11 @@
       "Lynnanne Zager",
       "Pavel Lychnikoff",
       "Darlena Tejeiro"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -21842,6 +24112,11 @@
       "Steve 'Spaz' Williams",
       "Fred Wood",
       "Colin Higgins"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -21920,6 +24195,11 @@
       "Marc Silk",
       "Amanda Lucas",
       "Danny Wagner"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -21982,6 +24262,11 @@
       "Alex Knoll",
       "Phoebe Yiamkiati",
       "Marton Csokas"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -22062,6 +24347,11 @@
       "James Rowland",
       "David Stiff",
       "Robert Cope"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -22126,6 +24416,12 @@
       "Adam Fogerty",
       "Jordan Long",
       "Spencer Wilding"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -22161,6 +24457,11 @@
       "Derek Webster",
       "Christopher John Fields",
       "Gianin Loffler"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -22201,6 +24502,12 @@
       "Julianna McCarthy",
       "Dale Dye",
       "Dean Norris"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -22227,6 +24534,12 @@
       "Julianne Nicholson",
       "Ian Brennan",
       "Larry Mitchell"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -22254,6 +24567,10 @@
       "Sébastien Akchoté",
       "Vincent Belorgey",
       "Laurent Nicolas"
+    ],
+    "genres": [
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -22294,6 +24611,11 @@
       "Julian Bucknall",
       "Morgan Walters",
       "Martin Herdman"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Family"
     ]
   },
   {
@@ -22357,6 +24679,12 @@
       "Sia Moody",
       "Guy Massey",
       "Martha Espinoza"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -22391,6 +24719,12 @@
       "Andrew Bryniarski",
       "Miguel A. Núñez, Jr.",
       "Robert Mammone"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -22450,6 +24784,11 @@
       "Gina Garenkooper",
       "Jeff Dimitriou",
       "Gary A. Hecker"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Thriller"
     ]
   },
   {
@@ -22490,6 +24829,13 @@
       "Yoshiyuki Yamaguchi",
       "Shogen Itokazu",
       "Ryosuke Nagata"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Thriller",
+      "Western"
     ]
   },
   {
@@ -22522,6 +24868,10 @@
       "Chipo Chung",
       "Paloma Baeza",
       "Archie Macdonald"
+    ],
+    "genres": [
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -22566,6 +24916,11 @@
       "Dale Dickey",
       "Beau Knapp",
       "Bingo O'Malley"
+    ],
+    "genres": [
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -22640,6 +24995,9 @@
       "Pamella D'Pella",
       "Danny McBride",
       "Cortney Palm"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -22676,6 +25034,11 @@
       "Sam Cohen",
       "Tracy Morgan",
       "Brent Spiner"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -22727,6 +25090,10 @@
       "Fraser McGregor",
       "Jonathan Gabriel Robbins",
       "Jason Sehorn"
+    ],
+    "genres": [
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -22791,6 +25158,11 @@
       "Eamon Brooks",
       "Rick Malambri",
       "Anya Monzikova"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -22826,6 +25198,10 @@
       "Colin Higgins",
       "Jess Murphy",
       "Sophie Morris-Sheppard"
+    ],
+    "genres": [
+      "Drama",
+      "Horror"
     ]
   },
   {
@@ -22852,6 +25228,10 @@
       "Elizabeth Banks",
       "Michael Beattie",
       "Jeanne Tripplehorn"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -22925,6 +25305,11 @@
       "Timothy Omundson",
       "Astrid Veillon",
       "Dean Rader Duval"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -22969,6 +25354,11 @@
       "Catherine Lough Haggquist",
       "Shaw Madson",
       "Belinda Montgomery"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -22997,6 +25387,11 @@
       "Laura Benanti",
       "Katya Virshilas",
       "Jenna Dewan"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Music"
     ]
   },
   {
@@ -23052,6 +25447,10 @@
       "George Hertzberg",
       "Nabil Massad",
       "Ivette González"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -23090,6 +25489,12 @@
       "Gideon Emery",
       "Zulay Henao",
       "Glynn Turman"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -23126,6 +25531,11 @@
       "Ernesto Griffith",
       "Jeffrey Reddick",
       "Brandy Jaques"
+    ],
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -23159,6 +25569,10 @@
       "Nathan Greno",
       "Byron Howard",
       "Tim Mertens"
+    ],
+    "genres": [
+      "Animation",
+      "Family"
     ]
   },
   {
@@ -23222,6 +25636,11 @@
       "Paul Silve",
       "Didier Gayral",
       "Stéphane Eichenholc"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -23298,6 +25717,11 @@
       "Charles Perrière",
       "Laurent Piemontesi",
       "Yann Hnautra"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -23351,6 +25775,10 @@
       "Jennifer Herrera",
       "Sylvester Stallone",
       "Éric Naggar"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -23419,6 +25847,10 @@
       "Solange Milhaud",
       "Catalina Denis",
       "Toby Leonard Moore"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -23469,6 +25901,10 @@
       "Mary-Pat Green",
       "Debbi Morgan",
       "Don Stroud"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -23520,6 +25956,11 @@
       "Jewel McDonald",
       "Harry Van Gorkum",
       "Michael Clossin"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "War"
     ]
   },
   {
@@ -23547,6 +25988,10 @@
       "Lenny Von Dohlen",
       "Vivienne Benesch",
       "Ashley Springer"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -23585,6 +26030,10 @@
       "Gregg Turkington",
       "Amy Adams",
       "Colin Hanks"
+    ],
+    "genres": [
+      "Comedy",
+      "Music"
     ]
   },
   {
@@ -23647,6 +26096,11 @@
       "William Wisher Jr.",
       "Nancy Fish",
       "Dalton Hamilton"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -23682,6 +26136,11 @@
       "Jadagrace",
       "David Midthunder",
       "Linda Hamilton"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -23721,6 +26180,11 @@
       "John Bear Curtis",
       "Andrew Kavadas",
       "Richard Ooms"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -23767,6 +26231,12 @@
       "Terry O'Neill",
       "Marc Anwar",
       "Paul Broughton"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -23847,6 +26317,13 @@
       "Hitesh Jogia",
       "Marwan Al-Shami",
       "Ali Bordbar"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -23887,6 +26364,12 @@
       "Michael Beach",
       "Ken Jenkins",
       "Michael Chapman"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -23927,6 +26410,11 @@
       "Gregory P. Hitchen",
       "Amanda Warren",
       "Jessica Lee Keller"
+    ],
+    "genres": [
+      "Romance",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -23974,6 +26462,11 @@
       "Dylan Charles",
       "Julian Firth",
       "Antony Gabriel"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -24019,6 +26512,11 @@
       "David Birgé-Cotte",
       "Estelle Brattesani",
       "Justine Le Pottier"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Music"
     ]
   },
   {
@@ -24046,6 +26544,9 @@
       "Zachary Booth",
       "Riley Thomas Stewart",
       "Kelly Coffield Park"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -24081,6 +26582,10 @@
       "Pete Johnson",
       "Brian L. Keaulana",
       "Anahit Minasyan"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -24142,6 +26647,10 @@
       "Asia Carrera",
       "Kiva Dawson",
       "Anthony J. Sacco"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -24172,6 +26681,9 @@
       "Luka Antic",
       "Rachel Berger",
       "Esteban Carvajal-Alegria"
+    ],
+    "genres": [
+      "Thriller"
     ]
   },
   {
@@ -24222,6 +26734,10 @@
       "David Sterne",
       "Olivia Llewellyn",
       "William Ilkley"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -24287,6 +26803,11 @@
       "Brian Neal Lucero",
       "David Midthunder",
       "Karin Silvestri"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -24322,6 +26843,11 @@
       "Dot Jones",
       "Markus Parilo",
       "Jeffrey R. Smith"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -24393,6 +26919,12 @@
       "Jean-Yves Bilien",
       "Danny Erskine",
       "Elwin 'Chopper' David"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -24459,6 +26991,11 @@
       "Denis Burgazliev",
       "Nick Wilder",
       "Chris Cooper"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -24525,6 +27062,12 @@
       "John Warman",
       "Chris Wilson",
       "Ben Youcef"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -24561,6 +27104,10 @@
       "Jodie Brunelle",
       "Evelina Turen",
       "John Franchi"
+    ],
+    "genres": [
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -24619,6 +27166,11 @@
       "Lai-Si Fernandez",
       "Moisés Acevedo",
       "Musto Pelinkovicci"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -24652,6 +27204,9 @@
       "Xavier Boiffier",
       "Julia Molkhou",
       "Sissi Duparc"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -24686,6 +27241,13 @@
       "Yo Oizumi",
       "Yōko Honna",
       "Ken Yasuda"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Drama",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -24730,6 +27292,11 @@
       "Philip Steuer",
       "Sim Evan-Jones",
       "Michael Madsen"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -24763,6 +27330,9 @@
       "Patricia Kalember",
       "Gary Galone",
       "David De Beck"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -24803,6 +27373,11 @@
       "Donald Apiyo",
       "Anneke Kim Sarnau",
       "Rupert Simonian"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -24835,6 +27410,9 @@
       "Albert Dray",
       "Daniel Delorme",
       "Marie Paquim"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -24894,6 +27472,11 @@
       "Mary Lynn Owen",
       "Matthew Lintz",
       "Wilbur Fitzgerald"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Mystery"
     ]
   },
   {
@@ -24934,6 +27517,11 @@
       "Françoise Loreau",
       "Nicolas Koretzky",
       "Dominique Bettenfeld"
+    ],
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -24977,6 +27565,11 @@
       "Mukhtiar Bhai",
       "Suraj Kumar",
       "Kapil Dubey"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -25131,6 +27724,12 @@
       "Erik A. Williams",
       "Chris Wilson",
       "Kevin Zaideman"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -25169,6 +27768,11 @@
       "Mousa Kraish",
       "Shaine Jones",
       "Marci T. House"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -25261,6 +27865,11 @@
       "Shawn Fogarty",
       "John Franchi",
       "Paul McGillicuddy"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -25299,6 +27908,11 @@
       "Stephanie Szostak",
       "Ivanka Trump",
       "Tibor Feldman"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -25366,6 +27980,12 @@
       "Franci Leary",
       "Monica Keena",
       "Gloria Lynne Henry"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -25399,6 +28019,9 @@
       "Philippe Brigaud",
       "Michel Caccia",
       "Pétronille Moss"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -25427,6 +28050,10 @@
       "Hélène Seuzaret",
       "Anna Galiena",
       "Elric Thomas"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -25459,6 +28086,12 @@
       "Robert Blanche",
       "Peter Horton",
       "Kim Myers"
+    ],
+    "genres": [
+      "Drama",
+      "Family",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -25488,6 +28121,10 @@
       "Jean-Philippe Puymartin",
       "Gilles Lellouche",
       "Pom Klementieff"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -25584,7 +28221,12 @@
     ],
     "director": "Irvin Kershner",
     "watch_date": null,
-    "rating": 8
+    "rating": 8,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ]
   },
   {
     "title": "The Escapist",
@@ -25613,6 +28255,10 @@
       "Stephen Farrelly",
       "Steven Mackintosh",
       "Ned Dennehy"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -25650,6 +28296,11 @@
       "Robert Gerringer",
       "Mercedes McCambridge",
       "Eileen Dietz"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -25692,6 +28343,11 @@
       "Tze Yep",
       "Gary Daniels",
       "Jet Li"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -25745,6 +28401,12 @@
       "Katherine Willis",
       "Mike Lutz",
       "Douglas Aarniokoski"
+    ],
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Mystery",
+      "Science Fiction"
     ]
   },
   {
@@ -25795,6 +28457,11 @@
       "Monica Tamayo",
       "Megan Baker",
       "Tammy Monica Gegamian"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -25826,6 +28493,10 @@
       "Fiona Lewis",
       "Ronald Lacey",
       "Sydney Bromley"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -25960,6 +28631,13 @@
       "Joss Skottowe",
       "Roger Wright",
       "John Bennett"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -25979,7 +28657,16 @@
       "780": "https://image.tmdb.org/t/p/w780/s5QOrTlZZC1KfmshS7LzsTAeZQc.jpg",
       "original": "https://image.tmdb.org/t/p/original/s5QOrTlZZC1KfmshS7LzsTAeZQc.jpg"
     },
-    "cast": ["Firmine Richard", "Lucien Jean-Baptiste", "Jimmy Woha", "Anne Consigny", "Astrid Bergès-Frisbey"]
+    "cast": [
+      "Firmine Richard",
+      "Lucien Jean-Baptiste",
+      "Jimmy Woha",
+      "Anne Consigny",
+      "Astrid Bergès-Frisbey"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   },
   {
     "title": "The Forbidden Kingdom",
@@ -26014,6 +28701,11 @@
       "Bin Jiang",
       "Shaohua Yang",
       "Yu Yuan Zeng"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -26057,6 +28749,9 @@
       "Mirabelle Kirkland",
       "Solenn Jarniou",
       "Emmanuel Malepart"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -26123,6 +28818,11 @@
       "Lily Soh Froehlich",
       "Charles Branklyn",
       "Michael Massee"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -26166,6 +28866,10 @@
       "Olivia Wilde",
       "Michael Villani",
       "Autumn Reeser"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -26244,6 +28948,10 @@
       "Joe Spinell",
       "Nick Vallelonga",
       "Conrad Yama"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -26293,6 +29001,10 @@
       "Brian Nickels",
       "Thomas Arnold",
       "Helen Soraya"
+    ],
+    "genres": [
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -26329,6 +29041,12 @@
       "Kim Min-jae",
       "Son Byung-ho",
       "Ryu Seung-su"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Western"
     ]
   },
   {
@@ -26390,6 +29108,9 @@
       "Antoñito Ruiz",
       "Aysanoa Runachagua",
       "Philip Ettington"
+    ],
+    "genres": [
+      "Western"
     ]
   },
   {
@@ -26420,6 +29141,11 @@
       "Élodie Yung",
       "Santi Sudaros",
       "Burt Kwouk"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -26455,6 +29181,11 @@
       "Yuya Ozeki",
       "Takashi Matsuyama",
       "Hiroshi Matsunaga"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -26562,6 +29293,9 @@
       "Yvonne Vera",
       "Victor Yerrid",
       "Anat Gerber"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -26602,6 +29336,12 @@
       "Ian McNeice",
       "Mark Gatiss",
       "Reece Shearsmith"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Science Fiction"
     ]
   },
   {
@@ -26657,6 +29397,12 @@
       "Jeff Smith",
       "Ivan Urbánek",
       "James Babson"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance",
+      "Thriller"
     ]
   },
   {
@@ -26701,6 +29447,11 @@
       "Michael Bean",
       "Bart Anderson",
       "Maggie Steed"
+    ],
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Mystery"
     ]
   },
   {
@@ -26789,6 +29540,11 @@
       "Mila Stromboni",
       "Robert Downey Jr.",
       "Stan Lee"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -26833,6 +29589,11 @@
       "Bob Zany",
       "Paul F. Tompkins",
       "Lucas McHugh Carroll"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -26871,6 +29632,12 @@
       "Malin Åkerman",
       "Michael Stone Forrest",
       "Cloie Wyatt Taylor"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -26911,6 +29678,14 @@
       "P. Lynn Johnson",
       "Laara Sadiq",
       "Aleks Holtz"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -26972,6 +29747,12 @@
       "Richard V. Licata",
       "Chris Ellis",
       "Eric Stonestreet"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -27014,6 +29795,10 @@
       "Melanie Jayne",
       "Gregory Scott Cummins",
       "Erik Walker"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -27084,6 +29869,12 @@
       "Bill Collins",
       "David Gene Gibbs",
       "James M. Helkey"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -27116,6 +29907,10 @@
       "Ashley LeConte Campbell",
       "Christine Evangelista",
       "Sonya Thompson"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -27146,6 +29941,9 @@
       "Ron Thomas",
       "Rob Garrison",
       "Scott Strader"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -27184,6 +29982,12 @@
       "Luke Carberry",
       "Cameron Hillman",
       "Ghye Samuel Brown"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Family"
     ]
   },
   {
@@ -27223,6 +30027,11 @@
       "Tj Burnett",
       "Omar Berdouni",
       "Raad Rawi"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -27254,6 +30063,12 @@
       "Martha MacIsaac",
       "Spencer Treat Clark",
       "Usha Khan"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -27291,6 +30106,12 @@
       "Harry Van Gorkum",
       "Murray McArthur",
       "Lee Ingleby"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "War"
     ]
   },
   {
@@ -27358,6 +30179,12 @@
       "Shinji Suzuki",
       "Hisao Takeda",
       "Ryoichiro Yonekura"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "History",
+      "War"
     ]
   },
   {
@@ -27411,6 +30238,12 @@
       "Sartaj Garewal",
       "Neran Persaud",
       "Andrew Rajan"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -27444,6 +30277,10 @@
       "Michael O'Neill",
       "Peter Gerety",
       "Jack Lemmon"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy"
     ]
   },
   {
@@ -27481,6 +30318,10 @@
       "Gustavo Sánchez Parra",
       "Carlos Cobos",
       "Tony Amendola"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
     ]
   },
   {
@@ -27522,6 +30363,11 @@
       "Mackenzie Aladjem",
       "Erin Carufel",
       "Sam Upton"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -27591,6 +30437,11 @@
       "Waris Dirie",
       "Karen Williams",
       "Barbara Broccoli"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -27637,6 +30488,11 @@
       "Michael Elsworth",
       "Mark Ferguson",
       "Brent McIntyre"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -27687,6 +30543,11 @@
       "Alistair Browning",
       "Ian Hughes",
       "Jed Brophy"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -27741,6 +30602,11 @@
       "Sam Comery",
       "Bruce Hopkins",
       "John Leigh"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -27777,6 +30643,11 @@
       "Yao Lin Chen",
       "Carmen du Sautoy",
       "Marne Maitland"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -27821,6 +30692,10 @@
       "Iván Rafael",
       "David Villalpando",
       "Mónica Fernández Cruz"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
     ]
   },
   {
@@ -27877,6 +30752,10 @@
       "Robert Simper",
       "Chris Pattinson",
       "Nigel Harbach"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction"
     ]
   },
   {
@@ -27971,6 +30850,12 @@
       "Anthony Zerbe",
       "Scott McLean",
       "Anthony Brandon Wong"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -28013,6 +30898,12 @@
       "Bernard White",
       "Ian Bliss",
       "Bruce Spence"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -28050,6 +30941,11 @@
       "Joel Davis",
       "Mark Nutter",
       "David Dahlgren"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -28114,6 +31010,11 @@
       "Mike Martindale",
       "Eric Kelly McFarland",
       "Ritchie Montgomery"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -28152,6 +31053,10 @@
       "Zsa Zsa Gábor",
       "Gina Mastrogiacomo",
       "David Zucker"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -28193,6 +31098,10 @@
       "Dick Vitale",
       "Jesse Ventura",
       "John Houseman"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -28223,6 +31132,11 @@
       "Óscar Casas",
       "Geraldine Chaplin",
       "Carmen López"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -28272,6 +31186,11 @@
       "Derek Jeter",
       "Rosie Perez",
       "Tracy Morgan"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
     ]
   },
   {
@@ -28305,6 +31224,12 @@
       "Gordon Reid",
       "Ricardo López",
       "Fionnula Flanagan"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -28353,6 +31278,9 @@
       "Melissa Samuels",
       "Steven Barr",
       "Billy Mayo"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -28447,6 +31375,10 @@
       "Adrian Hood",
       "Ryszard Kluge",
       "Maciej Kowalewski"
+    ],
+    "genres": [
+      "Drama",
+      "War"
     ]
   },
   {
@@ -28508,6 +31440,11 @@
       "Tim Pilleri",
       "Gary Sievers",
       "Inna Swann"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -28527,7 +31464,21 @@
       "780": "https://image.tmdb.org/t/p/w780/zAzI1wMRZzaBlc56DXJkjiv79Ut.jpg",
       "original": "https://image.tmdb.org/t/p/original/zAzI1wMRZzaBlc56DXJkjiv79Ut.jpg"
     },
-    "cast": ["Cecilia Cheung", "Liu Ye", "Hong Chen", "Cheng Qian", "Jang Dong-gun", "Hiroyuki Sanada"]
+    "cast": [
+      "Cecilia Cheung",
+      "Liu Ye",
+      "Hong Chen",
+      "Cheng Qian",
+      "Jang Dong-gun",
+      "Hiroyuki Sanada"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Romance",
+      "Thriller"
+    ]
   },
   {
     "title": "The Punisher",
@@ -28580,6 +31531,11 @@
       "Tom Nowicki",
       "Sonny Surowiec",
       "Steve Raulerson"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -28649,6 +31605,9 @@
       "Zachary Culbertson",
       "Brendan Kruse",
       "Austin Scott"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -28681,6 +31640,9 @@
       "Juliette Lamboley",
       "Frédéric Epaud",
       "François-Xavier Demaison"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -28726,6 +31688,11 @@
       "Billy Devlin",
       "Xander Berkeley",
       "Raymond Cruz"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -28774,6 +31741,13 @@
       "Malcolm Tierney",
       "Christopher Rozycki",
       "Valeriy Nikolaev"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Romance",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -28836,6 +31810,10 @@
       "Actor Sergio Kato",
       "Neil Summers",
       "Philip Ettington"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -28868,6 +31846,10 @@
       "Barry Dennen",
       "Lia Beldam",
       "Billie Gibson"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -28948,6 +31930,11 @@
       "George A. Romero",
       "John W. Iwanonkiw",
       "Philip Ettington"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -29019,6 +32006,11 @@
       "Jonathan Nation",
       "Sean Oliver",
       "Alison Robertson"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -29138,6 +32130,9 @@
       "Rebecca Tilney",
       "Georgina Tolentino",
       "Jeff Martineau"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -29172,6 +32167,13 @@
       "James A. Stephens",
       "Gregory Woo",
       "Ian Alda"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy"
     ]
   },
   {
@@ -29212,6 +32214,11 @@
       "Olivier Raynal",
       "Paulina Gálvez",
       "Cédric Klapisch"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -29241,6 +32248,12 @@
       "David Strathairn",
       "Seth Rogen",
       "Martin Short"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -29271,6 +32284,11 @@
       "Alec Baldwin",
       "David Hasselhoff",
       "Mr. Lawrence"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -29320,6 +32338,11 @@
       "Shane Rimmer",
       "Bryan Marshall",
       "George Roubicek"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -29363,6 +32386,10 @@
       "Kenneth Choi",
       "Scott Adsit",
       "Eddie Santiago"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -29416,6 +32443,11 @@
       "Marian Green",
       "J. Randolph Harrison",
       "Darrell Mapson"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -29448,6 +32480,9 @@
       "Cyia Batten",
       "Terrence Evans",
       "Marietta Marich"
+    ],
+    "genres": [
+      "Horror"
     ]
   },
   {
@@ -29480,6 +32515,11 @@
       "Richard Masur",
       "Joel Polis",
       "Thomas G. Waites"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction"
     ]
   },
   {
@@ -29499,7 +32539,16 @@
       "780": "https://image.tmdb.org/t/p/w780/sHN92A82QJ1Zlg6S9JqESSRZa81.jpg",
       "original": "https://image.tmdb.org/t/p/original/sHN92A82QJ1Zlg6S9JqESSRZa81.jpg"
     },
-    "cast": ["Christian Clavier", "Marine Delterme", "Tsilla Chelton", "Philippe Khorsand", "Catherine Jacob"]
+    "cast": [
+      "Christian Clavier",
+      "Marine Delterme",
+      "Tsilla Chelton",
+      "Philippe Khorsand",
+      "Catherine Jacob"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   },
   {
     "title": "The Tiger Brigades",
@@ -29532,6 +32581,11 @@
       "Gérard Jugnot",
       "Agnès Soral",
       "Eric Prat"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime"
     ]
   },
   {
@@ -29598,6 +32652,11 @@
       "Jennifer Iacono",
       "Claudia Mancinelli",
       "Anoushka Ravanshad"
+    ],
+    "genres": [
+      "Action",
+      "Romance",
+      "Thriller"
     ]
   },
   {
@@ -29666,6 +32725,11 @@
       "Adam Masnyk",
       "Thomas McGowan",
       "Thomas Olson"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -29700,6 +32764,11 @@
       "Frédéric Vallet",
       "Cameron Watson",
       "Adrian Dearnell"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -29745,6 +32814,10 @@
       "John Pleshette",
       "Terry Camilleri",
       "Joel McKinnon Miller"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -29775,6 +32848,9 @@
       "David Kammenos",
       "Sami Outalbali",
       "Karina Testa"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -29869,6 +32945,10 @@
       "Tracy Weisert",
       "Tamara Witmer",
       "Carolina Zaballa"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -29916,6 +32996,9 @@
       "Georges Anderson",
       "Marie-Thérèse Orain",
       "Hélène Zidi"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -29955,6 +33038,9 @@
       "Dominique Hulin",
       "Hélène Zidi",
       "Sandrine Bonnaire"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -30031,6 +33117,12 @@
       "John Barrowman",
       "Jack Fitzstephens",
       "Matt Johnston"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "History",
+      "Thriller"
     ]
   },
   {
@@ -30069,6 +33161,11 @@
       "Louis Lombardi",
       "Frank Medrano",
       "Ron Gilbert"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -30106,6 +33203,11 @@
       "Michael Pitt",
       "M. Night Shyamalan",
       "Charlie McDermott"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -30141,6 +33243,10 @@
       "François Lalande",
       "Didier Bénureau",
       "Frédéric Baptiste"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy"
     ]
   },
   {
@@ -30174,6 +33280,13 @@
       "Christina Asher",
       "Jed Brophy",
       "Ian Harcourt"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Thriller",
+      "Western"
     ]
   },
   {
@@ -30225,6 +33338,10 @@
       "Friederike Wagner",
       "Hubert Mulzer",
       "Dennis Gansel"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -30265,6 +33382,11 @@
       "Omid Djalili",
       "Jeff Nuttall",
       "John Albasiny"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -30308,6 +33430,9 @@
       "James Gaylyn",
       "Jessica Cauffiel",
       "Paul Rodríguez"
+    ],
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -30346,6 +33471,10 @@
       "Chanel Cresswell",
       "Kriss Dosanjh",
       "Hannah Walters"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -30418,6 +33547,11 @@
       "Douglas Tait",
       "Samuel L. Jackson",
       "Jeremy Renner"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
     ]
   },
   {
@@ -30448,6 +33582,10 @@
       "Jacques Boudet",
       "Ilona Bachelier",
       "Michel Winogradoff"
+    ],
+    "genres": [
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -30487,6 +33625,9 @@
       "Hansford Rowe",
       "Carlin Glynn",
       "Hank Garrett"
+    ],
+    "genres": [
+      "Thriller"
     ]
   },
   {
@@ -30527,6 +33668,11 @@
       "Edward Underdown",
       "Kevin McClory",
       "Philip Stone"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -30683,6 +33829,11 @@
       "R. Gern Trowbridge",
       "Francisco Váldez",
       "Lucie Zolcerova"
+    ],
+    "genres": [
+      "Drama",
+      "Romance",
+      "Thriller"
     ]
   },
   {
@@ -30737,6 +33888,11 @@
       "Jason Watkins",
       "Brendan Coyle",
       "Nadia Cameron-Blakey"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -30778,6 +33934,11 @@
       "Mel Johnson Jr.",
       "David Knell",
       "Alexia Robinson"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -30821,6 +33982,10 @@
       "Hugh Ross",
       "Victor Eadie",
       "Kate Donnelly"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -30879,6 +34044,11 @@
       "Charlie Adler",
       "Tom Everett",
       "Scott Peat"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -30939,6 +34109,11 @@
       "Frank Welker",
       "Stephen Monroe Taylor",
       "William H Worden"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -30996,6 +34171,11 @@
       "Andrew Howard",
       "Matthew Marsden",
       "Deep Roy"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -31026,6 +34206,11 @@
       "Jason Flemyng",
       "Keith David",
       "Ron Madoff"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -31057,6 +34242,12 @@
       "Silvio Simac",
       "Timo Dierkes",
       "Sebastien Vandenberghe"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -31151,6 +34342,10 @@
       "Julie Van",
       "Jobeth Wagner",
       "Tobey Maguire"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -31191,6 +34386,11 @@
       "Julian Glover",
       "Trevor Eve",
       "Frankie Fitzgerald"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "War"
     ]
   },
   {
@@ -31242,6 +34442,11 @@
       "Maggie A. Goodman",
       "Brandon Sanderson",
       "Ruben Nakai Campana"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Western"
     ]
   },
   {
@@ -31272,6 +34477,10 @@
       "Grant Heslov",
       "Charlton Heston",
       "Marshall Manesh"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
     ]
   },
   {
@@ -31318,6 +34527,11 @@
       "José Zúñiga",
       "Ayanna Berkshire",
       "Stephenie Meyer"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -31359,6 +34573,11 @@
       "Abraham Boyd",
       "Matthew Sturgess",
       "Kurt Wimmer"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -31419,6 +34638,11 @@
       "Marc H. Glick",
       "Kim Simms Thomas",
       "Andrea Havens"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -31471,6 +34695,11 @@
       "Kurt Carley",
       "Rana Morrison",
       "Zoltan Papp"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Thriller"
     ]
   },
   {
@@ -31508,6 +34737,12 @@
       "Mike Mukatis",
       "Raoul Ganeev",
       "Andrew Kavadas"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -31546,6 +34781,11 @@
       "Adnan Maral",
       "Merle Wiebensohn",
       "Torsten Michaelis"
+    ],
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -31589,6 +34829,10 @@
       "Affif Ben Badra",
       "Miguel Eduardo Cueva",
       "Scott Adkins"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -31626,6 +34870,12 @@
       "Josh Cooley",
       "Pete Docter",
       "Sherry Lynn"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -31723,6 +34973,11 @@
       "Mathis Landwehr",
       "Jason Oettle",
       "Wolfgang Stegemann"
+    ],
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Thriller"
     ]
   },
   {
@@ -31760,6 +35015,12 @@
       "James Ramsey",
       "Rony Bridges",
       "P.B. McBeath"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy"
     ]
   },
   {
@@ -31795,6 +35056,11 @@
       "Samuel West",
       "Robbie Coltrane",
       "Stephen Fisher"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror"
     ]
   },
   {
@@ -31829,6 +35095,13 @@
       "Ivana Miličević",
       "Shalom Harlow",
       "Johnny Galecki"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -31867,6 +35140,11 @@
       "Ed Viesturs",
       "Robert Taylor",
       "Alistair Browning"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -31907,6 +35185,11 @@
       "Steve Fitchpatrick",
       "Angelo Di Mascio Jr.",
       "Linda Klein"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -31955,6 +35238,10 @@
       "Candice T. Cain",
       "Valentin Siroon",
       "Mark Ruffalo"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -32024,6 +35311,12 @@
       "Sandra-Jessica Couturier",
       "Mike Dopud",
       "Levi Woods"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -32064,6 +35357,10 @@
       "Sebastian Sozzi",
       "Tet Wada",
       "Annika Pergament"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -32102,6 +35399,11 @@
       "Brian Caspe",
       "Mark O'Neal",
       "Bridget McManus"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -32151,6 +35453,11 @@
       "Columbus Short",
       "Tom Kenny",
       "Ty Simpkins"
+    ],
+    "genres": [
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -32200,6 +35507,11 @@
       "Kinshiro Oyama",
       "Hiroko Maki",
       "Tomo Fukui"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
     ]
   },
   {
@@ -32352,6 +35664,11 @@
       "Michael Adamthwaite",
       "Zack Snyder",
       "Danny Woodburn"
+    ],
+    "genres": [
+      "Action",
+      "Mystery",
+      "Science Fiction"
     ]
   },
   {
@@ -32387,6 +35704,11 @@
       "Gerard Murphy",
       "Michael Jeter",
       "Kim Coates"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -32422,6 +35744,9 @@
       "Christophe Rossignon",
       "Zinedine Soualem",
       "Jenny Clève"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -32478,6 +35803,11 @@
       "Joanne Miya",
       "John Astin",
       "Penny Santon"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -32523,6 +35853,10 @@
       "Nicholas Stojanovich",
       "Daniel Gullahorn",
       "Libby Villari"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -32542,7 +35876,18 @@
       "780": "https://image.tmdb.org/t/p/w780/vfgYyizaEKa37XvmLTaZhY7GgEV.jpg",
       "original": "https://image.tmdb.org/t/p/original/vfgYyizaEKa37XvmLTaZhY7GgEV.jpg"
     },
-    "cast": ["Monet Mazur", "Julian Morris", "J.A.Q.", "Johnny Pruitt", "Fran Kranz", "Rob Sullivan"]
+    "cast": [
+      "Monet Mazur",
+      "Julian Morris",
+      "J.A.Q.",
+      "Johnny Pruitt",
+      "Fran Kranz",
+      "Rob Sullivan"
+    ],
+    "genres": [
+      "Drama",
+      "Romance"
+    ]
   },
   {
     "title": "White Snow",
@@ -32576,6 +35921,9 @@
       "Gianluca Matarrese",
       "Noria Tzaprenko",
       "Ludo Hellinx"
+    ],
+    "genres": [
+      "Thriller"
     ]
   },
   {
@@ -32613,6 +35961,12 @@
       "Roman Varshavsky",
       "Steve Lucescu",
       "Paula Jean Hixson"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -32662,6 +36016,13 @@
       "Mik Scriba",
       "Michael Sims",
       "Natalie Fabry"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Science Fiction",
+      "Western"
     ]
   },
   {
@@ -32701,6 +36062,11 @@
       "Shawn Ashmore",
       "Sumela Kay",
       "Alex Burton"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -32784,6 +36150,12 @@
       "Warwick Young",
       "Dennis Kreusler",
       "Patrick Stewart"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -32836,6 +36208,12 @@
       "Stan Lee",
       "Alex Ferris",
       "Olivia Williams"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -32887,6 +36265,12 @@
       "Roger Cross",
       "Nolan Gerard Funk",
       "Steve Bacic"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -32923,6 +36307,11 @@
       "Pascal Léger",
       "Frédéric Pellegeay",
       "Gwenael Clause"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -32963,6 +36352,9 @@
       "Heidi Herschbach",
       "Vivian Bang",
       "Cecelia Antoinette"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -32999,6 +36391,11 @@
       "Michael Chow",
       "Ronald Rich",
       "Jeanne Roland"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ]
   },
   {
@@ -33035,6 +36432,10 @@
       "Deborah Rush",
       "Sara Ramirez",
       "Chris Messina"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
     ]
   },
   {
@@ -33082,6 +36483,11 @@
       "David Garrick",
       "Caroline Grace-Cassidy",
       "Julian Rhind-Tutt"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
     ]
   },
   {
@@ -33112,6 +36518,11 @@
       "Ittoku Kishibe",
       "Saburo Ishikura",
       "Akira Emoto"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
     ]
   },
   {
@@ -33148,6 +36559,10 @@
       "Shaun Michael Lynch",
       "Lynn McArthur",
       "Jade Moser"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
     ]
   },
   {
@@ -33188,6 +36603,10 @@
       "Ana Isabel Velásquez",
       "Javier Coromina",
       "Pep Sais"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
     ]
   },
   {
@@ -33221,6 +36640,10 @@
       "Carlos Olalla",
       "Òscar Foronda",
       "Paco Plaza"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -33258,6 +36681,12 @@
       "Balázs Koós",
       "Stephanie Belding",
       "Gerry Quigley"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -33304,6 +36733,12 @@
       "Paul H. Landers",
       "Oliver Riedel",
       "Christoph Schneider"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -33376,6 +36811,10 @@
       "Kim Pfeiffer",
       "Michael Pink",
       "Joachim Schoenfeldt"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction"
     ]
   }
 ]

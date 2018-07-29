@@ -115,6 +115,11 @@
       "Tom Harrison-Read",
       "William M. Patrick",
       "Toby Hefferman"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
     ]
   },
   {
@@ -148,6 +153,11 @@
       "Daeg Faerch",
       "Inder Kumar",
       "Michael Beasley"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -231,6 +241,10 @@
       "Jack Wallace",
       "Jackie Zane",
       "Maria Zyrianova"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -291,6 +305,11 @@
       "Robert Larriviere",
       "Nazanin Boniadi",
       "Marie Burke"
+    ],
+    "genres": [
+      "Drama",
+      "Romance",
+      "Science Fiction"
     ]
   },
   {
@@ -330,6 +349,9 @@
       "Austin Hébert",
       "Billy Slaughter",
       "Robert Knepper"
+    ],
+    "genres": [
+      "Action"
     ]
   },
   {
@@ -366,6 +388,9 @@
       "Yvonne Gradelet",
       "Charles Guillermin",
       "Armen Georgian"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -490,6 +515,11 @@
       "Mary Peyton Stewart",
       "Michael Love Toliver",
       "Gregory Paul Valdez"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -556,6 +586,10 @@
       "Julie Potter",
       "Ukee Washington",
       "Christopher Lee Philips"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -627,6 +661,12 @@
       "Julie Eagleton",
       "Neil Broome",
       "Tim Burton"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family",
+      "Fantasy"
     ]
   },
   {
@@ -679,6 +719,10 @@
       "Frank Pellegrino",
       "Lawrence Bender",
       "Marty Antonini"
+    ],
+    "genres": [
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -766,6 +810,12 @@
       "Rachel Emma Slack",
       "Clem So",
       "Ruolan Zhang"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
     ]
   },
   {
@@ -942,6 +992,11 @@
       "Paul De La Rosa",
       "Clem So",
       "Teresa Shaughnessy"
+    ],
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Romance"
     ]
   },
   {
@@ -984,6 +1039,11 @@
       "Toshiki Kameyama",
       "Atsushi Goto",
       "Maaya Sakamoto"
+    ],
+    "genres": [
+      "Action",
+      "Animation",
+      "Science Fiction"
     ]
   },
   {
@@ -1017,6 +1077,11 @@
       "Sayaka Ohara",
       "Kana Hanazawa",
       "井上和彦"
+    ],
+    "genres": [
+      "Animation",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -1100,6 +1165,12 @@
       "Marcus Shirock",
       "Maxine Wasa",
       "Ilka Tanya Payán"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ]
   },
   {
@@ -1208,6 +1279,9 @@
       "Donald K. Overstreet",
       "Stephen Payne",
       "Sandy Piña"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -1300,6 +1374,12 @@
       "Alexander Da Mota",
       "Akul Dang",
       "Frank Fiola"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -1377,6 +1457,9 @@
       "Caleb Thomas",
       "Emely von Oest",
       "Tricia Mary Young"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -1422,6 +1505,12 @@
       "Bill Kelly",
       "Emily Rutherfurd",
       "Wladimir Klitschko"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -1458,6 +1547,11 @@
       "Michelle Monaghan",
       "Larry Cedar",
       "Barbara Pilavin"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror"
     ]
   },
   {
@@ -1500,6 +1594,11 @@
       "Noomi Rapace",
       "Javier Botet",
       "Benjamin Taylor"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -1583,6 +1682,12 @@
       "Stephen Vining",
       "Jason Williams",
       "Cheyanna Lavon Zubas"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Science Fiction"
     ]
   },
   {
@@ -1611,6 +1716,9 @@
       "Louis-Do de Lencquesaing",
       "Jean-Michel Lahmi",
       "Katrina Grey"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -1703,6 +1811,11 @@
       "Edward Mannering",
       "Brendan McCoy",
       "Harry Palmer"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
     ]
   },
   {
@@ -1804,6 +1917,13 @@
       "Gary Lavard",
       "Özcan Özdemir",
       "Karin Boesler"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -1855,6 +1975,10 @@
       "Thomas VDB",
       "Jérémie Graine",
       "Renaud Rutten"
+    ],
+    "genres": [
+      "Comedy",
+      "War"
     ]
   },
   {
@@ -1916,6 +2040,12 @@
       "Stephanie De Meautis",
       "Bruno Dequier",
       "Martavious Gayles"
+    ],
+    "genres": [
+      "Action",
+      "Animation",
+      "Comedy",
+      "Family"
     ]
   },
   {
@@ -1973,6 +2103,12 @@
       "Allan Henry",
       "Joseph Naufahu",
       "Makoto Murata"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
@@ -2113,6 +2249,13 @@
       "Tom Whelehan",
       "Zac Whitehead",
       "Miroslav Zaruba"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction",
+      "War"
     ]
   },
   {
@@ -2254,6 +2397,11 @@
       "Frederick Keeve",
       "Kayla Bechor",
       "Robert Roldan"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
     ]
   },
   {
@@ -2340,6 +2488,13 @@
       "Bill Milner",
       "Eric Richard",
       "Harry Collett"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "History",
+      "Thriller",
+      "War"
     ]
   },
   {
@@ -2418,6 +2573,10 @@
       "Troy Faruk",
       "Chad Joyce",
       "Mark Smith"
+    ],
+    "genres": [
+      "Action",
+      "Crime"
     ]
   },
   {
@@ -2452,6 +2611,10 @@
       "Joel Labelle",
       "Allison Tolman",
       "Elizabeth Bowen"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
     ]
   },
   {
@@ -2511,6 +2674,10 @@
       "Jeff Ricketts",
       "Alexandra Ford",
       "James Carroll Jordan"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
     ]
   },
   {
@@ -2649,6 +2816,12 @@
       "Nickolas Wolf",
       "Trevor Wolf",
       "Tiani Wright"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Science Fiction"
     ]
   },
   {
@@ -2692,6 +2865,11 @@
       "Daniel Hargrave",
       "Greg Rementer",
       "Daniel Bernhardt"
+    ],
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
     ]
   },
   {
@@ -2765,6 +2943,10 @@
       "Mollie McGregor",
       "Sophia McGregor",
       "Scarlett Johansson"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
     ]
   },
   {
@@ -2814,7 +2996,14 @@
     ],
     "director": "Jon Favreau",
     "watch_date": "2017-12-23",
-    "rating": 7
+    "rating": 7,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Drama",
+      "Family",
+      "Fantasy"
+    ]
   },
   {
     "tmdb_id": 11527,
@@ -2851,7 +3040,12 @@
     ],
     "director": "John Boorman",
     "watch_date": "2017-12-25",
-    "rating": 4
+    "rating": 4,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
+    ]
   },
   {
     "tmdb_id": 181808,
@@ -2916,7 +3110,13 @@
     ],
     "director": "Rian Johnson",
     "watch_date": "2017-12-17",
-    "rating": 7
+    "rating": 7,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
+    ]
   },
   {
     "tmdb_id": 339846,
@@ -2980,6 +3180,10 @@
     ],
     "director": "Seth Gordon",
     "watch_date": "2017-12-31",
-    "rating": 6
+    "rating": 6,
+    "genres": [
+      "Action",
+      "Comedy"
+    ]
   }
 ]
