@@ -99,6 +99,7 @@ function getSelectedMovieDetails() {
           movieData.director = member.name
         }
       })
+      movieData.genres = movieDetails.genres.map((genre) => genre.name).sort()
     }
   )
 }
