@@ -86,6 +86,7 @@ function movieMatchesFilters(nodeMovie, filters) {
   const movieDirector = nodeMovie.dataset.jsMovieDirector
   const movieCast = nodeMovie.dataset.jsMovieCast
   const movieRelease = nodeMovie.dataset.jsMovieRelease
+  const movieGenres = nodeMovie.dataset.jsMovieGenres
   for (let index = 0; index < filters.length; index += 1) {
     const filter = filters[index]
     if (filter.type === 'rating' && movieRating !== filter.value) {
@@ -103,12 +104,15 @@ function movieMatchesFilters(nodeMovie, filters) {
     if (filter.type === 'release' && movieRelease.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
+    if (filter.type === 'genre' && movieGenres.search(new RegExp(filter.value, 'i')) === -1) {
+      return false
+    }
   }
   return true
 }
 
 function extractSearchFilters() {
-  const allowedTypes = ['rating', 'actor', 'director', 'title', 'release']
+  const allowedTypes = ['rating', 'actor', 'director', 'title', 'release', 'genre']
   const defaultType = 'title'
   const searchTerms = nodeSearchInput.value.split(';').map((term) => term.trim())
   const filters = []

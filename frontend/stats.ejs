@@ -55,6 +55,19 @@
         <table cellspacing="0" cellpadding="0" data-js-stats-directors-list></table>
         <button class="stat-more" data-js-stats-more-directors>More...</button>
       </div>
+      <h2 class="stat-heading">
+        Most seen genres
+      </h2>
+      <div class="stat-table">
+        <table cellspacing="0" cellpadding="0">
+          <% stats.genres.forEach((item, index) => { console.log(item) %>
+            <tr class="<%= index % 2 === 0 ? 'stat-table-row--alt' : '' %>">
+              <td><a href="../#genre:<%= item.label %>"><%= item.label %></a></td>
+              <td><%= item.count %></td>
+            </tr>
+          <% }) %>
+        </table>
+      </div>
     </div>
     <script src="<%= assets.polyfillsScript %>"></script>
     <script src="<%= assets.statsScript %>"></script>
