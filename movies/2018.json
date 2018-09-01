@@ -2858,5 +2858,40 @@
       "Adventure",
       "Thriller"
     ]
+  },
+  {
+    "title": "Blade of the Immortal",
+    "original_title": "無限の住人",
+    "watch_date": "2018-09-01",
+    "rating": 6,
+    "release_date": "2017-04-29",
+    "director": "Takashi Miike",
+    "tmdb_id": 426284,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+      "original": "https://image.tmdb.org/t/p/original/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg"
+    },
+    "cast": [
+      "Takuya Kimura",
+      "Hana Sugisaki",
+      "Sota Fukushi",
+      "Hayato Ichihara",
+      "Erika Toda",
+      "Ebizo Ichikawa",
+      "Chiaki Kuriyama",
+      "Kazuki Kitamura",
+      "Tsutomu Yamazaki",
+      "Min Tanaka",
+      "Shinnosuke Mitsushima"
+    ],
+    "genres": [
+      "Action",
+      "Drama"
+    ]
   }
 ]
