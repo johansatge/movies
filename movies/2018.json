@@ -3040,5 +3040,57 @@
       "Drama",
       "Romance"
     ]
+  },
+  {
+    "title": "Total Recall",
+    "original_title": "Total Recall",
+    "watch_date": "2018-09-16",
+    "rating": 4,
+    "release_date": "2012-08-02",
+    "director": "Len Wiseman",
+    "tmdb_id": 64635,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg",
+      "original": "https://image.tmdb.org/t/p/original/tWBo7aZk3I1dLxmMj7ZJcN8uke5.jpg"
+    },
+    "cast": [
+      "Colin Farrell",
+      "Kate Beckinsale",
+      "Jessica Biel",
+      "Bryan Cranston",
+      "Bill Nighy",
+      "John Cho",
+      "Bokeem Woodbine",
+      "Will Yun Lee",
+      "Steve Byers",
+      "Currie Graham",
+      "Jesse Bond",
+      "Brooks Darnell",
+      "Michael Therriault",
+      "Lisa Chandler",
+      "Milton Barnes",
+      "Natalie Lisinska",
+      "Billy Choi",
+      "Emily Chang",
+      "James McGowan",
+      "Mishael Morgan",
+      "Stephen MacDonald",
+      "Linlyn Lue",
+      "Andrew Moodie",
+      "Kaitlyn Wong",
+      "Danny Waugh",
+      "Filip Watermann"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
