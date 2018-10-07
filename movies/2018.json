@@ -3242,5 +3242,49 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Upgrade",
+    "original_title": "Upgrade",
+    "watch_date": "2018-10-07",
+    "rating": 8,
+    "release_date": "2018-06-01",
+    "director": "Leigh Whannell",
+    "tmdb_id": 500664,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg",
+      "original": "https://image.tmdb.org/t/p/original/8fDtXi6gVw8WUMWGT9XFz7YwkuE.jpg"
+    },
+    "cast": [
+      "Logan Marshall-Green",
+      "Simon Maiden",
+      "Melanie Vallejo",
+      "Betty Gabriel",
+      "Harrison Gilbertson",
+      "Benedict Hardie",
+      "Linda Cropper",
+      "Sachin Joab",
+      "Steve Danielsen",
+      "Michael M. Foster",
+      "Clayton Jacobson",
+      "Richard Cawthorne",
+      "Renah Gallagher",
+      "Christopher Kirby",
+      "Rosco Campbell",
+      "Richard Anastasios",
+      "Douglas Embry",
+      "Liam Howarth"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
