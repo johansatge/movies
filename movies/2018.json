@@ -3516,5 +3516,65 @@
       "Drama",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Nightmare Before Christmas",
+    "original_title": "The Nightmare Before Christmas",
+    "watch_date": "2018-11-01",
+    "rating": 6,
+    "release_date": "1993-10-09",
+    "director": "Henry Selick",
+    "tmdb_id": 9479,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg",
+      "original": "https://image.tmdb.org/t/p/original/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg"
+    },
+    "cast": [
+      "Danny Elfman",
+      "Chris Sarandon",
+      "Catherine O'Hara",
+      "William Hickey",
+      "Glenn Shadix",
+      "Paul Reubens",
+      "Ken Page",
+      "Edward Ivory",
+      "Kerry Katz",
+      "Carmen Twillie",
+      "Randy Crenshaw",
+      "Debi Durst",
+      "Glenn Walters",
+      "Sherwood Ball",
+      "Greg Proops",
+      "Tim Burton",
+      "Susan McBride",
+      "Mia Brown",
+      "L. Peter Callender",
+      "Ann Fraser",
+      "Jennifer Levey",
+      "Jesse McClurg",
+      "John Morris",
+      "Robert Olague",
+      "Bobbi Page",
+      "Elena Praskin",
+      "Trampas Warman",
+      "Judi M. Durand",
+      "Doris Hess",
+      "Daamen J. Krall",
+      "Christina MacGregor",
+      "David McCharen",
+      "Gary Raff",
+      "David J. Randolph",
+      "Gary Schwartz"
+    ],
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy"
+    ]
   }
 ]
