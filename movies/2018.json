@@ -3834,5 +3834,67 @@
       "Family",
       "Fantasy"
     ]
+  },
+  {
+    "title": "The Ballad of Buster Scruggs",
+    "original_title": "The Ballad of Buster Scruggs",
+    "watch_date": "2018-11-18",
+    "rating": 7,
+    "release_date": "2018-11-09",
+    "director": "Ethan Coen",
+    "tmdb_id": 537996,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/gBsf15wgAjMxX8l0lT711MovhSw.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/gBsf15wgAjMxX8l0lT711MovhSw.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/gBsf15wgAjMxX8l0lT711MovhSw.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/gBsf15wgAjMxX8l0lT711MovhSw.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/gBsf15wgAjMxX8l0lT711MovhSw.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/gBsf15wgAjMxX8l0lT711MovhSw.jpg",
+      "original": "https://image.tmdb.org/t/p/original/gBsf15wgAjMxX8l0lT711MovhSw.jpg"
+    },
+    "cast": [
+      "Tim Blake Nelson",
+      "James Franco",
+      "Liam Neeson",
+      "Tom Waits",
+      "Zoe Kazan",
+      "Tyne Daly",
+      "Brendan Gleeson",
+      "Jonjo O'Neill",
+      "Saul Rubinek",
+      "Chelcie Ross",
+      "Harry Melling",
+      "Bill Heck",
+      "Grainger Hines",
+      "Stephen Root",
+      "David Krumholtz",
+      "Clancy Brown",
+      "Ralph Ineson",
+      "Matthew Willig",
+      "Jesse Luken",
+      "Paul Rae",
+      "Tom Proctor",
+      "Tim DeZarn",
+      "E.E. Bell",
+      "Martin Palmer",
+      "Danny McCarthy",
+      "Billy Lockwood",
+      "Jackamoe Buzzell",
+      "Sam Dillon",
+      "Jefferson Mays",
+      "J. Nathan Simmons",
+      "Willie Watson",
+      "Katy Bodenhamer",
+      "Jiji Hise",
+      "Austin Rising",
+      "Stephen R. Estler",
+      "Grace LeSueur",
+      "Ethan Dubin"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Western"
+    ]
   }
 ]
