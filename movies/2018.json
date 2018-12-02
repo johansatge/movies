@@ -4153,5 +4153,52 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Visit",
+    "original_title": "The Visit",
+    "watch_date": "2018-12-02",
+    "rating": 6,
+    "release_date": "2015-09-10",
+    "director": "M. Night Shyamalan",
+    "tmdb_id": 298312,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg",
+      "original": "https://image.tmdb.org/t/p/original/32tNtTEQ1vIOLm1hEOSFkVwJT5D.jpg"
+    },
+    "cast": [
+      "Olivia DeJonge",
+      "Ed Oxenbould",
+      "Deanna Dunagan",
+      "Peter McRobbie",
+      "Kathryn Hahn",
+      "Celia Keenan-Bolger",
+      "Samuel Stricklen",
+      "Patch Darragh",
+      "Jorge Cordova",
+      "Steve Annan",
+      "Benjamin Kanes",
+      "Ocean James",
+      "Seamus Moroney",
+      "Dave Jia",
+      "Sajida De Leon",
+      "Erica Lynne Marszalek",
+      "John Buscemi",
+      "Richard Barlow",
+      "Shawn Gonzalez",
+      "Brian Gildea",
+      "Shelby Lackman",
+      "Jon Douglas Rainey"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
