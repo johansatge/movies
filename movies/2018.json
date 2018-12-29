@@ -4362,5 +4362,91 @@
       "Comedy",
       "Drama"
     ]
+  },
+  {
+    "title": "The Disappearance of Eleanor Rigby: Her",
+    "original_title": "The Disappearance of Eleanor Rigby: Her",
+    "watch_date": "2018-12-25",
+    "rating": 6,
+    "release_date": "2014-10-10",
+    "director": "Ned Benson",
+    "tmdb_id": 275060,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg",
+      "original": "https://image.tmdb.org/t/p/original/ynQT7JLYoLwV8P2ropoQEpTH7gG.jpg"
+    },
+    "cast": [
+      "Jessica Chastain",
+      "James McAvoy",
+      "Viola Davis",
+      "Isabelle Huppert",
+      "William Hurt",
+      "Jess Weixler",
+      "Bill Hader",
+      "Katherine Waterston",
+      "Nina Arianda",
+      "Ryan Eggold",
+      "Nikki M. James"
+    ],
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "title": "A Simple Favor",
+    "original_title": "A Simple Favor",
+    "watch_date": "2018-12-29",
+    "rating": 6,
+    "release_date": "2018-08-29",
+    "director": "Paul Feig",
+    "tmdb_id": 484247,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg",
+      "original": "https://image.tmdb.org/t/p/original/aIYsjQM0piKc0ibPBCTWv3sqshj.jpg"
+    },
+    "cast": [
+      "Anna Kendrick",
+      "Blake Lively",
+      "Henry Golding",
+      "Ian Ho",
+      "Joshua Satine",
+      "Andrew Rannells",
+      "Rupert Friend",
+      "Paul Jurewicz",
+      "Roger Dunn",
+      "Dustin Milligan",
+      "Eric Johnson",
+      "Bashir Salahuddin",
+      "Linda Cardellini",
+      "Jason Oliveira",
+      "Danielle Bourgon",
+      "Patti Harrison",
+      "Ava LaFramboise",
+      "Jean Smart",
+      "Sarah Baker",
+      "Glenda Braganza",
+      "Zach Smadu",
+      "Andrew Moodie",
+      "Aparna Nancherla",
+      "Kelly McCormack",
+      "Gia Sandhu"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
