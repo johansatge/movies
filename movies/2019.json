@@ -160,5 +160,60 @@
       "Comedy",
       "Family"
     ]
+  },
+  {
+    "title": "Bird Box",
+    "original_title": "Bird Box",
+    "watch_date": "2019-01-05",
+    "rating": 6,
+    "release_date": "2018-12-13",
+    "director": "Susanne Bier",
+    "tmdb_id": 405774,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+      "original": "https://image.tmdb.org/t/p/original/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg"
+    },
+    "cast": [
+      "Sandra Bullock",
+      "Trevante Rhodes",
+      "John Malkovich",
+      "Sarah Paulson",
+      "Jacki Weaver",
+      "Rosa Salazar",
+      "Danielle Macdonald",
+      "LilRel Howery",
+      "Tom Hollander",
+      "Machine Gun Kelly",
+      "BD Wong",
+      "Pruitt Taylor Vince",
+      "Vivien Lyra Blair",
+      "Julian Edwards",
+      "Parminder Nagra",
+      "Rebecca Pidgeon",
+      "Amy Gumenick",
+      "Taylor Handley",
+      "Happy Anderson",
+      "Kyle Beatty",
+      "Ashley Alvarado",
+      "David Dastmalchian",
+      "Keith Jardine",
+      "Kristopher Logan",
+      "Shirley Butler",
+      "Chanon Finley",
+      "Frank Mottek",
+      "Danny Max",
+      "Debra Mark"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
