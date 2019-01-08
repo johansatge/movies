@@ -215,5 +215,58 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "Welcome to Marwen",
+    "original_title": "Welcome to Marwen",
+    "watch_date": "2019-01-08",
+    "rating": 6,
+    "release_date": "2018-12-21",
+    "director": "Robert Zemeckis",
+    "tmdb_id": 351044,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg",
+      "original": "https://image.tmdb.org/t/p/original/yWY4WRcjvOtGiGvLEPDhOCZvBn.jpg"
+    },
+    "cast": [
+      "Steve Carell",
+      "Leslie Mann",
+      "Merritt Wever",
+      "Janelle Monáe",
+      "Diane Kruger",
+      "Falk Hentschel",
+      "Eiza González",
+      "Gwendoline Christie",
+      "Stefanie von Pfetten",
+      "Leslie Zemeckis",
+      "Siobhan Williams",
+      "Neil Jackson",
+      "Matt O'Leary",
+      "Eric Keenleyside",
+      "Veena Sood",
+      "Christie-Lee Britten",
+      "Matthew Kevin Anderson",
+      "Nikolai Witschl",
+      "Matt Ellis",
+      "Conrad Coates",
+      "Samantha Hum",
+      "Jason Burkart",
+      "Robert Mann",
+      "Alexander Lowe",
+      "Sharon Crandall",
+      "Patrick Roccas",
+      "Kate Gajdosik"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ]
   }
 ]
