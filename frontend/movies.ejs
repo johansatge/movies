@@ -59,7 +59,8 @@
           data-js-movie-title="<%= movie.title %> <%= movie.original_title %>"
           data-js-movie-director="<%= movie.director %>"
           data-js-movie-cast="<%= movie.cast.join(',') %>"
-          data-js-movie-release="<%= movie.release_date.substring(0, 4) %>"
+          data-js-movie-released="<%= movie.release_date.substring(0, 4) %>"
+          data-js-movie-watched="<%= movie.watch_date ? movie.watch_date.substring(0, 4) : '' %>"
           data-js-movie-genres="<%= movie.genres.join(',') %>"
         >
           <div class="movie-bg" data-js-lazy-load data-js-lazy-load-url="<%= movie.posters['342'] %>"></div>

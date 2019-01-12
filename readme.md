@@ -31,7 +31,8 @@ The search field on the movies page accepts the following syntaxes:
 * `rating:8` → search by rating
 * `actor:Charles Bronson` → search by actor
 * `director:George Lucas` → search by director
-* `release:1992` → search by release year
+* `released:1992` → search by release year
+* `watched:2018` → search by watch year
 
 Search terms can also be combined with the `;` character: `director:George Lucas;release:1983`
 

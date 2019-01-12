@@ -60,7 +60,7 @@
       </h2>
       <div class="stat-table">
         <table cellspacing="0" cellpadding="0">
-          <% stats.genres.forEach((item, index) => { console.log(item) %>
+          <% stats.genres.forEach((item, index) => { %>
             <tr class="<%= index % 2 === 0 ? 'stat-table-row--alt' : '' %>">
               <td><a href="../#genre:<%= item.label %>"><%= item.label %></a></td>
               <td><%= item.count %></td>
