@@ -345,5 +345,56 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "The Emperor of Paris",
+    "original_title": "L'Empereur de Paris",
+    "watch_date": "2019-01-13",
+    "rating": 7,
+    "release_date": "2018-12-19",
+    "director": "Jean-François Richet",
+    "tmdb_id": 478820,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/xPkHAiAahaZJitsIlArSCQqMVuM.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/xPkHAiAahaZJitsIlArSCQqMVuM.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/xPkHAiAahaZJitsIlArSCQqMVuM.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/xPkHAiAahaZJitsIlArSCQqMVuM.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/xPkHAiAahaZJitsIlArSCQqMVuM.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/xPkHAiAahaZJitsIlArSCQqMVuM.jpg",
+      "original": "https://image.tmdb.org/t/p/original/xPkHAiAahaZJitsIlArSCQqMVuM.jpg"
+    },
+    "cast": [
+      "Vincent Cassel",
+      "Olga Kurylenko",
+      "August Diehl",
+      "Фрейя Мавор",
+      "Denis Ménochet",
+      "James Thiérrée",
+      "Patrick Chesnais",
+      "Denis Lavant",
+      "Jérôme Pouly",
+      "Fabrice Luchini",
+      "Hervé Masquelier",
+      "John Sehil",
+      "Michèle Clément",
+      "Antoine Basler",
+      "Nicolas de Lavergne",
+      "François Girard",
+      "Nemo Schiffman",
+      "Philippe Beautier",
+      "Jérôme Cachon",
+      "William Sciortino",
+      "Jonathan Louis",
+      "Fayçal Safi",
+      "Antoine Lelandais",
+      "Frédéric Fix",
+      "Lucien Belves",
+      "Maxime Lefrancois"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
