@@ -70,13 +70,13 @@ module.exports = {
               test: /\.scss$/,
               include: [path.join(__dirname, 'sass')],
               use: [
+                'css-loader',
                 {
-                  loader: 'css-loader',
+                  loader: 'sass-loader',
                   options: {
-                    minimize: true,
+                    outputStyle: 'compressed',
                   },
                 },
-                'sass-loader',
               ],
             },
           ],
