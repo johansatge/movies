@@ -577,5 +577,62 @@
       "Action",
       "Thriller"
     ]
+  },
+  {
+    "title": "Glass",
+    "original_title": "Glass",
+    "watch_date": "2019-01-20",
+    "rating": 8,
+    "release_date": "2019-01-16",
+    "director": "M. Night Shyamalan",
+    "tmdb_id": 450465,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/aG5GS0V15Zpk8zvsww02faNT0QI.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/aG5GS0V15Zpk8zvsww02faNT0QI.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/aG5GS0V15Zpk8zvsww02faNT0QI.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/aG5GS0V15Zpk8zvsww02faNT0QI.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/aG5GS0V15Zpk8zvsww02faNT0QI.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/aG5GS0V15Zpk8zvsww02faNT0QI.jpg",
+      "original": "https://image.tmdb.org/t/p/original/aG5GS0V15Zpk8zvsww02faNT0QI.jpg"
+    },
+    "cast": [
+      "James McAvoy",
+      "Bruce Willis",
+      "Samuel L. Jackson",
+      "Anya Taylor-Joy",
+      "Sarah Paulson",
+      "Spencer Treat Clark",
+      "Charlayne Woodard",
+      "Luke Kirby",
+      "Marisa Brown",
+      "Ursula Triplett",
+      "Brian Donahue",
+      "Lory Molino",
+      "Raul Torres",
+      "M. Night Shyamalan",
+      "Rob Yang",
+      "Jane Park Smith",
+      "Adam David Thompson",
+      "Diana Silvers",
+      "Shannon Destiny Ryan",
+      "Nina Wisner",
+      "Kyli Zion",
+      "Shayna Ryan",
+      "Jessica Heller",
+      "Aurora Karine",
+      "Jon Douglas Rainey",
+      "Vincent Riviezzo",
+      "Jennifer Butler",
+      "Serge Didenko",
+      "Sarah Grgic",
+      "Andrew Hunsicker",
+      "Matt Jacobs"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
