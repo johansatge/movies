@@ -67,7 +67,7 @@ function recursiveFetch(assets, callback) {
       if (error) {
         throw new Error(error.statusText)
       }
-      nodeProgressBar.style.width = `${(offlineAssets.length - assets.length) * 100 / offlineAssets.length}%`
+      nodeProgressBar.style.width = `${((offlineAssets.length - assets.length) * 100) / offlineAssets.length}%`
       if (assets.length > 0) {
         recursiveFetch(assets, callback)
       } else {

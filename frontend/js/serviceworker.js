@@ -46,10 +46,12 @@ function cleanCacheKeys(keys) {
   const cacheNames = cacheTypes.map((type) => type.name)
   debug(`cleaning cache (worker cacheNames: ${cacheNames.join(',')}) (local cacheNames: ${keys.join(',')})`)
   return Promise.all(
-    keys.filter((key) => !cacheNames.includes(key)).map((key) => {
-      debug(`deleting cache (${key})`)
-      caches.delete(key)
-    })
+    keys
+      .filter((key) => !cacheNames.includes(key))
+      .map((key) => {
+        debug(`deleting cache (${key})`)
+        caches.delete(key)
+      })
   )
 }
 
