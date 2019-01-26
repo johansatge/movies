@@ -33,6 +33,7 @@ The search field on the movies page accepts the following syntaxes:
 * `director:George Lucas` → search by director
 * `released:1992` → search by release year
 * `watched:2018` → search by watch year
+* `genre:Action` → search by genre
 
 Search terms can also be combined with the `;` character: `director:George Lucas;release:1983`
 
