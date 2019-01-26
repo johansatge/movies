@@ -24,6 +24,7 @@ cleanDist()
   .then(writeFonts)
   .then(writeManifest)
   .then(readMovies)
+  .then(writeMoviesData)
   .then(writeActors)
   .then(writeDirectors)
   .then(buildFrontendAssets)
@@ -129,6 +130,37 @@ function readMovies() {
     buildState.movies = list
     buildState.stats = stats.extract(list)
   })
+}
+
+/**
+ * Write movies data for frontend JSON calls
+ */
+function writeMoviesData() {
+  log('Writing movies data')
+  buildState.moviesFiles = []
+  const allMovies = buildState.movies.map((movie) => {
+    return {
+      rating: movie.rating,
+      title: movie.title,
+      fullTitle: `${movie.title} ${movie.original_title}`,
+      director: movie.director,
+      cast: movie.cast.join(','),
+      released: movie.release_date.substring(0, 4),
+      watched: movie.watch_date ? movie.watch_date.substring(0, 4) : '',
+      genres: movie.genres.join(','),
+      poster: movie.posters['342'],
+      url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,
+    }
+  })
+  const writers = []
+  while (allMovies.length > 0) {
+    const movies = allMovies.splice(0, 100)
+    const json = JSON.stringify(movies)
+    const jsonFilename = `/movies/${checksum(json)}.json`
+    buildState.moviesFiles.push(jsonFilename)
+    writers.push(fs.outputFile(path.join(outputDir, jsonFilename), json, 'utf8'))
+  }
+  return Promise.all(writers)
 }
 
 /**
@@ -255,7 +287,7 @@ function getAssetsList(type) {
     app: Object.keys(buildState.assets)
       .map((name) => buildState.assets[name])
       .sort(),
-    movies: [...buildState.actorsFiles, ...buildState.directorsFiles],
+    movies: [...buildState.moviesFiles, ...buildState.actorsFiles, ...buildState.directorsFiles],
   }
   return assets[type]
 }

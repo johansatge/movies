@@ -30,7 +30,7 @@
     </div>
     <div class="topbar topbar--search">
       <a href="#" class="topbar-title topbar-title--current">
-        <span class="topbar-title-count" data-js-movies-count><%= movies.length %></span> Movies
+        <span class="topbar-title-count" data-js-movies-count></span> Movies
       </a>
       <a href="stats/" class="topbar-title">
         Stats
@@ -47,37 +47,14 @@
         <button class="topbar-offline-button" data-js-save-offline></button>
       </div>
     </div>
-    <div class="movies">
-      <% movies.forEach((movie) => { %>
-        <a
-          class="movie"
-          target="_blank"
-          rel="noopener"
-          href="https://www.themoviedb.org/movie/<%= movie.tmdb_id %>"
-          data-js-movie
-          data-js-movie-rating="<%= movie.rating %>"
-          data-js-movie-title="<%= movie.title %> <%= movie.original_title %>"
-          data-js-movie-director="<%= movie.director %>"
-          data-js-movie-cast="<%= movie.cast.join(',') %>"
-          data-js-movie-released="<%= movie.release_date.substring(0, 4) %>"
-          data-js-movie-watched="<%= movie.watch_date ? movie.watch_date.substring(0, 4) : '' %>"
-          data-js-movie-genres="<%= movie.genres.join(',') %>"
-        >
-          <div class="movie-bg" data-js-lazy-load data-js-lazy-load-url="<%= movie.posters['342'] %>"></div>
-          <div class="movie-rating">
-            ★ <%= movie.rating %>
-          </div>
-          <div class="movie-title">
-            <%= movie.title %>
-          </div>
-        </a>
-      <% }) %>
+    <div class="movies" data-js-movies>
     </div>
     <div class="no-results" data-js-no-results>No results</div>
     <script src="<%= assets.polyfillsScript %>"></script>
     <script src="<%= assets.moviesScript %>"></script>
     <script>
       Scripts.movies.init({
+        moviesFiles : <%- JSON.stringify(moviesFiles) %>,
         offlineAssets : <%- JSON.stringify(offlineAssets) %>,
       })
     </script>
