@@ -991,5 +991,44 @@
       "Mystery",
       "Thriller"
     ]
+  },
+  {
+    "title": "Enemy",
+    "original_title": "Enemy",
+    "watch_date": "2019-02-03",
+    "rating": 7,
+    "release_date": "2013-12-31",
+    "director": "Denis Villeneuve",
+    "tmdb_id": 181886,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg",
+      "original": "https://image.tmdb.org/t/p/original/aQkyFHzNzZoMhxZ7c0IaK8BljED.jpg"
+    },
+    "cast": [
+      "Jake Gyllenhaal",
+      "Mélanie Laurent",
+      "Sarah Gadon",
+      "Isabella Rossellini",
+      "Joshua Peace",
+      "Tim Post",
+      "Kedar Brown",
+      "Megan Mane",
+      "Misha Highstead",
+      "Alexis Uiga",
+      "Darryl Dinn",
+      "Kiran Friesen",
+      "Loretta Yu",
+      "Stephen R. Hart",
+      "Paul Stephen"
+    ],
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
