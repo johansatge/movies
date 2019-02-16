@@ -1076,5 +1076,65 @@
       "Action",
       "Thriller"
     ]
+  },
+  {
+    "title": "Sausage Party",
+    "original_title": "Sausage Party",
+    "watch_date": "2019-02-14",
+    "rating": 5,
+    "release_date": "2016-07-11",
+    "director": "Greg Tiernan",
+    "tmdb_id": 223702,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/w90cORtNWQAd2k93aFlIBbpQYTC.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/w90cORtNWQAd2k93aFlIBbpQYTC.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/w90cORtNWQAd2k93aFlIBbpQYTC.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/w90cORtNWQAd2k93aFlIBbpQYTC.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/w90cORtNWQAd2k93aFlIBbpQYTC.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/w90cORtNWQAd2k93aFlIBbpQYTC.jpg",
+      "original": "https://image.tmdb.org/t/p/original/w90cORtNWQAd2k93aFlIBbpQYTC.jpg"
+    },
+    "cast": [
+      "Seth Rogen",
+      "Kristen Wiig",
+      "Jonah Hill",
+      "Bill Hader",
+      "Michael Cera",
+      "James Franco",
+      "Danny McBride",
+      "Craig Robinson",
+      "Paul Rudd",
+      "Nick Kroll",
+      "David Krumholtz",
+      "Edward Norton",
+      "Salma Hayek",
+      "Anders Holm",
+      "Scott Underwood",
+      "Sugar Lyn Beard",
+      "Conrad Vernon",
+      "Ian James Corlett",
+      "Michael Daingerfield",
+      "Jason Simpson",
+      "Vincent Tong",
+      "Karen E. Wright",
+      "Lauren Miller",
+      "Sam Vincent",
+      "Greg Tiernan",
+      "Brian Dobson",
+      "Harland Williams",
+      "Alistair Abell",
+      "Iris Apatow",
+      "Michael Dobson",
+      "Ian Hanlin",
+      "Maryke Hendrikse",
+      "Nicole Oliver",
+      "Kelly Sheridan"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Fantasy"
+    ]
   }
 ]
