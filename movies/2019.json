@@ -1136,5 +1136,35 @@
       "Comedy",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Le Brio",
+    "original_title": "Le Brio",
+    "watch_date": "2019-02-16",
+    "rating": 5,
+    "release_date": "2017-11-22",
+    "director": "Yvan Attal",
+    "tmdb_id": 452187,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg",
+      "original": "https://image.tmdb.org/t/p/original/l43VMuUg1DoItf9nMcMSj2ZSbn3.jpg"
+    },
+    "cast": [
+      "Daniel Auteuil",
+      "Camélia Jordana",
+      "Yasin Houicha",
+      "Nozha Khouadra",
+      "Nicolas Vaude",
+      "Jean-Baptiste Lafarge"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
   }
 ]
