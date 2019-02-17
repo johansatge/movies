@@ -1269,5 +1269,51 @@
     "genres": [
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Summer of 84",
+    "original_title": "Summer of 84",
+    "watch_date": "2019-02-17",
+    "rating": 7,
+    "release_date": "2018-08-10",
+    "director": "Yoann-Karl Whissell",
+    "tmdb_id": 470229,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg",
+      "original": "https://image.tmdb.org/t/p/original/zastd8zM2ftOJpC7Y6gRFqAB7r.jpg"
+    },
+    "cast": [
+      "Graham Verchere",
+      "Judah Lewis",
+      "Caleb Emery",
+      "Cory Gruter-Andrew",
+      "Tiera Skovbye",
+      "Rich Sommer",
+      "Jason Gray-Stanford",
+      "J. Alex Brinson",
+      "William MacDonald",
+      "Harrison Houde",
+      "Mark Brandon",
+      "Susie Castillo",
+      "Jaiven Natt",
+      "Shauna Johannesen",
+      "Aren Buchholz",
+      "Patrick Lubczyk",
+      "Reilly Jacob",
+      "Patrick Keating",
+      "Jordan Buhat",
+      "Shahrokh Ferdowsi"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
