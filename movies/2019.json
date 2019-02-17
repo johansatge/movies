@@ -1236,5 +1236,38 @@
       "Crime",
       "Drama"
     ]
+  },
+  {
+    "title": "Just a Breath Away",
+    "original_title": "Dans la brume",
+    "watch_date": "2019-02-17",
+    "rating": 5,
+    "release_date": "2018-04-04",
+    "director": "Daniel Roby",
+    "tmdb_id": 477489,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg",
+      "original": "https://image.tmdb.org/t/p/original/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg"
+    },
+    "cast": [
+      "Romain Duris",
+      "Olga Kurylenko",
+      "Fantine Harduin",
+      "Michel Robin",
+      "Anna Gaylor",
+      "Erja Malatier",
+      "Réphaël Ghrenassia",
+      "Maurice Antoni",
+      "Alexis Manenti",
+      "Robin Barde"
+    ],
+    "genres": [
+      "Science Fiction"
+    ]
   }
 ]
