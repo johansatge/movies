@@ -153,8 +153,10 @@ function writeMoviesData() {
     }
   })
   const writers = []
+  let firstPage = true
   while (allMovies.length > 0) {
-    const movies = allMovies.splice(0, 100)
+    const movies = allMovies.splice(0, firstPage ? 50 : 200)
+    firstPage = false
     const json = JSON.stringify(movies)
     const jsonFilename = `/movies/${checksum(json)}.json`
     buildState.moviesFiles.push(jsonFilename)
