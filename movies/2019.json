@@ -1315,5 +1315,59 @@
       "Mystery",
       "Thriller"
     ]
+  },
+  {
+    "title": "Robin Hood",
+    "original_title": "Robin Hood",
+    "watch_date": "2019-02-23",
+    "rating": 4,
+    "release_date": "2018-11-20",
+    "director": "Otto Bathurst",
+    "tmdb_id": 375588,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg",
+      "original": "https://image.tmdb.org/t/p/original/AiRfixFcfTkNbn2A73qVJPlpkUo.jpg"
+    },
+    "cast": [
+      "Taron Egerton",
+      "Jamie Foxx",
+      "Ben Mendelsohn",
+      "Eve Hewson",
+      "Jamie Dornan",
+      "Tim Minchin",
+      "Paul Anderson",
+      "Roderick Hill",
+      "F. Murray Abraham",
+      "Ian Peck",
+      "Cornelius Booth",
+      "Kane Headley-Cummings",
+      "Scot Greenan",
+      "Lara Rossi",
+      "Kevin Griffiths",
+      "Catriona Temple",
+      "Björn Bengtsson",
+      "Nicholas Wittman",
+      "Yasen Atour",
+      "Josh Herdman",
+      "Jerome Holder",
+      "Kembe Sorel",
+      "Jonathan Peck",
+      "László Áron",
+      "Declan Hannigan",
+      "Antonio Lujak",
+      "Matt Devere",
+      "Andrea Mladinic",
+      "Frane Perišin"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ]
   }
 ]
