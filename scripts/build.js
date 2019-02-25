@@ -140,7 +140,7 @@ function writeMoviesData() {
   buildState.moviesFiles = []
   const allMovies = buildState.movies.map((movie) => {
     return {
-      rating: movie.rating,
+      rating: movie.rating + '',
       title: movie.title,
       fullTitle: `${movie.title} ${movie.original_title}`,
       director: movie.director,
