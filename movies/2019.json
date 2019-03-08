@@ -1573,5 +1573,36 @@
       "Family",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Ma famille t'adore déjà",
+    "original_title": "Ma famille t'adore déjà",
+    "watch_date": "2019-03-07",
+    "rating": 4,
+    "release_date": "2016-11-09",
+    "director": "Jérôme Commandeur",
+    "tmdb_id": 392140,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg",
+      "original": "https://image.tmdb.org/t/p/original/t57LIV16tfqo0rNaqoAx5X5IaHs.jpg"
+    },
+    "cast": [
+      "Arthur Dupont",
+      "Déborah François",
+      "Thierry Lhermitte",
+      "Marie-Anne Chazel",
+      "Valérie Karsenti",
+      "Jérôme Commandeur",
+      "Sabine Azéma",
+      "Eric Berger"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   }
 ]
