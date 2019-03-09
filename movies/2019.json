@@ -1604,5 +1604,66 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "Aquaman",
+    "original_title": "Aquaman",
+    "watch_date": "2019-03-09",
+    "rating": 5,
+    "release_date": "2018-12-07",
+    "director": "James Wan",
+    "tmdb_id": 297802,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "original": "https://image.tmdb.org/t/p/original/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
+    },
+    "cast": [
+      "Jason Momoa",
+      "Amber Heard",
+      "Nicole Kidman",
+      "Willem Dafoe",
+      "Patrick Wilson",
+      "Dolph Lundgren",
+      "Yahya Abdul-Mateen II",
+      "Tainu Kirkwood",
+      "Tamor Kirkwood",
+      "Kaan Guldur",
+      "Otis Dhanji",
+      "Kekoa Kumano",
+      "Graham McTavish",
+      "Temuera Morrison",
+      "Ludi Lin",
+      "Randall Park",
+      "Michael Beach",
+      "Djimon Hounsou",
+      "Natalia Safran",
+      "Sophia Forrest",
+      "Leigh Whannell",
+      "Julie Andrews",
+      "Andrew Crawford",
+      "John Rhys-Davies",
+      "Patrick Cox",
+      "Jon Quested",
+      "Winnie Mzembe",
+      "Connor Zegenhagen",
+      "Gabriella Petkova",
+      "Braden Lewis",
+      "Vincent B. Gorce",
+      "Sasha Dulics",
+      "Rhianna Palmer",
+      "Robert Longstreet",
+      "Luke Owen"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
+    ]
   }
 ]
