@@ -1739,5 +1739,56 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Escape Room",
+    "original_title": "Escape Room",
+    "watch_date": "2019-04-06",
+    "rating": 3,
+    "release_date": "2019-01-03",
+    "director": "Adam Robitel",
+    "tmdb_id": 522681,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+      "original": "https://image.tmdb.org/t/p/original/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg"
+    },
+    "cast": [
+      "Taylor Russell",
+      "Logan Miller",
+      "Jay Ellis",
+      "Tyler Labine",
+      "Deborah Ann Woll",
+      "Nik Dodani",
+      "Yorick van Wageningen",
+      "Kenneth Fok",
+      "Cornelius Geaney Jr.",
+      "Russell Crous",
+      "Bart Fouche",
+      "Jessica Sutton",
+      "Paul Hampshire",
+      "Vere Tindale",
+      "Jamie-Lee Money",
+      "Jeremy Jess Boado",
+      "Inge Beckmann",
+      "Raven Swart",
+      "Adam Robitel",
+      "Dan Gruenberg",
+      "Rebecca Riedy",
+      "Pete Sepenuk"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
