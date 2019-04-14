@@ -1790,5 +1790,55 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Nutcracker and the Four Realms",
+    "original_title": "The Nutcracker and the Four Realms",
+    "watch_date": "2019-04-13",
+    "rating": 3,
+    "release_date": "2018-10-26",
+    "director": "Joe Johnston",
+    "tmdb_id": 426543,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/tysit5m7HSEvf1wknPR0DeEhR7e.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/tysit5m7HSEvf1wknPR0DeEhR7e.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/tysit5m7HSEvf1wknPR0DeEhR7e.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/tysit5m7HSEvf1wknPR0DeEhR7e.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/tysit5m7HSEvf1wknPR0DeEhR7e.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/tysit5m7HSEvf1wknPR0DeEhR7e.jpg",
+      "original": "https://image.tmdb.org/t/p/original/tysit5m7HSEvf1wknPR0DeEhR7e.jpg"
+    },
+    "cast": [
+      "Keira Knightley",
+      "Mackenzie Foy",
+      "Eugenio Derbez",
+      "Matthew Macfadyen",
+      "Richard E. Grant",
+      "Misty Copeland",
+      "Helen Mirren",
+      "Morgan Freeman",
+      "Jayden Fowora-Knight",
+      "Anna Madeley",
+      "Ellie Bamber",
+      "Tom Sweet",
+      "Jack Whitehall",
+      "Omid Djalili",
+      "Meera Syal",
+      "Lil Buck",
+      "Gustavo Dudamel",
+      "Ocean Navarro",
+      "Sergei Polunin",
+      "Nick Mohammed",
+      "Charles Streeter",
+      "Trent Owers",
+      "Gemma Wilks",
+      "Andrei Cotofan",
+      "Jessie Vinning"
+    ],
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ]
   }
 ]
