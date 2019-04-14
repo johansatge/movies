@@ -105,7 +105,7 @@ function onRatingClick(evt, items) {
 
 function onReleaseYearClick(evt, items) {
   if (items.length === 1) {
-    document.location.href = `../#release:${items[0]._model.label}`
+    document.location.href = `../#released:${items[0]._model.label}`
   }
 }
 
