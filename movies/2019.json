@@ -1958,5 +1958,66 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Crazy Rich Asians",
+    "original_title": "Crazy Rich Asians",
+    "watch_date": "2019-05-11",
+    "rating": 6,
+    "release_date": "2018-08-15",
+    "director": "Jon M. Chu",
+    "tmdb_id": 455207,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+      "original": "https://image.tmdb.org/t/p/original/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg"
+    },
+    "cast": [
+      "Constance Wu",
+      "Henry Golding",
+      "Michelle Yeoh",
+      "Gemma Chan",
+      "Lisa Lu",
+      "Awkwafina",
+      "Harry Shum Jr.",
+      "Ken Jeong",
+      "Sonoya Mizuno",
+      "Chris Pang",
+      "Jimmy O. Yang",
+      "Ronny Chieng",
+      "Remy Hii",
+      "Nico Santos",
+      "Jing Lusi",
+      "Carmen Soo",
+      "Pierre Png",
+      "Fiona Xie",
+      "Victoria Loke",
+      "Janice Koh Yu-Mei",
+      "Amy Cheng",
+      "Chieng Mun Koh",
+      "Tan Kheng Hua",
+      "Constance Lau",
+      "Selena Tan",
+      "Kris Aquino",
+      "Peter Carroll",
+      "Jasmine Chen",
+      "Daniel Jenkins",
+      "Kina Kasuya Grannis",
+      "Jessica Galetti",
+      "Charles Grounds",
+      "Marcus Mok",
+      "Shuhei Kinoshita",
+      "Tumurbaatar Enkhtungalag",
+      "Russell Wong"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ]
   }
 ]
