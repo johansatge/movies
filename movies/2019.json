@@ -2236,5 +2236,51 @@
       "Drama",
       "Western"
     ]
+  },
+  {
+    "title": "Aladdin",
+    "original_title": "Aladdin",
+    "watch_date": "2019-05-28",
+    "rating": 7,
+    "release_date": "2019-05-22",
+    "director": "Guy Ritchie",
+    "tmdb_id": 420817,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+      "original": "https://image.tmdb.org/t/p/original/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg"
+    },
+    "cast": [
+      "Mena Massoud",
+      "Naomi Scott",
+      "Will Smith",
+      "Marwan Kenzari",
+      "Navid Negahban",
+      "Nasim Pedrad",
+      "Billy Magnussen",
+      "Numan Acar",
+      "Alan Tudyk",
+      "Frank Welker",
+      "Robby Haynes",
+      "Nina Wadia",
+      "Jordan A. Nash",
+      "Taliyah Blair",
+      "Aubrey Lin",
+      "Amir Boutrous",
+      "Buckso Dhillon-Woolley",
+      "Omar Abidi",
+      "Stefan Kalipha"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Fantasy",
+      "Romance"
+    ]
   }
 ]
