@@ -2176,5 +2176,65 @@
       "Drama",
       "Romance"
     ]
+  },
+  {
+    "title": "The Sisters Brothers",
+    "original_title": "The Sisters Brothers",
+    "watch_date": "2019-05-25",
+    "rating": 7,
+    "release_date": "2018-09-19",
+    "director": "Jacques Audiard",
+    "tmdb_id": 440161,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg",
+      "original": "https://image.tmdb.org/t/p/original/7Tl2nZ6uvmxwK14Skbf9VFHEHpX.jpg"
+    },
+    "cast": [
+      "John C. Reilly",
+      "Joaquin Phoenix",
+      "Jake Gyllenhaal",
+      "Riz Ahmed",
+      "Rebecca Root",
+      "Allison Tolman",
+      "Rutger Hauer",
+      "Carol Kane",
+      "Richard Brake",
+      "Hugo Dillon",
+      "Lexie Benbow-Hart",
+      "Diego Llano",
+      "Patrice Cossoneau",
+      "Zac Abbott",
+      "Trevor Allan Davies",
+      "Jóhannes Haukur Jóhannesson",
+      "Aidan O'Hare",
+      "Eric Colvin",
+      "Jochen Hägele",
+      "Sean Duggan",
+      "Nick Cornwall",
+      "Duncan Lacroix",
+      "Jean-Marc Bellu",
+      "Raymond Waring",
+      "Frédéric Siuen",
+      "Kelda Holmes",
+      "Andrew Litvack",
+      "Creed Bratton",
+      "David Gasman",
+      "Gerard Cooke",
+      "Philip Rosch",
+      "Ian Reddington",
+      "Lenuta Bala",
+      "Aldo Maland",
+      "Theo Exarchopoulos"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Western"
+    ]
   }
 ]
