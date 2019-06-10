@@ -2282,5 +2282,53 @@
       "Fantasy",
       "Romance"
     ]
+  },
+  {
+    "title": "Hot Rod",
+    "original_title": "Hot Rod",
+    "watch_date": "2019-06-10",
+    "rating": 6,
+    "release_date": "2007-08-03",
+    "director": "Akiva Schaffer",
+    "tmdb_id": 10074,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg",
+      "original": "https://image.tmdb.org/t/p/original/6LDKcAFFNJ3ra1a5LgPSiAbyJHC.jpg"
+    },
+    "cast": [
+      "Andy Samberg",
+      "Isla Fisher",
+      "Bill Hader",
+      "Sissy Spacek",
+      "Danny McBride",
+      "Jorma Taccone",
+      "Ian McShane",
+      "Will Arnett",
+      "Chris Parnell",
+      "Mark Acheson",
+      "Ken Kirzinger",
+      "Alana Husband",
+      "Chester Tam",
+      "Brittney Irvin",
+      "Brittany Tiplady",
+      "Andrew Moxham",
+      "Alvin Sanders",
+      "Terri O'Neill",
+      "Chris Eastman",
+      "Paulo Ribeiro",
+      "Brett Chan",
+      "Aaron Au",
+      "John Burnside",
+      "Akiva Schaffer"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
+    ]
   }
 ]
