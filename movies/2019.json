@@ -2330,5 +2330,57 @@
       "Action",
       "Comedy"
     ]
+  },
+  {
+    "title": "Us",
+    "original_title": "Us",
+    "watch_date": "2019-06-22",
+    "rating": 7,
+    "release_date": "2019-03-14",
+    "director": "Jordan Peele",
+    "tmdb_id": 458723,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "original": "https://image.tmdb.org/t/p/original/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg"
+    },
+    "cast": [
+      "Lupita Nyong'o",
+      "Winston Duke",
+      "Evan Alex",
+      "Shahadi Wright Joseph",
+      "Elisabeth Moss",
+      "Tim Heidecker",
+      "Yahya Abdul-Mateen II",
+      "Anna Diop",
+      "Cali Sheldon",
+      "Noelle Sheldon",
+      "Madison Curry",
+      "Napiera Groves",
+      "Lon Gowan",
+      "Alan Frazier",
+      "Duke Nicholson",
+      "Dustin Ybarra",
+      "Nathan Harrington",
+      "Kara Hayward",
+      "Darrel Cherney",
+      "David M Sandoval Jr.",
+      "James Cobb",
+      "Alessandro Garcia",
+      "Ashia Camille",
+      "Ray Walker",
+      "Abraham Reyes",
+      "Anne-Marie Olsen",
+      "Jessica Rubinstein",
+      "Jordan Peele"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
+    ]
   }
 ]
