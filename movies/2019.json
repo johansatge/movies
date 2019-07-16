@@ -2572,5 +2572,41 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Pet Sematary",
+    "original_title": "Pet Sematary",
+    "watch_date": "2019-07-16",
+    "rating": 6,
+    "release_date": "2019-04-04",
+    "director": "Kevin Kölsch",
+    "tmdb_id": 157433,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+      "original": "https://image.tmdb.org/t/p/original/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg"
+    },
+    "cast": [
+      "Jason Clarke",
+      "Amy Seimetz",
+      "John Lithgow",
+      "Jeté Laurence",
+      "Lucas Lavoie",
+      "Hugo Lavoie",
+      "Obssa Ahmed",
+      "Alyssa Brooke Levine",
+      "Naomi Frenette",
+      "Maria Herrera",
+      "Frank Schorpion"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
