@@ -3140,5 +3140,55 @@
       "Drama",
       "Western"
     ]
+  },
+  {
+    "title": "John Wick: Chapter 3 – Parabellum",
+    "original_title": "John Wick: Chapter 3 – Parabellum",
+    "watch_date": "2019-08-23",
+    "rating": 6,
+    "release_date": "2019-05-15",
+    "director": "Chad Stahelski",
+    "tmdb_id": 458156,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+      "original": "https://image.tmdb.org/t/p/original/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg"
+    },
+    "cast": [
+      "Keanu Reeves",
+      "Halle Berry",
+      "Ian McShane",
+      "Laurence Fishburne",
+      "Anjelica Huston",
+      "Saïd Taghmaoui",
+      "Mark Dacascos",
+      "Lance Reddick",
+      "Jerome Flynn",
+      "Asia Kate Dillon",
+      "Jason Mantzoukas",
+      "Boban Marjanović",
+      "Robin Lord Taylor",
+      "Cecep Arif Rahman",
+      "Yayan Ruhian",
+      "Arjon Bashiri",
+      "Susan Blommaert",
+      "Randall Duk Kim",
+      "Margaret Daly",
+      "Unity Phelan",
+      "Andrea Sooch",
+      "Sergio Delavicci",
+      "Tiler Peck",
+      "Tiger Hu Chen",
+      "Faith Logan"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
