@@ -3190,5 +3190,48 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "Parasite",
+    "original_title": "기생충",
+    "watch_date": "2019-08-24",
+    "rating": 8,
+    "release_date": "2019-05-30",
+    "director": "Bong Joon-ho",
+    "tmdb_id": 496243,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "original": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+    },
+    "cast": [
+      "Song Kang-ho",
+      "Lee Sun-kyun",
+      "Cho Yeo-jeong",
+      "Choi Woo-shik",
+      "Park So-dam",
+      "Lee Jung-eun",
+      "Chang Hyae-jin",
+      "Park Myung-hoon",
+      "Jung Ji-so",
+      "Jung Hyeon-jun",
+      "Park Keun-rok",
+      "Jung Yi-seo",
+      "Jeong Ik-han",
+      "Lee Joo-hyung",
+      "Lee Ji-hye",
+      "Andreas Fronk",
+      "Anna Elisabeth Rihlmann",
+      "Park Seo-joon"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ]
   }
 ]
