@@ -3233,5 +3233,41 @@
       "Drama",
       "Thriller"
     ]
+  },
+  {
+    "title": "Patients",
+    "original_title": "Patients",
+    "watch_date": "2019-09-08",
+    "rating": 7,
+    "release_date": "2017-03-01",
+    "director": "Grand Corps Malade",
+    "tmdb_id": 434616,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg",
+      "original": "https://image.tmdb.org/t/p/original/bsfTP1UFMZJTeZTnwfkPdMCj4QZ.jpg"
+    },
+    "cast": [
+      "Pablo Pauly",
+      "Soufiane Guerrab",
+      "Moussa Mansaly",
+      "Nailia Harzoune",
+      "Franck Falise",
+      "Yannick Renier",
+      "Alban Ivanov",
+      "Jason Divengele",
+      "Côme Levin",
+      "Dominique Blanc",
+      "Anne Benoît",
+      "Rabah Nait Oufella"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
   }
 ]
