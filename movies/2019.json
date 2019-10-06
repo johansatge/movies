@@ -3409,5 +3409,68 @@
       "Fantasy",
       "Romance"
     ]
+  },
+  {
+    "title": "Midsommar",
+    "original_title": "Midsommar",
+    "watch_date": "2019-10-06",
+    "rating": 8,
+    "release_date": "2019-07-03",
+    "director": "Ari Aster",
+    "tmdb_id": 530385,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg",
+      "original": "https://image.tmdb.org/t/p/original/rXsh4MI6uyVgZBSSzXCfitJnVPy.jpg"
+    },
+    "cast": [
+      "Florence Pugh",
+      "Jack Reynor",
+      "William Jackson Harper",
+      "Vilhelm Blomgren",
+      "Will Poulter",
+      "Ellora Torchia",
+      "Archie Madekwe",
+      "Henrik Norlén",
+      "Gunnel Fred",
+      "Isabelle Grill",
+      "Agnes Westerlund Rase",
+      "Julia Ragnarsson",
+      "Mats Blomgren",
+      "Lars Väringer",
+      "Anna Åström",
+      "Hampus Hallberg",
+      "Liv Mjönes",
+      "Louise Peterhoff",
+      "Katarina Weidhagen",
+      "Björn Andrésen",
+      "Tomas Engström",
+      "Dag Andersson",
+      "Lennart R. Svensson",
+      "Anders Beckman",
+      "Rebecka Johnston",
+      "Tove Skeidsvoll",
+      "Anders Back",
+      "Anki Larsson",
+      "Levente Puczkó-Smith",
+      "Frans Cavallin Rosengarten",
+      "Vilmos Kolba",
+      "Mihály Kaszás",
+      "Gabi Fón",
+      "Zsolt Bojári",
+      "Klaudia Csányi",
+      "Anna Berentzen",
+      "Austin R. Grant"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
