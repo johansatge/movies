@@ -3648,5 +3648,41 @@
       "Fantasy",
       "Romance"
     ]
+  },
+  {
+    "title": "Gemini Man",
+    "original_title": "Gemini Man",
+    "watch_date": "2019-10-19",
+    "rating": 4,
+    "release_date": "2019-10-02",
+    "director": "Ang Lee",
+    "tmdb_id": 453405,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "original": "https://image.tmdb.org/t/p/original/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg"
+    },
+    "cast": [
+      "Will Smith",
+      "Mary Elizabeth Winstead",
+      "Clive Owen",
+      "Benedict Wong",
+      "Linda Emond",
+      "Theodora Miranne",
+      "Justin James Boykin",
+      "Alexandra Szucs",
+      "Douglas Hodge",
+      "Tim Connolly",
+      "Victor Hugo",
+      "Georgia Curtis"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
   }
 ]
