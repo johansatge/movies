@@ -3684,5 +3684,52 @@
       "Action",
       "Thriller"
     ]
+  },
+  {
+    "title": "Fast & Furious Presents: Hobbs & Shaw",
+    "original_title": "Fast & Furious Presents: Hobbs & Shaw",
+    "watch_date": "2019-10-26",
+    "rating": 4,
+    "release_date": "2019-08-01",
+    "director": "David Leitch",
+    "tmdb_id": 384018,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg",
+      "original": "https://image.tmdb.org/t/p/original/kvpNZAQow5es1tSY6XW2jAZuPPG.jpg"
+    },
+    "cast": [
+      "Dwayne Johnson",
+      "Jason Statham",
+      "Idris Elba",
+      "Vanessa Kirby",
+      "Helen Mirren",
+      "Eiza González",
+      "Eddie Marsan",
+      "Eliana Su’a",
+      "Cliff Curtis",
+      "Lori Pelenise Tuisano",
+      "Rob Delaney",
+      "Stephanie Vogt",
+      "David Mumeni",
+      "Axel Nu",
+      "Lampros Kalfuntzos",
+      "Leati Joseph Anoaʻi",
+      "Kevin Hart",
+      "Ryan Reynolds",
+      "Tom Wu",
+      "Ima Caryl",
+      "Ella-Rae Smith",
+      "Rain Chan",
+      "Lee Anne Nyagodzi",
+      "Maria Sergejeva"
+    ],
+    "genres": [
+      "Action"
+    ]
   }
 ]
