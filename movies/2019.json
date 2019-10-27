@@ -3731,5 +3731,73 @@
     "genres": [
       "Action"
     ]
+  },
+  {
+    "title": "In the Tall Grass",
+    "original_title": "In the Tall Grass",
+    "watch_date": "2019-10-27",
+    "rating": 4,
+    "release_date": "2019-09-20",
+    "director": "Vincenzo Natali",
+    "tmdb_id": 523139,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+      "original": "https://image.tmdb.org/t/p/original/1RxhzwFkAUqMt215Brb06u8P8pn.jpg"
+    },
+    "cast": [
+      "Laysla De Oliveira",
+      "Avery Whitted",
+      "Patrick Wilson",
+      "Will Buie Jr.",
+      "Harrison Gilbertson",
+      "Tiffany Helm",
+      "Rachel Wilson"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ]
+  },
+  {
+    "title": "Scary Stories to Tell in the Dark",
+    "original_title": "Scary Stories to Tell in the Dark",
+    "watch_date": "2019-10-27",
+    "rating": 5,
+    "release_date": "2019-08-08",
+    "director": "André Øvredal",
+    "tmdb_id": 417384,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg",
+      "original": "https://image.tmdb.org/t/p/original/d0FWbzrmm99BTfUqf1Lbjl2zu3S.jpg"
+    },
+    "cast": [
+      "Zoe Colletti",
+      "Michael Garza",
+      "Gabriel Rush",
+      "Dean Norris",
+      "Gil Bellows",
+      "Lorraine Toussaint",
+      "Austin Zajur",
+      "Natalie Ganzhorn",
+      "Austin Abrams",
+      "Kathleen Pollard",
+      "Javier Botet",
+      "Mark Steger"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
+    ]
   }
 ]
