@@ -3875,5 +3875,41 @@
       "Comedy",
       "Horror"
     ]
+  },
+  {
+    "title": "The Art of Self-Defense",
+    "original_title": "The Art of Self-Defense",
+    "watch_date": "2019-11-01",
+    "rating": 7,
+    "release_date": "2019-07-12",
+    "director": "Riley Stearns",
+    "tmdb_id": 480001,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg",
+      "original": "https://image.tmdb.org/t/p/original/2yzkRUONrJV4jNj6FSEZBNRCzvC.jpg"
+    },
+    "cast": [
+      "Jesse Eisenberg",
+      "Alessandro Nivola",
+      "Imogen Poots",
+      "Steve Terada",
+      "Phillip Andre Botello",
+      "Jason Burkey",
+      "David Zellner",
+      "Leland Orser",
+      "Caroline Amiguet",
+      "Apollo Bacala",
+      "Hauke Bahr",
+      "Dallas Edwards"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
   }
 ]
