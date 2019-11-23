@@ -3911,5 +3911,44 @@
       "Comedy",
       "Drama"
     ]
+  },
+  {
+    "title": "City Hunter",
+    "original_title": "Nicky Larson et le Parfum de Cupidon",
+    "watch_date": "2019-11-23",
+    "rating": 7,
+    "release_date": "2018-12-15",
+    "director": "Philippe Lacheau",
+    "tmdb_id": 469274,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/gVKfVxoHE34nUUoehs0shNzpEVe.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/gVKfVxoHE34nUUoehs0shNzpEVe.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/gVKfVxoHE34nUUoehs0shNzpEVe.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/gVKfVxoHE34nUUoehs0shNzpEVe.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/gVKfVxoHE34nUUoehs0shNzpEVe.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/gVKfVxoHE34nUUoehs0shNzpEVe.jpg",
+      "original": "https://image.tmdb.org/t/p/original/gVKfVxoHE34nUUoehs0shNzpEVe.jpg"
+    },
+    "cast": [
+      "Philippe Lacheau",
+      "Élodie Fontan",
+      "Tarek Boudali",
+      "Pamela Anderson",
+      "Julien Arruti",
+      "Didier Bourdon",
+      "Gérard Jugnot",
+      "Kamel Guenfoud",
+      "Audrey Lamy",
+      "Chantal Ladesou",
+      "Raphaël Personnaz",
+      "Reem Kherici",
+      "Medi Sadoun",
+      "Sophie Mousel",
+      "Arben Bajraktaraj"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy"
+    ]
   }
 ]
