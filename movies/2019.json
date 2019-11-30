@@ -3950,5 +3950,44 @@
       "Adventure",
       "Comedy"
     ]
+  },
+  {
+    "title": "Rambo: Last Blood",
+    "original_title": "Rambo: Last Blood",
+    "watch_date": "2019-11-30",
+    "rating": 3,
+    "release_date": "2019-09-19",
+    "director": "Adrian Grunberg",
+    "tmdb_id": 522938,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
+      "original": "https://image.tmdb.org/t/p/original/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg"
+    },
+    "cast": [
+      "Sylvester Stallone",
+      "Yvette Monreal",
+      "Óscar Jaenada",
+      "Sergio Peris-Mencheta",
+      "Paz Vega",
+      "Joaquín Cosio",
+      "Adriana Barraza",
+      "Louis Mandylor",
+      "Marco de la O",
+      "Jessica Madsen",
+      "Nicholas Wittman",
+      "Díana Bermudez",
+      "Sheila Shah",
+      "Atanas Srebrev",
+      "Aaron Cohen"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
   }
 ]
