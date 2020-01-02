@@ -1,0 +1,57 @@
+[
+  {
+    "title": "A Star Is Born",
+    "original_title": "A Star Is Born",
+    "watch_date": "2020-01-01",
+    "rating": 6,
+    "release_date": "2018-10-03",
+    "director": "Bradley Cooper",
+    "tmdb_id": 332562,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "original": "https://image.tmdb.org/t/p/original/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg"
+    },
+    "cast": [
+      "Bradley Cooper",
+      "Lady Gaga",
+      "Sam Elliott",
+      "Andrew Dice Clay",
+      "Rafi Gavron",
+      "Anthony Ramos",
+      "Dave Chappelle",
+      "Marlon Williams",
+      "Brandi Carlile",
+      "Ron Rifkin",
+      "Barry Shabaka Henley",
+      "Michael D. Roberts",
+      "Michael Harney",
+      "Rebecca Field",
+      "Willam Belli",
+      "Greg Grunberg",
+      "D.J. \"Shangela\" Pierce",
+      "Eddie Griffin",
+      "Drena De Niro",
+      "Jacob Schick",
+      "Gabe Fazio",
+      "Luenell",
+      "Lukas Nelson",
+      "Anthony LoGerfo",
+      "Corey McCormick",
+      "Logan Metz",
+      "Tato Melgar",
+      "Don Roy King",
+      "Halsey",
+      "Alec Baldwin"
+    ],
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ]
+  }
+]
