@@ -290,5 +290,58 @@
       "Horror",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+    "original_title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+    "watch_date": "2020-02-11",
+    "rating": 6,
+    "release_date": "2020-02-05",
+    "director": "Cathy Yan",
+    "tmdb_id": 495764,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg",
+      "original": "https://image.tmdb.org/t/p/original/z7FCF54Jvzv9Anxyf82QeqFXXOO.jpg"
+    },
+    "cast": [
+      "Margot Robbie",
+      "Rosie Perez",
+      "Jurnee Smollett-Bell",
+      "Mary Elizabeth Winstead",
+      "Ewan McGregor",
+      "Ella Jay Basco",
+      "Chris Messina",
+      "Ali Wong",
+      "Matthew Willig",
+      "Dana Lee",
+      "Steven Williams",
+      "Robert Catrini",
+      "Daniel Bernhardt",
+      "François Chau",
+      "Miyuki Matsunaga",
+      "Anna Mikami",
+      "Paul Lasa",
+      "Charlene Amoia",
+      "Ella Mika",
+      "Derek Wilson",
+      "Bojana Novaković",
+      "Andy Hoff",
+      "Bruno Oliver",
+      "Michael Masini",
+      "Judy Kain",
+      "David Bianchi",
+      "Rj Wayne",
+      "Eddie Alfano"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ]
   }
 ]
