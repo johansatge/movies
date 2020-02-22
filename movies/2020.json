@@ -343,5 +343,64 @@
       "Comedy",
       "Crime"
     ]
+  },
+  {
+    "title": "Knives Out",
+    "original_title": "Knives Out",
+    "watch_date": "2020-02-22",
+    "rating": 8,
+    "release_date": "2019-11-27",
+    "director": "Rian Johnson",
+    "tmdb_id": 546554,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "original": "https://image.tmdb.org/t/p/original/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
+    },
+    "cast": [
+      "Daniel Craig",
+      "Chris Evans",
+      "Ana de Armas",
+      "Jamie Lee Curtis",
+      "Michael Shannon",
+      "Don Johnson",
+      "Toni Collette",
+      "Lakeith Stanfield",
+      "Christopher Plummer",
+      "Katherine Langford",
+      "Jaeden Martell",
+      "Riki Lindhome",
+      "Edi Patterson",
+      "Frank Oz",
+      "K Callan",
+      "Noah Segan",
+      "M. Emmet Walsh",
+      "Marlene Forte",
+      "Raúl Castillo",
+      "Shyrley Rodriguez",
+      "Kerry Frances",
+      "Gary Tanguay",
+      "Octavia Chavez-Richmond",
+      "Joseph Gordon-Levitt",
+      "Paul Bellefeuille",
+      "Ben Bunnag",
+      "Michael Burnell",
+      "Frankie Francois",
+      "Marcela Jaramillo",
+      "Gabrielle Lorthe",
+      "Rob Lévesque",
+      "Paul Tawczynski"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
