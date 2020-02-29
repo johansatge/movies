@@ -402,5 +402,60 @@
       "Mystery",
       "Thriller"
     ]
+  },
+  {
+    "title": "Zombieland: Double Tap",
+    "original_title": "Zombieland: Double Tap",
+    "watch_date": "2020-02-29",
+    "rating": 6,
+    "release_date": "2019-10-09",
+    "director": "Ruben Fleischer",
+    "tmdb_id": 338967,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
+      "original": "https://image.tmdb.org/t/p/original/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg"
+    },
+    "cast": [
+      "Woody Harrelson",
+      "Jesse Eisenberg",
+      "Emma Stone",
+      "Abigail Breslin",
+      "Zoey Deutch",
+      "Avan Jogia",
+      "Rosario Dawson",
+      "Luke Wilson",
+      "Thomas Middleditch",
+      "Victoria Hall",
+      "Victor Rivera",
+      "Ian Gregg",
+      "Devin Mojica",
+      "Rachel Luttrell",
+      "John Dixon",
+      "Ronny A. Matthew",
+      "Jess Durham",
+      "David Fleischer",
+      "Jenin Gonzalez",
+      "Felix Detancourt",
+      "Lucas Fleischer",
+      "Gianni Diasetti, Jr.",
+      "Ari Loeb",
+      "Anthony Dilio",
+      "Bill Murray",
+      "Julia Vasi",
+      "Al Roker",
+      "Lili Estefan",
+      "Josh Horowitz",
+      "Grace Randolph"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Horror"
+    ]
   }
 ]
