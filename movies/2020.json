@@ -457,5 +457,44 @@
       "Comedy",
       "Horror"
     ]
+  },
+  {
+    "title": "Jexi",
+    "original_title": "Jexi",
+    "watch_date": "2020-04-04",
+    "rating": 5,
+    "release_date": "2019-10-10",
+    "director": "Scott Moore",
+    "tmdb_id": 620725,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg",
+      "original": "https://image.tmdb.org/t/p/original/pdYhXJPoV0Kvwdih74lejHPTyWL.jpg"
+    },
+    "cast": [
+      "Adam Devine",
+      "Rose Byrne",
+      "Alexandra Shipp",
+      "Michael Peña",
+      "Justin Hartley",
+      "Charlyne Yi",
+      "Wanda Sykes",
+      "Ron Funches",
+      "September D'Angelo",
+      "Marcella Bragio",
+      "Kelly Richardson",
+      "Vanessa Sheri",
+      "Brenda Lorena Garcia",
+      "Alexandra Fabbri",
+      "Tony Toste",
+      "Kid Cudi"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   }
 ]
