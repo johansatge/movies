@@ -496,5 +496,45 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "Ip Man 4: The Finale",
+    "original_title": "葉問4",
+    "watch_date": "2020-04-11",
+    "rating": 5,
+    "release_date": "2019-12-19",
+    "director": "Wilson Yip",
+    "tmdb_id": 449924,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+      "original": "https://image.tmdb.org/t/p/original/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg"
+    },
+    "cast": [
+      "Donnie Yen",
+      "Wu Yue",
+      "Vanness Wu",
+      "Scott Adkins",
+      "Danny Chan Kwok-Kwan",
+      "Vanda Lee",
+      "Karena Ng",
+      "Kent Cheng",
+      "Ngo Ka-nin",
+      "Lynn Hung",
+      "Lo Meng",
+      "Mark Strange",
+      "Chris Collins",
+      "Grace Englert",
+      "Nicola Stuart-Hill"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "History"
+    ]
   }
 ]
