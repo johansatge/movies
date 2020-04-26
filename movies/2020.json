@@ -633,5 +633,42 @@
       "Adventure",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Sonic the Hedgehog",
+    "original_title": "Sonic the Hedgehog",
+    "watch_date": "2020-04-25",
+    "rating": 3,
+    "release_date": "2020-02-12",
+    "director": "Jeff Fowler",
+    "tmdb_id": 454626,
+    "posters": {
+      "92": "https://image.tmdb.org/t/p/w92/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+      "154": "https://image.tmdb.org/t/p/w154/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+      "185": "https://image.tmdb.org/t/p/w185/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+      "342": "https://image.tmdb.org/t/p/w342/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+      "500": "https://image.tmdb.org/t/p/w500/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+      "780": "https://image.tmdb.org/t/p/w780/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+      "original": "https://image.tmdb.org/t/p/original/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg"
+    },
+    "cast": [
+      "Ben Schwartz",
+      "James Marsden",
+      "Jim Carrey",
+      "Tika Sumpter",
+      "Natasha Rothwell",
+      "Adam Pally",
+      "Lee Majdoub",
+      "Neal McDonough",
+      "Tom Butler",
+      "Frank C. Turner",
+      "Colleen O'Shaughnessey"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Family",
+      "Science Fiction"
+    ]
   }
 ]
