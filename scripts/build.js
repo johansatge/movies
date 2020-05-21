@@ -318,27 +318,27 @@ function getServiceWorkerCacheTypes() {
     {
       name: `base-${htmlHash}-${appHash}-${moviesHash}`,
       matches: [
-        {type: 'path', value: '/'},
-        {type: 'path', value: '/index.html'},
-        {type: 'path', value: '/stats/'},
-        {type: 'path', value: '/stats/index.html'},
+        {type: 'absPath', value: '/'},
+        {type: 'absPath', value: '/index.html'},
+        {type: 'absPath', value: '/stats/'},
+        {type: 'absPath', value: '/stats/index.html'},
       ],
     },
     // App assets (JS files, fonts...)
     {
       name: `app-${appHash}`,
       matches: appAssets.map((asset) => {
-        return {type: 'path', value: asset}
+        return {type: 'absPath', value: asset}
       }),
     },
-    // Movies-related assets (images & JSON resources for the stats page)
+    // Movies-related assets (images & JSON resources)
     {
       name: `movies-${moviesHash}`,
       matches: [
-        ...moviesAssets.map((asset) => {
-          return {type: 'path', value: asset}
-        }),
-        {type: 'domain', value: 'image.tmdb.org'},
+        {type: 'pathStartsWith', value: '/posters/'},
+        {type: 'pathStartsWith', value: '/actors/'},
+        {type: 'pathStartsWith', value: '/directors/'},
+        {type: 'pathStartsWith', value: '/movies/'},
       ],
     },
   ]

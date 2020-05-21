@@ -146,10 +146,10 @@ function getCacheNameForRequest(request) {
   const url = new URL(request.url)
   const type = cacheTypes.find((type) => {
     return type.matches.find((match) => {
-      if (match.type === 'domain' && url.hostname === match.value) {
+      if (match.type === 'pathStartsWith' && url.pathname.startsWith(match.value)) {
         return true
       }
-      if (match.type === 'path' && url.pathname === match.value) {
+      if (match.type === 'absPath' && url.pathname === match.value) {
         return true
       }
       return false
