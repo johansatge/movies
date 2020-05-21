@@ -11,9 +11,10 @@ self.addEventListener('install', onInstall)
 self.addEventListener('activate', onActivate)
 self.addEventListener('fetch', onFetch)
 
-function debug(message) {
+function debug(message, color = 'ffcf20') {
   if (self.location.hostname === 'localhost') {
-    console.log(`SW: ${message}`) // eslint-disable-line no-console
+    const cssColor = `background: #${color}; color: #000000; padding: 4px;`
+    console.log('%cSW', cssColor, message) // eslint-disable-line no-console
   }
 }
 
@@ -35,7 +36,7 @@ function onActivate(evt) {
       .keys()
       .then(cleanCacheKeys)
       .then(() => debug('activated'))
-      .catch((error) => debug(`could not active (${error.message})`))
+      .catch((error) => debug(`could not activate (${error.message})`))
   )
 }
 
@@ -73,10 +74,10 @@ function onFetch(evt) {
       const canUseCache = evt.request.url.search(/#nocache$/) === -1
       const fetchAndCacheResource = fetchAndCache(evt.request, !canUseCache)
       if (cachedResource && canUseCache) {
-        debug(`serving ${evt.request.url} from cache`)
+        debug(`serving ${evt.request.url} from cache`, '8ebf2a')
         return cachedResource
       }
-      debug(`serving ${evt.request.url} from network`)
+      debug(`serving ${evt.request.url} from network`, 'fd9621')
       return fetchAndCacheResource
     })
   )
