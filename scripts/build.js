@@ -1,4 +1,3 @@
-require('dotenv').config()
 
 const checksum = require('checksum')
 const ejs = require('ejs')
@@ -10,7 +9,7 @@ const movies = require('../movies/movies.js')
 const path = require('path')
 const promisify = require('util').promisify
 const webpack = require('webpack')
-const stats = require('./stats.js')
+const { extractStats } = require('./helpers/stats.js')
 
 const buildState = {
   assets: {},
@@ -128,7 +127,7 @@ function readMovies() {
   log('Reading movies list')
   return movies.getByWatchDate().then((list) => {
     buildState.movies = list
-    buildState.stats = stats.extract(list)
+    buildState.stats = extractStats(list)
   })
 }
 

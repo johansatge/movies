@@ -1,12 +1,9 @@
-require('dotenv').config()
-
 const fs = require('fs-extra')
 const path = require('path')
-const request = require('request')
+const { fetchMovieSearch, fetchMovieData } = require('./helpers/tmdb.js')
 
 let movieSearchTerm = null
 let matchingMovies = null
-let apiConfiguration = null
 let movieSelection = null
 let movieData = {
   title: null,
@@ -43,23 +40,20 @@ function askMovieSearchTerm() {
 }
 
 function getAndShowMatchingMovies() {
-  return Promise.all([
-    fetchApi('/configuration'),
-    fetchApi(`/search/movie?language=en-US&page=1&include_adult=false&query=${encodeURIComponent(movieSearchTerm)}`),
-  ]).then(([configuration, results]) => {
-    if (results.results.length === 0) {
-      return Promise.reject(new Error('No matching movies found'))
-    }
-    apiConfiguration = configuration
-    matchingMovies = results.results
-    results.results.forEach((result, index) => {
-      const title = result.title
-      const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
-      const year = result.release_date.substring(0, 4)
-      const url = `https://www.themoviedb.org/movie/${result.id}`
-      process.stdout.write(`${index}. ${title} (${year})${originalTitle} - ${url}\n`)
+  return fetchMovieSearch(movieSearchTerm)
+    .then((results) => {
+      if (results.length === 0) {
+        return Promise.reject(new Error('No matching movies found'))
+      }
+      matchingMovies = results
+      results.forEach((result, index) => {
+        const title = result.title
+        const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
+        const year = result.release_date.substring(0, 4)
+        const url = `https://www.themoviedb.org/movie/${result.id}`
+        process.stdout.write(`${index}. ${title} (${year})${originalTitle} - ${url}\n`)
+      })
     })
-  })
 }
 
 function askMovieSelection() {
@@ -82,26 +76,11 @@ function askMovieWatchDate() {
 
 function getSelectedMovieDetails() {
   const movieId = matchingMovies[movieSelection].id
-  return Promise.all([fetchApi(`/movie/${movieId}`), fetchApi(`/movie/${movieId}/credits`)]).then(
-    ([movieDetails, movieCredits]) => {
-      movieData.tmdb_id = movieId
-      movieData.title = movieDetails.title
-      movieData.original_title = movieDetails.original_title
-      movieData.release_date = movieDetails.release_date
-      movieData.cast = movieCredits.cast.map((member) => member.name)
-      apiConfiguration.images.poster_sizes.forEach((size) => {
-        movieData.posters[size.replace(/^w/, '')] = `${apiConfiguration.images.secure_base_url}${size}${
-          movieDetails.poster_path
-        }`
-      })
-      movieCredits.crew.forEach((member) => {
-        if (member.job === 'Director') {
-          movieData.director = member.name
-        }
-      })
-      movieData.genres = movieDetails.genres.map((genre) => genre.name).sort()
-    }
-  )
+  return fetchMovieData(movieId).then((data) => {
+    Object.keys(data).forEach((key) => {
+      movieData[key] = data[key]
+    })
+  })
 }
 
 function writeMovie() {
@@ -134,22 +113,5 @@ function readInput(message) {
     stdin.addListener('data', (buffer) => {
       resolve(buffer.toString().trim())
     })
-  })
-}
-
-function fetchApi(endpoint) {
-  return new Promise((resolve, reject) => {
-    const apiKey = process.env.TMDB_API_KEY
-    const url = `https://api.themoviedb.org/3${endpoint}${endpoint.search(/\?/) > -1 ? '&' : '?'}&api_key=${apiKey}`
-    request(
-      {
-        method: 'get',
-        url,
-      },
-      (error, response, body) => {
-        const code = response.statusCode
-        error ? reject(error) : code === 200 ? resolve(JSON.parse(body)) : reject(new Error(`${code} error`))
-      }
-    )
   })
 }

@@ -1,12 +1,11 @@
-module.exports = {
-  extract,
-}
+const m = {}
+module.exports = m
 
 /**
  * Extract meaningful stats from a list of movies,
  * and return them to be used in the build script
  */
-function extract(movies) {
+m.extractStats = function(movies) {
   const ratings = {}
   const months = {}
   const releaseYears = {}
