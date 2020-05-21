@@ -5,11 +5,12 @@ const frontendConfig = require('../frontend/config.js')
 const fs = require('fs-extra')
 const glob = require('glob')
 const minify = require('html-minifier').minify
-const movies = require('../movies/movies.js')
+const { getMoviesByWatchDate } = require('./helpers/movie.js')
 const path = require('path')
 const promisify = require('util').promisify
 const webpack = require('webpack')
 const { extractStats } = require('./helpers/stats.js')
+const { log } = require('./helpers/log.js')
 
 const buildState = {
   assets: {},
@@ -27,6 +28,7 @@ cleanDist()
   .then(writeActors)
   .then(writeDirectors)
   .then(buildFrontendAssets)
+  .then(copyPosters)
   .then(renderMoviesHtml)
   .then(renderStatsHtml)
   .then(buildServiceWorker)
@@ -35,10 +37,6 @@ cleanDist()
     log(error.message)
     process.exit(1)
   })
-
-function log(message) {
-  console.log(message) // eslint-disable-line no-console
-}
 
 /**
  * Clean destination directory
@@ -125,7 +123,7 @@ function writeManifest() {
  */
 function readMovies() {
   log('Reading movies list')
-  return movies.getByWatchDate().then((list) => {
+  return getMoviesByWatchDate().then((list) => {
     buildState.movies = list
     buildState.stats = extractStats(list)
   })
@@ -147,7 +145,7 @@ function writeMoviesData() {
       released: movie.release_date.substring(0, 4),
       watched: movie.watch_date ? movie.watch_date.substring(0, 4) : '',
       genres: movie.genres.join(','),
-      poster: movie.posters['342'],
+      poster: movie.poster,
       url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,
     }
   })
@@ -222,6 +220,13 @@ function buildFrontendAssets() {
     buildState.statsStyles = require(statsStylesPath).toString()
     return Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
   })
+}
+
+function copyPosters() {
+  log('Copying posters')
+  const source = path.join(__dirname, '../movies/posters')
+  const dest = path.join(outputDir, 'posters')
+  return fs.copy(source, dest)
 }
 
 /**

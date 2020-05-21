@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "import": "node scripts/import.js",
+    "import-refresh": "node scripts/import-refresh.js",
     "build": "node scripts/build.js",
     "server": "node scripts/build.js && node scripts/server.js",
     "checkstyle": "eslint ."

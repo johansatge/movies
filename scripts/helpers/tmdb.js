@@ -15,26 +15,8 @@ m.fetchMovieSearch = function(rawTerm) {
 
 m.fetchMovieData = function(movieId) {
   return Promise.all([getConfiguration(), fetchApi(`/movie/${movieId}`), fetchApi(`/movie/${movieId}/credits`)]).then(
-    ([configuration, movieDetails, movieCredits]) => {
-      const data = {}
-      data.tmdb_id = movieId
-      data.title = movieDetails.title
-      data.original_title = movieDetails.original_title
-      data.release_date = movieDetails.release_date
-      data.cast = movieCredits.cast.map((member) => member.name)
-      data.posters = {}
-      configuration.images.poster_sizes.forEach((size) => {
-        data.posters[size.replace(/^w/, '')] = `${configuration.images.secure_base_url}${size}${
-          movieDetails.poster_path
-        }`
-      })
-      movieCredits.crew.forEach((member) => {
-        if (member.job === 'Director') {
-          data.director = member.name
-        }
-      })
-      data.genres = movieDetails.genres.map((genre) => genre.name).sort()
-      return data
+    ([config, details, credits]) => {
+      return { config, details, credits }
     }
   )
 }

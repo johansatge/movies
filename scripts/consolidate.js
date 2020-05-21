@@ -8,6 +8,8 @@ const files = [
   'movies/2015.json',
   'movies/2016.json',
   'movies/2018.json',
+  'movies/2019.json',
+  'movies/2020.json',
 ]
 
 files.forEach((filePath) => {

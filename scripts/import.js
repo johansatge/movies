@@ -1,21 +1,14 @@
 const fs = require('fs-extra')
 const path = require('path')
 const { fetchMovieSearch, fetchMovieData } = require('./helpers/tmdb.js')
+const { fetchFormattedMovieData } = require('./helpers/movie.js')
+const { log } = require('./helpers/log.js')
 
 let movieSearchTerm = null
 let matchingMovies = null
 let movieSelection = null
-let movieData = {
-  title: null,
-  original_title: null,
-  watch_date: null,
-  rating: null,
-  release_date: null,
-  director: null,
-  tmdb_id: null,
-  posters: {},
-  cast: null,
-}
+let watchDate = null
+let rating = null
 
 askMovieSearchTerm()
   .then(getAndShowMatchingMovies)
@@ -25,11 +18,11 @@ askMovieSearchTerm()
   .then(getSelectedMovieDetails)
   .then(writeMovie)
   .then(() => {
-    console.log('Movie saved') // eslint-disable-line no-console
+    log('Movie saved')
     process.exit(0)
   })
   .catch((error) => {
-    console.error(error.message) // eslint-disable-line no-console
+    log(error.message)
     process.exit(1)
   })
 
@@ -64,26 +57,24 @@ function askMovieSelection() {
 
 function askMovieRating() {
   return readInput('Rating (0-10): ').then((input) => {
-    movieData.rating = parseInt(input)
+    rating = parseInt(input)
   })
 }
 
 function askMovieWatchDate() {
   return readInput('Watch date (YYYY-MM-DD or empty if unknown): ').then((input) => {
-    movieData.watch_date = input.length > 0 ? input : null
+    watchDate = input.length > 0 ? input : null
   })
 }
 
 function getSelectedMovieDetails() {
   const movieId = matchingMovies[movieSelection].id
-  return fetchMovieData(movieId).then((data) => {
-    Object.keys(data).forEach((key) => {
-      movieData[key] = data[key]
-    })
+  return fetchMovieData(movieId).then((tmdbData) => {
+    return fetchFormattedMovieData(rating, watchDate, tmdbData)
   })
 }
 
-function writeMovie() {
+function writeMovie(movieData) {
   return new Promise((resolve, reject) => {
     const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '_unsorted.json'
     const filePath = path.join(__dirname, '..', 'movies', fileName)
