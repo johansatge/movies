@@ -180,7 +180,13 @@
     margin: 0 14px 0 0;
   }
   .topbar-search {
-    width: 100%;
-    margin: 10px 0 0 0;
+    width: auto;
+    left: 15px;
+    right: 15px;
+    display: block;
+    float: none;
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
   }
 }
