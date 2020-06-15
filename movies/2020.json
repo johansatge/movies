@@ -775,5 +775,58 @@
       "Comedy",
       "Crime"
     ]
+  },
+  {
+    "title": "Young Frankenstein",
+    "original_title": "Young Frankenstein",
+    "watch_date": "2020-06-13",
+    "rating": 7,
+    "release_date": "1974-12-15",
+    "director": "Mel Brooks",
+    "tmdb_id": 3034,
+    "poster": "posters/3034.jpg",
+    "cast": [
+      "Gene Wilder",
+      "Teri Garr",
+      "Marty Feldman",
+      "Peter Boyle",
+      "Cloris Leachman",
+      "Madeline Kahn",
+      "Kenneth Mars",
+      "Richard Haydn",
+      "Liam Dunn",
+      "Danny Goldman",
+      "Oscar Beregi Jr.",
+      "Arthur Malet",
+      "Richard A. Roth",
+      "Monte Landis",
+      "Rusty Blitz",
+      "Anne Beesley",
+      "Gene Hackman",
+      "John Madison",
+      "John Dennis",
+      "Rick Norman",
+      "Rolfe Sedan",
+      "Terrence Pushman",
+      "Randolph Dobbs",
+      "Norbert Schiller",
+      "Pat O'Hara",
+      "Michael Fox",
+      "Lidia Kristen",
+      "Berry Kroeger",
+      "Ian Abercrombie",
+      "Mel Brooks",
+      "Lou Cutell",
+      "Leoda Richards",
+      "Clement von Franckenstein",
+      "Jeff Maxwell",
+      "Lars Hensen",
+      "Johnny Marlin",
+      "Maida Severn",
+      "Arthur Tovey"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   }
 ]
