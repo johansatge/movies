@@ -1,9 +1,8 @@
 /* global document */
 
-import axios from 'axios'
 import Chart from 'chart.js'
 
-export {init}
+export { init }
 
 const state = {
   actors: {
@@ -77,24 +76,14 @@ function addActorsDirectors(type) {
 }
 
 function getActorsDirectors(type) {
-  return new Promise((resolve, reject) => {
     if (state[type].items.length > 0) {
-      return resolve()
+      return Promise.resolve()
     }
-    axios({
-      url: state[type].files.splice(0, 1),
-      method: 'get',
-      json: true,
-    })
+    return window.fetch(state[type].files.splice(0, 1))
+      .then((response) => response.json())
       .then((response) => {
-        if (response.data) {
-          state[type].items = state[type].items.concat(response.data)
-          return resolve()
-        }
-        reject(new Error('Empty response'))
+        state[type].items = state[type].items.concat(response)
       })
-      .catch(reject)
-  })
 }
 
 function onRatingClick(evt, items) {
