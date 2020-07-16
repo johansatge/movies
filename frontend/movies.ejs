@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#ffcf20">
     <link rel="icon" type="image/png" href="<%= assets.favicon %>">
+    <link rel="apple-touch-icon" href="<%= assets['logo-256'] %>">
   </head>
   <body>
     <div class="offline-progress-overlay" data-js-offline-progress-overlay>
@@ -29,7 +30,7 @@
         <button class="offline-message-button" data-js-offline-message-confirm>Ok</button>
       </div>
     </div>
-    <div class="topbar topbar--search" data-js-topbar>
+    <heading class="topbar topbar--search" data-js-topbar>
       <a href="#" class="topbar-title topbar-title--current">
         <span class="topbar-title-count" data-js-movies-count></span> Movies
       </a>
@@ -47,8 +48,8 @@
         <a class="topbar-search-help" href="http://github.com/johansatge/movies/#advanced-search" target="_blank" rel="noopener">Help</a>
       </label>
       <button class="topbar-search-toggle" data-js-search-toggle>Toggle search</button>
-    </div>
-    <div class="movies" data-js-movies></div>
+    </heading>
+    <main class="movies" data-js-movies></main>
     <script type="text/template" data-js-movie-template>
       <div class="movie-bg" style="background-image: url(__poster__)"></div>
       <div class="movie-rating">★ __rating__</div>

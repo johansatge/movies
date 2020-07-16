@@ -10,9 +10,10 @@
     <link href="<%= assets.manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/png" href="<%= assets.favicon %>">
+    <link rel="apple-touch-icon" href="<%= assets['logo-256'] %>">
   </head>
   <body>
-    <div class="topbar">
+    <heading class="topbar">
       <a href=".." class="topbar-title">
         <span class="topbar-title-count"><%= movies.length %></span> Movies
       </a>
@@ -22,7 +23,7 @@
       <a href="http://github.com/johansatge/movies" class="topbar-title">
         About
       </a>
-    </div>
+    </heading>
     <div class="stats">
       <h2 class="stat-heading">
         Ratings
