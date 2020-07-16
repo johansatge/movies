@@ -117,14 +117,14 @@
   height: 20px;
   top: 6px;
   right: 8px;
-  background: #7a7a7a;
+  background: #444444;
   color: #ffffff;
   text-align: center;
   font-weight: bold;
   font-size: 11px;
   line-height: 20px;
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .topbar-search-toggle {
   display: none;
@@ -136,6 +136,7 @@
   transform: rotate(45deg);
   transform-origin: 50% 50%;
   cursor: pointer;
+  font-size: 0;
 }
 [data-js-search-hidden] .topbar-search-toggle {
   top: 11px;

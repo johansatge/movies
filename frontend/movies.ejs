@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>Movies</title>
+    <meta name="description" content="A list of movies I have watched, in a PWA, with ratings and stats">
     <style><%- moviesStyles %></style>
     <link href="<%= assets.manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
@@ -45,7 +46,7 @@
         <input data-js-search class="topbar-search-input" placeholder="Search movie..." value="">
         <a class="topbar-search-help" href="http://github.com/johansatge/movies/#advanced-search" target="_blank" rel="noopener">Help</a>
       </label>
-      <button class="topbar-search-toggle" data-js-search-toggle></button>
+      <button class="topbar-search-toggle" data-js-search-toggle>Toggle search</button>
     </div>
     <div class="movies" data-js-movies></div>
     <script type="text/template" data-js-movie-template>
