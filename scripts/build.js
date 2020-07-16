@@ -1,4 +1,3 @@
-
 const checksum = require('checksum')
 const ejs = require('ejs')
 const frontendConfig = require('../frontend/config.js')
@@ -318,27 +317,27 @@ function getServiceWorkerCacheTypes() {
     {
       name: `base-${htmlHash}-${appHash}-${moviesHash}`,
       matches: [
-        {type: 'absPath', value: '/'},
-        {type: 'absPath', value: '/index.html'},
-        {type: 'absPath', value: '/stats/'},
-        {type: 'absPath', value: '/stats/index.html'},
+        { type: 'absPath', value: '/' },
+        { type: 'absPath', value: '/index.html' },
+        { type: 'absPath', value: '/stats/' },
+        { type: 'absPath', value: '/stats/index.html' },
       ],
     },
     // App assets (JS files, fonts...)
     {
       name: `app-${appHash}`,
       matches: appAssets.map((asset) => {
-        return {type: 'absPath', value: asset}
+        return { type: 'absPath', value: asset }
       }),
     },
     // Movies-related assets (images & JSON resources)
     {
       name: `movies-${moviesHash}`,
       matches: [
-        {type: 'pathStartsWith', value: '/posters/'},
-        {type: 'pathStartsWith', value: '/actors/'},
-        {type: 'pathStartsWith', value: '/directors/'},
-        {type: 'pathStartsWith', value: '/movies/'},
+        { type: 'pathStartsWith', value: '/posters/' },
+        { type: 'pathStartsWith', value: '/actors/' },
+        { type: 'pathStartsWith', value: '/directors/' },
+        { type: 'pathStartsWith', value: '/movies/' },
       ],
     },
   ]

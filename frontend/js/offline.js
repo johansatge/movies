@@ -61,7 +61,7 @@ function recursiveFetch(assets, callback) {
     return callback(new Error('Operation cancelled'))
   }
   const urls = assets.splice(0, 20)
-  Promise.all(urls.map((url) => fetch(`${url}#nocache`, {mode: 'no-cors'})))
+  Promise.all(urls.map((url) => fetch(`${url}#nocache`, { mode: 'no-cors' })))
     .then((responses) => {
       const error = responses.find((response) => response.type !== 'opaque' && !response.ok)
       if (error) {

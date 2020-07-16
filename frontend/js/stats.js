@@ -1,4 +1,4 @@
-/* global document */
+/* global window, document */
 
 import Chart from 'chart.js'
 
@@ -76,14 +76,15 @@ function addActorsDirectors(type) {
 }
 
 function getActorsDirectors(type) {
-    if (state[type].items.length > 0) {
-      return Promise.resolve()
-    }
-    return window.fetch(state[type].files.splice(0, 1))
-      .then((response) => response.json())
-      .then((response) => {
-        state[type].items = state[type].items.concat(response)
-      })
+  if (state[type].items.length > 0) {
+    return Promise.resolve()
+  }
+  return window
+    .fetch(state[type].files.splice(0, 1))
+    .then((response) => response.json())
+    .then((response) => {
+      state[type].items = state[type].items.concat(response)
+    })
 }
 
 function onRatingClick(evt, items) {

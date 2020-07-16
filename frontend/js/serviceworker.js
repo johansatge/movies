@@ -1,4 +1,4 @@
-/* global self, caches, fetch, URL, Headers, Response, OFFLINE_CACHE_TYPES */
+/* global self, caches, fetch, Headers, Response, OFFLINE_CACHE_TYPES */
 
 /**
  * Populated on build (see webpack config)
@@ -123,7 +123,7 @@ function fetchAndCache(request, cacheIsMandatory) {
  */
 function fetchResource(request) {
   const swDomain = `${self.location.protocol}//${self.location.hostname}`
-  return request.url.search(swDomain) === 0 ? fetch(request) : fetch(request, {mode: 'no-cors'})
+  return request.url.search(swDomain) === 0 ? fetch(request) : fetch(request, { mode: 'no-cors' })
 }
 
 /**

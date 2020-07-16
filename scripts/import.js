@@ -33,20 +33,19 @@ function askMovieSearchTerm() {
 }
 
 function getAndShowMatchingMovies() {
-  return fetchMovieSearch(movieSearchTerm)
-    .then((results) => {
-      if (results.length === 0) {
-        return Promise.reject(new Error('No matching movies found'))
-      }
-      matchingMovies = results
-      results.forEach((result, index) => {
-        const title = result.title
-        const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
-        const year = result.release_date.substring(0, 4)
-        const url = `https://www.themoviedb.org/movie/${result.id}`
-        process.stdout.write(`${index}. ${title} (${year})${originalTitle} - ${url}\n`)
-      })
+  return fetchMovieSearch(movieSearchTerm).then((results) => {
+    if (results.length === 0) {
+      return Promise.reject(new Error('No matching movies found'))
+    }
+    matchingMovies = results
+    results.forEach((result, index) => {
+      const title = result.title
+      const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
+      const year = result.release_date.substring(0, 4)
+      const url = `https://www.themoviedb.org/movie/${result.id}`
+      process.stdout.write(`${index}. ${title} (${year})${originalTitle} - ${url}\n`)
     })
+  })
 }
 
 function askMovieSelection() {

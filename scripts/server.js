@@ -11,6 +11,6 @@ app.get('/serviceworker.js', (request, response) => {
 })
 app.use('/', express.static(path.join(__dirname, '..', '.dist')))
 
-app.listen(5000, function() {
+app.listen(5000, function () {
   console.log('http://localhost:5000') // eslint-disable-line no-console
 })

@@ -1,6 +1,6 @@
 /* global window, document */
 
-import {init as initOffline} from './offline.js'
+import { init as initOffline } from './offline.js'
 
 const nodeBody = document.body
 const nodeTopBar = document.querySelector('[data-js-topbar]')
@@ -72,7 +72,8 @@ function downloadMovies(moviesFiles) {
   if (moviesFiles.length === 0) {
     return true
   }
-  return window.fetch(moviesFiles[0])
+  return window
+    .fetch(moviesFiles[0])
     .then((response) => response.json())
     .then((response) => {
       response.forEach((movie) => {
@@ -95,7 +96,7 @@ function setMoviesGrid() {
   const linesCount = Math.ceil(currentFilteredMovies.length / currentMovieSize.perLine)
   window.removeEventListener('scroll', onScrollWindow)
   window.scrollTo(0, 0)
-  nodeMovies.style.height = `${(linesCount * currentMovieSize.thumbHeight) + nodeTopBar.clientHeight}px`
+  nodeMovies.style.height = `${linesCount * currentMovieSize.thumbHeight + nodeTopBar.clientHeight}px`
   window.addEventListener('scroll', onScrollWindow)
   let x = 0
   let y = nodeTopBar.clientHeight

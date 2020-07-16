@@ -6,7 +6,7 @@ const request = require('request')
 const m = {}
 module.exports = m
 
-m.fetchFormattedMovieData = function(rating, watchDate, tmdbData) {
+m.fetchFormattedMovieData = function (rating, watchDate, tmdbData) {
   const movie = {
     title: tmdbData.details.title,
     original_title: tmdbData.details.original_title,
@@ -17,7 +17,7 @@ m.fetchFormattedMovieData = function(rating, watchDate, tmdbData) {
     tmdb_id: tmdbData.details.id,
     poster: `posters/${tmdbData.details.id}.jpg`,
     cast: tmdbData.credits.cast.map((member) => member.name),
-    genres: tmdbData.details.genres.map((genre) => genre.name).sort()
+    genres: tmdbData.details.genres.map((genre) => genre.name).sort(),
   }
   const posterSize = 'w342'
   const posterUrl = `${tmdbData.config.images.secure_base_url}${posterSize}${tmdbData.details.poster_path}`
@@ -25,7 +25,7 @@ m.fetchFormattedMovieData = function(rating, watchDate, tmdbData) {
   return fetchAndStorePoster(posterUrl, posterPath).then(() => movie)
 }
 
-m.getMoviesByWatchDate = function() {
+m.getMoviesByWatchDate = function () {
   return new Promise((resolve, reject) => {
     glob(path.join(__dirname, '../../movies/*.json'), (error, files) => {
       const fileReaders = files.map((file) => fs.readFile(file), 'utf8')
