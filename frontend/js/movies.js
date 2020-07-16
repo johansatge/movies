@@ -1,150 +1,176 @@
 /* global window, document */
 
-import axios from 'axios'
 import {init as initOffline} from './offline.js'
 
 const nodeBody = document.body
+const nodeTopBar = document.querySelector('[data-js-topbar]')
+const nodeMovies = document.querySelector('[data-js-movies]')
 const nodeMoviesCount = document.querySelector('[data-js-movies-count]')
 const nodeSearchInput = document.querySelector('[data-js-search]')
 const nodeSearchToggle = document.querySelector('[data-js-search-toggle]')
 const nodeNoResults = document.querySelector('[data-js-no-results]')
+const movieTemplate = document.querySelector('[data-js-movie-template]').innerHTML
 
 const movies = []
-let filteredMoviesOnce = false
+let currentFilters = null
+let currentMovieSize = null
+let currentLinesOfMovies = {}
 
-export {init}
+export { init }
 
-function init({moviesFiles, offlineAssets}) {
-  bindMoviesGrid()
-  bindLazyLoadImages()
-  bindSearchFilter()
+function init({ moviesFiles, offlineAssets }) {
   initOffline(offlineAssets)
-  initMovies(moviesFiles)
+  initSearchInput()
+  currentMovieSize = getCurrentMovieSize()
+  window.addEventListener('resize', onResizeWindow)
+  downloadMovies(moviesFiles)
 }
 
-function initMovies(moviesFiles) {
-  if (moviesFiles.length === 0) {
-    return true
+function initSearchInput() {
+  const valueFromUrl = decodeURIComponent(document.location.hash.replace(/^#/, ''))
+  if (valueFromUrl.length > 0) {
+    nodeSearchInput.value = valueFromUrl
   }
-  return axios({
-    url: moviesFiles[0],
-    method: 'get',
-    json: true,
-  }).then((response) => {
-    if (response.data) {
-      // @todo use a less ugly way to populate the movies
-      // -> migrate to Preact / insert HTML nodes / etc
-      let html = ''
-      response.data.forEach((movie) => {
-        movies.push(movie)
-        html += `<a class="movie" target="_blank" rel="noopener" href="${movie.url}" data-js-movie>
-          <div class="movie-bg" data-js-lazy-load data-js-lazy-load-url="${movie.poster}"></div>
-          <div class="movie-rating">★ ${movie.rating}</div>
-          <div class="movie-title">${movie.title}</div>
-        </a>`
-      })
-      document.querySelector('[data-js-movies]').innerHTML += html
-      setMoviesGrid()
-      filterMovies()
-      moviesFiles.shift()
-      return initMovies(moviesFiles)
-    }
-    throw new Error('Empty movies file')
-  })
+  nodeSearchInput.addEventListener('input', onSearchInputUpdate)
+  nodeSearchToggle.addEventListener('click', onToggleSearchInput)
+  currentFilters = extractFiltersFromSearchInput()
 }
 
-function bindMoviesGrid() {
-  window.addEventListener('resize', setMoviesGrid)
+function onSearchInputUpdate() {
+  currentFilters = extractFiltersFromSearchInput()
+  setMoviesGrid()
 }
 
-function setMoviesGrid() {
-  const targetWidth = 160
-  const windowWidth = window.innerWidth - 1
-  const nodeMovies = document.querySelectorAll('[data-js-movie]')
-  for (let index = 0; index < nodeMovies.length; index += 1) {
-    const count = windowWidth / targetWidth
-    const width = windowWidth / parseInt(count)
-    const height = width * 1.5
-    nodeMovies[index].style.width = `${width}px`
-    nodeMovies[index].style.height = `${height}px`
-  }
-}
-
-function bindLazyLoadImages() {
-  window.addEventListener('scroll', lazyLoadImages)
-  window.addEventListener('resize', lazyLoadImages)
-}
-
-function bindSearchFilter() {
-  nodeSearchInput.addEventListener('input', filterMovies)
-  nodeSearchToggle.addEventListener('click', toggleSearch)
-}
-
-function toggleSearch() {
+function onToggleSearchInput() {
   if (nodeBody.dataset.jsSearchHidden) {
     delete nodeBody.dataset.jsSearchHidden
   } else {
     nodeBody.dataset.jsSearchHidden = true
   }
+  setMoviesGrid()
 }
 
-function filterMovies() {
-  if (!filteredMoviesOnce) {
-    const initialValue = decodeURIComponent(document.location.hash.replace(/^#/, ''))
-    if (initialValue.length > 0) {
-      nodeSearchInput.value = initialValue
-    }
-    filteredMoviesOnce = true
-  }
-  let visibleMovies = 0
-  const filters = extractSearchFilters()
-  const nodeMovies = document.querySelectorAll('[data-js-movie]')
-  for (let index = 0; index < nodeMovies.length; index += 1) {
-    if (movieMatchesFilters(index, filters)) {
-      if (nodeMovies[index].style.display !== 'block') {
-        nodeMovies[index].style.display = 'block'
-      }
-      visibleMovies += 1
-    } else {
-      if (nodeMovies[index].style.display !== 'none') {
-        nodeMovies[index].style.display = 'none'
-      }
-    }
-  }
-  nodeMoviesCount.innerHTML = visibleMovies
-  nodeNoResults.style.display = visibleMovies > 0 ? 'none' : 'block'
-  lazyLoadImages()
+function onResizeWindow() {
+  currentMovieSize = getCurrentMovieSize()
+  setMoviesGrid()
 }
 
-function movieMatchesFilters(movieIndex, filters) {
-  for (let index = 0; index < filters.length; index += 1) {
-    const filter = filters[index]
-    if (filter.type === 'rating' && movies[movieIndex].rating !== filter.value) {
+function onScrollWindow() {
+  showMoviesInViewport()
+}
+
+function getCurrentMovieSize() {
+  const targetWidth = 160
+  const windowWidth = window.innerWidth - 1
+  const perLine = parseInt(windowWidth / targetWidth)
+  const thumbWidth = windowWidth / perLine
+  const thumbHeight = thumbWidth * 1.5
+  return { perLine, thumbWidth, thumbHeight }
+}
+
+function downloadMovies(moviesFiles) {
+  if (moviesFiles.length === 0) {
+    return true
+  }
+  return window.fetch(moviesFiles[0])
+    .then((response) => response.json())
+    .then((response) => {
+      response.forEach((movie) => {
+        movies.push(movie)
+      })
+      moviesFiles.shift()
+      setMoviesGrid()
+      return downloadMovies(moviesFiles)
+    })
+}
+
+function setMoviesGrid() {
+  const currentFilteredMovies = []
+  currentLinesOfMovies = {}
+  movies.forEach((movie) => {
+    if (movieMatchesCurrentFilters(movie)) {
+      currentFilteredMovies.push(movie)
+    }
+  })
+  const linesCount = Math.ceil(currentFilteredMovies.length / currentMovieSize.perLine)
+  window.removeEventListener('scroll', onScrollWindow)
+  window.scrollTo(0, 0)
+  nodeMovies.style.height = `${(linesCount * currentMovieSize.thumbHeight) + nodeTopBar.clientHeight}px`
+  window.addEventListener('scroll', onScrollWindow)
+  let x = 0
+  let y = nodeTopBar.clientHeight
+  currentFilteredMovies.forEach((movie) => {
+    if (!movie.node) {
+      movie.node = document.createElement('a')
+      movie.node.classList.add('movie')
+      movie.node.target = '_blank'
+      movie.node.rel = 'noopener'
+      movie.node.href = movie.url
+      movie.node.innerHTML = movieTemplate
+        .replace('__title__', movie.title)
+        .replace('__poster__', movie.poster)
+        .replace('__rating__', movie.rating)
+    }
+    movie.node.style.width = `${currentMovieSize.thumbWidth}px`
+    movie.node.style.height = `${currentMovieSize.thumbHeight}px`
+    movie.node.style.left = `${x}px`
+    movie.node.style.top = `${y}px`
+    if (!currentLinesOfMovies[String(y)]) {
+      currentLinesOfMovies[String(y)] = []
+    }
+    currentLinesOfMovies[String(y)].push(movie)
+    const isLineFull = currentLinesOfMovies[String(y)].length === currentMovieSize.perLine
+    x = isLineFull ? 0 : x + currentMovieSize.thumbWidth
+    y = isLineFull ? y + currentMovieSize.thumbHeight : y
+  })
+  nodeMoviesCount.innerHTML = currentFilteredMovies.length
+  nodeNoResults.style.display = currentFilteredMovies.length > 0 ? 'none' : 'block'
+  showMoviesInViewport()
+}
+
+function showMoviesInViewport() {
+  const minY = (document.documentElement.scrollTop || document.body.scrollTop) + nodeTopBar.clientHeight
+  const maxY = minY + window.innerHeight - nodeTopBar.clientHeight
+  nodeMovies.innerHTML = '' // @todo remove only the irrelevant children
+  Object.keys(currentLinesOfMovies).forEach((lineY) => {
+    lineY = parseFloat(lineY)
+    if (lineY + currentMovieSize.thumbHeight >= minY && lineY < maxY) {
+      currentLinesOfMovies[lineY].forEach((movie) => {
+        nodeMovies.appendChild(movie.node)
+      })
+    }
+  })
+}
+
+function movieMatchesCurrentFilters(movie) {
+  for (let index = 0; index < currentFilters.length; index += 1) {
+    const filter = currentFilters[index]
+    if (filter.type === 'rating' && movie.rating !== filter.value) {
       return false
     }
-    if (filter.type === 'title' && movies[movieIndex].fullTitle.search(new RegExp(filter.value, 'i')) === -1) {
+    if (filter.type === 'title' && movie.fullTitle.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
-    if (filter.type === 'director' && movies[movieIndex].director.search(new RegExp(filter.value, 'i')) === -1) {
+    if (filter.type === 'director' && movie.director.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
-    if (filter.type === 'actor' && movies[movieIndex].cast.search(new RegExp(filter.value, 'i')) === -1) {
+    if (filter.type === 'actor' && movie.cast.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
-    if (filter.type === 'released' && movies[movieIndex].released.search(new RegExp(filter.value, 'i')) === -1) {
+    if (filter.type === 'released' && movie.released.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
-    if (filter.type === 'watched' && movies[movieIndex].watched.search(new RegExp(filter.value, 'i')) === -1) {
+    if (filter.type === 'watched' && movie.watched.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
-    if (filter.type === 'genre' && movies[movieIndex].genres.search(new RegExp(filter.value, 'i')) === -1) {
+    if (filter.type === 'genre' && movie.genres.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
   }
   return true
 }
 
-function extractSearchFilters() {
+function extractFiltersFromSearchInput() {
   const allowedTypes = ['rating', 'actor', 'director', 'title', 'released', 'watched', 'genre']
   const defaultType = 'title'
   const searchTerms = nodeSearchInput.value.split(';').map((term) => term.trim())
@@ -167,25 +193,4 @@ function extractSearchFilters() {
     }
   })
   return filters
-}
-
-function lazyLoadImages() {
-  const images = document.querySelectorAll('[data-js-lazy-load]')
-  const windowHeight = window.innerHeight
-  for (let index = 0; index < images.length; index += 1) {
-    const image = images[index]
-    const boundings = image.getBoundingClientRect()
-    let needsLazyLoad = false
-    if (boundings.top > 0 && boundings.top < windowHeight) {
-      needsLazyLoad = true
-    }
-    if (boundings.top + boundings.height > 0 && boundings.top + boundings.height < windowHeight) {
-      needsLazyLoad = true
-    }
-    if (needsLazyLoad) {
-      const src = image.dataset.jsLazyLoadUrl
-      image.style.backgroundImage = `url(${src})`
-      delete image.dataset.jsLazyLoad
-    }
-  }
 }

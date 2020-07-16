@@ -28,7 +28,7 @@
         <button class="offline-message-button" data-js-offline-message-confirm>Ok</button>
       </div>
     </div>
-    <div class="topbar topbar--search">
+    <div class="topbar topbar--search" data-js-topbar>
       <a href="#" class="topbar-title topbar-title--current">
         <span class="topbar-title-count" data-js-movies-count></span> Movies
       </a>
@@ -47,8 +47,12 @@
       </label>
       <button class="topbar-search-toggle" data-js-search-toggle></button>
     </div>
-    <div class="movies" data-js-movies>
-    </div>
+    <div class="movies" data-js-movies></div>
+    <script type="text/template" data-js-movie-template>
+      <div class="movie-bg" style="background-image: url(__poster__)"></div>
+      <div class="movie-rating">★ __rating__</div>
+      <div class="movie-title">__title__</div>
+    </script>
     <div class="no-results" data-js-no-results>No results</div>
     <script src="<%= assets.polyfillsScript %>"></script>
     <script src="<%= assets.moviesScript %>"></script>

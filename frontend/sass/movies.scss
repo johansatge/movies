@@ -8,14 +8,10 @@
   width: 100%;
   position: absolute;
   z-index: 1;
-  padding: 60px 0 0 0;
 }
 .movie {
   display: block;
-  position: relative;
-  width: 200px;
-  height: 300px;
-  float: left;
+  position: absolute;
   text-decoration: none;
 }
 .movie-title {
@@ -69,12 +65,4 @@
   font-family: $fontTitle;
   color: #444444;
   font-size: 30px;
-}
-@media screen and (max-width: 680px) {
-  .movies {
-    padding: 95px 0 0 0;
-  }
-  [data-js-search-hidden] .movies {
-    padding: 52px 0 0 0;
-  }
 }
