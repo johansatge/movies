@@ -1409,5 +1409,58 @@
       "Action",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Enola Holmes",
+    "original_title": "Enola Holmes",
+    "watch_date": "2020-10-03",
+    "rating": 7,
+    "release_date": "2020-09-23",
+    "director": "Harry Bradbeer",
+    "tmdb_id": 497582,
+    "poster": "posters/497582.jpg",
+    "cast": [
+      "Millie Bobby Brown",
+      "Henry Cavill",
+      "Sam Claflin",
+      "Helena Bonham Carter",
+      "Louis Partridge",
+      "Burn Gorman",
+      "Adeel Akhtar",
+      "Fiona Shaw",
+      "Susan Wokoma",
+      "Frances de la Tour",
+      "Hattie Morahan",
+      "David Bamber",
+      "Claire Rushbrook",
+      "Gaby French",
+      "Paul Copley",
+      "Ellie Haddington",
+      "Alex Kelly",
+      "Connor Catchpole",
+      "Sarah Flind",
+      "Dempsey Bovell",
+      "Mary Roscoe",
+      "Tuyen Do",
+      "Esther Coles",
+      "Jay Simpson",
+      "Delroy Atkinson",
+      "Neil Bell",
+      "David Kirkbride",
+      "Joakim Skarli",
+      "Gianni Calchetti",
+      "Quinn Copeland",
+      "Owen Atlas",
+      "Pierre Bergman",
+      "Heather Pearse",
+      "Paul Parker",
+      "Margaret Wheldon"
+    ],
+    "genres": [
+      "Adventure",
+      "Crime",
+      "Drama",
+      "Mystery"
+    ]
   }
 ]
