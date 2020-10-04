@@ -1462,5 +1462,49 @@
       "Drama",
       "Mystery"
     ]
+  },
+  {
+    "title": "El Camino: A Breaking Bad Movie",
+    "original_title": "El Camino: A Breaking Bad Movie",
+    "watch_date": "2020-10-04",
+    "rating": 5,
+    "release_date": "2019-10-11",
+    "director": "Vince Gilligan",
+    "tmdb_id": 559969,
+    "poster": "posters/559969.jpg",
+    "cast": [
+      "Aaron Paul",
+      "Jesse Plemons",
+      "Charles Baker",
+      "Matt Jones",
+      "Scott MacArthur",
+      "Larry Hankin",
+      "Scott Shepherd",
+      "Tom Bower",
+      "Robert Forster",
+      "Jonathan Banks",
+      "Bryan Cranston",
+      "Krysten Ritter",
+      "Kevin Rankin",
+      "Tess Harper",
+      "Michael Bofshever",
+      "Marla Gibbs",
+      "Brendan Sexton III",
+      "Johnny Ortiz",
+      "Todd Terry",
+      "Julie Pearl",
+      "Gloria Sandoval",
+      "Carlos Sepulveda",
+      "Matthew Van Wettering",
+      "Chris Bylsma",
+      "David Mattey",
+      "Cody Renee Cameron"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ]
   }
 ]
