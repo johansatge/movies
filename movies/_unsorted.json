@@ -4108,6 +4108,37 @@
     ]
   },
   {
+    "title": "Chrysalis",
+    "original_title": "Chrysalis",
+    "watch_date": null,
+    "rating": 6,
+    "release_date": "2007-06-25",
+    "director": "Julien Leclercq",
+    "tmdb_id": 13336,
+    "poster": "posters/13336.jpg",
+    "cast": [
+      "Albert Dupontel",
+      "Marie Guillard",
+      "Marthe Keller",
+      "Mélanie Thierry",
+      "Claude Perron",
+      "Alain Figlarz",
+      "Smadi Wolfman",
+      "Patrick Bauchau",
+      "Guy Lecluyse",
+      "Cyril Lecomte",
+      "Francis Renaud",
+      "Manon Chevallier",
+      "Estelle Lefébure"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Science Fiction",
+      "Thriller"
+    ]
+  },
+  {
     "title": "Cirque du Freak: The Vampire's Assistant",
     "original_title": "Cirque du Freak: The Vampire's Assistant",
     "watch_date": null,
@@ -7588,6 +7619,34 @@
       "Action",
       "Drama",
       "Thriller"
+    ]
+  },
+  {
+    "title": "Entente Cordiale",
+    "original_title": "L'Entente cordiale",
+    "watch_date": null,
+    "rating": 5,
+    "release_date": "2006-06-21",
+    "director": "Vincent de Brus",
+    "tmdb_id": 21774,
+    "poster": "posters/21774.jpg",
+    "cast": [
+      "Christian Clavier",
+      "Daniel Auteuil",
+      "Jennifer Saunders",
+      "John Cleese",
+      "François Levantal",
+      "Shelley Conn",
+      "Sanjeev Bhaskar",
+      "Ivan Franěk",
+      "Didier Flamand",
+      "François Morel",
+      "Michèle Laroque",
+      "Paul Barrett",
+      "Jake Broder"
+    ],
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -14560,34 +14619,6 @@
     ]
   },
   {
-    "title": "Entente Cordiale",
-    "original_title": "L'Entente cordiale",
-    "watch_date": null,
-    "rating": 5,
-    "release_date": "2006-06-21",
-    "director": "Vincent de Brus",
-    "tmdb_id": 21774,
-    "poster": "posters/21774.jpg",
-    "cast": [
-      "Christian Clavier",
-      "Daniel Auteuil",
-      "Jennifer Saunders",
-      "John Cleese",
-      "François Levantal",
-      "Shelley Conn",
-      "Sanjeev Bhaskar",
-      "Ivan Franěk",
-      "Didier Flamand",
-      "François Morel",
-      "Michèle Laroque",
-      "Paul Barrett",
-      "Jake Broder"
-    ],
-    "genres": [
-      "Comedy"
-    ]
-  },
-  {
     "title": "La Femme Nikita",
     "original_title": "Nikita",
     "watch_date": null,
@@ -14976,62 +15007,6 @@
       "Action",
       "Fantasy",
       "Horror"
-    ]
-  },
-  {
-    "title": "Léon: The Professional",
-    "original_title": "Léon: The Professional",
-    "watch_date": null,
-    "rating": 8,
-    "release_date": "1994-09-14",
-    "director": "Luc Besson",
-    "tmdb_id": 101,
-    "poster": "posters/101.jpg",
-    "cast": [
-      "Jean Reno",
-      "Natalie Portman",
-      "Gary Oldman",
-      "Danny Aiello",
-      "Peter Appel",
-      "Michael Badalucco",
-      "Ellen Greene",
-      "Elizabeth Regen",
-      "Carl J. Matusovich",
-      "Eric Challier",
-      "Willi One Blood",
-      "Don Creech",
-      "Keith A. Glascoe",
-      "Jernard Burks",
-      "Matt De Matt",
-      "Frank Senger",
-      "Stuart Rudin",
-      "Lucius Wyatt Cherokee",
-      "Maïwenn",
-      "Luc Bernard",
-      "Joseph Malerba",
-      "Adam Busch",
-      "Jessie Keosian",
-      "George Martin",
-      "Alex Dezen",
-      "Kent Broadhurst",
-      "Tommy Hollis",
-      "Peter Linari",
-      "Arsène Jiroyan",
-      "Geoffrey Bateman",
-      "Samy Naceri",
-      "Michel Montanary",
-      "Marc Andréoni",
-      "Gilles Kleber",
-      "Christophe Gautier",
-      "Junior Almeida",
-      "David Gregg",
-      "Didier Legros",
-      "Hervé Husson"
-    ],
-    "genres": [
-      "Action",
-      "Crime",
-      "Drama"
     ]
   },
   {
@@ -15941,6 +15916,62 @@
       "Drama",
       "Mystery",
       "Thriller"
+    ]
+  },
+  {
+    "title": "Léon: The Professional",
+    "original_title": "Léon: The Professional",
+    "watch_date": null,
+    "rating": 8,
+    "release_date": "1994-09-14",
+    "director": "Luc Besson",
+    "tmdb_id": 101,
+    "poster": "posters/101.jpg",
+    "cast": [
+      "Jean Reno",
+      "Natalie Portman",
+      "Gary Oldman",
+      "Danny Aiello",
+      "Peter Appel",
+      "Michael Badalucco",
+      "Ellen Greene",
+      "Elizabeth Regen",
+      "Carl J. Matusovich",
+      "Eric Challier",
+      "Willi One Blood",
+      "Don Creech",
+      "Keith A. Glascoe",
+      "Jernard Burks",
+      "Matt De Matt",
+      "Frank Senger",
+      "Stuart Rudin",
+      "Lucius Wyatt Cherokee",
+      "Maïwenn",
+      "Luc Bernard",
+      "Joseph Malerba",
+      "Adam Busch",
+      "Jessie Keosian",
+      "George Martin",
+      "Alex Dezen",
+      "Kent Broadhurst",
+      "Tommy Hollis",
+      "Peter Linari",
+      "Arsène Jiroyan",
+      "Geoffrey Bateman",
+      "Samy Naceri",
+      "Michel Montanary",
+      "Marc Andréoni",
+      "Gilles Kleber",
+      "Christophe Gautier",
+      "Junior Almeida",
+      "David Gregg",
+      "Didier Legros",
+      "Hervé Husson"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
     ]
   },
   {
