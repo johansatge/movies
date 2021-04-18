@@ -436,5 +436,41 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "The Marksman",
+    "original_title": "The Marksman",
+    "watch_date": "2021-04-18",
+    "rating": 4,
+    "release_date": "2021-01-15",
+    "director": "Robert Lorenz",
+    "tmdb_id": 634528,
+    "poster": "posters/634528.jpg",
+    "cast": [
+      "Liam Neeson",
+      "Katheryn Winnick",
+      "Teresa Ruiz",
+      "Juan Pablo Raba",
+      "Dylan Kenin",
+      "Luce Rains",
+      "Chase Mullins",
+      "Christopher Mele",
+      "Grayson Berry",
+      "David DeLao",
+      "Esodie Geiger",
+      "Gonzalo Robles",
+      "Jacob Perez",
+      "Kellen Boyle",
+      "Sean A. Rosales",
+      "Elias Gallegos",
+      "Dustin Pennington",
+      "Clark Sanchez",
+      "Ming Wang"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
