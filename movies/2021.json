@@ -667,5 +667,23 @@
       "Horror",
       "Thriller"
     ]
+  },
+  {
+    "title": "Three Identical Strangers",
+    "original_title": "Three Identical Strangers",
+    "watch_date": "2021-06-05",
+    "rating": 7,
+    "release_date": "2018-06-29",
+    "director": "Tim Wardle",
+    "tmdb_id": 489988,
+    "poster": "posters/489988.jpg",
+    "cast": [
+      "David Kellman",
+      "Robert Shafran",
+      "Lawrence Wright"
+    ],
+    "genres": [
+      "Documentary"
+    ]
   }
 ]
