@@ -749,5 +749,43 @@
       "Action",
       "Crime"
     ]
+  },
+  {
+    "title": "Luca",
+    "original_title": "Luca",
+    "watch_date": "2021-06-23",
+    "rating": 7,
+    "release_date": "2021-06-17",
+    "director": "Enrico Casarosa",
+    "tmdb_id": 508943,
+    "poster": "posters/508943.jpg",
+    "cast": [
+      "Jacob Tremblay",
+      "Jack Dylan Grazer",
+      "Emma Berman",
+      "Saverio Raimondo",
+      "Maya Rudolph",
+      "Marco Barricelli",
+      "Jim Gaffigan",
+      "Peter Sohn",
+      "Lorenzo Crisci",
+      "Marina Massironi",
+      "Gino La Monica",
+      "Sandy Martin",
+      "Giacomo Gianniotti",
+      "Elisa Gabrielli",
+      "Mimi Maynard",
+      "Sacha Baron Cohen",
+      "Francesca Fanti",
+      "Jonathan Nichols",
+      "Enrico Casarosa",
+      "Jim Pirri"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Fantasy"
+    ]
   }
 ]
