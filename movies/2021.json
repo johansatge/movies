@@ -787,5 +787,33 @@
       "Family",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Rurouni Kenshin: The Final",
+    "original_title": "るろうに剣心 最終章 The Final",
+    "watch_date": "2021-06-27",
+    "rating": 6,
+    "release_date": "2021-04-23",
+    "director": "Keishi Ōtomo",
+    "tmdb_id": 602063,
+    "poster": "posters/602063.jpg",
+    "cast": [
+      "Takeru Satoh",
+      "Emi Takei",
+      "Mackenyu Arata",
+      "Munetaka Aoki",
+      "Yôsuke Eguchi",
+      "Riku Onishi",
+      "Yu Aoi",
+      "Tao Tsuchiya",
+      "Kasumi Arimura",
+      "Yusuke Iseya",
+      "Ryunosuke Kamiki"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ]
   }
 ]
