@@ -43,7 +43,7 @@ function getAndShowMatchingMovies() {
       const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
       const year = result.release_date ? result.release_date.substring(0, 4) : 'unknown year'
       const url = `https://www.themoviedb.org/movie/${result.id}`
-      process.stdout.write(`${index}. ${title} (${year})${originalTitle} - ${url}\n`)
+      process.stdout.write(`${index}. ${title} (${year} - ${result.vote_average})${originalTitle} - ${url}\n`)
     })
   })
 }
