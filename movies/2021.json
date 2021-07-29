@@ -1001,5 +1001,47 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "A Quiet Place Part II",
+    "original_title": "A Quiet Place Part II",
+    "watch_date": "2021-07-29",
+    "rating": 5,
+    "release_date": "2021-05-21",
+    "director": "John Krasinski",
+    "tmdb_id": 520763,
+    "poster": "posters/520763.jpg",
+    "cast": [
+      "Emily Blunt",
+      "Cillian Murphy",
+      "Millicent Simmonds",
+      "Noah Jupe",
+      "Djimon Hounsou",
+      "John Krasinski",
+      "Wayne Duvall",
+      "Scoot McNairy",
+      "Okieriete Onaodowan",
+      "Blake DeLong",
+      "Silas Pereira-Olson",
+      "Scott Matheny",
+      "Liz Cameron",
+      "Lauren-Ashley Cristiano",
+      "Ashley Dyke",
+      "Andy Rich",
+      "Robert A. Coldicott",
+      "Bill Smith",
+      "Zachary Golinger",
+      "Sheri Fairchild",
+      "Barbara Singer",
+      "Gary Sundown",
+      "Kyle Licht",
+      "David Lundy",
+      "Krzysztof  Mardula"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
