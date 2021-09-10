@@ -1337,5 +1337,59 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "original_title": "Shang-Chi and the Legend of the Ten Rings",
+    "watch_date": "2021-09-09",
+    "rating": 8,
+    "release_date": "2021-09-01",
+    "director": "Destin Daniel Cretton",
+    "tmdb_id": 566525,
+    "poster": "posters/566525.jpg",
+    "cast": [
+      "Simu Liu",
+      "Tony Leung Chiu-wai",
+      "Awkwafina",
+      "Meng'er Zhang",
+      "Fala Chen",
+      "Michelle Yeoh",
+      "Yuen Wah",
+      "Ben Kingsley",
+      "Florian Munteanu",
+      "Andy Le",
+      "Paul He",
+      "Jayden Tianyi Zhang",
+      "Elodie Fong",
+      "Arnold Sun",
+      "Stephanie Hsu",
+      "Kunal Dudheker",
+      "Tsai Chin",
+      "Jodi Long",
+      "Dallas Liu",
+      "Ronny Chieng",
+      "Daniel Liu",
+      "Stella Ye",
+      "Fernando Chien",
+      "Michael-Anthony Taylor",
+      "Zach Cherry",
+      "Raymond Ma",
+      "Lau Ga-Yung",
+      "Johnny Carr",
+      "Harmonie He",
+      "Lydia Sarks",
+      "Dee Bradley Baker",
+      "Benedict Wong",
+      "Tim Roth",
+      "Mark Ruffalo",
+      "Brie Larson",
+      "David Chea",
+      "Bingchen Ye"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ]
   }
 ]
