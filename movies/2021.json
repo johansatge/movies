@@ -1391,5 +1391,51 @@
       "Adventure",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Cruella",
+    "original_title": "Cruella",
+    "watch_date": "2021-09-11",
+    "rating": 7,
+    "release_date": "2021-05-26",
+    "director": "Craig Gillespie",
+    "tmdb_id": 337404,
+    "poster": "posters/337404.jpg",
+    "cast": [
+      "Emma Stone",
+      "Emma Thompson",
+      "Joel Fry",
+      "Paul Walter Hauser",
+      "Mark Strong",
+      "Tipper Seifert-Cleveland",
+      "Kirby Howell-Baptiste",
+      "Emily Beecham",
+      "John McCrea",
+      "Kayvan Novak",
+      "Jamie Demetriou",
+      "Abraham Popoola",
+      "Leo Bill",
+      "Javone Prince",
+      "Steve Edge",
+      "Paul Chowdhry",
+      "Ziggy Gardner",
+      "Joseph MacDonald",
+      "Niamh Lynch",
+      "Andrew Leung",
+      "Ed Birch",
+      "Dylan Lowe",
+      "Paul Bazely",
+      "Ninette Finch",
+      "Sarah Crowden",
+      "Harrison Willmott",
+      "Jack Barry",
+      "Asmara Gabrielle",
+      "Tom Turner",
+      "Crystal Wingx"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
+    ]
   }
 ]
