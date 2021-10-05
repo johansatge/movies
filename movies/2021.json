@@ -1725,5 +1725,44 @@
       "Horror",
       "Thriller"
     ]
+  },
+  {
+    "title": "Triple Threat",
+    "original_title": "Triple Threat",
+    "watch_date": "2021-10-05",
+    "rating": 3,
+    "release_date": "2019-03-19",
+    "director": "Jesse V. Johnson",
+    "tmdb_id": 449985,
+    "poster": "posters/449985.jpg",
+    "cast": [
+      "Tony Jaa",
+      "Tiger Hu Chen",
+      "Iko Uwais",
+      "Scott Adkins",
+      "Michael Jai White",
+      "Michael Bisping",
+      "Celina Jade",
+      "JeeJa Yanin",
+      "Dominiquie Vandenberg",
+      "Michael Wong Man-Tak",
+      "Monica Mok",
+      "Daniel Whyte",
+      "Ron Smoorenburg",
+      "Zhang Guangbei",
+      "Sile Zhang",
+      "Anthony Tai",
+      "Damon Whitaker",
+      "Pattarasuda Anumanrajadhon",
+      "Panayakorn Sornmayura",
+      "Aroon Wanasbodeewong",
+      "Chatchawan Wongarj",
+      "Marcus Guilhem",
+      "Selina Lo"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
   }
 ]
