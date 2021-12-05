@@ -1851,5 +1851,41 @@
       "Comedy",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Primer",
+    "original_title": "Primer",
+    "watch_date": "2021-21-05",
+    "rating": 6,
+    "release_date": "2004-10-08",
+    "director": "Shane Carruth",
+    "tmdb_id": 14337,
+    "poster": "posters/14337.jpg",
+    "cast": [
+      "Shane Carruth",
+      "David Sullivan",
+      "Casey Gooden",
+      "Anand Upadhyaya",
+      "Carrie Crawford",
+      "Jay Butler",
+      "John Carruth",
+      "Juan Tapia",
+      "Ashley Warren",
+      "Samantha Thomson",
+      "Chip Carruth",
+      "Delaney Price",
+      "Jack Pyland",
+      "Keith Bradshaw",
+      "Ashok Upadhyaya",
+      "Brandon Blagg",
+      "Jon Cook",
+      "David Joyner",
+      "Eric De Soualhat"
+    ],
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
