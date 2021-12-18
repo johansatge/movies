@@ -57,8 +57,9 @@ module.exports = {
       {
         mode: 'production',
         entry: {
-          moviesStyles: path.join(__dirname, 'sass', 'movies.scss'),
-          statsStyles: path.join(__dirname, 'sass', 'stats.scss'),
+          commonStyles: path.join(__dirname, 'css', 'common.css'),
+          moviesStyles: path.join(__dirname, 'css', 'movies.css'),
+          statsStyles: path.join(__dirname, 'css', 'stats.css'),
         },
         output: {
           libraryTarget: 'commonjs2',
@@ -66,18 +67,10 @@ module.exports = {
         module: {
           rules: [
             {
-              test: /\.scss$/,
-              include: [path.join(__dirname, 'sass')],
+              test: /\.css$/,
+              include: [path.join(__dirname, 'css')],
               use: [
                 'css-loader',
-                {
-                  loader: 'sass-loader',
-                  options: {
-                    sassOptions: {
-                      outputStyle: 'compressed',
-                    },
-                  },
-                },
               ],
             },
           ],

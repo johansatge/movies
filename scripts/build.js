@@ -212,11 +212,13 @@ function buildFrontendAssets() {
     }
     buildState.assets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
     buildState.assets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
+    const commonStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.commonStyles)
     const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
     const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
+    buildState.commonStyles = require(commonStylesPath).toString()
     buildState.moviesStyles = require(moviesStylesPath).toString()
     buildState.statsStyles = require(statsStylesPath).toString()
-    return Promise.all([fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
+    return Promise.all([fs.remove(commonStylesPath), fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
   })
 }
 
