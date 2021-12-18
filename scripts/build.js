@@ -212,7 +212,6 @@ function buildFrontendAssets() {
     }
     buildState.assets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
     buildState.assets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
-    buildState.assets.polyfillsScript = `/${info.children[0].assetsByChunkName.polyfills}`
     const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
     const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
     buildState.moviesStyles = require(moviesStylesPath).toString()

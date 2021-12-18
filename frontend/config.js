@@ -34,7 +34,6 @@ module.exports = {
         entry: {
           movies: path.join(__dirname, 'js', 'movies.js'),
           stats: path.join(__dirname, 'js', 'stats.js'),
-          polyfills: path.join(__dirname, 'js', 'polyfills.js'),
         },
         output: {
           filename: (entry) => `${entry.chunk.name}.${entry.chunk.hash}.js`,
