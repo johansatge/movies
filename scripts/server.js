@@ -27,7 +27,7 @@ async function onLocalServerRequest(request, response) {
     if (request.method !== 'GET') {
       throw new Error(`Invalid method ${request.method}`)
     }
-    const requestPath = request.url === '/' ? 'index.html' : request.url
+    const requestPath = getRequestPath(request.url)
     const contents = await fsp.readFile(path.join(distPath, requestPath))
     response.writeHead(200, {
       'Content-Type': getMimeType(requestPath),
@@ -38,6 +38,14 @@ async function onLocalServerRequest(request, response) {
     response.writeHead(500, { 'Content-Type': 'text/plain' })
     response.end(`An error occurred: ${error.message}\n(${error.stack})`)
   }
+}
+
+function getRequestPath(requestUrl) {
+  const specialUrls = {
+    '/': 'index.html',
+    '/stats': 'stats/index.html',
+  }
+  return specialUrls[requestUrl] || requestUrl
 }
 
 function getMimeType(requestPath) {

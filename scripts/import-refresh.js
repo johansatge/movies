@@ -2,7 +2,6 @@ const fsp = require('fs').promises
 const path = require('path')
 const { fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
-const { emptyDir } = require('fs-extra')
 
 ;(async () => {
   const postersPath = path.join(__dirname, '../movies/posters')
@@ -10,7 +9,7 @@ const { emptyDir } = require('fs-extra')
   try {
     await fsp.rm(postersPath, { recursive: true })
   } catch(error) {}
-  fsp.mkdir(postersPath, { recursive: true})
+  await fsp.mkdir(postersPath, { recursive: true})
   let files = await fsp.readdir(moviesPath)
   files = files.filter((file) => file.endsWith('.json'))
   for(let fileIndex = 0; fileIndex < files.length; fileIndex += 1) {

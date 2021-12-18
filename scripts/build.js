@@ -1,7 +1,6 @@
 const checksum = require('checksum')
 const ejs = require('ejs')
 const frontendConfig = require('../frontend/config.js')
-const fs = require('fs-extra')
 const fsp = require('fs').promises
 const minify = require('html-minifier').minify
 const path = require('path')
@@ -47,7 +46,15 @@ async function build() {
  */
 async function cleanDist() {
   log(`Cleaning ${outputDir}`)
-  await fs.emptyDir(outputDir)
+  try {
+    await fsp.rm(outputDir, { recursive: true })
+  } catch(error) {}
+  await fsp.mkdir(outputDir, { recursive: true})
+  await fsp.mkdir(path.join(outputDir, 'actors'))
+  await fsp.mkdir(path.join(outputDir, 'directors'))
+  await fsp.mkdir(path.join(outputDir, 'movies'))
+  await fsp.mkdir(path.join(outputDir, 'posters'))
+  await fsp.mkdir(path.join(outputDir, 'stats'))
 }
 
 /**
@@ -101,7 +108,7 @@ function writeFileWithHash(filePath) {
   return promisify(checksum.file)(filePath).then((hash) => {
     const pathParts = path.parse(filePath)
     const filename = `${pathParts.name}.${hash}${pathParts.ext}`
-    return fs.copy(filePath, path.join(outputDir, filename)).then(() => {
+    return fsp.copyFile(filePath, path.join(outputDir, filename)).then(() => {
       return filename
     })
   })
@@ -115,7 +122,7 @@ async function writeManifest() {
   const json = JSON.stringify(frontendConfig.manifest)
   const filename = `manifest.${checksum(json)}.json`
   buildState.assets.manifest = `/${filename}`
-  await fs.outputFile(path.join(outputDir, filename), json, 'utf8')
+  await fsp.writeFile(path.join(outputDir, filename), json, 'utf8')
 }
 
 /**
@@ -162,7 +169,7 @@ function writeMoviesData() {
     const json = JSON.stringify(movies)
     const jsonFilename = `/movies/${checksum(json)}.json`
     buildState.moviesFiles.push(jsonFilename)
-    writers.push(fs.outputFile(path.join(outputDir, jsonFilename), json, 'utf8'))
+    writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
   return Promise.all(writers)
 }
@@ -179,7 +186,7 @@ function writeActors() {
     const json = JSON.stringify(actors)
     const jsonFilename = `/actors/${checksum(json)}.json`
     buildState.actorsFiles.push(jsonFilename)
-    writers.push(fs.outputFile(path.join(outputDir, jsonFilename), json, 'utf8'))
+    writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
   return Promise.all(writers)
 }
@@ -196,7 +203,7 @@ function writeDirectors() {
     const json = JSON.stringify(directors)
     const jsonFilename = `/directors/${checksum(json)}.json`
     buildState.directorsFiles.push(jsonFilename)
-    writers.push(fs.outputFile(path.join(outputDir, jsonFilename), json, 'utf8'))
+    writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
   return Promise.all(writers)
 }
@@ -224,15 +231,18 @@ function buildFrontendAssets() {
     buildState.commonStyles = require(commonStylesPath).toString()
     buildState.moviesStyles = require(moviesStylesPath).toString()
     buildState.statsStyles = require(statsStylesPath).toString()
-    return Promise.all([fs.remove(commonStylesPath), fs.remove(moviesStylesPath), fs.remove(statsStylesPath)])
+    return Promise.all([fsp.unlink(commonStylesPath), fsp.unlink(moviesStylesPath), fsp.unlink(statsStylesPath)])
   })
 }
 
 async function copyPosters() {
   log('Copying posters')
-  const source = path.join(__dirname, '../movies/posters')
-  const dest = path.join(outputDir, 'posters')
-  await fs.copy(source, dest)
+  const sourcePath = path.join(__dirname, '../movies/posters')
+  const destPath = path.join(outputDir, 'posters')
+  const files = (await fsp.readdir(sourcePath)).filter((file) => file.endsWith('.jpg'))
+  for(let index = 0; index < files.length; index += 1) {
+    await fsp.copyFile(path.join(sourcePath, files[index]), path.join(destPath, files[index]))
+  }
 }
 
 /**
@@ -240,12 +250,12 @@ async function copyPosters() {
  */
 async function renderMoviesHtml() {
   log('Rendering index.html')
-  const ejsTemplate = await fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8')
+  const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8')
   buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
   const html = ejs.render(ejsTemplate, buildState)
   const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
   buildState.moviesHtmlHash = checksum(minifiedHtml)
-  await fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
+  await fsp.writeFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
 }
 
 /**
@@ -253,11 +263,11 @@ async function renderMoviesHtml() {
  */
 async function renderStatsHtml() {
   log('Rendering stats/index.html')
-  const ejsTemplate = await fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
+  const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
   const html = ejs.render(ejsTemplate, buildState)
   const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
   buildState.statsHtmlHash = checksum(minifiedHtml)
-  await fs.outputFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
+  await fsp.writeFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
 }
 
 /**
