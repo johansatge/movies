@@ -1,45 +1,44 @@
 const fsp = require('fs').promises
 const path = require('path')
-const { fetchMovieSearch, fetchMovieData } = require('./helpers/tmdb.js')
-const { fetchFormattedMovieData } = require('./helpers/movie.js')
+const { fetchMovieSearch, fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
 
-let movieSearchTerm = null
-let matchingMovies = null
-let movieSelection = null
-let watchDate = null
-let rating = null
 let movieData = null
 
 importMovie()
 
 async function importMovie() {
   try {
-    await askMovieSearchTerm()
-    await getAndShowMatchingMovies()
-    await askMovieSelection()
-    await askMovieRating()
-    await askMovieWatchDate()
-    await getSelectedMovieDetails()
-    await writeMovie()
+    const searchTerm = await readInput('Movie to import: ')
+    const matchingMovies = await getAndShowMatchingMovies(searchTerm)
+    const selectedMovie = parseInt(await readInput('Select a movie: '))
+    if (selectedMovie < 0 || selectedMovie > matchingMovies.length - 1) {
+      throw new Error('Invalid selected movie')
+    }
+    const rating = parseInt(await readInput('Rating (0-10): '))
+    if (rating < 0 || rating > 10) {
+      throw new Error('Invalid rating')
+    }
+    const watchDate = await readInput('Watch date (YYYY-MM-DD or empty if unknown): ')
+    if (watchDate.length > 0 && !watchDate.match(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)) {
+      throw new Error('Invalid watch date')
+    }
+    const movieData = await fetchFormattedMovieData(matchingMovies[selectedMovie].id, rating, watchDate)
+    await writeMovie(movieData)
     log('Movie saved')
     process.exit(0)
   } catch(error) {
     log(error.message)
+    log(error.stack)
     process.exit(1)
   }
 }
 
-async function askMovieSearchTerm() {
-  movieSearchTerm = await readInput('Movie to import: ')
-}
-
-async function getAndShowMatchingMovies() {
-  const results = await fetchMovieSearch(movieSearchTerm)
+async function getAndShowMatchingMovies(searchTerm) {
+  const results = await fetchMovieSearch(searchTerm)
   if (results.length === 0) {
     throw new Error('No matching movies found')
   }
-  matchingMovies = results
   results.forEach((result, index) => {
     const title = result.title
     const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
@@ -47,29 +46,11 @@ async function getAndShowMatchingMovies() {
     const url = `https://www.themoviedb.org/movie/${result.id}`
     process.stdout.write(`${index}. ${title} (${year} - ${result.vote_average})${originalTitle} - ${url}\n`)
   })
+  return results
 }
 
-async function askMovieSelection() {
-  movieSelection = await readInput('Select a movie: ')
-}
-
-async function askMovieRating() {
-  rating = await readInput('Rating (0-10): ')
-}
-
-async function askMovieWatchDate() {
-  const input = await readInput('Watch date (YYYY-MM-DD or empty if unknown): ')
-  watchDate = input.length > 0 ? input : null
-}
-
-async function getSelectedMovieDetails() {
-  const movieId = matchingMovies[movieSelection].id
-  const tmdbData = await fetchMovieData(movieId)
-  movieData = await fetchFormattedMovieData(rating, watchDate, tmdbData)
-}
-
-async function writeMovie() {
-  const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '0unsorted.json'
+async function writeMovie(movieData) {
+  const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '0_unsorted.json'
   const filePath = path.join(__dirname, '../movies', fileName)
   const contents = await fsp.readFile(filePath, 'utf8')
   const json = JSON.parse(contents)

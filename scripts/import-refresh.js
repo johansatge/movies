@@ -1,7 +1,6 @@
 const fsp = require('fs').promises
 const path = require('path')
-const { fetchMovieData } = require('./helpers/tmdb.js')
-const { fetchFormattedMovieData } = require('./helpers/movie.js')
+const { fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
 const { emptyDir } = require('fs-extra')
 
@@ -16,8 +15,7 @@ const { emptyDir } = require('fs-extra')
     for(let movieIndex = 0; movieIndex < json.length; movieIndex += 1) {
       log(`Updating movie ${movieIndex} over ${json.length} (${files[fileIndex]}`)
       const oldData = json[movieIndex]
-      const tmdbData = await fetchMovieData(oldData.tmdb_id)
-      json[movieIndex] = await fetchFormattedMovieData(oldData.rating, oldData.watch_date, tmdbData)
+      json[movieIndex] = await fetchFormattedMovieData(json[movieIndex].tmdb_id, oldData.rating, oldData.watch_date)
     }
     await fsp.writeFile(files[fileIndex], JSON.stringify(json, null, 2))
   }

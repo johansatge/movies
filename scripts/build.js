@@ -4,7 +4,6 @@ const frontendConfig = require('../frontend/config.js')
 const fs = require('fs-extra')
 const fsp = require('fs').promises
 const minify = require('html-minifier').minify
-const { getMoviesByWatchDate } = require('./helpers/movie.js')
 const path = require('path')
 const promisify = require('util').promisify
 const webpack = require('webpack')
@@ -38,6 +37,7 @@ async function build() {
     await outputBuildDuration()
   } catch (error) {
     log(error.message)
+    log(error.stack)
     process.exit(1)
   }
 }
@@ -123,9 +123,15 @@ async function writeManifest() {
  */
 async function readMovies() {
   log('Reading movies list')
-  const list = await getMoviesByWatchDate()
-  buildState.movies = list
-  buildState.stats = extractStats(list)
+  buildState.movies = []
+  const moviesPath = path.join(__dirname, '../movies')
+  let files = await fsp.readdir(moviesPath)
+  files = files.filter((file) => file.endsWith('.json')).sort().reverse()
+  for(let index = 0; index < files.length; index += 1) {
+    const json = await fsp.readFile(path.join(moviesPath, files[index]), 'utf8')
+    buildState.movies = buildState.movies.concat(JSON.parse(json).reverse())
+  }
+  buildState.stats = extractStats(buildState.movies)
 }
 
 /**
