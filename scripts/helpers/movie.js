@@ -1,12 +1,11 @@
-const fs = require('fs').promises
-const glob = require('glob')
+const fsp = require('fs').promises
 const path = require('path')
 const request = require('request')
 
 const m = {}
 module.exports = m
 
-m.fetchFormattedMovieData = function (rating, watchDate, tmdbData) {
+m.fetchFormattedMovieData = async function (rating, watchDate, tmdbData) {
   const movie = {
     title: tmdbData.details.title,
     original_title: tmdbData.details.original_title,
@@ -22,22 +21,20 @@ m.fetchFormattedMovieData = function (rating, watchDate, tmdbData) {
   const posterSize = 'w342'
   const posterUrl = `${tmdbData.config.images.secure_base_url}${posterSize}${tmdbData.details.poster_path}`
   const posterPath = path.join(__dirname, '../../movies', movie.poster)
-  return fetchAndStorePoster(posterUrl, posterPath).then(() => movie)
+  await fetchAndStorePoster(posterUrl, posterPath)
+  return movie
 }
 
-m.getMoviesByWatchDate = function () {
-  return new Promise((resolve, reject) => {
-    glob(path.join(__dirname, '../../movies/*.json'), (error, files) => {
-      const fileReaders = files.map((file) => fs.readFile(file), 'utf8')
-      Promise.all(fileReaders)
-        .then((moviesByYear) => {
-          let movies = []
-          moviesByYear.forEach((json) => (movies = movies.concat(JSON.parse(json))))
-          resolve(movies.reverse())
-        })
-        .catch(reject)
-    })
-  })
+m.getMoviesByWatchDate = async function () {
+  const moviesPath = path.join(__dirname, '../../movies')
+  let files = await fsp.readdir(moviesPath)
+  files = files.filter((file) => file.endsWith('.json')).sort().reverse()
+  let movies = []
+  for(let index = 0; index < files.length; index += 1) {
+    const json = await fsp.readFile(path.join(moviesPath, files[index]), 'utf8')
+    movies = movies.concat(JSON.parse(json).reverse())
+  }
+  return movies
 }
 
 function fetchAndStorePoster(url, destPath) {
@@ -51,7 +48,7 @@ function fetchAndStorePoster(url, destPath) {
       if (error) {
         return reject(error)
       }
-      return fs.writeFile(destPath, buffer).then(resolve).catch(reject)
+      return fsp.writeFile(destPath, buffer).then(resolve).catch(reject)
     })
   })
 }

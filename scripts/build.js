@@ -2,7 +2,7 @@ const checksum = require('checksum')
 const ejs = require('ejs')
 const frontendConfig = require('../frontend/config.js')
 const fs = require('fs-extra')
-const glob = require('glob')
+const fsp = require('fs').promises
 const minify = require('html-minifier').minify
 const { getMoviesByWatchDate } = require('./helpers/movie.js')
 const path = require('path')
@@ -17,80 +17,81 @@ const buildState = {
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
 
-cleanDist()
-  .then(writeLogos)
-  .then(writeFavicon)
-  .then(writeFonts)
-  .then(writeManifest)
-  .then(readMovies)
-  .then(writeMoviesData)
-  .then(writeActors)
-  .then(writeDirectors)
-  .then(buildFrontendAssets)
-  .then(copyPosters)
-  .then(renderMoviesHtml)
-  .then(renderStatsHtml)
-  .then(buildServiceWorker)
-  .then(outputBuildDuration)
-  .catch((error) => {
+build()
+
+async function build() {
+  try {
+    await cleanDist()
+    await writeLogos()
+    await writeFavicon()
+    await writeFonts()
+    await writeManifest()
+    await readMovies()
+    await writeMoviesData()
+    await writeActors()
+    await writeDirectors()
+    await buildFrontendAssets()
+    await copyPosters()
+    await renderMoviesHtml()
+    await renderStatsHtml()
+    await buildServiceWorker()
+    await outputBuildDuration()
+  } catch (error) {
     log(error.message)
     process.exit(1)
-  })
+  }
+}
 
 /**
  * Clean destination directory
  */
-function cleanDist() {
+async function cleanDist() {
   log(`Cleaning ${outputDir}`)
-  return fs.emptyDir(outputDir)
+  await fs.emptyDir(outputDir)
 }
 
 /**
  * Write logo with hashes
  */
-function writeLogos() {
+async function writeLogos() {
   log('Writing logos')
-  return writeLogo('256').then(() => writeLogo('512'))
+  await writeLogo('256')
+  await writeLogo('512')
 }
 
 /**
  * Write a logo in the destination dir and add it to the manifest
  */
-function writeLogo(size) {
-  return writeFileWithHash(path.join('frontend', `logo-${size}.png`)).then((filename) => {
-    buildState.assets[`logo-${size}`] = `/${filename}`
-    frontendConfig.manifest.icons.push({
-      src: `/${filename}`,
-      sizes: `${size}x${size}`,
-      type: 'image/png',
-    })
+async function writeLogo(size) {
+  const filename = await writeFileWithHash(path.join('frontend', `logo-${size}.png`))
+  buildState.assets[`logo-${size}`] = `/${filename}`
+  frontendConfig.manifest.icons.push({
+    src: `/${filename}`,
+    sizes: `${size}x${size}`,
+    type: 'image/png',
   })
 }
 
 /**
  * Write the favicon and keep its name for later use in the HTML templates
  */
-function writeFavicon() {
+async function writeFavicon() {
   log('Writing favicon')
-  return writeFileWithHash(path.join('frontend', 'favicon.png')).then((filename) => {
-    buildState.assets.favicon = `/${filename}`
-  })
+  const filename = await writeFileWithHash(path.join('frontend', 'favicon.png'))
+  buildState.assets.favicon = `/${filename}`
 }
 
 /**
  * Write the fonts and keep their names for later use in the HTML templates
  */
-function writeFonts() {
+async function writeFonts() {
   log('Writing fonts')
-  return promisify(glob)(path.join('frontend', 'fonts', '*.{woff,woff2}')).then((files) => {
-    return Promise.all(
-      files.map((file) =>
-        writeFileWithHash(file).then((filename) => {
-          buildState.assets[path.parse(file).base] = `/${filename}`
-        })
-      )
-    )
-  })
+  const fontsPath = path.join(__dirname, '../frontend/fonts')
+  const files = (await fsp.readdir(fontsPath)).filter((file) => file.search(/\.woff2?$/) > -1)
+  for (let index = 0; index < files.length; index += 1) {
+    const filename = await writeFileWithHash(path.join(fontsPath, files[index]))
+    buildState.assets[path.parse(files[index]).base] = `/${filename}`
+  }
 }
 
 /**
@@ -109,23 +110,22 @@ function writeFileWithHash(filePath) {
 /**
  * Write the manifest and keep its name for later use in the HTML templates
  */
-function writeManifest() {
+async function writeManifest() {
   log('Writing manifest')
   const json = JSON.stringify(frontendConfig.manifest)
   const filename = `manifest.${checksum(json)}.json`
   buildState.assets.manifest = `/${filename}`
-  return fs.outputFile(path.join(outputDir, filename), json, 'utf8')
+  await fs.outputFile(path.join(outputDir, filename), json, 'utf8')
 }
 
 /**
  * Read & parse movies stats from the JSON files
  */
-function readMovies() {
+async function readMovies() {
   log('Reading movies list')
-  return getMoviesByWatchDate().then((list) => {
-    buildState.movies = list
-    buildState.stats = extractStats(list)
-  })
+  const list = await getMoviesByWatchDate()
+  buildState.movies = list
+  buildState.stats = extractStats(list)
 }
 
 /**
@@ -222,38 +222,36 @@ function buildFrontendAssets() {
   })
 }
 
-function copyPosters() {
+async function copyPosters() {
   log('Copying posters')
   const source = path.join(__dirname, '../movies/posters')
   const dest = path.join(outputDir, 'posters')
-  return fs.copy(source, dest)
+  await fs.copy(source, dest)
 }
 
 /**
  * Render EJS movies page to HTML
  */
-function renderMoviesHtml() {
+async function renderMoviesHtml() {
   log('Rendering index.html')
-  return fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8').then((ejsTemplate) => {
-    buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
-    const html = ejs.render(ejsTemplate, buildState)
-    const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
-    buildState.moviesHtmlHash = checksum(minifiedHtml)
-    return fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
-  })
+  const ejsTemplate = await fs.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8')
+  buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
+  const html = ejs.render(ejsTemplate, buildState)
+  const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
+  buildState.moviesHtmlHash = checksum(minifiedHtml)
+  await fs.outputFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
 }
 
 /**
  * Render EJS stats page to HTML
  */
-function renderStatsHtml() {
+async function renderStatsHtml() {
   log('Rendering stats/index.html')
-  return fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8').then((ejsTemplate) => {
-    const html = ejs.render(ejsTemplate, buildState)
-    const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
-    buildState.statsHtmlHash = checksum(minifiedHtml)
-    return fs.outputFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
-  })
+  const ejsTemplate = await fs.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
+  const html = ejs.render(ejsTemplate, buildState)
+  const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
+  buildState.statsHtmlHash = checksum(minifiedHtml)
+  await fs.outputFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
 }
 
 /**
