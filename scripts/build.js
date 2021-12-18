@@ -28,7 +28,8 @@ async function build() {
     await writeMoviesData()
     await writeActors()
     await writeDirectors()
-    await buildFrontendAssets()
+    await buildCss()
+    await buildJs()
     await copyPosters()
     await renderMoviesHtml()
     await renderStatsHtml()
@@ -211,12 +212,29 @@ function writeDirectors() {
   return Promise.all(writers)
 }
 
+async function buildCss() {
+  log('Building CSS assets')
+  const cssPath = path.join(__dirname, '../frontend/css')
+  const files = (await fsp.readdir(cssPath)).filter((file) => file.endsWith('.css'))
+  buildState.assets.styles = {}
+  for (let index = 0; index < files.length; index += 1) {
+    const rawCss = await fsp.readFile(path.join(cssPath, files[index]), 'utf8')
+    buildState.assets.styles[path.parse(files[index]).name] = minifyCss(rawCss)
+  }
+}
+
+function minifyCss(css) {
+  css = css.replace(/\n/g, ' ')
+  css = css.replace(/ {2,}/g, '')
+  css = css.replace(/\/\*[^*]*\*\//g, '')
+  return css
+}
+
 /**
- * Build frontend with webpack (JS & CSS)
- * The CSS is extracted to be inlined in the HTML
+ * Build JS with webpack
  */
-function buildFrontendAssets() {
-  log('Building CSS & JS assets')
+function buildJs() {
+  log('Building JS assets')
   const webpackConfig = frontendConfig.webpackFrontend()
   webpackConfig.forEach((config) => {
     config.output.path = outputDir
@@ -228,13 +246,6 @@ function buildFrontendAssets() {
     }
     buildState.assets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
     buildState.assets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
-    const commonStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.commonStyles)
-    const moviesStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.moviesStyles)
-    const statsStylesPath = path.join(outputDir, info.children[1].assetsByChunkName.statsStyles)
-    buildState.commonStyles = require(commonStylesPath).toString()
-    buildState.moviesStyles = require(moviesStylesPath).toString()
-    buildState.statsStyles = require(statsStylesPath).toString()
-    return Promise.all([fsp.unlink(commonStylesPath), fsp.unlink(moviesStylesPath), fsp.unlink(statsStylesPath)])
   })
 }
 

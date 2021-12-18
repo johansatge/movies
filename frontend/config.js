@@ -53,27 +53,6 @@ module.exports = {
           ],
         },
       },
-      // CSS files are exported as commonJS modules and used in the build script
-      {
-        mode: 'production',
-        entry: {
-          commonStyles: path.join(__dirname, 'css', 'common.css'),
-          moviesStyles: path.join(__dirname, 'css', 'movies.css'),
-          statsStyles: path.join(__dirname, 'css', 'stats.css'),
-        },
-        output: {
-          libraryTarget: 'commonjs2',
-        },
-        module: {
-          rules: [
-            {
-              test: /\.css$/,
-              include: [path.join(__dirname, 'css')],
-              use: ['css-loader'],
-            },
-          ],
-        },
-      },
     ]
   },
   webpackServiceWorker: (cacheTypes) => {
