@@ -1,4 +1,4 @@
-const request = require('request')
+const fetch = require('node-fetch')
 
 require('dotenv').config()
 
@@ -21,29 +21,17 @@ m.fetchMovieData = function (movieId) {
   )
 }
 
-function getConfiguration() {
+async function getConfiguration() {
   if (cachedConfiguration === null) {
-    return fetchApi('/configuration').then((config) => {
-      cachedConfiguration = config
-      return config
-    })
+    cachedConfiguration = await fetchApi('/configuration')
   }
   return cachedConfiguration
 }
 
-function fetchApi(endpoint) {
-  return new Promise((resolve, reject) => {
-    const apiKey = process.env.TMDB_API_KEY
-    const url = `https://api.themoviedb.org/3${endpoint}${endpoint.search(/\?/) > -1 ? '&' : '?'}&api_key=${apiKey}`
-    request(
-      {
-        method: 'get',
-        url,
-      },
-      (error, response, body) => {
-        const code = response.statusCode
-        error ? reject(error) : code === 200 ? resolve(JSON.parse(body)) : reject(new Error(`${code} error`))
-      }
-    )
-  })
+async function fetchApi(endpoint) {
+  const apiKey = process.env.TMDB_API_KEY
+  const url = `https://api.themoviedb.org/3${endpoint}${endpoint.search(/\?/) > -1 ? '&' : '?'}&api_key=${apiKey}`
+  const response = await fetch(url)
+  const json = await response.json()
+  return json
 }

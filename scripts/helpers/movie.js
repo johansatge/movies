@@ -1,6 +1,6 @@
 const fsp = require('fs').promises
 const path = require('path')
-const request = require('request')
+const fetch = require('node-fetch')
 
 const m = {}
 module.exports = m
@@ -37,18 +37,8 @@ m.getMoviesByWatchDate = async function () {
   return movies
 }
 
-function fetchAndStorePoster(url, destPath) {
-  const options = {
-    method: 'get',
-    url,
-    encoding: null,
-  }
-  return new Promise((resolve, reject) => {
-    request(options, (error, response, buffer) => {
-      if (error) {
-        return reject(error)
-      }
-      return fsp.writeFile(destPath, buffer).then(resolve).catch(reject)
-    })
-  })
+async function fetchAndStorePoster(url, destPath) {
+  const response = await fetch(url)
+  const buffer = await response.buffer()
+  await fsp.writeFile(destPath, buffer)
 }
