@@ -11,6 +11,7 @@ const { checksumFile, checksumString } = require('./helpers/checksum.js')
 
 const buildState = {
   assets: {},
+  styles: {},
 }
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
@@ -216,10 +217,10 @@ async function buildCss() {
   log('Building CSS assets')
   const cssPath = path.join(__dirname, '../frontend/css')
   const files = (await fsp.readdir(cssPath)).filter((file) => file.endsWith('.css'))
-  buildState.assets.styles = {}
+  buildState.styles = {}
   for (let index = 0; index < files.length; index += 1) {
     const rawCss = await fsp.readFile(path.join(cssPath, files[index]), 'utf8')
-    buildState.assets.styles[path.parse(files[index]).name] = minifyCss(rawCss)
+    buildState.styles[path.parse(files[index]).name] = minifyCss(rawCss)
   }
 }
 

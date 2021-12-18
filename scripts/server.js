@@ -43,7 +43,7 @@ async function onLocalServerRequest(request, response) {
 function getRequestPath(requestUrl) {
   const specialUrls = {
     '/': 'index.html',
-    '/stats': 'stats/index.html',
+    '/stats/': 'stats/index.html',
   }
   return specialUrls[requestUrl] || requestUrl
 }
