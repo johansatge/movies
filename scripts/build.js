@@ -1,4 +1,3 @@
-const checksum = require('checksum')
 const ejs = require('ejs')
 const frontendConfig = require('../frontend/config.js')
 const fsp = require('fs').promises
@@ -8,6 +7,7 @@ const promisify = require('util').promisify
 const webpack = require('webpack')
 const { extractStats } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
+const { checksumFile, checksumString } = require('./helpers/checksum.js')
 
 const buildState = {
   assets: {},
@@ -104,14 +104,12 @@ async function writeFonts() {
 /**
  * Write a file in the destination dir and add its checksum in its name
  */
-function writeFileWithHash(filePath) {
-  return promisify(checksum.file)(filePath).then((hash) => {
-    const pathParts = path.parse(filePath)
-    const filename = `${pathParts.name}.${hash}${pathParts.ext}`
-    return fsp.copyFile(filePath, path.join(outputDir, filename)).then(() => {
-      return filename
-    })
-  })
+async function writeFileWithHash(filePath) {
+  const hash = await checksumFile(filePath)
+  const pathParts = path.parse(filePath)
+  const filename = `${pathParts.name}.${hash}${pathParts.ext}`
+  await fsp.copyFile(filePath, path.join(outputDir, filename))
+  return filename
 }
 
 /**
@@ -120,7 +118,7 @@ function writeFileWithHash(filePath) {
 async function writeManifest() {
   log('Writing manifest')
   const json = JSON.stringify(frontendConfig.manifest)
-  const filename = `manifest.${checksum(json)}.json`
+  const filename = `manifest.${checksumString(json)}.json`
   buildState.assets.manifest = `/${filename}`
   await fsp.writeFile(path.join(outputDir, filename), json, 'utf8')
 }
@@ -167,7 +165,7 @@ function writeMoviesData() {
     const movies = allMovies.splice(0, firstPage ? 50 : 200)
     firstPage = false
     const json = JSON.stringify(movies)
-    const jsonFilename = `/movies/${checksum(json)}.json`
+    const jsonFilename = `/movies/${checksumString(json)}.json`
     buildState.moviesFiles.push(jsonFilename)
     writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
@@ -184,7 +182,7 @@ function writeActors() {
   while (buildState.stats.actors.length > 0) {
     const actors = buildState.stats.actors.splice(0, 1000)
     const json = JSON.stringify(actors)
-    const jsonFilename = `/actors/${checksum(json)}.json`
+    const jsonFilename = `/actors/${checksumString(json)}.json`
     buildState.actorsFiles.push(jsonFilename)
     writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
@@ -201,7 +199,7 @@ function writeDirectors() {
   while (buildState.stats.directors.length > 0) {
     const directors = buildState.stats.directors.splice(0, 500)
     const json = JSON.stringify(directors)
-    const jsonFilename = `/directors/${checksum(json)}.json`
+    const jsonFilename = `/directors/${checksumString(json)}.json`
     buildState.directorsFiles.push(jsonFilename)
     writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
@@ -254,7 +252,7 @@ async function renderMoviesHtml() {
   buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
   const html = ejs.render(ejsTemplate, buildState)
   const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
-  buildState.moviesHtmlHash = checksum(minifiedHtml)
+  buildState.moviesHtmlHash = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
 }
 
@@ -266,7 +264,7 @@ async function renderStatsHtml() {
   const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
   const html = ejs.render(ejsTemplate, buildState)
   const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
-  buildState.statsHtmlHash = checksum(minifiedHtml)
+  buildState.statsHtmlHash = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
 }
 
@@ -322,10 +320,10 @@ function getAssetsList(type) {
  */
 function getServiceWorkerCacheTypes() {
   const appAssets = getAssetsList('app')
-  const appHash = checksum(JSON.stringify(appAssets))
+  const appHash = checksumString(JSON.stringify(appAssets))
   const moviesAssets = getAssetsList('movies')
-  const moviesHash = checksum(JSON.stringify(moviesAssets))
-  const htmlHash = checksum(buildState.moviesHtmlHash + buildState.statsHtmlHash)
+  const moviesHash = checksumString(JSON.stringify(moviesAssets))
+  const htmlHash = checksumString(buildState.moviesHtmlHash + buildState.statsHtmlHash)
   return [
     // Base assets (HTML pages basically), to be updated as soon as there is an app update
     // We can't use getAssetsList('base') here because it would match unwanted resources
