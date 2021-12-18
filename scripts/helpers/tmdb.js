@@ -23,7 +23,7 @@ m.fetchFormattedMovieData = async function (movieId, rating, watchDate) {
   const movie = {
     title: details.title,
     original_title: details.original_title,
-    watch_date: watchDate.length > 0 ? watchDate : null,
+    watch_date: watchDate && watchDate.length > 0 ? watchDate : null,
     rating,
     release_date: details.release_date,
     director: credits.crew.find((member) => member.job === 'Director').name,
