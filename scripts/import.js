@@ -3,8 +3,6 @@ const path = require('path')
 const { fetchMovieSearch, fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
 
-let movieData = null
-
 importMovie()
 
 async function importMovie() {
@@ -27,7 +25,7 @@ async function importMovie() {
     await writeMovie(movieData)
     log('Movie saved')
     process.exit(0)
-  } catch(error) {
+  } catch (error) {
     log(error.message)
     log(error.stack)
     process.exit(1)

@@ -48,8 +48,10 @@ async function cleanDist() {
   log(`Cleaning ${outputDir}`)
   try {
     await fsp.rm(outputDir, { recursive: true })
-  } catch(error) {}
-  await fsp.mkdir(outputDir, { recursive: true})
+  } catch (error) {
+    // nothing
+  }
+  await fsp.mkdir(outputDir, { recursive: true })
   await fsp.mkdir(path.join(outputDir, 'actors'))
   await fsp.mkdir(path.join(outputDir, 'directors'))
   await fsp.mkdir(path.join(outputDir, 'movies'))
@@ -131,8 +133,11 @@ async function readMovies() {
   buildState.movies = []
   const moviesPath = path.join(__dirname, '../movies')
   let files = await fsp.readdir(moviesPath)
-  files = files.filter((file) => file.endsWith('.json')).sort().reverse()
-  for(let index = 0; index < files.length; index += 1) {
+  files = files
+    .filter((file) => file.endsWith('.json'))
+    .sort()
+    .reverse()
+  for (let index = 0; index < files.length; index += 1) {
     const json = await fsp.readFile(path.join(moviesPath, files[index]), 'utf8')
     buildState.movies = buildState.movies.concat(JSON.parse(json).reverse())
   }
@@ -238,7 +243,7 @@ async function copyPosters() {
   const sourcePath = path.join(__dirname, '../movies/posters')
   const destPath = path.join(outputDir, 'posters')
   const files = (await fsp.readdir(sourcePath)).filter((file) => file.endsWith('.jpg'))
-  for(let index = 0; index < files.length; index += 1) {
+  for (let index = 0; index < files.length; index += 1) {
     await fsp.copyFile(path.join(sourcePath, files[index]), path.join(destPath, files[index]))
   }
 }

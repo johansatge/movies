@@ -69,9 +69,7 @@ module.exports = {
             {
               test: /\.css$/,
               include: [path.join(__dirname, 'css')],
-              use: [
-                'css-loader',
-              ],
+              use: ['css-loader'],
             },
           ],
         },

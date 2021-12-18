@@ -17,7 +17,7 @@ async function startLocalServer() {
     if (server.listening) {
       printLocalIps()
     }
-  } catch(error) {
+  } catch (error) {
     console.log(`Server could not start: ${error.message}`)
   }
 }
@@ -34,7 +34,7 @@ async function onLocalServerRequest(request, response) {
       'Cache-Control': 'no-cache, no-store',
     })
     response.end(contents)
-  } catch(error) {
+  } catch (error) {
     response.writeHead(500, { 'Content-Type': 'text/plain' })
     response.end(`An error occurred: ${error.message}\n(${error.stack})`)
   }
@@ -63,7 +63,7 @@ function getMimeType(requestPath) {
 }
 
 function onLocalServerError(error) {
-  console.log(`A server error occurred: ${color(error.message, 'red')}`)
+  console.log(`A server error occurred: ${error.message}`)
   process.exitCode = 1
 }
 
