@@ -7,11 +7,26 @@ const promisify = require('util').promisify
 const webpack = require('webpack')
 const { extractStats } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
-const { checksumFile, checksumString } = require('./helpers/checksum.js')
+const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
 
 const buildState = {
-  assets: {},
+  // App assets (URLs to be injected in the HTML and SW)
+  appAssets: {},
+  // Movies assets (movies, actors & directors files; URLs to be injected in the HTML and SW)
+  moviesAssets: {
+    movies: [],
+    actors: [],
+    directors: [],
+  },
+  // CSS styles to be inlined in the HTML
   styles: {},
+  // App logos to be inlined in the HTML and the manifest
+  logos: [],
+  movies: [],
+  stats: null,
+  offlineAssets: null,
+  moviesHtmlHash: null,
+  statsHtmlHash: null,
 }
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
@@ -25,10 +40,10 @@ async function build() {
     await writeFavicon()
     await writeFonts()
     await writeManifest()
-    await readMovies()
-    await writeMoviesData()
-    await writeActors()
-    await writeDirectors()
+    await readWatchedMovies()
+    await writeMovies()
+    await writeActorsAndDirectors('actors')
+    await writeActorsAndDirectors('directors')
     await buildCss()
     await buildJs()
     await copyPosters()
@@ -43,9 +58,6 @@ async function build() {
   }
 }
 
-/**
- * Clean destination directory
- */
 async function cleanDist() {
   log(`Cleaning ${outputDir}`)
   try {
@@ -61,81 +73,53 @@ async function cleanDist() {
   await fsp.mkdir(path.join(outputDir, 'stats'))
 }
 
-/**
- * Write logo with hashes
- */
 async function writeLogos() {
   log('Writing logos')
   await writeLogo('256')
   await writeLogo('512')
 }
 
-/**
- * Write a logo in the destination dir and add it to the manifest
- */
 async function writeLogo(size) {
-  const filename = await writeFileWithHash(path.join('frontend', `logo-${size}.png`))
-  buildState.assets[`logo-${size}`] = `/${filename}`
-  frontendConfig.manifest.icons.push({
+  const filename = await copyFileWithHash(path.join(__dirname, `../frontend/logo-${size}.png`), outputDir)
+  buildState.appAssets[`logo-${size}`] = `/${filename}`
+  // https://developer.mozilla.org/en-US/docs/Web/Manifest/icons
+  buildState.logos.push({
     src: `/${filename}`,
     sizes: `${size}x${size}`,
     type: 'image/png',
   })
 }
 
-/**
- * Write the favicon and keep its name for later use in the HTML templates
- */
 async function writeFavicon() {
   log('Writing favicon')
-  const filename = await writeFileWithHash(path.join('frontend', 'favicon.png'))
-  buildState.assets.favicon = `/${filename}`
+  const filename = await copyFileWithHash(path.join(__dirname, '../frontend/favicon.png'), outputDir)
+  buildState.appAssets.favicon = `/${filename}`
 }
 
-/**
- * Write the fonts and keep their names for later use in the HTML templates
- */
 async function writeFonts() {
   log('Writing fonts')
   const fontsPath = path.join(__dirname, '../frontend/fonts')
   const files = (await fsp.readdir(fontsPath)).filter((file) => file.search(/\.woff2?$/) > -1)
   for (let index = 0; index < files.length; index += 1) {
-    const filename = await writeFileWithHash(path.join(fontsPath, files[index]))
-    buildState.assets[path.parse(files[index]).base] = `/${filename}`
+    const filename = await copyFileWithHash(path.join(fontsPath, files[index]), outputDir)
+    buildState.appAssets[path.parse(files[index]).base] = `/${filename}`
   }
 }
 
-/**
- * Write a file in the destination dir and add its checksum in its name
- */
-async function writeFileWithHash(filePath) {
-  const hash = await checksumFile(filePath)
-  const pathParts = path.parse(filePath)
-  const filename = `${pathParts.name}.${hash}${pathParts.ext}`
-  await fsp.copyFile(filePath, path.join(outputDir, filename))
-  return filename
-}
-
-/**
- * Write the manifest and keep its name for later use in the HTML templates
- */
 async function writeManifest() {
   log('Writing manifest')
-  const json = JSON.stringify(frontendConfig.manifest)
+  const rawJson = JSON.parse(await fsp.readFile(path.join(__dirname, '../frontend/manifest.json')))
+  rawJson.icons = buildState.logos
+  const json = JSON.stringify(rawJson)
   const filename = `manifest.${checksumString(json)}.json`
-  buildState.assets.manifest = `/${filename}`
+  buildState.appAssets.manifest = `/${filename}`
   await fsp.writeFile(path.join(outputDir, filename), json, 'utf8')
 }
 
-/**
- * Read & parse movies stats from the JSON files
- */
-async function readMovies() {
+async function readWatchedMovies() {
   log('Reading movies list')
-  buildState.movies = []
   const moviesPath = path.join(__dirname, '../movies')
-  let files = await fsp.readdir(moviesPath)
-  files = files
+  const files = (await fsp.readdir(moviesPath))
     .filter((file) => file.endsWith('.json'))
     .sort()
     .reverse()
@@ -146,12 +130,8 @@ async function readMovies() {
   buildState.stats = extractStats(buildState.movies)
 }
 
-/**
- * Write movies data for frontend JSON calls
- */
-function writeMoviesData() {
+function writeMovies() {
   log('Writing movies data')
-  buildState.moviesFiles = []
   const allMovies = buildState.movies.map((movie) => {
     return {
       rating: movie.rating + '',
@@ -173,41 +153,20 @@ function writeMoviesData() {
     firstPage = false
     const json = JSON.stringify(movies)
     const jsonFilename = `/movies/${checksumString(json)}.json`
-    buildState.moviesFiles.push(jsonFilename)
+    buildState.moviesAssets.movies.push(jsonFilename)
     writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
   return Promise.all(writers)
 }
 
-/**
- * Write actors files for frontend JSON calls
- */
-function writeActors() {
-  log('Writing actors')
+function writeActorsAndDirectors(type) {
+  log(`Writing ${type}`)
   const writers = []
-  buildState.actorsFiles = []
-  while (buildState.stats.actors.length > 0) {
-    const actors = buildState.stats.actors.splice(0, 1000)
-    const json = JSON.stringify(actors)
-    const jsonFilename = `/actors/${checksumString(json)}.json`
-    buildState.actorsFiles.push(jsonFilename)
-    writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
-  }
-  return Promise.all(writers)
-}
-
-/**
- * Write directors files for frontend JSON calls
- */
-function writeDirectors() {
-  log('Writing directors')
-  const writers = []
-  buildState.directorsFiles = []
-  while (buildState.stats.directors.length > 0) {
-    const directors = buildState.stats.directors.splice(0, 500)
-    const json = JSON.stringify(directors)
-    const jsonFilename = `/directors/${checksumString(json)}.json`
-    buildState.directorsFiles.push(jsonFilename)
+  while (buildState.stats[type].length > 0) {
+    const items = buildState.stats[type].splice(0, 1000)
+    const json = JSON.stringify(items)
+    const jsonFilename = `/${type}/${checksumString(json)}.json`
+    buildState.moviesAssets[type].push(jsonFilename)
     writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
   }
   return Promise.all(writers)
@@ -217,37 +176,31 @@ async function buildCss() {
   log('Building CSS assets')
   const cssPath = path.join(__dirname, '../frontend/css')
   const files = (await fsp.readdir(cssPath)).filter((file) => file.endsWith('.css'))
-  buildState.styles = {}
   for (let index = 0; index < files.length; index += 1) {
-    const rawCss = await fsp.readFile(path.join(cssPath, files[index]), 'utf8')
-    buildState.styles[path.parse(files[index]).name] = minifyCss(rawCss)
+    let css = await fsp.readFile(path.join(cssPath, files[index]), 'utf8')
+    Object.keys(buildState.appAssets).forEach((id) => {
+      css = css.replace(`/__${id}__`, buildState.appAssets[id])
+    })
+    css = css.replace(/\n/g, ' ')
+    css = css.replace(/ {2,}/g, '')
+    css = css.replace(/\/\*[^*]*\*\//g, '')
+    buildState.styles[path.parse(files[index]).name] = css
   }
 }
 
-function minifyCss(css) {
-  css = css.replace(/\n/g, ' ')
-  css = css.replace(/ {2,}/g, '')
-  css = css.replace(/\/\*[^*]*\*\//g, '')
-  return css
-}
-
-/**
- * Build JS with webpack
- */
-function buildJs() {
+async function buildJs() {
   log('Building JS assets')
   const webpackConfig = frontendConfig.webpackFrontend()
   webpackConfig.forEach((config) => {
     config.output.path = outputDir
   })
-  return promisify(webpack)(webpackConfig).then((stats) => {
-    const info = stats.toJson()
-    if (stats.hasErrors()) {
-      throw new Error(info.errors[0])
-    }
-    buildState.assets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
-    buildState.assets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
-  })
+  const stats = await promisify(webpack)(webpackConfig)
+  const info = stats.toJson()
+  if (stats.hasErrors()) {
+    throw new Error(info.errors[0])
+  }
+  buildState.appAssets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
+  buildState.appAssets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
 }
 
 async function copyPosters() {
@@ -260,55 +213,34 @@ async function copyPosters() {
   }
 }
 
-/**
- * Render EJS movies page to HTML
- */
 async function renderMoviesHtml() {
   log('Rendering index.html')
   const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8')
   buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
   const html = ejs.render(ejsTemplate, buildState)
-  const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
+  const minifiedHtml = minify(html, frontendConfig.htmlMinify)
   buildState.moviesHtmlHash = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
 }
 
-/**
- * Render EJS stats page to HTML
- */
 async function renderStatsHtml() {
   log('Rendering stats/index.html')
   const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
   const html = ejs.render(ejsTemplate, buildState)
-  const minifiedHtml = minify(replaceAssets(html), frontendConfig.htmlMinify)
+  const minifiedHtml = minify(html, frontendConfig.htmlMinify)
   buildState.statsHtmlHash = checksumString(minifiedHtml)
-  await fsp.writeFile(path.join(outputDir, 'stats', 'index.html'), minifiedHtml, 'utf8')
+  await fsp.writeFile(path.join(outputDir, 'stats/index.html'), minifiedHtml, 'utf8')
 }
 
-/**
- * Replace assets URLs (fonts, actually) in the inlined CSS
- */
-function replaceAssets(html) {
-  Object.keys(buildState.assets).forEach((id) => {
-    html = html.replace(`/__${id}__`, buildState.assets[id])
-  })
-  return html
-}
-
-/**
- * Build service worker with webpack
- * It needs a list of caches
- */
-function buildServiceWorker() {
+async function buildServiceWorker() {
   log('Building service worker')
   const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheTypes())
   webpackConfig.output.path = outputDir
-  return promisify(webpack)(webpackConfig).then((stats) => {
-    const info = stats.toJson()
-    if (stats.hasErrors()) {
-      throw new Error(info.errors[0])
-    }
-  })
+  const stats = await promisify(webpack)(webpackConfig)
+  const info = stats.toJson()
+  if (stats.hasErrors()) {
+    throw new Error(info.errors[0])
+  }
 }
 
 /**
@@ -319,10 +251,14 @@ function buildServiceWorker() {
 function getAssetsList(type) {
   const assets = {
     base: ['/', '/index.html', '/stats/', '/stats/index.html'],
-    app: Object.keys(buildState.assets)
-      .map((name) => buildState.assets[name])
+    app: Object.keys(buildState.appAssets)
+      .map((name) => buildState.appAssets[name])
       .sort(),
-    movies: [...buildState.moviesFiles, ...buildState.actorsFiles, ...buildState.directorsFiles],
+    movies: [
+      ...buildState.moviesAssets.movies,
+      ...buildState.moviesAssets.actors,
+      ...buildState.moviesAssets.directors,
+    ],
   }
   return assets[type]
 }

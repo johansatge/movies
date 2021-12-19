@@ -8,11 +8,11 @@
     <meta name="description" content="A list of movies I have watched, in a PWA, with ratings and stats">
     <style><%- styles.common %></style>
     <style><%- styles.movies %></style>
-    <link href="<%= assets.manifest %>" rel="manifest">
+    <link href="<%= appAssets.manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#ffcf20">
-    <link rel="icon" type="image/png" href="<%= assets.favicon %>">
-    <link rel="apple-touch-icon" href="<%= assets['logo-256'] %>">
+    <link rel="icon" type="image/png" href="<%= appAssets.favicon %>">
+    <link rel="apple-touch-icon" href="<%= appAssets['logo-256'] %>">
   </head>
   <body>
     <div class="offline-progress-overlay" data-js-offline-progress-overlay>
@@ -57,10 +57,10 @@
       <div class="movie-title">__title__</div>
     </script>
     <div class="no-results" data-js-no-results>No results</div>
-    <script src="<%= assets.moviesScript %>"></script>
+    <script src="<%= appAssets.moviesScript %>"></script>
     <script>
       Scripts.movies.init({
-        moviesFiles : <%- JSON.stringify(moviesFiles) %>,
+        moviesFiles : <%- JSON.stringify(moviesAssets.movies) %>,
         offlineAssets : <%- JSON.stringify(offlineAssets) %>,
       })
     </script>
