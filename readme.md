@@ -81,12 +81,4 @@ Run:
 npm run build
 ```
 
-To build the project in the `.dist` directory.
-
-```shell
-npm run server
-```
-
-To build the project and boot a local server. _(No live reload support for now)_
-
 The deployment is handled by [Netlify](https://www.netlify.com/), when pushing updates on `master`.
