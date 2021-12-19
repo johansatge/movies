@@ -6,16 +6,17 @@
     <meta charset="utf-8">
     <title>Stats</title>
     <meta name="description" content="A list of movies I have watched, in a PWA, with ratings and stats">
-    <style><%- statsStyles %></style>
-    <link href="<%= assets.manifest %>" rel="manifest">
+    <style><%- styles.common %></style>
+    <style><%- styles.stats %></style>
+    <link href="<%= appAssets.manifest %>" rel="manifest">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="<%= assets.favicon %>">
-    <link rel="apple-touch-icon" href="<%= assets['logo-256'] %>">
+    <link rel="icon" type="image/png" href="<%= appAssets.favicon %>">
+    <link rel="apple-touch-icon" href="<%= appAssets['logo-256'] %>">
   </head>
   <body>
     <heading class="topbar">
       <a href=".." class="topbar-title">
-        <span class="topbar-title-count"><%= movies.length %></span> Movies
+        <span class="topbar-title-count"><%= stats.moviesCount %></span> Movies
       </a>
       <a href="#" class="topbar-title topbar-title--current">
         Stats
@@ -71,16 +72,15 @@
         </table>
       </div>
     </div>
-    <script src="<%= assets.polyfillsScript %>"></script>
-    <script src="<%= assets.statsScript %>"></script>
+    <script src="<%= appAssets.statsScript %>"></script>
     <script>
       Scripts.stats.init({
         moviesByRating : <%- JSON.stringify(stats.ratings) %>,
         moviesByMonth : <%- JSON.stringify(stats.months) %>,
         moviesByReleaseYears : <%- JSON.stringify(stats.releaseYears) %>,
-        actorsFiles : <%- JSON.stringify(actorsFiles) %>,
+        actorsFiles : <%- JSON.stringify(moviesAssets.actors) %>,
         actorsCount : <%- stats.actorsCount %>,
-        directorsFiles : <%- JSON.stringify(directorsFiles) %>,
+        directorsFiles : <%- JSON.stringify(moviesAssets.actors) %>,
         directorsCount : <%- stats.directorsCount %>,
       })
     </script>

@@ -1,99 +1,65 @@
-const fs = require('fs-extra')
+const fsp = require('fs').promises
 const path = require('path')
-const { fetchMovieSearch, fetchMovieData } = require('./helpers/tmdb.js')
-const { fetchFormattedMovieData } = require('./helpers/movie.js')
+const { fetchMovieSearch, fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
 
-let movieSearchTerm = null
-let matchingMovies = null
-let movieSelection = null
-let watchDate = null
-let rating = null
+importMovie()
 
-askMovieSearchTerm()
-  .then(getAndShowMatchingMovies)
-  .then(askMovieSelection)
-  .then(askMovieRating)
-  .then(askMovieWatchDate)
-  .then(getSelectedMovieDetails)
-  .then(writeMovie)
-  .then(() => {
+async function importMovie() {
+  try {
+    const searchTerm = await readInput('Movie to import: ')
+    const matchingMovies = await getAndShowMatchingMovies(searchTerm)
+    const selectedMovie = parseInt(await readInput('Select a movie: '))
+    if (selectedMovie < 0 || selectedMovie > matchingMovies.length - 1) {
+      throw new Error('Invalid selected movie')
+    }
+    const rating = parseInt(await readInput('Rating (0-10): '))
+    if (rating < 0 || rating > 10) {
+      throw new Error('Invalid rating')
+    }
+    const watchDate = await readInput('Watch date (YYYY-MM-DD or empty if unknown): ')
+    if (watchDate.length > 0 && !watchDate.match(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)) {
+      throw new Error('Invalid watch date')
+    }
+    const movieData = await fetchFormattedMovieData(matchingMovies[selectedMovie].id, rating, watchDate)
+    await writeMovie(movieData)
     log('Movie saved')
     process.exit(0)
-  })
-  .catch((error) => {
+  } catch (error) {
     log(error.message)
+    log(error.stack)
     process.exit(1)
-  })
-
-function askMovieSearchTerm() {
-  return readInput('Movie to import: ').then((input) => {
-    movieSearchTerm = input
-  })
+  }
 }
 
-function getAndShowMatchingMovies() {
-  return fetchMovieSearch(movieSearchTerm).then((results) => {
-    if (results.length === 0) {
-      return Promise.reject(new Error('No matching movies found'))
+async function getAndShowMatchingMovies(searchTerm) {
+  const results = await fetchMovieSearch(searchTerm)
+  if (results.length === 0) {
+    throw new Error('No matching movies found')
+  }
+  results.forEach((result, index) => {
+    const title = result.title
+    const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
+    const year = result.release_date ? result.release_date.substring(0, 4) : 'unknown year'
+    const url = `https://www.themoviedb.org/movie/${result.id}`
+    process.stdout.write(`${index}. ${title} (${year} - ${result.vote_average})${originalTitle} - ${url}\n`)
+  })
+  return results
+}
+
+async function writeMovie(movieData) {
+  const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '0_unsorted.json'
+  const filePath = path.join(__dirname, '../movies', fileName)
+  const contents = await fsp.readFile(filePath, 'utf8')
+  const json = JSON.parse(contents)
+  json.push(movieData)
+  json.sort((a, b) => {
+    if (a.watch_date !== b.watch_date) {
+      return a.watch_date > b.watch_date ? 1 : a.watch_date < b.watch_date ? -1 : 0
     }
-    matchingMovies = results
-    results.forEach((result, index) => {
-      const title = result.title
-      const originalTitle = result.original_title !== result.title ? ` (${result.original_title})` : ''
-      const year = result.release_date ? result.release_date.substring(0, 4) : 'unknown year'
-      const url = `https://www.themoviedb.org/movie/${result.id}`
-      process.stdout.write(`${index}. ${title} (${year} - ${result.vote_average})${originalTitle} - ${url}\n`)
-    })
+    return a.title > b.title ? 1 : a.title < b.title ? -1 : 0
   })
-}
-
-function askMovieSelection() {
-  return readInput('Select a movie: ').then((input) => {
-    movieSelection = parseInt(input)
-  })
-}
-
-function askMovieRating() {
-  return readInput('Rating (0-10): ').then((input) => {
-    rating = parseInt(input)
-  })
-}
-
-function askMovieWatchDate() {
-  return readInput('Watch date (YYYY-MM-DD or empty if unknown): ').then((input) => {
-    watchDate = input.length > 0 ? input : null
-  })
-}
-
-function getSelectedMovieDetails() {
-  const movieId = matchingMovies[movieSelection].id
-  return fetchMovieData(movieId).then((tmdbData) => {
-    return fetchFormattedMovieData(rating, watchDate, tmdbData)
-  })
-}
-
-function writeMovie(movieData) {
-  return new Promise((resolve, reject) => {
-    const fileName = movieData.watch_date ? `${movieData.watch_date.substring(0, 4)}.json` : '_unsorted.json'
-    const filePath = path.join(__dirname, '..', 'movies', fileName)
-    fs.readFile(filePath, 'utf8', (error, contents) => {
-      if (error) {
-        return reject(new Error(`Could not read ${filePath} (${error.message})`))
-      }
-      const json = JSON.parse(contents)
-      json.push(movieData)
-      json.sort((a, b) => {
-        if (a.watch_date !== b.watch_date) {
-          return a.watch_date > b.watch_date ? 1 : a.watch_date < b.watch_date ? -1 : 0
-        }
-        return a.title > b.title ? 1 : a.title < b.title ? -1 : 0
-      })
-      fs.writeFile(filePath, JSON.stringify(json, null, 2), 'utf8', (error) => {
-        error ? reject(new Error(`Could not write ${filePath} (${error.message})`)) : resolve()
-      })
-    })
-  })
+  await fsp.writeFile(filePath, JSON.stringify(json, null, 2), 'utf8')
 }
 
 function readInput(message) {

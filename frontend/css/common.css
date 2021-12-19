@@ -1,0 +1,447 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  /* Font URLs are injected when building the final HTML */
+  src: url('/__opensans-condensedbold.woff2__') format('woff2'), url('/__opensans-condensedbold.woff__') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  /* Font URLs are injected when building the final HTML */
+  src: url('/__opensans-regular.woff2__') format('woff2'), url('/__opensans-regular.woff__') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-title: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-body: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+html,
+body,
+div,
+heading,
+main,
+img,
+input,
+h1,
+h2,
+h3,
+span,
+p,
+a,
+button,
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-body);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: transparent;
+}
+html,
+body {
+  background: #000000;
+}
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  padding: 14px 28px 0 28px;
+  box-sizing: border-box;
+  background: #ffcf20;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.topbar-title {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  line-height: 0;
+  font-family: var(--font-title);
+  margin: 0 24px 0 0;
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  text-shadow: 0 1px 0 #ffe37e;
+  color: #000;
+  text-decoration: none;
+  padding: 16px 0 0 0;
+  border-radius: 5px;
+}
+.topbar-title--current {
+  padding: 16px 10px 0 8px;
+  background: #262626;
+  color: #ffffff;
+  text-shadow: none;
+}
+.topbar-title-count {
+  font-family: inherit;
+  opacity: 0.6;
+}
+.topbar-offline {
+  position: relative;
+  width: 18px;
+  height: 32px;
+  display: none;
+}
+[data-js-has-service-worker] .topbar-offline {
+  display: inline-block;
+}
+.topbar-offline::before,
+.topbar-offline::after {
+  position: absolute;
+  z-index: 1;
+  content: ' ';
+  display: block;
+  background: #262626;
+}
+.topbar-offline::before {
+  width: 3px;
+  top: 6px;
+  left: 7px;
+  height: 14px;
+}
+.topbar-offline::after {
+  width: 100%;
+  bottom: 5px;
+  height: 3px;
+}
+.topbar-offline-button {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.topbar-offline-button::before {
+  left: 3px;
+  transform: rotate(-135deg);
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 8px;
+  height: 8px;
+  top: 9px;
+  border-left: 3px solid #262626;
+  border-top: 3px solid #262626;
+}
+.topbar-search {
+  float: right;
+  position: relative;
+  width: 300px;
+}
+.topbar-search-input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 32px;
+  border: 0;
+  background: #262626;
+  border-radius: 5px;
+  text-indent: 16px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.topbar-search-help {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  line-height: 80px;
+  color: #ffffff;
+}
+.topbar-search-help::after {
+  position: absolute;
+  content: '?';
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  right: 8px;
+  background: #444444;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 20px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.topbar-search-toggle {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  width: 31px;
+  height: 31px;
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  font-size: 0;
+}
+[data-js-search-hidden] .topbar-search-toggle {
+  top: 11px;
+  transform: rotate(225deg);
+}
+.topbar-search-toggle::before,
+.topbar-search-toggle::after {
+  top: 11px;
+  left: 11px;
+  position: absolute;
+  content: ' ';
+  display: block;
+  background: #000000;
+}
+.topbar-search-toggle::before {
+  width: 3px;
+  height: 12px;
+}
+.topbar-search-toggle::after {
+  width: 12px;
+  height: 3px;
+}
+
+@media screen and (max-width: 680px) {
+  .topbar {
+    height: 52px;
+    padding: 10px 15px 0 15px;
+  }
+  .topbar-search-toggle {
+    display: block;
+  }
+  .topbar--search {
+    height: 95px;
+  }
+  [data-js-search-hidden] .topbar--search {
+    height: 52px;
+  }
+  [data-js-search-hidden] .topbar-search {
+    display: none;
+  }
+  .topbar-title {
+    margin: 0 14px 0 0;
+  }
+  .topbar-search {
+    width: auto;
+    left: 15px;
+    right: 15px;
+    display: block;
+    float: none;
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
+  }
+}
+
+.offline-progress-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.88);
+}
+.offline-progressbar {
+  position: absolute;
+  width: 70%;
+  height: 20px;
+  left: 15%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  top: 50%;
+  margin: -10px 0 0 0;
+  box-sizing: border-box;
+  padding: 3px;
+}
+.offline-progressbar-progress {
+  position: relative;
+  height: 14px;
+  width: 0;
+  background: #ffffff;
+  border-radius: 9px;
+  transition: width 150ms;
+}
+.offline-progress-title {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 50%;
+  color: #ffffff;
+  font-family: var(--font-title);
+  text-align: center;
+  font-size: 28px;
+  margin: -60px 0 0 0;
+}
+.offline-progress-actions {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 50%;
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+.offline-progress-button {
+  height: 36px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #262626;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  padding: 0 14px 0 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .offline-progress-title {
+    font-size: 24px;
+    margin: -50px 0 0 0;
+  }
+  .offline-progressbar {
+    height: 16px;
+    border-radius: 8px;
+    margin: -8px 0 0 0;
+  }
+  .offline-progressbar-progress {
+    height: 10px;
+    border-radius: 5px;
+  }
+  .offline-progress-actions {
+    margin: 25px 0 0 0;
+  }
+  .offline-progress-button {
+    height: 34px;
+    font-size: 15px;
+    padding: 0 12px 0 12px;
+  }
+}
+
+.offline-message-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.88);
+}
+.offline-message-window {
+  position: absolute;
+  width: 400px;
+  background: #ffffff;
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  margin: 0 0 0 -200px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.offline-message-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #262626;
+  margin: 0 0 10px;
+  position: relative;
+}
+.offline-message-icon::after {
+  content: ' ';
+  display: block;
+  width: 18px;
+  height: 9px;
+  border-left: 5px solid #262626;
+  border-bottom: 5px solid #262626;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  transform: rotate(-45deg);
+}
+[data-js-offline-error] .offline-message-icon::before,
+[data-js-offline-error] .offline-message-icon::after {
+  content: ' ';
+  display: block;
+  width: 26px;
+  height: 4px;
+  background: #262626;
+  position: absolute;
+  border: 0;
+}
+[data-js-offline-error] .offline-message-icon::before {
+  top: 23px;
+  left: 12px;
+  transform: rotate(-45deg);
+}
+[data-js-offline-error] .offline-message-icon::after {
+  top: 23px;
+  left: 12px;
+  transform: rotate(45deg);
+}
+.offline-message-content {
+  width: 100%;
+  margin: 0 0 15px;
+  font-family: Open Sans, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #262626;
+  line-height: 24px;
+}
+.offline-message-button {
+  height: 36px;
+  background: #262626;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  padding: 0 14px 0 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .offline-message-window {
+    width: 280px;
+    margin: 0 0 0 -140px;
+    padding: 15px;
+  }
+  .offline-message-icon {
+    margin: 0 0 5px 0;
+  }
+  .offline-message-content {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 10px;
+  }
+  .offline-message-button {
+    height: 34px;
+    font-size: 15px;
+    padding: 0 12px 0 12px;
+  }
+}
