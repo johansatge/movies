@@ -15,8 +15,7 @@
     "url": "git+https://github.com/johansatge/movies.git"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
-    "dotenv": "^8.2.0",
+    "chart.js": "^3.6.2",
     "ejs": "^3.1.3",
     "esbuild": "^0.14.5",
     "eslint": "^8.5.0",

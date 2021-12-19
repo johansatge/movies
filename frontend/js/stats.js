@@ -1,10 +1,31 @@
 /* global window, document */
 
-import Chart from 'chart.js'
+import {
+  Chart,
+  BarElement,
+  BarController,
+  CategoryScale,
+  LinearScale,
+  LineController,
+  LineElement,
+  PointElement,
+  Tooltip,
+} from 'chart.js'
+Chart.register(
+  BarElement,
+  BarController,
+  CategoryScale,
+  LinearScale,
+  LineController,
+  LineElement,
+  PointElement,
+  Tooltip
+)
 
 window.Scripts = window.Scripts || {}
 window.Scripts.stats = {
   init,
+  data: null,
 }
 
 const state = {
@@ -25,6 +46,7 @@ const state = {
 }
 
 function init(stats) {
+  window.Scripts.stats.data = stats
   state.actors.files = stats.actorsFiles
   state.actors.count = stats.actorsCount
   state.directors.files = stats.directorsFiles
@@ -92,13 +114,14 @@ function getActorsDirectors(type) {
 
 function onRatingClick(evt, items) {
   if (items.length === 1) {
-    document.location.href = `../#rating:${items[0]._index + 1}`
+    document.location.href = `../#rating:${items[0].index + 1}`
   }
 }
 
 function onReleaseYearClick(evt, items) {
   if (items.length === 1) {
-    document.location.href = `../#released:${items[0]._model.label}`
+    const year = window.Scripts.stats.data.moviesByReleaseYears[items[0].index]
+    document.location.href = `../#released:${year.label}`
   }
 }
 
@@ -121,35 +144,36 @@ function initChart(node, type, labels, data, onClick) {
       legend: {
         display: false,
       },
+      interaction: {
+        mode: 'index',
+      },
       maintainAspectRatio: false,
       responsive: true,
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-              fontColor: '#ffffff',
-              fontFamily: 'Open Sans',
-              fontSize: 12,
-            },
-            gridLines: {
-              color: 'rgba(0, 0, 0, 0.2)',
+        y: {
+          ticks: {
+            color: '#ffffff',
+            font: {
+              family: 'Open Sans',
+              size: 12,
             },
           },
-        ],
-        xAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-              fontColor: '#ffffff',
-              fontFamily: 'Open Sans',
-              fontSize: 11,
-            },
-            gridLines: {
-              color: 'rgba(0, 0, 0, 0.2)',
+          grid: {
+            color: 'rgba(0, 0, 0, 0.2)',
+          },
+        },
+        x: {
+          ticks: {
+            color: '#ffffff',
+            font: {
+              family: 'Open Sans',
+              size: 12,
             },
           },
-        ],
+          grid: {
+            color: 'rgba(0, 0, 0, 0.2)',
+          },
+        },
       },
     },
   }

@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const path = require('path')
 const fsp = require('fs').promises
 
-require('dotenv').config()
+const { TMDB_API_KEY } = require('../../.env.js')
 
 const m = {}
 module.exports = m
@@ -52,8 +52,7 @@ async function getConfiguration() {
 }
 
 async function fetchApi(endpoint) {
-  const apiKey = process.env.TMDB_API_KEY
-  const url = `https://api.themoviedb.org/3${endpoint}${endpoint.search(/\?/) > -1 ? '&' : '?'}&api_key=${apiKey}`
+  const url = `https://api.themoviedb.org/3${endpoint}${endpoint.search(/\?/) > -1 ? '&' : '?'}&api_key=${TMDB_API_KEY}`
   const response = await fetch(url)
   const json = await response.json()
   return json
