@@ -22,11 +22,15 @@ const buildState = {
   styles: {},
   // App logos to be inlined in the HTML and the manifest
   logos: [],
-  movies: [],
+  // Stats (years, actors, directors...)
   stats: null,
+  // List of assets (by URL), inlined in the HTML, to be fetched when clicking the "Download" button
   offlineAssets: null,
-  moviesHtmlHash: null,
-  statsHtmlHash: null,
+  // Hash of index.html & stats/index.html used in the SW to invalidate cache
+  htmlHash: {
+    movies: null,
+    stats: null,
+  },
 }
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
@@ -40,7 +44,6 @@ async function build() {
     await writeFavicon()
     await writeFonts()
     await writeManifest()
-    await readWatchedMovies()
     await writeMovies()
     await writeActorsAndDirectors('actors')
     await writeActorsAndDirectors('directors')
@@ -116,23 +119,20 @@ async function writeManifest() {
   await fsp.writeFile(path.join(outputDir, filename), json, 'utf8')
 }
 
-async function readWatchedMovies() {
-  log('Reading movies list')
+async function writeMovies() {
+  log('Reading movies list & writing data')
   const moviesPath = path.join(__dirname, '../movies')
   const files = (await fsp.readdir(moviesPath))
     .filter((file) => file.endsWith('.json'))
     .sort()
     .reverse()
+  let movies = []
   for (let index = 0; index < files.length; index += 1) {
     const json = await fsp.readFile(path.join(moviesPath, files[index]), 'utf8')
-    buildState.movies = buildState.movies.concat(JSON.parse(json).reverse())
+    movies = movies.concat(JSON.parse(json).reverse())
   }
-  buildState.stats = extractStats(buildState.movies)
-}
-
-function writeMovies() {
-  log('Writing movies data')
-  const allMovies = buildState.movies.map((movie) => {
+  buildState.stats = extractStats(movies)
+  const allMovies = movies.map((movie) => {
     return {
       rating: movie.rating + '',
       title: movie.title,
@@ -146,17 +146,14 @@ function writeMovies() {
       url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,
     }
   })
-  const writers = []
   let firstPage = true
   while (allMovies.length > 0) {
-    const movies = allMovies.splice(0, firstPage ? 50 : 200)
     firstPage = false
-    const json = JSON.stringify(movies)
+    const json = JSON.stringify(allMovies.splice(0, firstPage ? 50 : 200))
     const jsonFilename = `/movies/${checksumString(json)}.json`
     buildState.moviesAssets.movies.push(jsonFilename)
-    writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
+    await fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8')
   }
-  return Promise.all(writers)
 }
 
 function writeActorsAndDirectors(type) {
@@ -219,7 +216,7 @@ async function renderMoviesHtml() {
   buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
   const html = ejs.render(ejsTemplate, buildState)
   const minifiedHtml = minify(html, frontendConfig.htmlMinify)
-  buildState.moviesHtmlHash = checksumString(minifiedHtml)
+  buildState.htmlHash.movies = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
 }
 
@@ -228,7 +225,7 @@ async function renderStatsHtml() {
   const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
   const html = ejs.render(ejsTemplate, buildState)
   const minifiedHtml = minify(html, frontendConfig.htmlMinify)
-  buildState.statsHtmlHash = checksumString(minifiedHtml)
+  buildState.htmlHash.stats = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'stats/index.html'), minifiedHtml, 'utf8')
 }
 
@@ -276,7 +273,7 @@ function getServiceWorkerCacheTypes() {
   const appHash = checksumString(JSON.stringify(appAssets))
   const moviesAssets = getAssetsList('movies')
   const moviesHash = checksumString(JSON.stringify(moviesAssets))
-  const htmlHash = checksumString(buildState.moviesHtmlHash + buildState.statsHtmlHash)
+  const htmlHash = checksumString(buildState.htmlHash.movies + buildState.htmlHash.stats)
   return [
     // Base assets (HTML pages basically), to be updated as soon as there is an app update
     // We can't use getAssetsList('base') here because it would match unwanted resources

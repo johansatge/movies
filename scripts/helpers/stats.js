@@ -36,6 +36,7 @@ m.extractStats = function (movies) {
     directors: objectStatToArray(directors, 'count', 'desc'),
     genres: objectStatToArray(genres, 'count', 'desc'),
   }
+  stats.moviesCount = movies.length
   stats.actorsCount = stats.actors.length
   stats.directorsCount = stats.directors.length
   return stats
