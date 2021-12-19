@@ -9,6 +9,7 @@ const { extractStats } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
 const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
 
+// State is populated in each build state, and forwarded to EJS
 const buildState = {
   // App assets (URLs to be injected in the HTML and SW)
   appAssets: {},
@@ -22,7 +23,7 @@ const buildState = {
   styles: {},
   // App logos to be inlined in the HTML and the manifest
   logos: [],
-  // Stats (years, actors, directors...)
+  // Stats computed when writing movies (years, actors, directors...)
   stats: null,
   // List of assets (by URL), inlined in the HTML, to be fetched when clicking the "Download" button
   offlineAssets: null,
@@ -32,6 +33,7 @@ const buildState = {
     stats: null,
   },
 }
+
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
 
@@ -126,47 +128,47 @@ async function writeMovies() {
     .filter((file) => file.endsWith('.json'))
     .sort()
     .reverse()
-  let movies = []
+  const fullMovies = []
+  const frontendMovies = []
   for (let index = 0; index < files.length; index += 1) {
     const json = await fsp.readFile(path.join(moviesPath, files[index]), 'utf8')
-    movies = movies.concat(JSON.parse(json).reverse())
+    const movies = JSON.parse(json).reverse()
+    movies.forEach((movie) => {
+      fullMovies.push(movie)
+      frontendMovies.push({
+        rating: movie.rating + '',
+        title: movie.title,
+        fullTitle: `${movie.title} ${movie.original_title}`,
+        director: movie.director,
+        cast: movie.cast.join(','),
+        released: movie.release_date.substring(0, 4),
+        watched: movie.watch_date ? movie.watch_date.substring(0, 4) : '',
+        genres: movie.genres.join(','),
+        poster: movie.poster,
+        url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,
+      })
+    })
   }
-  buildState.stats = extractStats(movies)
-  const allMovies = movies.map((movie) => {
-    return {
-      rating: movie.rating + '',
-      title: movie.title,
-      fullTitle: `${movie.title} ${movie.original_title}`,
-      director: movie.director,
-      cast: movie.cast.join(','),
-      released: movie.release_date.substring(0, 4),
-      watched: movie.watch_date ? movie.watch_date.substring(0, 4) : '',
-      genres: movie.genres.join(','),
-      poster: movie.poster,
-      url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,
-    }
-  })
+  buildState.stats = extractStats(fullMovies)
   let firstPage = true
-  while (allMovies.length > 0) {
+  while (frontendMovies.length > 0) {
     firstPage = false
-    const json = JSON.stringify(allMovies.splice(0, firstPage ? 50 : 200))
+    const json = JSON.stringify(frontendMovies.splice(0, firstPage ? 50 : 200))
     const jsonFilename = `/movies/${checksumString(json)}.json`
     buildState.moviesAssets.movies.push(jsonFilename)
     await fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8')
   }
 }
 
-function writeActorsAndDirectors(type) {
+async function writeActorsAndDirectors(type) {
   log(`Writing ${type}`)
-  const writers = []
   while (buildState.stats[type].length > 0) {
     const items = buildState.stats[type].splice(0, 1000)
     const json = JSON.stringify(items)
     const jsonFilename = `/${type}/${checksumString(json)}.json`
     buildState.moviesAssets[type].push(jsonFilename)
-    writers.push(fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8'))
+    await fsp.writeFile(path.join(outputDir, jsonFilename), json, 'utf8')
   }
-  return Promise.all(writers)
 }
 
 async function buildCss() {

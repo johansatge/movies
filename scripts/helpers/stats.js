@@ -13,19 +13,19 @@ m.extractStats = function (movies) {
   const directors = {}
   const genres = {}
   movies.forEach((movie) => {
-    ratings[movie.rating] = typeof ratings[movie.rating] === 'undefined' ? 1 : (ratings[movie.rating] += 1)
+    ratings[movie.rating] = !ratings[movie.rating] ? 1 : (ratings[movie.rating] += 1)
     const month = movie.watch_date ? movie.watch_date.substring(0, 7) : null
     if (month) {
-      months[month] = typeof months[month] === 'undefined' ? 1 : (months[month] += 1)
+      months[month] = !months[month] ? 1 : (months[month] += 1)
     }
     const releaseYear = movie.release_date.substring(0, 4)
-    releaseYears[releaseYear] = typeof releaseYears[releaseYear] === 'undefined' ? 1 : (releaseYears[releaseYear] += 1)
+    releaseYears[releaseYear] = !releaseYears[releaseYear] ? 1 : (releaseYears[releaseYear] += 1)
     movie.cast.forEach((actor) => {
-      actors[actor] = typeof actors[actor] === 'undefined' ? 1 : (actors[actor] += 1)
+      actors[actor] = !actors[actor] ? 1 : (actors[actor] += 1)
     })
-    directors[movie.director] = typeof directors[movie.director] === 'undefined' ? 1 : (directors[movie.director] += 1)
+    directors[movie.director] = !directors[movie.director] ? 1 : (directors[movie.director] += 1)
     movie.genres.forEach((genre) => {
-      genres[genre] = typeof genres[genre] === 'undefined' ? 1 : (genres[genre] += 1)
+      genres[genre] = !genres[genre] ? 1 : (genres[genre] += 1)
     })
   })
   const stats = {
