@@ -1,7 +1,7 @@
 /* global self, caches, fetch, Headers, Response, OFFLINE_CACHE_TYPES */
 
 /**
- * Populated on build (see webpack config)
+ * Populated on build
  * Each cache type as a list of matchers (string or regex) and a name
  * (The name contains a hash for the current set of files to be stored in that cache)
  */

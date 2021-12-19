@@ -1,10 +1,8 @@
+const esbuild = require('esbuild')
 const ejs = require('ejs')
-const frontendConfig = require('../frontend/config.js')
 const fsp = require('fs').promises
 const minify = require('html-minifier').minify
 const path = require('path')
-const promisify = require('util').promisify
-const webpack = require('webpack')
 const { extractStats } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
 const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
@@ -36,6 +34,19 @@ const buildState = {
 
 const outputDir = path.join(__dirname, '..', '.dist')
 const startTime = new Date().getTime()
+const htmlMinifyOptions = {
+  caseSensitive: true,
+  collapseWhitespace: true,
+  conservativeCollapse: true,
+  html5: true,
+  minifyCSS: false,
+  minifyJS: false,
+  removeAttributeQuotes: false,
+  removeComments: true,
+  removeEmptyAttributes: true,
+  removeScriptTypeAttributes: true,
+  useShortDoctype: true,
+}
 
 build()
 
@@ -189,17 +200,20 @@ async function buildCss() {
 
 async function buildJs() {
   log('Building JS assets')
-  const webpackConfig = frontendConfig.webpackFrontend()
-  webpackConfig.forEach((config) => {
-    config.output.path = outputDir
+  const result = await esbuild.build({
+    entryPoints: [path.join(__dirname, '../frontend/js/movies.js'), path.join(__dirname, '../frontend/js/stats.js')],
+    bundle: true,
+    minify: true,
+    entryNames: '[name].[hash]',
+    outdir: outputDir,
+    metafile: true,
   })
-  const stats = await promisify(webpack)(webpackConfig)
-  const info = stats.toJson()
-  if (stats.hasErrors()) {
-    throw new Error(info.errors[0])
+  if (result.errors.length > 0) {
+    throw new Error(result.errors[0])
   }
-  buildState.appAssets.moviesScript = `/${info.children[0].assetsByChunkName.movies}`
-  buildState.appAssets.statsScript = `/${info.children[0].assetsByChunkName.stats}`
+  const assets = Object.keys(result.metafile.outputs)
+  buildState.appAssets.moviesScript = `/${path.parse(assets[0]).base}`
+  buildState.appAssets.statsScript = `/${path.parse(assets[1]).base}`
 }
 
 async function copyPosters() {
@@ -217,7 +231,7 @@ async function renderMoviesHtml() {
   const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'movies.ejs'), 'utf8')
   buildState.offlineAssets = [...getAssetsList('base'), ...getAssetsList('app'), ...getAssetsList('movies')]
   const html = ejs.render(ejsTemplate, buildState)
-  const minifiedHtml = minify(html, frontendConfig.htmlMinify)
+  const minifiedHtml = minify(html, htmlMinifyOptions)
   buildState.htmlHash.movies = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'index.html'), minifiedHtml, 'utf8')
 }
@@ -226,19 +240,25 @@ async function renderStatsHtml() {
   log('Rendering stats/index.html')
   const ejsTemplate = await fsp.readFile(path.join(__dirname, '..', 'frontend', 'stats.ejs'), 'utf8')
   const html = ejs.render(ejsTemplate, buildState)
-  const minifiedHtml = minify(html, frontendConfig.htmlMinify)
+  const minifiedHtml = minify(html, htmlMinifyOptions)
   buildState.htmlHash.stats = checksumString(minifiedHtml)
   await fsp.writeFile(path.join(outputDir, 'stats/index.html'), minifiedHtml, 'utf8')
 }
 
 async function buildServiceWorker() {
   log('Building service worker')
-  const webpackConfig = frontendConfig.webpackServiceWorker(getServiceWorkerCacheTypes())
-  webpackConfig.output.path = outputDir
-  const stats = await promisify(webpack)(webpackConfig)
-  const info = stats.toJson()
-  if (stats.hasErrors()) {
-    throw new Error(info.errors[0])
+  const result = await esbuild.build({
+    entryPoints: [path.join(__dirname, '../frontend/js/serviceworker.js')],
+    bundle: true,
+    minify: true,
+    outdir: outputDir,
+    metafile: true,
+    define: {
+      OFFLINE_CACHE_TYPES: JSON.stringify(getServiceWorkerCacheTypes()),
+    },
+  })
+  if (result.errors.length > 0) {
+    throw new Error(result.errors[0])
   }
 }
 

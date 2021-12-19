@@ -2,7 +2,10 @@
 
 import Chart from 'chart.js'
 
-export { init }
+window.Scripts = window.Scripts || {}
+window.Scripts.stats = {
+  init,
+}
 
 const state = {
   actors: {

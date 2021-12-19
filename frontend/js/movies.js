@@ -16,7 +16,10 @@ let currentFilters = null
 let currentMovieSize = null
 let currentLinesOfMovies = {}
 
-export { init }
+window.Scripts = window.Scripts || {}
+window.Scripts.movies = {
+  init,
+}
 
 function init({ moviesFiles, offlineAssets }) {
   initOffline(offlineAssets)
