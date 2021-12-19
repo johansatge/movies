@@ -40,15 +40,15 @@ Search terms can also be combined with the `;` character: `director:George Lucas
 ## Installation
 
 ```shell
-# Make sure node >= 8 is installed
+# Make sure node 16 is installed
 node -v
 # Clone the project
 git clone git@github.com:johansatge/movies.git
 cd movies
 # Install the dependencies
 npm install
-# Create .env file with a TMDB API key:
-echo "TMDB_API_KEY=xxx" > .env
+# Create env file with a TMDB API key:
+echo "module.exports = { TMDB_API_KEY: 'xxx' }" > .env.js
 ```
 
 ## Local server
@@ -82,5 +82,11 @@ npm run build
 ```
 
 To build the project in the `.dist` directory.
+
+```shell
+npm run server
+```
+
+To build the project and boot a local server. _(No live reload support for now)_
 
 The deployment is handled by [Netlify](https://www.netlify.com/), when pushing updates on `master`.
