@@ -61,7 +61,7 @@ Run:
 npm run import
 ```
 
-Answer the questions. Then, commit the updated JSON file.
+Answer the questions. Then, commit the updated JSON file, and poster file.
 
 ## Build and deployment
 
