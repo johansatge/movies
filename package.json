@@ -7,7 +7,7 @@
     "import": "node scripts/import.js",
     "import-refresh": "node scripts/import-refresh.js",
     "build": "node scripts/build.js",
-    "server": "node scripts/build.js && node scripts/server.js",
+    "watch": "node scripts/build.js --watch",
     "checkstyle": "eslint ."
   },
   "repository": {

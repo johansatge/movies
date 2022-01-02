@@ -1,11 +1,13 @@
 const esbuild = require('esbuild')
 const ejs = require('ejs')
+const fs = require('fs')
 const fsp = require('fs').promises
 const minify = require('html-minifier').minify
 const path = require('path')
 const { extractStats } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
 const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
+const { startLocalServer } = require('./server.js')
 
 // State is populated in each build state, and forwarded to EJS
 const buildState = {
@@ -32,7 +34,8 @@ const buildState = {
   },
 }
 
-const outputDir = path.join(__dirname, '..', '.dist')
+const srcDir = path.join(__dirname, '../frontend')
+const outputDir = path.join(__dirname, '../.dist')
 const startTime = new Date().getTime()
 const htmlMinifyOptions = {
   caseSensitive: true,
@@ -49,6 +52,10 @@ const htmlMinifyOptions = {
 }
 
 build()
+if (process.argv.includes('--watch')) {
+  startLocalServer()
+  buildOnChange()
+}
 
 async function build() {
   try {
@@ -72,6 +79,14 @@ async function build() {
     log(error.stack)
     process.exit(1)
   }
+}
+
+async function buildOnChange() {
+  log(`Watching ${srcDir}`)
+  fs.watch(srcDir, { recursive: true }, (evtType, file) => {
+    log(`Event ${evtType} on ${file}, building...`)
+    build()
+  })
 }
 
 async function cleanDist() {
@@ -116,9 +131,9 @@ async function writeFonts() {
   log('Writing fonts')
   const fontsPath = path.join(__dirname, '../frontend/fonts')
   const files = (await fsp.readdir(fontsPath)).filter((file) => file.search(/\.woff2?$/) > -1)
-  for (let index = 0; index < files.length; index += 1) {
-    const filename = await copyFileWithHash(path.join(fontsPath, files[index]), outputDir)
-    buildState.appAssets[path.parse(files[index]).base] = `/${filename}`
+  for (const file of files) {
+    const filename = await copyFileWithHash(path.join(fontsPath, file), outputDir)
+    buildState.appAssets[path.parse(file).base] = `/${filename}`
   }
 }
 
@@ -141,8 +156,8 @@ async function writeMovies() {
     .reverse()
   const fullMovies = []
   const frontendMovies = []
-  for (let index = 0; index < files.length; index += 1) {
-    const json = await fsp.readFile(path.join(moviesPath, files[index]), 'utf8')
+  for (const file of files) {
+    const json = await fsp.readFile(path.join(moviesPath, file), 'utf8')
     const movies = JSON.parse(json).reverse()
     movies.forEach((movie) => {
       fullMovies.push(movie)
@@ -186,15 +201,15 @@ async function buildCss() {
   log('Building CSS assets')
   const cssPath = path.join(__dirname, '../frontend/css')
   const files = (await fsp.readdir(cssPath)).filter((file) => file.endsWith('.css'))
-  for (let index = 0; index < files.length; index += 1) {
-    let css = await fsp.readFile(path.join(cssPath, files[index]), 'utf8')
+  for (const file of files) {
+    let css = await fsp.readFile(path.join(cssPath, file), 'utf8')
     Object.keys(buildState.appAssets).forEach((id) => {
       css = css.replace(`/__${id}__`, buildState.appAssets[id])
     })
     css = css.replace(/\n/g, ' ')
     css = css.replace(/ {2,}/g, '')
     css = css.replace(/\/\*[^*]*\*\//g, '')
-    buildState.styles[path.parse(files[index]).name] = css
+    buildState.styles[path.parse(file).name] = css
   }
 }
 
@@ -221,8 +236,8 @@ async function copyPosters() {
   const sourcePath = path.join(__dirname, '../movies/posters')
   const destPath = path.join(outputDir, 'posters')
   const files = (await fsp.readdir(sourcePath)).filter((file) => file.endsWith('.jpg'))
-  for (let index = 0; index < files.length; index += 1) {
-    await fsp.copyFile(path.join(sourcePath, files[index]), path.join(destPath, files[index]))
+  for (const file of files) {
+    await fsp.copyFile(path.join(sourcePath, file), path.join(destPath, file))
   }
 }
 
