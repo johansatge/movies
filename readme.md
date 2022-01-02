@@ -8,8 +8,7 @@ _This app uses the [TMDb API](https://developers.themoviedb.org/) but is not end
 
 * [Features](#features)
   * [Advanced search](#advanced-search)
-* [Installation](#installation)
-* [Local server](#local-server)
+* [Local installation](#local-installation)
 * [Adding a movie](#adding-a-movie)
 * [Build and deployment](#build-and-deployment)
 
@@ -37,7 +36,7 @@ The search field on the movies page accepts the following syntaxes:
 
 Search terms can also be combined with the `;` character: `director:George Lucas;release:1983`
 
-## Installation
+## Local installation
 
 ```shell
 # Make sure node 16 is installed
@@ -49,19 +48,10 @@ cd movies
 npm install
 # Create env file with a TMDB API key:
 echo "module.exports = { TMDB_API_KEY: 'xxx' }" > .env.js
+# Run the local server (will rebuild app on changes)
+npm run watch
+# Navigate to http://localhost:5000/
 ```
-
-## Local server
-
-Run:
-
-```shell
-npm run server
-```
-
-Then, navigate to [`localhost:5000`](http://localhost:5000/).
-
-:warning: _Note the local server currently doesn't support livereload._
 
 ## Adding a movie
 
@@ -75,10 +65,12 @@ Answer the questions. Then, commit the updated JSON file.
 
 ## Build and deployment
 
-Run:
+To test the build locally, run:
 
 ```shell
 npm run build
 ```
 
-The deployment is handled by [Netlify](https://www.netlify.com/), when pushing updates on `master`.
+Assets are built in `.dist`.
+
+Deployment is handled by [Netlify](https://www.netlify.com/), when pushing updates on `master`.
