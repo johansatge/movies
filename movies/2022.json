@@ -54,5 +54,52 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Palm Springs",
+    "original_title": "Palm Springs",
+    "watch_date": "2022-01-16",
+    "rating": 7,
+    "release_date": "2020-07-10",
+    "director": "Max Barbakow",
+    "tmdb_id": 587792,
+    "poster": "posters/587792.jpg",
+    "cast": [
+      "Andy Samberg",
+      "Cristin Milioti",
+      "J.K. Simmons",
+      "Peter Gallagher",
+      "Meredith Hagner",
+      "Camila Mendes",
+      "Tyler Hoechlin",
+      "Chris Pang",
+      "Jacqueline Obradors",
+      "June Squibb",
+      "Tongayi Chirisa",
+      "Dale Dickey",
+      "Conner O'Malley",
+      "Jena Friedman",
+      "Brian Duffy",
+      "Martin Kildare",
+      "Lilli Birdsell",
+      "Ryan Sturtz",
+      "Clifford V. Johnson",
+      "Calki Garcia",
+      "Michelle Johnston",
+      "Isla Sellers",
+      "Matt Smith",
+      "Rebecca Smith",
+      "Jake Smith",
+      "Noah Smith",
+      "Rocky Bonifield",
+      "Erin Flannery",
+      "David Hutchison",
+      "Mark Kubr",
+      "David Philip Reed"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
+    ]
   }
 ]
