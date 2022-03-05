@@ -31,7 +31,7 @@ async function onLocalServerRequest(request, response) {
     if (request.method !== 'GET') {
       throw new Error(`Invalid method ${request.method}`)
     }
-    const requestPath = getRequestPath(request.url)
+    const requestPath = getRequestPath(new URL(request.url, 'http://localhost').pathname)
     const contents = await fsp.readFile(path.join(serverPath, requestPath))
     response.writeHead(200, {
       'Content-Type': getMimeType(requestPath),

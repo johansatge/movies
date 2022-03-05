@@ -212,5 +212,56 @@
       "Fantasy",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Riders of Justice",
+    "original_title": "Retfærdighedens ryttere",
+    "watch_date": "2022-03-05",
+    "rating": 8,
+    "release_date": "2020-11-19",
+    "director": "Anders Thomas Jensen",
+    "tmdb_id": 663870,
+    "poster": "posters/663870.jpg",
+    "cast": [
+      "Mads Mikkelsen",
+      "Nikolaj Lie Kaas",
+      "Lars Brygmann",
+      "Nicolas Bro",
+      "Andrea Heick Gadeberg",
+      "Gustav Lindh",
+      "Roland Møller",
+      "Albert Rudbeck Lindhardt",
+      "Morten Suurballe",
+      "Jesper Ole Feit Andersen",
+      "Jacob Ulrik Lohmann",
+      "Rikke Louise Andersson",
+      "Gustav Dyekjær Giese",
+      "Henrik Noël Olesen",
+      "Anne Birgitte Lind",
+      "Omar Shargawi",
+      "Klaus Hjuler",
+      "Peder Holm Johansen",
+      "Christina Ibsen Meyer",
+      "Stine Lee Bruhn Schrøder",
+      "Jesper Groth",
+      "Natalí Vallespir Sand",
+      "Rigmor Ranthe",
+      "Anders Nyborg",
+      "Christian Hornhof",
+      "Natasja Crone",
+      "Johanne Dal-Lewkovitch",
+      "Kaspar Velberg",
+      "Marta Riisalu",
+      "Raivo Trass",
+      "Nadia Mhadhbi",
+      "Kamal Krayti",
+      "Veronica Verdugo",
+      "Christian Høgh Andersen"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ]
   }
 ]
