@@ -413,5 +413,32 @@
       "Family",
       "Fantasy"
     ]
+  },
+  {
+    "title": "15 Minutes of War",
+    "original_title": "L'Intervention",
+    "watch_date": "2022-03-25",
+    "rating": 5,
+    "release_date": "2019-01-30",
+    "director": "Fred Grivois",
+    "tmdb_id": 484638,
+    "poster": "posters/484638.jpg",
+    "cast": [
+      "Olga Kurylenko",
+      "Alban Lenoir",
+      "Sébastien Lalanne",
+      "Michaël Abiteboul",
+      "Vincent Perez",
+      "Josiane Balasko",
+      "Guillaume Labbé",
+      "David Murgia",
+      "Ben Cura"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "History",
+      "War"
+    ]
   }
 ]
