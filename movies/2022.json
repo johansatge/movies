@@ -440,5 +440,33 @@
       "History",
       "War"
     ]
+  },
+  {
+    "title": "Coherence",
+    "original_title": "Coherence",
+    "watch_date": "2022-03-25",
+    "rating": 7,
+    "release_date": "2013-09-19",
+    "director": "James Ward Byrkit",
+    "tmdb_id": 220289,
+    "poster": "posters/220289.jpg",
+    "cast": [
+      "Emily Baldoni",
+      "Maury Sterling",
+      "Nicholas Brendon",
+      "Lorene Scafaria",
+      "Elizabeth Gracen",
+      "Hugo Armstrong",
+      "Alex Manugian",
+      "Lauren Maher",
+      "Kelly Donovan",
+      "Aqueela Zoll",
+      "Mark Ballou",
+      "Alexis Boozer Sterling"
+    ],
+    "genres": [
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
