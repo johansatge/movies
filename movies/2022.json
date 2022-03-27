@@ -468,5 +468,34 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "I Kill Giants",
+    "original_title": "I Kill Giants",
+    "watch_date": "2022-03-26",
+    "rating": 4,
+    "release_date": "2018-01-21",
+    "director": "Anders Walter",
+    "tmdb_id": 419831,
+    "poster": "posters/419831.jpg",
+    "cast": [
+      "Madison Wolfe",
+      "Zoe Saldana",
+      "Imogen Poots",
+      "Sydney Wade",
+      "Rory Jackson",
+      "Noel Clarke",
+      "Jennifer Ehle",
+      "Ciara O'Callaghan",
+      "John Boyle",
+      "Art Parkinson",
+      "Brandon Maher",
+      "Don Wycherley",
+      "Amanda Stuart"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ]
   }
 ]
