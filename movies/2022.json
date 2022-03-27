@@ -497,5 +497,65 @@
       "Drama",
       "Fantasy"
     ]
+  },
+  {
+    "title": "The Adam Project",
+    "original_title": "The Adam Project",
+    "watch_date": "2022-03-27",
+    "rating": 5,
+    "release_date": "2022-03-11",
+    "director": "Shawn Levy",
+    "tmdb_id": 696806,
+    "poster": "posters/696806.jpg",
+    "cast": [
+      "Ryan Reynolds",
+      "Walker Scobell",
+      "Mark Ruffalo",
+      "Jennifer Garner",
+      "Zoe Saldana",
+      "Catherine Keener",
+      "Alex Mallari Jr.",
+      "Braxton Bjerken",
+      "Kasra Wong",
+      "Lucie Guest",
+      "Donald Sales",
+      "Esther Ming Li",
+      "Ben Wilkinson",
+      "Milo Shandel"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Science Fiction"
+    ]
+  },
+  {
+    "title": "Underwater",
+    "original_title": "Underwater",
+    "watch_date": "2022-03-27",
+    "rating": 5,
+    "release_date": "2020-01-08",
+    "director": "William Eubank",
+    "tmdb_id": 443791,
+    "poster": "posters/443791.jpg",
+    "cast": [
+      "Kristen Stewart",
+      "Vincent Cassel",
+      "Mamoudou Athie",
+      "T. J. Miller",
+      "John Gallagher Jr.",
+      "Jessica Henwick",
+      "Gunner Wright",
+      "Fiona Rene",
+      "Amanda Troop"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
