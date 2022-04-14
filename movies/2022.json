@@ -557,5 +557,39 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "OSS 117: From Africa with Love",
+    "original_title": "OSS 117 : Alerte rouge en Afrique noire",
+    "watch_date": "2022-04-14",
+    "rating": 6,
+    "release_date": "2021-08-04",
+    "director": "Nicolas Bedos",
+    "tmdb_id": 604563,
+    "poster": "posters/604563.jpg",
+    "cast": [
+      "Jean Dujardin",
+      "Pierre Niney",
+      "Wladimir Yordanoff",
+      "Fatou N'Diaye",
+      "Natacha Lindinger",
+      "Gilles Cohen",
+      "Pol White",
+      "Brice Fournier",
+      "Bruno Paviot",
+      "Karim Barras",
+      "Jean-Édouard Bodziak",
+      "Benoît Joubert",
+      "Nicolas Bedos",
+      "Frédéric Vallet",
+      "Martial Courcier",
+      "Marie-Gaëlle Cals",
+      "Emile Abossolo M'bo"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ]
   }
 ]
