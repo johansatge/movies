@@ -5,7 +5,7 @@ const fsp = require('fs').promises
 const http = require('http')
 const { networkInterfaces } = require('os')
 
-const serverPort = 5000
+const serverPort = 5001
 const serverPath = path.join(__dirname, '../.dist')
 
 module.exports = {

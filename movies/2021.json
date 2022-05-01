@@ -8,6 +8,7 @@
     "director": "Lee Unkrich",
     "tmdb_id": 354912,
     "poster": "posters/354912.jpg",
+    "runtime": 105,
     "cast": [
       "Anthony Gonzalez",
       "Gael García Bernal",
@@ -35,7 +36,6 @@
       "Salvador Reyes",
       "John Ratzenberger",
       "Antonio Sol",
-      "Memo Aponte",
       "Liliana Barba Meinecke",
       "Emmanuel Bernal",
       "David Berón",
@@ -43,7 +43,6 @@
       "Wilma Bonet",
       "Alex Castillo",
       "Vicki Davis",
-      "Daniel Diaz",
       "Roberto Donati",
       "Efrain Figueroa",
       "Deb Fink",
@@ -93,7 +92,9 @@
       "Óscar Bonfiglio",
       "Lalo Alcaraz",
       "Marcela Davison Aviles",
-      "Carolina Ángel"
+      "Carolina Ángel",
+      "Michael Giacchino",
+      "Daniel Díaz"
     ],
     "genres": [
       "Adventure",
@@ -113,6 +114,7 @@
     "director": "Patty Jenkins",
     "tmdb_id": 464052,
     "poster": "posters/464052.jpg",
+    "runtime": 151,
     "cast": [
       "Gal Gadot",
       "Chris Pine",
@@ -277,6 +279,7 @@
     "director": "Grand Corps Malade",
     "tmdb_id": 587301,
     "poster": "posters/587301.jpg",
+    "runtime": 111,
     "cast": [
       "Zita Hanrot",
       "Liam Pierron",
@@ -308,6 +311,7 @@
     "director": "Oliver Stone",
     "tmdb_id": 302401,
     "poster": "posters/302401.jpg",
+    "runtime": 134,
     "cast": [
       "Joseph Gordon-Levitt",
       "Shailene Woodley",
@@ -356,7 +360,8 @@
       "John Kerry",
       "Michelle Obama",
       "Vladimir Putin",
-      "Donald Trump"
+      "Donald Trump",
+      "Al Sotto"
     ],
     "genres": [
       "Crime",
@@ -374,6 +379,7 @@
     "director": "Philippe Lacheau",
     "tmdb_id": 398929,
     "poster": "posters/398929.jpg",
+    "runtime": 90,
     "cast": [
       "Philippe Lacheau",
       "Élodie Fontan",
@@ -387,7 +393,7 @@
       "Alice Dufour",
       "Philippe Duquesne",
       "Chantal Ladesou",
-      "La Fouine",
+      "Laouni Mouhid",
       "Michèle Laroque",
       "Kad Merad",
       "Jo Prestia",
@@ -429,7 +435,7 @@
       "Lady",
       "Hendji",
       "Lundja",
-      "Superflame",
+      "Geoffrey Petit-Jean-Genat",
       "Celia Canning",
       "Etienne Monin"
     ],
@@ -446,11 +452,13 @@
     "director": "Robert Lorenz",
     "tmdb_id": 634528,
     "poster": "posters/634528.jpg",
+    "runtime": 108,
     "cast": [
       "Liam Neeson",
       "Katheryn Winnick",
       "Teresa Ruiz",
       "Juan Pablo Raba",
+      "Jacob Perez",
       "Dylan Kenin",
       "Luce Rains",
       "Chase Mullins",
@@ -459,16 +467,17 @@
       "David DeLao",
       "Esodie Geiger",
       "Gonzalo Robles",
-      "Jacob Perez",
       "Kellen Boyle",
       "Sean A. Rosales",
       "Elias Gallegos",
       "Dustin Pennington",
-      "Clark Sanchez",
-      "Ming Wang"
+      "Amber Midthunder",
+      "Charles David Richards",
+      "Roger Jerome"
     ],
     "genres": [
       "Action",
+      "Adventure",
       "Crime",
       "Thriller"
     ]
@@ -482,14 +491,15 @@
     "director": "Ilya Naishuller",
     "tmdb_id": 615457,
     "poster": "posters/615457.jpg",
+    "runtime": 92,
     "cast": [
       "Bob Odenkirk",
-      "Aleksey Serebryakov",
       "Connie Nielsen",
       "Christopher Lloyd",
+      "Aleksey Serebryakov",
+      "RZA",
       "Michael Ironside",
       "Colin Salmon",
-      "RZA",
       "Billy MacLellan",
       "Araya Mengesha",
       "Gage Munroe",
@@ -515,7 +525,17 @@
       "Jim Kirby",
       "Daniel Bernhardt",
       "Alain Moussi",
-      "Alan Wong"
+      "Alan Wong",
+      "Yulia Guzhva",
+      "Vladimir Levkovsky",
+      "Dasha Naishuller",
+      "Thomas Soares",
+      "Stephane Jullien",
+      "Meaghan Ann De Werrenne-Walle",
+      "Robert Heinamaki",
+      "Brent Alarie",
+      "Adam Hurtig",
+      "Darya Charusha"
     ],
     "genres": [
       "Action",
@@ -532,6 +552,7 @@
     "director": "Sam Hargrave",
     "tmdb_id": 545609,
     "poster": "posters/545609.jpg",
+    "runtime": 116,
     "cast": [
       "Chris Hemsworth",
       "Rudhraksh Jaiswal",
@@ -605,6 +626,7 @@
     "director": "Zack Snyder",
     "tmdb_id": 503736,
     "poster": "posters/503736.jpg",
+    "runtime": 148,
     "cast": [
       "Dave Bautista",
       "Ella Purnell",
@@ -660,10 +682,12 @@
       "Steve Soliz",
       "Jordyn Aurora Aquino",
       "Sarah Minnich",
-      "Fred Tatasciore"
+      "Fred Tatasciore",
+      "Gordon Tarpley"
     ],
     "genres": [
       "Action",
+      "Crime",
       "Horror",
       "Thriller"
     ]
@@ -677,6 +701,7 @@
     "director": "Tim Wardle",
     "tmdb_id": 489988,
     "poster": "posters/489988.jpg",
+    "runtime": 97,
     "cast": [
       "David Kellman",
       "Robert Shafran",
@@ -695,32 +720,35 @@
     "director": "Guy Ritchie",
     "tmdb_id": 637649,
     "poster": "posters/637649.jpg",
+    "runtime": 119,
     "cast": [
       "Jason Statham",
       "Holt McCallany",
-      "Eddie Marsan",
-      "Josh Hartnett",
       "Scott Eastwood",
       "Jeffrey Donovan",
-      "Alex Ferns",
+      "Josh Hartnett",
+      "Eddie Marsan",
+      "Andy García",
       "Laz Alonso",
+      "Darrell D'Silva",
+      "Babs Olusanmokun",
+      "Deobia Oparei",
+      "Chris Reilly",
       "Niamh Algar",
       "Raúl Castillo",
+      "Alex Ferns",
       "Post Malone",
       "Lyne Renee",
+      "Rocci Williams",
       "Anthony Molinari",
-      "Deobia Oparei",
       "Tadhg Murphy",
-      "Babs Olusanmokun",
-      "Darrell D'Silva",
-      "Chris Reilly",
       "Matthew Illesley",
       "Rebecca Calder",
       "Jason Wong",
       "Alessandro Babalola",
+      "Eli Brown",
       "Cameron Jack",
       "Montana Manning",
-      "Rocci Williams",
       "Josh Cowdery",
       "Eve Macklin",
       "Fernando Martinez",
@@ -739,15 +767,14 @@
       "Stephanie Mae",
       "Christian Sanderson",
       "Luke Lynch",
-      "Eli Brown",
-      "Andy García",
       "Rob Delaney",
       "Puneet Tyagi",
       "Gerald Tyler"
     ],
     "genres": [
       "Action",
-      "Crime"
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -759,6 +786,7 @@
     "director": "Enrico Casarosa",
     "tmdb_id": 508943,
     "poster": "posters/508943.jpg",
+    "runtime": 95,
     "cast": [
       "Jacob Tremblay",
       "Jack Dylan Grazer",
@@ -770,7 +798,7 @@
       "Peter Sohn",
       "Lorenzo Crisci",
       "Marina Massironi",
-      "Gino La Monica",
+      "Luigi La Monica",
       "Sandy Martin",
       "Giacomo Gianniotti",
       "Elisa Gabrielli",
@@ -779,9 +807,11 @@
       "Francesca Fanti",
       "Jonathan Nichols",
       "Enrico Casarosa",
-      "Jim Pirri"
+      "Jim Pirri",
+      "Arturo Sorino"
     ],
     "genres": [
+      "Adventure",
       "Animation",
       "Comedy",
       "Family",
@@ -797,18 +827,28 @@
     "director": "Keishi Ōtomo",
     "tmdb_id": 602063,
     "poster": "posters/602063.jpg",
+    "runtime": 138,
     "cast": [
       "Takeru Satoh",
       "Emi Takei",
-      "Mackenyu Arata",
+      "Mackenyu",
       "Munetaka Aoki",
-      "Yôsuke Eguchi",
-      "Riku Onishi",
       "Yu Aoi",
+      "Yûsuke Iseya",
       "Tao Tsuchiya",
+      "Ryosuke Miura",
+      "Yosuke Eguchi",
+      "Takuma Otoo",
+      "Shingo Tsurumi",
+      "Takeo Nakahara",
+      "Riku Onishi",
+      "Kazuki Kitamura",
+      "Shinnosuke Abe",
+      "Shuntaro Yanagi",
+      "Joey Iwanaga",
+      "Eiki Narita",
       "Kasumi Arimura",
-      "Yusuke Iseya",
-      "Ryunosuke Kamiki"
+      "Ryûnosuke Kamiki"
     ],
     "genres": [
       "Action",
@@ -825,6 +865,7 @@
     "director": "Robert Zemeckis",
     "tmdb_id": 856,
     "poster": "posters/856.jpg",
+    "runtime": 104,
     "cast": [
       "Bob Hoskins",
       "Christopher Lloyd",
@@ -838,7 +879,6 @@
       "Betsy Brantley",
       "Mel Blanc",
       "Mae Questel",
-      "Frank Sinatra",
       "Richard Williams",
       "Wayne Allwine",
       "Frank Welker",
@@ -897,6 +937,7 @@
     "director": "Cate Shortland",
     "tmdb_id": 497698,
     "poster": "posters/497698.jpg",
+    "runtime": 134,
     "cast": [
       "Scarlett Johansson",
       "Florence Pugh",
@@ -946,7 +987,7 @@
       "Noel Krisztian Kozak",
       "Martin Razpopov",
       "Olivier Richters",
-      "Dalibor Bajunovic",
+      "Dalibor Bajunović",
       "Andrew Byron",
       "Ed Ashe",
       "Dawid Szatarski",
@@ -974,9 +1015,7 @@
       "Ian Wilson",
       "Omar Alboukharey",
       "Tyrone Kearns",
-      "Tony McCarthy",
       "Gavin Lee Lewis",
-      "Wong Charlie",
       "Ahmed Bakare",
       "Zoltan Rencsar",
       "Adam Prickett",
@@ -993,13 +1032,13 @@
       "Stephen Samson",
       "Marian Lorencik",
       "Julia Louis-Dreyfus",
-      "Jeremy Renner"
+      "Jeremy Renner",
+      "Dale Liner"
     ],
     "genres": [
       "Action",
       "Adventure",
-      "Science Fiction",
-      "Thriller"
+      "Science Fiction"
     ]
   },
   {
@@ -1011,6 +1050,7 @@
     "director": "John Krasinski",
     "tmdb_id": 520763,
     "poster": "posters/520763.jpg",
+    "runtime": 97,
     "cast": [
       "Emily Blunt",
       "Cillian Murphy",
@@ -1036,7 +1076,8 @@
       "Gary Sundown",
       "Kyle Licht",
       "David Lundy",
-      "Krzysztof  Mardula"
+      "Krzysztof  Mardula",
+      "Alice Sophie Malyukova"
     ],
     "genres": [
       "Horror",
@@ -1053,6 +1094,7 @@
     "director": "Justin Lin",
     "tmdb_id": 385128,
     "poster": "posters/385128.jpg",
+    "runtime": 143,
     "cast": [
       "Vin Diesel",
       "Michelle Rodriguez",
@@ -1066,19 +1108,19 @@
       "Helen Mirren",
       "Kurt Russell",
       "Charlize Theron",
+      "Anna Sawai",
       "Lucas Black",
       "Shad Moss",
-      "Anna Sawai",
-      "Don Omar",
       "Jason Tobin",
+      "Thue Ersted Rasmussen",
+      "Don Omar",
       "Shea Whigham",
       "Vincent Sinclair Diesel",
       "Finn Cole",
-      "Thue Ersted Rasmussen",
       "Vinnie Bennett",
       "J. D. Pardo",
-      "Jim Parrack",
       "Cardi B",
+      "Jim Parrack",
       "Lex Elle",
       "Krzysztof  Mardula",
       "Amber Sienna",
@@ -1101,24 +1143,37 @@
       "Bill Simmons",
       "Luka Hays",
       "Jimmy Lin",
-      "Gal Gadot",
-      "Jason Statham"
+      "Jason Statham",
+      "Janice Blue",
+      "Sophia Bui",
+      "Miranda Chambers",
+      "Méghane De Croock",
+      "Lex Elle",
+      "Elizabeth Haley",
+      "Rob Horrocks",
+      "Joy A. Kennelly",
+      "Amber Pauline",
+      "Demitra Sealy",
+      "Valeria Zunzun",
+      "Ella Walker"
     ],
     "genres": [
       "Action",
+      "Adventure",
       "Crime",
       "Thriller"
     ]
   },
   {
-    "title": "Kaamelott - The First Chapter",
-    "original_title": "Kaamelott : Premier volet",
+    "title": "Kaamelott: The First Chapter",
+    "original_title": "Kaamelott - Premier volet",
     "watch_date": "2021-08-27",
     "rating": 7,
     "release_date": "2021-07-21",
     "director": "Alexandre Astier",
     "tmdb_id": 577242,
     "poster": "posters/577242.jpg",
+    "runtime": 120,
     "cast": [
       "Alexandre Astier",
       "Lionnel Astier",
@@ -1192,7 +1247,8 @@
     ],
     "genres": [
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Fantasy"
     ]
   },
   {
@@ -1204,12 +1260,13 @@
     "director": "Niki Caro",
     "tmdb_id": 337401,
     "poster": "posters/337401.jpg",
+    "runtime": 115,
     "cast": [
       "Liu Yifei",
-      "Jet Li",
       "Tzi Ma",
       "Donnie Yen",
       "Gong Li",
+      "Jet Li",
       "Jason Scott Lee",
       "Yoson An",
       "Rosalind Chao",
@@ -1235,11 +1292,11 @@
       "Zhaidarbek Kunguzhinov",
       "Gary Young",
       "Wolf Chen",
-      "Owen Kwong",
-      "Radhesh Aria"
+      "Owen Kwong"
     ],
     "genres": [
       "Adventure",
+      "Drama",
       "Fantasy"
     ]
   },
@@ -1252,6 +1309,7 @@
     "director": "James Gunn",
     "tmdb_id": 436969,
     "poster": "posters/436969.jpg",
+    "runtime": 132,
     "cast": [
       "Margot Robbie",
       "Idris Elba",
@@ -1261,46 +1319,66 @@
       "Viola Davis",
       "David Dastmalchian",
       "Daniela Melchior",
-      "Peter Capaldi",
       "Michael Rooker",
       "Jai Courtney",
+      "Peter Capaldi",
       "Alice Braga",
       "Pete Davidson",
-      "Nathan Fillion",
-      "Storm Reid",
       "Joaquín Cosío",
       "Juan Diego Botto",
+      "Storm Reid",
+      "Nathan Fillion",
+      "Taika Waititi",
       "Steve Agee",
-      "Jennifer Holland",
-      "Tinashe Kajese",
       "Sean Gunn",
+      "John Ostrander",
       "Flula Borg",
       "Mayling Ng",
-      "Taika Waititi",
-      "Julio Ruiz",
-      "Lynne Ashe",
-      "Dee Bradley Baker",
-      "John Ostrander",
       "Stephen Blackehart",
+      "Tinashe Kajese",
+      "Jennifer Holland",
+      "Fernando Martinez",
+      "Dee Bradley Baker",
+      "Jaws",
+      "Crisp Ratt",
       "Natalia Safran",
-      "Mikaela Hoover",
-      "Lloyd Kaufman",
-      "Pom Klementieff",
-      "Angel Airan Bonilla",
-      "Andrew Ayala",
-      "James William Ballard",
-      "Timothy Carr",
       "Jared Leland Gore",
-      "Gerardo Davila",
+      "Rey Hernandez",
+      "Ray Benitez",
+      "Reinaldo Faberlle",
+      "Jonathan Fritschi",
       "Josh Ventura",
+      "Gerardo Davila",
+      "Mikaela Hoover",
+      "Lynne Ashe",
+      "Julio Cesar Ruiz",
+      "J.R. Adduci",
+      "Curtis Lyons Jr.",
+      "Maya Le Clark",
+      "Elideusa Gomes Almeida",
+      "Shanna Kernan",
+      "Bridget Taylor",
+      "Monica Rivera",
+      "Andrea Andrade",
+      "Giovanni Rodriguez",
       "Giovannie Cruz",
       "Sergio Carlo",
-      "Edgar Zanabria"
+      "Edgar Zanabria",
+      "Grecia Balboa",
+      "Kenneth Trujillo",
+      "Randy Havens",
+      "Michelle Civile",
+      "Gabrielle Manning",
+      "Michael Aaron Milligan",
+      "Diany Rodriguez",
+      "Teresita Mans",
+      "Terence Rosemore",
+      "Lloyd Kaufman",
+      "Pom Klementieff"
     ],
     "genres": [
       "Action",
       "Adventure",
-      "Comedy",
       "Fantasy"
     ]
   },
@@ -1313,6 +1391,7 @@
     "director": "Clay Tarver",
     "tmdb_id": 653349,
     "poster": "posters/653349.jpg",
+    "runtime": 103,
     "cast": [
       "John Cena",
       "Lil Rel Howery",
@@ -1347,6 +1426,7 @@
     "director": "Destin Daniel Cretton",
     "tmdb_id": 566525,
     "poster": "posters/566525.jpg",
+    "runtime": 132,
     "cast": [
       "Simu Liu",
       "Tony Leung Chiu-wai",
@@ -1380,6 +1460,7 @@
       "Lydia Sarks",
       "Dee Bradley Baker",
       "Benedict Wong",
+      "Jade Xu",
       "Tim Roth",
       "Mark Ruffalo",
       "Brie Larson",
@@ -1401,6 +1482,7 @@
     "director": "Craig Gillespie",
     "tmdb_id": 337404,
     "poster": "posters/337404.jpg",
+    "runtime": 134,
     "cast": [
       "Emma Stone",
       "Emma Thompson",
@@ -1431,9 +1513,11 @@
       "Jack Barry",
       "Asmara Gabrielle",
       "Tom Turner",
-      "Crystal Wingx"
+      "Crystal Wingx",
+      "John Wolfe"
     ],
     "genres": [
+      "Adventure",
       "Comedy",
       "Crime"
     ]
@@ -1447,44 +1531,50 @@
     "director": "Denis Villeneuve",
     "tmdb_id": 438631,
     "poster": "posters/438631.jpg",
+    "runtime": 155,
     "cast": [
       "Timothée Chalamet",
       "Rebecca Ferguson",
       "Oscar Isaac",
-      "Zendaya",
-      "Jason Momoa",
-      "Stellan Skarsgård",
-      "Stephen McKinley Henderson",
       "Josh Brolin",
-      "Javier Bardem",
-      "Sharon Duncan-Brewster",
-      "Chang Chen",
+      "Stellan Skarsgård",
       "Dave Bautista",
-      "David Dastmalchian",
+      "Sharon Duncan-Brewster",
+      "Stephen McKinley Henderson",
+      "Zendaya",
+      "Chang Chen",
       "Charlotte Rampling",
+      "Jason Momoa",
+      "Javier Bardem",
+      "David Dastmalchian",
       "Babs Olusanmokun",
-      "Benjamin Clémentine",
       "Golda Rosheuvel",
-      "Souad Faress",
       "Roger Yuan",
+      "Benjamin Clémentine",
+      "Souad Faress",
+      "Seun Shote",
+      "Neil Bell",
       "Oliver Ryan",
       "Stephen Collins",
       "Charlie Rawes",
+      "Richard Carter",
+      "Benjamin Dilloway",
       "Elmi Rashid Elmi",
+      "Tachia Newall",
       "Gloria Obianyo",
+      "Fehinti Balogun",
+      "Dora Kápolnai-Schvab",
+      "Joelle Amery",
+      "Jimmy Walker",
       "Paul Bullion",
-      "Balázs Megyeri",
-      "Peter Sztojanov Jr.",
-      "Björn Freiberg",
-      "Ferenc Iván Szabó",
-      "István Aldott"
+      "Milena Sidorova",
+      "János Timkó",
+      "Jean Gilpin",
+      "Marianne Faithfull",
+      "Ellen Dubin"
     ],
     "genres": [
-      "Action",
       "Adventure",
-      "Comedy",
-      "Drama",
-      "Family",
       "Science Fiction"
     ]
   },
@@ -1497,6 +1587,7 @@
     "director": "Dome Karukoski",
     "tmdb_id": 468224,
     "poster": "posters/468224.jpg",
+    "runtime": 112,
     "cast": [
       "Nicholas Hoult",
       "Lily Collins",
@@ -1546,7 +1637,6 @@
     ],
     "genres": [
       "Drama",
-      "History",
       "Romance",
       "War"
     ]
@@ -1560,6 +1650,7 @@
     "director": "Nia DaCosta",
     "tmdb_id": 565028,
     "poster": "posters/565028.jpg",
+    "runtime": 91,
     "cast": [
       "Yahya Abdul-Mateen II",
       "Teyonah Parris",
@@ -1603,8 +1694,7 @@
       "Virginia Madsen"
     ],
     "genres": [
-      "Horror",
-      "Thriller"
+      "Horror"
     ]
   },
   {
@@ -1616,6 +1706,7 @@
     "director": "M. Night Shyamalan",
     "tmdb_id": 631843,
     "poster": "posters/631843.jpg",
+    "runtime": 108,
     "cast": [
       "Gael García Bernal",
       "Vicky Krieps",
@@ -1643,7 +1734,8 @@
       "Jeffrey Holsman",
       "Margaux Da Silva",
       "John Twohy",
-      "Kylie Begley"
+      "Kylie Begley",
+      "Emma Jonnz"
     ],
     "genres": [
       "Horror",
@@ -1660,25 +1752,26 @@
     "director": "Mike Flanagan",
     "tmdb_id": 501170,
     "poster": "posters/501170.jpg",
+    "runtime": 152,
     "cast": [
       "Ewan McGregor",
       "Kyliegh Curran",
       "Rebecca Ferguson",
-      "Bruce Greenwood",
-      "Katie Parker",
       "Cliff Curtis",
-      "Carl Lumbly",
-      "Carel Struycken",
-      "Emily Alyn Lind",
       "Zahn McClarnon",
-      "Zackary Momoh",
+      "Emily Alyn Lind",
       "Selena Anduze",
       "Robert Longstreet",
+      "Carel Struycken",
+      "Katie Parker",
       "James Flanagan",
       "Met Clark",
+      "Zackary Momoh",
       "Jocelin Donahue",
       "Dakota Hickman",
+      "Carl Lumbly",
       "Henry Thomas",
+      "Bruce Greenwood",
       "Sallye Hooks",
       "Alex Essoe",
       "Roger Dale Floyd",
@@ -1735,6 +1828,7 @@
     "director": "Jesse V. Johnson",
     "tmdb_id": 449985,
     "poster": "posters/449985.jpg",
+    "runtime": 96,
     "cast": [
       "Tony Jaa",
       "Tiger Hu Chen",
@@ -1774,6 +1868,7 @@
     "director": "Shawn Levy",
     "tmdb_id": 550988,
     "poster": "posters/550988.jpg",
+    "runtime": 115,
     "cast": [
       "Ryan Reynolds",
       "Jodie Comer",
@@ -1807,7 +1902,7 @@
       "Jonathan De Azevedo",
       "Destiny Claymore",
       "Ninja",
-      "Imane Anys",
+      "Pokimane",
       "Lannan Eacott",
       "Seán McLoughlin",
       "DanTDM",
@@ -1843,7 +1938,8 @@
       "Brett Schneider",
       "Omar Ghonim",
       "Tait Fletcher",
-      "Domenic Arduino"
+      "Domenic Arduino",
+      "Emma Jonnz"
     ],
     "genres": [
       "Action",
@@ -1861,6 +1957,7 @@
     "director": "Shane Carruth",
     "tmdb_id": 14337,
     "poster": "posters/14337.jpg",
+    "runtime": 77,
     "cast": [
       "Shane Carruth",
       "David Sullivan",
@@ -1880,7 +1977,8 @@
       "Brandon Blagg",
       "Jon Cook",
       "David Joyner",
-      "Eric De Soualhat"
+      "Eric De Soualhat",
+      "Kevin Lucero Less"
     ],
     "genres": [
       "Drama",

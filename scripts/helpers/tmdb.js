@@ -29,6 +29,7 @@ m.fetchFormattedMovieData = async function (movieId, rating, watchDate) {
     director: credits.crew.find((member) => member.job === 'Director').name,
     tmdb_id: details.id,
     poster: `posters/${details.id}.jpg`,
+    runtime: details.runtime || null,
     cast: credits.cast.map((member) => member.name),
     genres: details.genres.map((genre) => genre.name).sort(),
   }

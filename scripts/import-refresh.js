@@ -4,14 +4,14 @@ const { fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
 
 ;(async () => {
-  const postersPath = path.join(__dirname, '../movies/posters')
+  // const postersPath = path.join(__dirname, '../movies/posters')
   const moviesPath = path.join(__dirname, '../movies')
   try {
-    await fsp.rm(postersPath, { recursive: true })
+    // await fsp.rm(postersPath, { recursive: true })
   } catch (error) {
     // nothing
   }
-  await fsp.mkdir(postersPath, { recursive: true })
+  // await fsp.mkdir(postersPath, { recursive: true })
   let files = await fsp.readdir(moviesPath)
   files = files.filter((file) => file.endsWith('.json'))
   for (let fileIndex = 0; fileIndex < files.length; fileIndex += 1) {
