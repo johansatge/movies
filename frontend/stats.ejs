@@ -39,6 +39,12 @@
         <canvas data-js-stats-movies-by-release-years></canvas>
       </div>
       <h2 class="stat-heading">
+        Runtime
+      </h2>
+      <div class="stat-graph">
+        <canvas data-js-stats-movies-by-runtime></canvas>
+      </div>
+      <h2 class="stat-heading">
         Watched by month
       </h2>
       <div class="stat-graph">
@@ -78,6 +84,7 @@
         moviesByRating : <%- JSON.stringify(stats.ratings) %>,
         moviesByMonth : <%- JSON.stringify(stats.months) %>,
         moviesByReleaseYears : <%- JSON.stringify(stats.releaseYears) %>,
+        moviesByRuntime : <%- JSON.stringify(stats.runtimes) %>,
         actorsFiles : <%- JSON.stringify(moviesAssets.actors) %>,
         actorsCount : <%- stats.actorsCount %>,
         directorsFiles : <%- JSON.stringify(moviesAssets.actors) %>,

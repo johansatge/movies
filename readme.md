@@ -31,6 +31,7 @@ The search field on the movies page accepts the following syntaxes:
 * `actor:Charles Bronson` → search by actor
 * `director:George Lucas` → search by director
 * `released:1992` → search by release year
+* `runtime:01h30` → search by runtime
 * `watched:2018` → search by watch year
 * `genre:Action` → search by genre
 

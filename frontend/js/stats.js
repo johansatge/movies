@@ -75,6 +75,13 @@ function init(stats) {
     stats.moviesByMonth.map((month) => month.label),
     stats.moviesByMonth.map((month) => month.count)
   )
+  initChart(
+    document.querySelector('[data-js-stats-movies-by-runtime]').getContext('2d'),
+    'bar',
+    stats.moviesByRuntime.map((runtime) => runtime.label),
+    stats.moviesByRuntime.map((runtime) => runtime.count),
+    onRuntimeClick
+  )
 }
 
 function addActorsDirectors(type) {
@@ -122,6 +129,13 @@ function onReleaseYearClick(evt, items) {
   if (items.length === 1) {
     const year = window.Scripts.stats.data.moviesByReleaseYears[items[0].index]
     document.location.href = `../#released:${year.label}`
+  }
+}
+
+function onRuntimeClick(evt, items) {
+  if (items.length === 1) {
+    const runtime = window.Scripts.stats.data.moviesByRuntime[items[0].index]
+    document.location.href = `../#runtime:${runtime.label}`
   }
 }
 

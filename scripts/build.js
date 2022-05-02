@@ -4,7 +4,7 @@ const fs = require('fs')
 const fsp = require('fs').promises
 const minify = require('html-minifier').minify
 const path = require('path')
-const { extractStats } = require('./helpers/stats.js')
+const { extractStats, getReadableRuntime } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
 const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
 const { startLocalServer } = require('./server.js')
@@ -170,6 +170,7 @@ async function writeMovies() {
         released: movie.release_date.substring(0, 4),
         watched: movie.watch_date ? movie.watch_date.substring(0, 4) : '',
         genres: movie.genres.join(','),
+        runtime: getReadableRuntime(movie.runtime),
         poster: movie.poster,
         url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,
       })

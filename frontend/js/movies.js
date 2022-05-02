@@ -170,12 +170,15 @@ function movieMatchesCurrentFilters(movie) {
     if (filter.type === 'genre' && movie.genres.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
+    if (filter.type === 'runtime' && movie.runtime.search(new RegExp(filter.value, 'i')) === -1) {
+      return false
+    }
   }
   return true
 }
 
 function extractFiltersFromSearchInput() {
-  const allowedTypes = ['rating', 'actor', 'director', 'title', 'released', 'watched', 'genre']
+  const allowedTypes = ['rating', 'actor', 'director', 'title', 'released', 'watched', 'genre', 'runtime']
   const defaultType = 'title'
   const searchTerms = nodeSearchInput.value.split(';').map((term) => term.trim())
   const filters = []
