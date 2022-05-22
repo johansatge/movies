@@ -1035,5 +1035,54 @@
       "Comedy",
       "TV Movie"
     ]
+  },
+  {
+    "title": "Sexy Beast",
+    "original_title": "Sexy Beast",
+    "watch_date": "2022-05-21",
+    "rating": 7,
+    "release_date": "2000-09-13",
+    "director": "Jonathan Glazer",
+    "tmdb_id": 11826,
+    "poster": "posters/11826.jpg",
+    "runtime": 89,
+    "cast": [
+      "Ray Winstone",
+      "Ben Kingsley",
+      "Ian McShane",
+      "Amanda Redman",
+      "Cavan Kendall",
+      "Julianne White",
+      "Álvaro Monje",
+      "James Fox",
+      "Robert Atiko",
+      "Nieves del Amo Oruet",
+      "Enrique Alemán Fabrega",
+      "Gérard Barray",
+      "José Maria Cano Ramos",
+      "Desirée Erasmus",
+      "Santiago Frías Muñoz",
+      "José Hernández",
+      "Ana Maldonado Herreria",
+      "Andy Lucas",
+      "José Lirola Ramos",
+      "José López Carrillo",
+      "Antonio Fco. Márquez Quesada",
+      "Juan Manuel Martínez Cobos",
+      "Dionisio Mesa",
+      "Eddie O'Connell",
+      "Terence Plummer",
+      "Manuel Sánchez Berlanca",
+      "Frank Scinto",
+      "Darkie Smith",
+      "Rocky Taylor",
+      "Chris Webb",
+      "Pedro Zamora Hernández"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ]
   }
 ]
