@@ -1084,5 +1084,34 @@
       "Drama",
       "Thriller"
     ]
+  },
+  {
+    "title": "Napoleon Dynamite",
+    "original_title": "Napoleon Dynamite",
+    "watch_date": "2022-05-22",
+    "rating": 7,
+    "release_date": "2004-06-11",
+    "director": "Jared Hess",
+    "tmdb_id": 8193,
+    "poster": "posters/8193.jpg",
+    "runtime": 95,
+    "cast": [
+      "Jon Heder",
+      "Haylie Duff",
+      "Aaron Ruell",
+      "Jon Gries",
+      "Tina Majorino",
+      "Efren Ramirez",
+      "Shondrella Avery",
+      "Diedrich Bader",
+      "Sandy Martin",
+      "Trevor Snarr",
+      "Emily Dunn",
+      "Ellen Dubin",
+      "Samantha Marsden"
+    ],
+    "genres": [
+      "Comedy"
+    ]
   }
 ]
