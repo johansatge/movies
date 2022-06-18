@@ -1185,5 +1185,42 @@
       "Adventure",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Outfit",
+    "original_title": "The Outfit",
+    "watch_date": "2022-06-12",
+    "rating": 7,
+    "release_date": "2022-02-25",
+    "director": "Graham Moore",
+    "tmdb_id": 799876,
+    "poster": "posters/799876.jpg",
+    "runtime": 105,
+    "cast": [
+      "Mark Rylance",
+      "Johnny Flynn",
+      "Zoey Deutch",
+      "Dylan O'Brien",
+      "Simon Russell Beale",
+      "Nikki Amuka-Bird",
+      "Alan Mehdizadeh",
+      "Johnathan McClain",
+      "Scoop Wasserstein",
+      "Chiedu Agborh",
+      "Michael Addo",
+      "Michal Forejtek",
+      "Bmcabana Sf",
+      "John Gumley-Mason",
+      "Stephen Knox",
+      "Lauris Karklins",
+      "Steve Chatfield",
+      "William Keetch",
+      "Ryan Hall"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ]
   }
 ]
