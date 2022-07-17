@@ -1358,5 +1358,51 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "My Cousin Vinny",
+    "original_title": "My Cousin Vinny",
+    "watch_date": "2022-07-16",
+    "rating": 7,
+    "release_date": "1992-03-13",
+    "director": "Jonathan Lynn",
+    "tmdb_id": 10377,
+    "poster": "posters/10377.jpg",
+    "runtime": 120,
+    "cast": [
+      "Joe Pesci",
+      "Ralph Macchio",
+      "Marisa Tomei",
+      "Mitchell Whitfield",
+      "Fred Gwynne",
+      "Lane Smith",
+      "Austin Pendleton",
+      "Bruce McGill",
+      "Maury Chaykin",
+      "Paulene Myers",
+      "Raynor Scheine",
+      "James Rebhorn",
+      "Chris Ellis",
+      "Lou Walker",
+      "Michael Burgess",
+      "Michael Simpson",
+      "Kenny Jones",
+      "Thomas Merdis",
+      "J. Don Ferguson",
+      "Michael Genevie",
+      "Jeff Lewis",
+      "Ron Leggett",
+      "Aubrey J. Osteen",
+      "Larry Shuler",
+      "Suzi Bass",
+      "Bill Coates",
+      "Jill Jane Clements",
+      "Muriel Moore",
+      "Bob Penny"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
+    ]
   }
 ]
