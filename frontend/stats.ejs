@@ -77,6 +77,21 @@
           <% }) %>
         </table>
       </div>
+      <h2 class="stat-heading">
+        Languages
+      </h2>
+      <div class="stat-table">
+        <table cellspacing="0" cellpadding="0">
+          <% stats.languages.forEach((item, index) => { %>
+            <tr class="<%= index % 2 === 0 ? 'stat-table-row--alt' : '' %>">
+              <td><a href="../#language:<%= item.label %>">
+                <%= languages[item.label] ? languages[item.label].name : item.label %>
+              </a></td>
+              <td><%= item.count %></td>
+            </tr>
+          <% }) %>
+        </table>
+      </div>
     </div>
     <script src="<%= appAssets.statsScript %>"></script>
     <script>

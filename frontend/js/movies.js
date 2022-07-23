@@ -173,12 +173,15 @@ function movieMatchesCurrentFilters(movie) {
     if (filter.type === 'runtime' && movie.runtime.search(new RegExp(filter.value, 'i')) === -1) {
       return false
     }
+    if (filter.type === 'language' && movie.lang !== filter.value) {
+      return false
+    }
   }
   return true
 }
 
 function extractFiltersFromSearchInput() {
-  const allowedTypes = ['rating', 'actor', 'director', 'title', 'released', 'watched', 'genre', 'runtime']
+  const allowedTypes = ['rating', 'actor', 'director', 'title', 'released', 'watched', 'genre', 'runtime', 'language']
   const defaultType = 'title'
   const searchTerms = nodeSearchInput.value.split(';').map((term) => term.trim())
   const filters = []

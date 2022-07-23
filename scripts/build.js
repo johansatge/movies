@@ -8,6 +8,7 @@ const { extractStats, getReadableRuntime } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
 const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
 const { startLocalServer } = require('./server.js')
+const languages = require('./helpers/languages.json')
 
 // State is populated in each build state, and forwarded to EJS
 const buildState = {
@@ -25,6 +26,7 @@ const buildState = {
   logos: [],
   // Stats computed when writing movies (years, actors, directors...)
   stats: null,
+  languages,
   // List of assets (by URL), inlined in the HTML, to be fetched when clicking the "Download" button
   offlineAssets: null,
   // Hash of index.html & stats/index.html used in the SW to invalidate cache
@@ -170,6 +172,7 @@ async function writeMovies() {
         released: movie.release_date.substring(0, 4),
         watched: movie.watch_date ? movie.watch_date.substring(0, 4) : '',
         genres: movie.genres.join(','),
+        lang: movie.original_language,
         runtime: getReadableRuntime(movie.runtime),
         poster: movie.poster,
         url: `https://www.themoviedb.org/movie/${movie.tmdb_id}`,

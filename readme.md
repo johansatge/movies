@@ -34,6 +34,7 @@ The search field on the movies page accepts the following syntaxes:
 * `runtime:01h30` → search by runtime
 * `watched:2018` → search by watch year
 * `genre:Action` → search by genre
+* `language:fr` → search by original release language
 
 Search terms can also be combined with the `;` character: `director:George Lucas;release:1983`
 
