@@ -1695,5 +1695,56 @@
       "Adventure",
       "Fantasy"
     ]
+  },
+  {
+    "title": "The Gray Man",
+    "original_title": "The Gray Man",
+    "original_language": "en",
+    "watch_date": "2022-07-23",
+    "rating": 5,
+    "release_date": "2022-07-13",
+    "director": "Anthony Russo",
+    "tmdb_id": 725201,
+    "poster": "posters/725201.jpg",
+    "runtime": 128,
+    "cast": [
+      "Ryan Gosling",
+      "Chris Evans",
+      "Ana de Armas",
+      "Jessica Henwick",
+      "Regé-Jean Page",
+      "Wagner Moura",
+      "Julia Butters",
+      "Dhanush",
+      "Alfre Woodard",
+      "Billy Bob Thornton",
+      "Eme Ikwuakor",
+      "Scott Haze",
+      "Deobia Oparei",
+      "Daz Crawford",
+      "Jimmy Jean-Louis",
+      "Aishwarya Sonar",
+      "Callan Mulvey",
+      "Robert Kazinsky",
+      "Sam Lerner",
+      "Karen Jin Beck",
+      "Kath Leroy",
+      "Dana Aliya Levinson",
+      "Matthew Bellows",
+      "Kate Blumberg",
+      "Nadiv Molcho",
+      "Martin Harris",
+      "Patrick Newall",
+      "Becky Wu",
+      "Jamal Antar",
+      "Justin Walker White",
+      "Joe Daru",
+      "Kendall Wells",
+      "Shea Whigham"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
   }
 ]
