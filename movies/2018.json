@@ -2,6 +2,7 @@
   {
     "title": "John Wick: Chapter 2",
     "original_title": "John Wick: Chapter 2",
+    "original_language": "en",
     "watch_date": "2018-01-07",
     "rating": 6,
     "release_date": "2017-02-08",
@@ -85,6 +86,7 @@
   {
     "title": "Acts of Violence",
     "original_title": "Acts of Violence",
+    "original_language": "en",
     "watch_date": "2018-01-13",
     "rating": 3,
     "release_date": "2018-01-12",
@@ -135,6 +137,7 @@
   {
     "title": "Death Note",
     "original_title": "Death Note",
+    "original_language": "en",
     "watch_date": "2018-01-16",
     "rating": 3,
     "release_date": "2017-08-25",
@@ -189,11 +192,11 @@
       "Kyle Donaldson",
       "Dawn Chubai",
       "Addison Gosselin",
-      "Al Miro"
+      "Al Miro",
+      "William B. Davis"
     ],
     "genres": [
       "Crime",
-      "Drama",
       "Fantasy",
       "Horror",
       "Thriller"
@@ -202,6 +205,7 @@
   {
     "title": "Death Wish",
     "original_title": "Death Wish",
+    "original_language": "en",
     "watch_date": "2018-01-20",
     "rating": 5,
     "release_date": "1974-07-24",
@@ -238,6 +242,7 @@
   {
     "title": "Death Wish II",
     "original_title": "Death Wish II",
+    "original_language": "en",
     "watch_date": "2018-01-21",
     "rating": 4,
     "release_date": "1982-02-20",
@@ -279,6 +284,7 @@
   {
     "title": "Blame!",
     "original_title": "ブラム",
+    "original_language": "ja",
     "watch_date": "2018-02-23",
     "rating": 5,
     "release_date": "2017-05-20",
@@ -306,6 +312,7 @@
   {
     "title": "Maze Runner: The Scorch Trials",
     "original_title": "Maze Runner: The Scorch Trials",
+    "original_language": "en",
     "watch_date": "2018-03-09",
     "rating": 4,
     "release_date": "2015-09-09",
@@ -379,10 +386,11 @@
   {
     "title": "Justice League",
     "original_title": "Justice League",
+    "original_language": "en",
     "watch_date": "2018-03-18",
     "rating": 7,
     "release_date": "2017-11-15",
-    "director": "Zack Snyder",
+    "director": "Joss Whedon",
     "tmdb_id": 141052,
     "poster": "posters/141052.jpg",
     "runtime": 120,
@@ -402,7 +410,7 @@
       "Amber Heard",
       "Joe Morton",
       "Lisa Loven Kongsli",
-      "Ingvar E. Sigurðsson",
+      "Ingvar Sigurdsson",
       "David Thewlis",
       "Sergi Constance",
       "Julian Lewis Jones",
@@ -493,13 +501,13 @@
     "genres": [
       "Action",
       "Adventure",
-      "Fantasy",
       "Science Fiction"
     ]
   },
   {
     "title": "Black Panther",
     "original_title": "Black Panther",
+    "original_language": "en",
     "watch_date": "2018-03-19",
     "rating": 6,
     "release_date": "2018-02-13",
@@ -563,7 +571,7 @@
       "Timothy Carr",
       "Apollo GT",
       "James Siderits",
-      "Travis Love",
+      "T. Love",
       "Lidya Jewett",
       "Alona Leoine",
       "Kinley Fleurejuste",
@@ -595,6 +603,7 @@
   {
     "title": "Tomb Raider",
     "original_title": "Tomb Raider",
+    "original_language": "en",
     "watch_date": "2018-03-20",
     "rating": 4,
     "release_date": "2018-03-05",
@@ -649,6 +658,7 @@
   {
     "title": "American Made",
     "original_title": "American Made",
+    "original_language": "en",
     "watch_date": "2018-03-25",
     "rating": 4,
     "release_date": "2017-08-18",
@@ -682,7 +692,7 @@
       "Morgan Hinkleman",
       "Courtney Lakin",
       "Chris Gann",
-      "Fredy Yate Escobar",
+      "Fredy Yate",
       "Robert Farrior",
       "Alberto Ospino",
       "Felipe Bernedette",
@@ -706,7 +716,7 @@
       "Alex Quarles",
       "Trip McCarthy",
       "Zachary Powell",
-      "Jairo Ordoñez",
+      "Jairo Ordóñez",
       "Matt Mercurio",
       "Johnny Otto",
       "Ronald Reagan",
@@ -724,6 +734,7 @@
   {
     "title": "Marry Me, Dude",
     "original_title": "Épouse-moi mon pote",
+    "original_language": "fr",
     "watch_date": "2018-03-29",
     "rating": 2,
     "release_date": "2017-10-25",
@@ -743,9 +754,18 @@
       "Doudou Masta",
       "Nadia Kounda",
       "Manuel Blanch",
-      "Andy Raconte",
+      "Nadège Dabrowski",
       "Ricky Tribord",
-      "Manuela Gourary"
+      "Baya Belal",
+      "Manuela Gourary",
+      "Camille Lou",
+      "Alexis Manenti",
+      "Vladimir Houbart",
+      "David Diane",
+      "Philippe Valmont",
+      "Zinedine Soualem",
+      "Ramzy Bedia",
+      "Yves Pignot"
     ],
     "genres": [
       "Comedy"
@@ -754,13 +774,14 @@
   {
     "title": "Wind River",
     "original_title": "Wind River",
+    "original_language": "en",
     "watch_date": "2018-03-29",
     "rating": 8,
     "release_date": "2017-08-03",
     "director": "Taylor Sheridan",
     "tmdb_id": 395834,
     "poster": "posters/395834.jpg",
-    "runtime": 106,
+    "runtime": 107,
     "cast": [
       "Jeremy Renner",
       "Elizabeth Olsen",
@@ -808,6 +829,7 @@
   {
     "title": "Ice Age: Dawn of the Dinosaurs",
     "original_title": "Ice Age: Dawn of the Dinosaurs",
+    "original_language": "en",
     "watch_date": "2018-04-08",
     "rating": 5,
     "release_date": "2009-06-26",
@@ -840,7 +862,7 @@
       "Allegra Leguizamo",
       "Carlos Saldanha",
       "Claudia Besso",
-      "Beatrice Miller",
+      "Bea Miller",
       "Christian Pikes",
       "Avery Christopher Plum",
       "Joe Romano",
@@ -864,7 +886,7 @@
       "Johnathan Tchaikovsky",
       "Pamala Tyson",
       "June Christopher",
-      "Beatrice Miller"
+      "Frank Welker"
     ],
     "genres": [
       "Adventure",
@@ -876,6 +898,7 @@
   {
     "title": "Ice Age: Continental Drift",
     "original_title": "Ice Age: Continental Drift",
+    "original_language": "en",
     "watch_date": "2018-04-14",
     "rating": 7,
     "release_date": "2012-06-27",
@@ -904,7 +927,7 @@
       "Rebel Wilson",
       "Alan Tudyk",
       "Ester Dean",
-      "Eddie « Piolin » Sotelo",
+      "Eddie 'Piolin' Sotelo",
       "Joy Behar",
       "Heather Morris",
       "Chris Wedge",
@@ -944,6 +967,7 @@
   {
     "title": "Suicide Squad",
     "original_title": "Suicide Squad",
+    "original_language": "en",
     "watch_date": "2018-04-14",
     "rating": 6,
     "release_date": "2016-08-03",
@@ -1085,6 +1109,7 @@
   {
     "title": "The Dark Tower",
     "original_title": "The Dark Tower",
+    "original_language": "en",
     "watch_date": "2018-04-14",
     "rating": 3,
     "release_date": "2017-08-03",
@@ -1155,6 +1180,7 @@
   {
     "title": "The Hitman's Bodyguard",
     "original_title": "The Hitman's Bodyguard",
+    "original_language": "en",
     "watch_date": "2018-04-14",
     "rating": 6,
     "release_date": "2017-08-16",
@@ -1167,10 +1193,10 @@
       "Samuel L. Jackson",
       "Gary Oldman",
       "Salma Hayek",
+      "Richard E. Grant",
       "Élodie Yung",
       "Joaquim de Almeida",
       "Kirsty Mitchell",
-      "Richard E. Grant",
       "Yuri Kolokolnikov",
       "Sam Hazeldine",
       "Mikhail Gorevoy",
@@ -1226,6 +1252,7 @@
   {
     "title": "Transformers: The Last Knight",
     "original_title": "Transformers: The Last Knight",
+    "original_language": "en",
     "watch_date": "2018-04-14",
     "rating": 4,
     "release_date": "2017-06-16",
@@ -1330,13 +1357,13 @@
     "genres": [
       "Action",
       "Adventure",
-      "Fantasy",
       "Science Fiction"
     ]
   },
   {
     "title": "Rurouni Kenshin Part I: Origins",
     "original_title": "るろうに剣心",
+    "original_language": "ja",
     "watch_date": "2018-04-22",
     "rating": 7,
     "release_date": "2012-08-25",
@@ -1382,6 +1409,7 @@
   {
     "title": "Valerian and the City of a Thousand Planets",
     "original_title": "Valerian and the City of a Thousand Planets",
+    "original_language": "en",
     "watch_date": "2018-04-28",
     "rating": 6,
     "release_date": "2017-07-20",
@@ -1507,7 +1535,8 @@
       "Gaëtan Cotigny",
       "François Bredon",
       "Peter Hudson",
-      "Cédric Chevalme"
+      "Cédric Chevalme",
+      "Thalia Besson"
     ],
     "genres": [
       "Action",
@@ -1518,6 +1547,7 @@
   {
     "title": "Rurouni Kenshin Part II: Kyoto Inferno",
     "original_title": "るろうに剣心 京都大火編",
+    "original_language": "ja",
     "watch_date": "2018-04-29",
     "rating": 6,
     "release_date": "2014-08-01",
@@ -1535,7 +1565,7 @@
       "Yûsuke Iseya",
       "Min Tanaka",
       "Tao Tsuchiya",
-      "Ryûnosuke Kamiki",
+      "Ryunosuke Kamiki",
       "Maryjun Takahashi",
       "Tatsuya Fujiwara",
       "Kazufumi Miyazawa",
@@ -1567,6 +1597,7 @@
   {
     "title": "Avengers: Infinity War",
     "original_title": "Avengers: Infinity War",
+    "original_language": "en",
     "watch_date": "2018-05-06",
     "rating": 8,
     "release_date": "2018-04-25",
@@ -1584,7 +1615,7 @@
       "Tom Holland",
       "Chadwick Boseman",
       "Don Cheadle",
-      "Zoe Saldana",
+      "Zoe Saldaña",
       "Karen Gillan",
       "Elizabeth Olsen",
       "Paul Bettany",
@@ -1650,6 +1681,7 @@
   {
     "title": "Rurouni Kenshin Part III: The Legend Ends",
     "original_title": "るろうに剣心　伝説の最期編",
+    "original_language": "ja",
     "watch_date": "2018-05-06",
     "rating": 7,
     "release_date": "2014-09-13",
@@ -1670,7 +1702,7 @@
       "Kazufumi Miyazawa",
       "Yukiyoshi Ozawa",
       "Tatsuya Fujiwara",
-      "Ryûnosuke Kamiki",
+      "Ryunosuke Kamiki",
       "Kenichi Takitoh",
       "Ryosuke Miura",
       "Tomomi Maruyama",
@@ -1697,6 +1729,7 @@
   {
     "title": "Mr. Right",
     "original_title": "Mr. Right",
+    "original_language": "en",
     "watch_date": "2018-05-08",
     "rating": 3,
     "release_date": "2016-02-29",
@@ -1742,6 +1775,7 @@
   {
     "title": "Annihilation",
     "original_title": "Annihilation",
+    "original_language": "en",
     "watch_date": "2018-05-10",
     "rating": 7,
     "release_date": "2018-02-22",
@@ -1781,6 +1815,7 @@
   {
     "title": "Life",
     "original_title": "Life",
+    "original_language": "en",
     "watch_date": "2018-05-12",
     "rating": 7,
     "release_date": "2017-03-22",
@@ -1816,6 +1851,7 @@
   {
     "title": "Downsizing",
     "original_title": "Downsizing",
+    "original_language": "en",
     "watch_date": "2018-05-13",
     "rating": 8,
     "release_date": "2017-12-22",
@@ -1860,7 +1896,7 @@
       "Laura Dern",
       "Niecy Nash",
       "Margo Martindale",
-      "Kerri Kenney-Silver",
+      "Kerri Kenney",
       "Donna Lynne Champlin",
       "Don Lake",
       "Mary Kay Place",
@@ -1907,7 +1943,6 @@
       "Pamela Archer",
       "Dalila Gamboa Diaz",
       "Margareta Pettersson",
-      "Joaquim de Almeida",
       "Cameron Geddes",
       "Bjørnar Egede-Nissen",
       "Warren Belle",
@@ -1962,6 +1997,7 @@
   {
     "title": "Pacific Rim: Uprising",
     "original_title": "Pacific Rim: Uprising",
+    "original_language": "en",
     "watch_date": "2018-05-20",
     "rating": 5,
     "release_date": "2018-03-21",
@@ -2012,6 +2048,7 @@
   {
     "title": "Maze Runner: The Death Cure",
     "original_title": "Maze Runner: The Death Cure",
+    "original_language": "en",
     "watch_date": "2018-05-26",
     "rating": 3,
     "release_date": "2018-01-10",
@@ -2066,6 +2103,7 @@
   {
     "title": "The Guest",
     "original_title": "The Guest",
+    "original_language": "en",
     "watch_date": "2018-06-09",
     "rating": 5,
     "release_date": "2014-09-05",
@@ -2087,7 +2125,23 @@
       "Candice Patton",
       "Chris Ellis",
       "Chase Williamson",
-      "Steven John Brown"
+      "Steven John Brown",
+      "Brenden Wedner",
+      "Alex Knight",
+      "Nancy Jeris",
+      "Matthew Page",
+      "Katie Anne Mitchell",
+      "Frank Bond",
+      "Mike Miller",
+      "Jesse Luken",
+      "Kelsey Leos Montoya",
+      "Justin Ramsey",
+      "Tyler Riegleman",
+      "Justin Yu",
+      "Lonnie Lane",
+      "Tina Borek",
+      "Darlene Kellum",
+      "J. Nathan Simmons"
     ],
     "genres": [
       "Action",
@@ -2098,6 +2152,7 @@
   {
     "title": "Run All Night",
     "original_title": "Run All Night",
+    "original_language": "en",
     "watch_date": "2018-06-13",
     "rating": 6,
     "release_date": "2015-03-11",
@@ -2141,6 +2196,7 @@
   {
     "title": "Hell or High Water",
     "original_title": "Hell or High Water",
+    "original_language": "en",
     "watch_date": "2018-06-14",
     "rating": 8,
     "release_date": "2016-08-11",
@@ -2197,13 +2253,13 @@
     "genres": [
       "Crime",
       "Drama",
-      "Thriller",
-      "Western"
+      "Thriller"
     ]
   },
   {
     "title": "The Happening",
     "original_title": "The Happening",
+    "original_language": "en",
     "watch_date": "2018-06-14",
     "rating": 5,
     "release_date": "2008-06-11",
@@ -2269,6 +2325,7 @@
   {
     "title": "Counter Investigation",
     "original_title": "Contre-enquête",
+    "original_language": "fr",
     "watch_date": "2018-06-16",
     "rating": 7,
     "release_date": "2007-03-07",
@@ -2324,6 +2381,7 @@
   {
     "title": "It",
     "original_title": "It",
+    "original_language": "en",
     "watch_date": "2018-06-16",
     "rating": 7,
     "release_date": "2017-09-06",
@@ -2386,6 +2444,7 @@
   {
     "title": "Les Tuche 3",
     "original_title": "Les Tuche 3",
+    "original_language": "fr",
     "watch_date": "2018-06-17",
     "rating": 4,
     "release_date": "2018-01-31",
@@ -2489,6 +2548,7 @@
   {
     "title": "Blade Runner 2049",
     "original_title": "Blade Runner 2049",
+    "original_language": "en",
     "watch_date": "2018-06-23",
     "rating": 9,
     "release_date": "2017-10-04",
@@ -2505,11 +2565,11 @@
       "Mackenzie Davis",
       "Jared Leto",
       "Carla Juri",
+      "Hiam Abbass",
       "Lennie James",
       "Dave Bautista",
       "David Dastmalchian",
       "Barkhad Abdi",
-      "Hiam Abbass",
       "Wood Harris",
       "Edward James Olmos",
       "Tómas Lemarquis",
@@ -2545,6 +2605,7 @@
   {
     "title": "Jurassic World: Fallen Kingdom",
     "original_title": "Jurassic World: Fallen Kingdom",
+    "original_language": "en",
     "watch_date": "2018-07-04",
     "rating": 6,
     "release_date": "2018-06-06",
@@ -2598,12 +2659,14 @@
     "genres": [
       "Action",
       "Adventure",
-      "Science Fiction"
+      "Science Fiction",
+      "Thriller"
     ]
   },
   {
     "title": "Ready Player One",
     "original_title": "Ready Player One",
+    "original_language": "en",
     "watch_date": "2018-07-08",
     "rating": 7,
     "release_date": "2018-03-28",
@@ -2704,6 +2767,7 @@
   {
     "title": "C'est la vie!",
     "original_title": "Le Sens de la fête",
+    "original_language": "fr",
     "watch_date": "2018-07-10",
     "rating": 8,
     "release_date": "2017-10-04",
@@ -2725,7 +2789,7 @@
       "William Lebghil",
       "Kévin Azaïs",
       "Antoine Chappey",
-      "Basky Manmathan",
+      "Manmathan Basky",
       "Khereddine Ennasri",
       "Gabriel Naccache",
       "Nicky Marbot",
@@ -2739,6 +2803,7 @@
   {
     "title": "Return of the Hero",
     "original_title": "Le retour du héros",
+    "original_language": "fr",
     "watch_date": "2018-07-13",
     "rating": 6,
     "release_date": "2018-02-14",
@@ -2785,6 +2850,7 @@
   {
     "title": "A Quiet Place",
     "original_title": "A Quiet Place",
+    "original_language": "en",
     "watch_date": "2018-07-24",
     "rating": 8,
     "release_date": "2018-04-03",
@@ -2810,6 +2876,7 @@
   {
     "title": "One Crazy Summer",
     "original_title": "One Crazy Summer",
+    "original_language": "en",
     "watch_date": "2018-07-28",
     "rating": 5,
     "release_date": "1986-08-08",
@@ -2884,6 +2951,7 @@
   {
     "title": "Ant-Man and the Wasp",
     "original_title": "Ant-Man and the Wasp",
+    "original_language": "en",
     "watch_date": "2018-07-29",
     "rating": 7,
     "release_date": "2018-07-04",
@@ -2925,7 +2993,7 @@
       "Suehyla El-Attar",
       "Julia Vera",
       "Jessica Winther",
-      "Norwood J. Cheek Jr.",
+      "Norwood Cheek",
       "Bryan Lugo",
       "Darcy Shean",
       "Torrey Vogel",
@@ -2986,6 +3054,7 @@
   {
     "title": "Mission: Impossible - Fallout",
     "original_title": "Mission: Impossible - Fallout",
+    "original_language": "en",
     "watch_date": "2018-08-05",
     "rating": 7,
     "release_date": "2018-07-13",
@@ -3044,7 +3113,8 @@
       "Lampros Kalfuntzos",
       "Hiten Patel",
       "Jag Patel",
-      "Godiva Marshall"
+      "Godiva Marshall",
+      "Pamela Cook"
     ],
     "genres": [
       "Action",
@@ -3054,6 +3124,7 @@
   {
     "title": "Blade of the Immortal",
     "original_title": "無限の住人",
+    "original_language": "ja",
     "watch_date": "2018-09-01",
     "rating": 6,
     "release_date": "2017-04-29",
@@ -3119,6 +3190,7 @@
   {
     "title": "The Circle",
     "original_title": "The Circle",
+    "original_language": "en",
     "watch_date": "2018-09-08",
     "rating": 5,
     "release_date": "2017-04-27",
@@ -3214,6 +3286,7 @@
   {
     "title": "Sierra Burgess Is a Loser",
     "original_title": "Sierra Burgess Is a Loser",
+    "original_language": "en",
     "watch_date": "2018-09-09",
     "rating": 4,
     "release_date": "2018-09-07",
@@ -3228,7 +3301,7 @@
       "RJ Cyler",
       "Chrissy Metz",
       "Alice Lee",
-      "William Peltz",
+      "Will Peltz",
       "Mario Revolori",
       "Joey Morgan",
       "JT Neal",
@@ -3256,6 +3329,7 @@
   {
     "title": "Total Recall",
     "original_title": "Total Recall",
+    "original_language": "en",
     "watch_date": "2018-09-16",
     "rating": 4,
     "release_date": "2012-08-02",
@@ -3313,7 +3387,6 @@
     ],
     "genres": [
       "Action",
-      "Adventure",
       "Science Fiction",
       "Thriller"
     ]
@@ -3321,6 +3394,7 @@
   {
     "title": "Deadpool 2",
     "original_title": "Deadpool 2",
+    "original_language": "en",
     "watch_date": "2018-09-22",
     "rating": 7,
     "release_date": "2018-05-10",
@@ -3377,7 +3451,6 @@
       "Elaine Kliner",
       "David Leitch",
       "Alicia Morton",
-      "Fred Savage",
       "Valencia Budijanto",
       "Lisa Bunting",
       "Miles Ellis",
@@ -3406,6 +3479,7 @@
   {
     "title": "Solo: A Star Wars Story",
     "original_title": "Solo: A Star Wars Story",
+    "original_language": "en",
     "watch_date": "2018-09-30",
     "rating": 5,
     "release_date": "2018-05-15",
@@ -3532,6 +3606,7 @@
   {
     "title": "Upgrade",
     "original_title": "Upgrade",
+    "original_language": "en",
     "watch_date": "2018-10-07",
     "rating": 8,
     "release_date": "2018-05-31",
@@ -3591,6 +3666,7 @@
   {
     "title": "Get Out",
     "original_title": "Get Out",
+    "original_language": "en",
     "watch_date": "2018-10-08",
     "rating": 8,
     "release_date": "2017-02-24",
@@ -3625,7 +3701,9 @@
       "Sean Paul Braud",
       "Zailand Adams",
       "Keegan-Michael Key",
-      "Jordan Peele"
+      "Jordan Peele",
+      "Evan Shafran",
+      "Tahj Vaughans"
     ],
     "genres": [
       "Horror",
@@ -3636,6 +3714,7 @@
   {
     "title": "Game Night",
     "original_title": "Game Night",
+    "original_language": "en",
     "watch_date": "2018-10-20",
     "rating": 7,
     "release_date": "2018-02-22",
@@ -3663,7 +3742,7 @@
       "John Francis Daley",
       "Michael Cyril Creighton",
       "Brooke Jaye Taylor",
-      "Jonathan Goldstein",
+      "Jonathan M. Goldstein",
       "Charlotte Haynes Hazzard",
       "Chad Lail",
       "Natasha Hall",
@@ -3710,6 +3789,7 @@
   {
     "title": "The Foreigner",
     "original_title": "The Foreigner",
+    "original_language": "en",
     "watch_date": "2018-10-28",
     "rating": 6,
     "release_date": "2017-09-28",
@@ -3807,6 +3887,7 @@
   {
     "title": "The Nightmare Before Christmas",
     "original_title": "The Nightmare Before Christmas",
+    "original_language": "en",
     "watch_date": "2018-11-01",
     "rating": 6,
     "release_date": "1993-10-09",
@@ -3861,6 +3942,7 @@
   {
     "title": "The First Purge",
     "original_title": "The First Purge",
+    "original_language": "en",
     "watch_date": "2018-11-02",
     "rating": 3,
     "release_date": "2018-07-04",
@@ -3943,6 +4025,7 @@
   {
     "title": "Sicario: Day of the Soldado",
     "original_title": "Sicario: Day of the Soldado",
+    "original_language": "en",
     "watch_date": "2018-11-10",
     "rating": 6,
     "release_date": "2018-06-27",
@@ -3955,8 +4038,8 @@
       "Josh Brolin",
       "Isabela Merced",
       "Jeffrey Donovan",
-      "Catherine Keener",
       "Manuel Garcia-Rulfo",
+      "Catherine Keener",
       "Matthew Modine",
       "Shea Whigham",
       "Elijah Rodriguez",
@@ -3966,10 +4049,11 @@
       "Raoul Max Trujillo",
       "Bruno Bichir",
       "Jake Picking",
-      "Tenzin Marco-Taylor",
+      "Arturo Maese Bernal",
       "Faysal  Ahmed",
-      "Dan Davidson",
       "Graham Beckel",
+      "Tenzin Marco-Taylor",
+      "Dan Davidson",
       "Sherman Allen",
       "Lourdes Del Rio Garcia",
       "Christopher Heyerdahl",
@@ -3994,7 +4078,6 @@
       "Lloyd Voights",
       "Rob Franco",
       "Oscar Avila",
-      "Arturo Maese Bernal",
       "Billy R. Sanchez",
       "Gary Anthony Castro",
       "Iliana Donatlán",
@@ -4048,6 +4131,7 @@
   {
     "title": "The Equalizer 2",
     "original_title": "The Equalizer 2",
+    "original_language": "en",
     "watch_date": "2018-11-17",
     "rating": 5,
     "release_date": "2018-07-19",
@@ -4119,6 +4203,7 @@
   {
     "title": "Fantastic Beasts: The Crimes of Grindelwald",
     "original_title": "Fantastic Beasts: The Crimes of Grindelwald",
+    "original_language": "en",
     "watch_date": "2018-11-18",
     "rating": 8,
     "release_date": "2018-11-14",
@@ -4140,7 +4225,7 @@
       "Carmen Ejogo",
       "Jessica Williams",
       "William Nadylam",
-      "Ingvar E. Sigurðsson",
+      "Ingvar Sigurdsson",
       "Ólafur Darri Ólafsson",
       "Kevin Guthrie",
       "Brontis Jodorowsky",
@@ -4210,14 +4295,15 @@
       "Al Clark"
     ],
     "genres": [
+      "Action",
       "Adventure",
-      "Drama",
       "Fantasy"
     ]
   },
   {
     "title": "The Ballad of Buster Scruggs",
     "original_title": "The Ballad of Buster Scruggs",
+    "original_language": "en",
     "watch_date": "2018-11-18",
     "rating": 7,
     "release_date": "2018-11-09",
@@ -4262,7 +4348,9 @@
       "Jiji Hise",
       "Austin Rising",
       "Stephen R. Estler",
-      "Grace LeSueur"
+      "Grace LeSueur",
+      "Eric Petersen",
+      "Jesse Youngblood"
     ],
     "genres": [
       "Comedy",
@@ -4273,6 +4361,7 @@
   {
     "title": "The Great Wall",
     "original_title": "The Great Wall",
+    "original_language": "en",
     "watch_date": "2018-11-24",
     "rating": 5,
     "release_date": "2016-12-16",
@@ -4310,6 +4399,7 @@
   {
     "title": "The Meg",
     "original_title": "The Meg",
+    "original_language": "en",
     "watch_date": "2018-12-01",
     "rating": 4,
     "release_date": "2018-08-09",
@@ -4359,6 +4449,7 @@
   {
     "title": "The Predator",
     "original_title": "The Predator",
+    "original_language": "en",
     "watch_date": "2018-12-01",
     "rating": 3,
     "release_date": "2018-09-05",
@@ -4384,7 +4475,7 @@
       "Javier Lacroix",
       "Gabriel LaBelle",
       "Nikolas Dukic",
-      "R. J. Fetherstonhaugh",
+      "RJ Fetherstonhaugh",
       "James S. Salisbury",
       "Garry Chalk",
       "Duncan Fraser",
@@ -4426,6 +4517,7 @@
   {
     "title": "The Visit",
     "original_title": "The Visit",
+    "original_language": "en",
     "watch_date": "2018-12-02",
     "rating": 6,
     "release_date": "2015-09-10",
@@ -4464,6 +4556,7 @@
   {
     "title": "Venom",
     "original_title": "Venom",
+    "original_language": "en",
     "watch_date": "2018-12-09",
     "rating": 6,
     "release_date": "2018-09-28",
@@ -4541,6 +4634,7 @@
   {
     "title": "Nothing to Hide",
     "original_title": "Le Jeu",
+    "original_language": "fr",
     "watch_date": "2018-12-15",
     "rating": 6,
     "release_date": "2018-10-17",
@@ -4562,12 +4656,16 @@
       "Sabri Ouamar",
       "Cosette Briand",
       "Gabriel Briand",
+      "Jessica Blue",
       "Dorothée Tavernier",
       "Alain Berlioux",
       "Stéphane Grossi",
       "Eric de Montalier",
       "Pierre Benoist",
-      "Caroline Nolot"
+      "Caroline Nolot",
+      "Alan Maxson",
+      "Veronica Scheyving",
+      "Dahlia Salem"
     ],
     "genres": [
       "Comedy",
@@ -4577,6 +4675,7 @@
   {
     "title": "The Disappearance of Eleanor Rigby: Her",
     "original_title": "The Disappearance of Eleanor Rigby: Her",
+    "original_language": "en",
     "watch_date": "2018-12-25",
     "rating": 6,
     "release_date": "2014-10-10",
@@ -4606,6 +4705,7 @@
   {
     "title": "A Simple Favor",
     "original_title": "A Simple Favor",
+    "original_language": "en",
     "watch_date": "2018-12-29",
     "rating": 6,
     "release_date": "2018-08-29",
@@ -4679,6 +4779,7 @@
   {
     "title": "The Greatest Showman",
     "original_title": "The Greatest Showman",
+    "original_language": "en",
     "watch_date": "2018-31-12",
     "rating": 8,
     "release_date": "2017-12-20",

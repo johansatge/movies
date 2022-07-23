@@ -2,6 +2,7 @@
   {
     "title": "Assault on Precinct 13",
     "original_title": "Assault on Precinct 13",
+    "original_language": "en",
     "watch_date": "2012-01-04",
     "rating": 5,
     "release_date": "2005-01-19",
@@ -47,6 +48,7 @@
   {
     "title": "Drive Angry",
     "original_title": "Drive Angry",
+    "original_language": "en",
     "watch_date": "2012-01-08",
     "rating": 4,
     "release_date": "2011-02-24",
@@ -114,6 +116,7 @@
   {
     "title": "Killer Elite",
     "original_title": "Killer Elite",
+    "original_language": "en",
     "watch_date": "2012-01-13",
     "rating": 6,
     "release_date": "2011-09-22",
@@ -183,6 +186,7 @@
   {
     "title": "Batman Returns",
     "original_title": "Batman Returns",
+    "original_language": "en",
     "watch_date": "2012-01-15",
     "rating": 8,
     "release_date": "1992-06-19",
@@ -250,6 +254,7 @@
   {
     "title": "Planet of the Apes",
     "original_title": "Planet of the Apes",
+    "original_language": "en",
     "watch_date": "2012-01-17",
     "rating": 6,
     "release_date": "2001-07-25",
@@ -296,6 +301,7 @@
   {
     "title": "Contagion",
     "original_title": "Contagion",
+    "original_language": "en",
     "watch_date": "2012-01-19",
     "rating": 7,
     "release_date": "2011-09-08",
@@ -461,6 +467,7 @@
   {
     "title": "Real Steel",
     "original_title": "Real Steel",
+    "original_language": "en",
     "watch_date": "2012-01-21",
     "rating": 6,
     "release_date": "2011-09-28",
@@ -524,7 +531,7 @@
       "Miguel Sandoval",
       "Dwight Sora",
       "Jojuan Westmoreland",
-      "Amanda Wright",
+      "Amanda Bright",
       "Gary T. Jones"
     ],
     "genres": [
@@ -536,6 +543,7 @@
   {
     "title": "300",
     "original_title": "300",
+    "original_language": "en",
     "watch_date": "2012-01-22",
     "rating": 8,
     "release_date": "2007-03-07",
@@ -595,7 +603,7 @@
       "Vervi Mauricio",
       "Charles Papasoff",
       "Isabelle Champeau",
-      "Veronique Natalie Szalankiewicz",
+      "Veronique-Natale Szalankiewicz",
       "Maéva Nadon",
       "David Thibodeau",
       "Jean Michel Paré",
@@ -641,6 +649,7 @@
   {
     "title": "Forrest Gump",
     "original_title": "Forrest Gump",
+    "original_language": "en",
     "watch_date": "2012-01-23",
     "rating": 8,
     "release_date": "1994-06-23",
@@ -725,7 +734,8 @@
       "W. Benson Terry",
       "Tyler Long",
       "Jim Hanks",
-      "Michael Oliver"
+      "Michael Oliver",
+      "John Worsham"
     ],
     "genres": [
       "Comedy",
@@ -736,6 +746,7 @@
   {
     "title": "Kate & Leopold",
     "original_title": "Kate & Leopold",
+    "original_language": "en",
     "watch_date": "2012-01-27",
     "rating": 5,
     "release_date": "2001-12-25",
@@ -778,6 +789,7 @@
   {
     "title": "Take Shelter",
     "original_title": "Take Shelter",
+    "original_language": "en",
     "watch_date": "2012-02-05",
     "rating": 9,
     "release_date": "2011-09-30",
@@ -815,6 +827,7 @@
   {
     "title": "The Man",
     "original_title": "The Man",
+    "original_language": "en",
     "watch_date": "2012-02-08",
     "rating": 3,
     "release_date": "2005-09-08",
@@ -858,6 +871,7 @@
   {
     "title": "The Skin I Live In",
     "original_title": "La piel que habito",
+    "original_language": "es",
     "watch_date": "2012-02-14",
     "rating": 7,
     "release_date": "2011-08-17",
@@ -897,6 +911,7 @@
   {
     "title": "Tucker and Dale vs. Evil",
     "original_title": "Tucker and Dale vs. Evil",
+    "original_language": "en",
     "watch_date": "2012-02-14",
     "rating": 7,
     "release_date": "2010-01-22",
@@ -934,6 +949,7 @@
   {
     "title": "Chronicle",
     "original_title": "Chronicle",
+    "original_language": "en",
     "watch_date": "2012-02-27",
     "rating": 6,
     "release_date": "2012-02-01",
@@ -969,6 +985,7 @@
   {
     "title": "Slumdog Millionaire",
     "original_title": "Slumdog Millionaire",
+    "original_language": "en",
     "watch_date": "2012-02-29",
     "rating": 5,
     "release_date": "2008-11-12",
@@ -980,7 +997,7 @@
       "Dev Patel",
       "Saurabh Shukla",
       "Anil Kapoor",
-      "Rajendranath Zutshi",
+      "Raj Zutshi",
       "Jeneva Talwar",
       "Freida Pinto",
       "Irrfan Khan",
@@ -1075,6 +1092,7 @@
   {
     "title": "The Thing",
     "original_title": "The Thing",
+    "original_language": "en",
     "watch_date": "2012-02-29",
     "rating": 6,
     "release_date": "2011-10-12",
@@ -1111,6 +1129,7 @@
   {
     "title": "The Three Musketeers",
     "original_title": "The Three Musketeers",
+    "original_language": "en",
     "watch_date": "2012-03-02",
     "rating": 3,
     "release_date": "2011-08-31",
@@ -1162,6 +1181,7 @@
   {
     "title": "A Serbian Film",
     "original_title": "Srpski film",
+    "original_language": "sr",
     "watch_date": "2012-03-04",
     "rating": 4,
     "release_date": "2010-06-16",
@@ -1196,6 +1216,7 @@
   {
     "title": "The Artist",
     "original_title": "The Artist",
+    "original_language": "en",
     "watch_date": "2012-03-11",
     "rating": 8,
     "release_date": "2011-10-12",
@@ -1293,6 +1314,7 @@
   {
     "title": "Young Adult",
     "original_title": "Young Adult",
+    "original_language": "en",
     "watch_date": "2012-03-16",
     "rating": 6,
     "release_date": "2011-11-11",
@@ -1348,6 +1370,7 @@
   {
     "title": "The Wedding Cake",
     "original_title": "Pièce Montée",
+    "original_language": "en",
     "watch_date": "2012-03-17",
     "rating": 5,
     "release_date": "2010-03-10",
@@ -1379,6 +1402,7 @@
   {
     "title": "The Jacket",
     "original_title": "The Jacket",
+    "original_language": "en",
     "watch_date": "2012-03-18",
     "rating": 7,
     "release_date": "2005-03-04",
@@ -1421,6 +1445,7 @@
   {
     "title": "My Worst Nightmare",
     "original_title": "Mon pire cauchemar",
+    "original_language": "fr",
     "watch_date": "2012-03-20",
     "rating": 5,
     "release_date": "2011-09-12",
@@ -1462,6 +1487,7 @@
   {
     "title": "Arthur and the Invisibles",
     "original_title": "Arthur et les Minimoys",
+    "original_language": "en",
     "watch_date": "2012-03-24",
     "rating": 4,
     "release_date": "2006-12-13",
@@ -1473,15 +1499,19 @@
       "Freddie Highmore",
       "Madonna",
       "Mia Farrow",
+      "Jimmy Fallon",
+      "David Bowie",
       "Doug Rand",
       "Penny Balfour",
-      "Jason Bateman",
-      "David Suchet",
-      "Adam LeFevre",
       "Ron Crawford",
+      "David Suchet",
+      "Jason Bateman",
+      "Adam LeFevre",
+      "Robert De Niro",
+      "Snoop Dogg",
       "Jean Bejote Njamba",
-      "Saul Jephcott",
       "Lee Delong",
+      "Saul Jephcott",
       "Christian Erickson",
       "Eric Balliet",
       "Oxmo Puccino",
@@ -1493,11 +1523,7 @@
       "Vincent Mendy",
       "Mathar Licka Gueye",
       "Tonio Descanvelle",
-      "Jimmy Fallon",
-      "Robert De Niro",
       "Emilio Estevez",
-      "Snoop Dogg",
-      "David Bowie",
       "Harvey Keitel",
       "Rob Corddry",
       "Nate Corddry",
@@ -1515,6 +1541,7 @@
   {
     "title": "Clash of the Titans",
     "original_title": "Clash of the Titans",
+    "original_language": "en",
     "watch_date": "2012-03-24",
     "rating": 6,
     "release_date": "2010-03-31",
@@ -1581,6 +1608,7 @@
   {
     "title": "The Hunger Games",
     "original_title": "The Hunger Games",
+    "original_language": "en",
     "watch_date": "2012-03-24",
     "rating": 7,
     "release_date": "2012-03-12",
@@ -1651,6 +1679,7 @@
   {
     "title": "The Darwin Awards",
     "original_title": "The Darwin Awards",
+    "original_language": "en",
     "watch_date": "2012-03-25",
     "rating": 5,
     "release_date": "2006-07-05",
@@ -1694,6 +1723,7 @@
   {
     "title": "Spider",
     "original_title": "Spider",
+    "original_language": "en",
     "watch_date": "2012-03-27",
     "rating": 6,
     "release_date": "2002-11-06",
@@ -1732,6 +1762,7 @@
   {
     "title": "The Hurt Locker",
     "original_title": "The Hurt Locker",
+    "original_language": "en",
     "watch_date": "2012-03-30",
     "rating": 7,
     "release_date": "2008-10-10",
@@ -1784,6 +1815,7 @@
   {
     "title": "Strange Days",
     "original_title": "Strange Days",
+    "original_language": "en",
     "watch_date": "2012-03-31",
     "rating": 7,
     "release_date": "1995-10-13",
@@ -1794,15 +1826,14 @@
     "cast": [
       "Ralph Fiennes",
       "Angela Bassett",
-      "Tom Sizemore",
       "Juliette Lewis",
-      "Kelly Hu",
-      "Vincent D'Onofrio",
-      "William Fichtner",
+      "Tom Sizemore",
       "Michael Wincott",
+      "Vincent D'Onofrio",
       "Glenn Plummer",
       "Brigitte Bako",
       "Richard Edson",
+      "William Fichtner",
       "Josef Sommer",
       "Joe Urla",
       "Michael Jace",
@@ -1818,6 +1849,7 @@
       "Dex Elliott Sanders",
       "David Packer",
       "Paulo Tocha",
+      "Kelly Hu",
       "Art Chudabala",
       "Ray Chang",
       "Chris Douridas",
@@ -1838,6 +1870,7 @@
   {
     "title": "Trophy Wife",
     "original_title": "Potiche",
+    "original_language": "fr",
     "watch_date": "2012-03-31",
     "rating": 5,
     "release_date": "2010-11-10",
@@ -1869,6 +1902,7 @@
   {
     "title": "Face/Off",
     "original_title": "Face/Off",
+    "original_language": "en",
     "watch_date": "2012-04-09",
     "rating": 6,
     "release_date": "1997-06-27",
@@ -1918,6 +1952,7 @@
   {
     "title": "The Girl with the Dragon Tattoo",
     "original_title": "The Girl with the Dragon Tattoo",
+    "original_language": "en",
     "watch_date": "2012-04-14",
     "rating": 8,
     "release_date": "2011-12-14",
@@ -2025,6 +2060,7 @@
   {
     "title": "Special Forces",
     "original_title": "Forces spéciales",
+    "original_language": "fr",
     "watch_date": "2012-04-19",
     "rating": 4,
     "release_date": "2011-11-02",
@@ -2077,6 +2113,7 @@
   {
     "title": "Wild Target",
     "original_title": "Wild Target",
+    "original_language": "en",
     "watch_date": "2012-04-20",
     "rating": 3,
     "release_date": "2010-06-17",
@@ -2108,6 +2145,7 @@
   {
     "title": "Black Hawk Down",
     "original_title": "Black Hawk Down",
+    "original_language": "en",
     "watch_date": "2012-04-21",
     "rating": 7,
     "release_date": "2001-12-28",
@@ -2153,7 +2191,9 @@
       "Ioan Gruffudd",
       "Richard Tyson",
       "Corey Johnson",
-      "Gabriel Casseus"
+      "Gabriel Casseus",
+      "Danny Hoch",
+      "Tac Fitzgerald"
     ],
     "genres": [
       "Action",
@@ -2164,6 +2204,7 @@
   {
     "title": "Hollywoo",
     "original_title": "Hollywoo",
+    "original_language": "fr",
     "watch_date": "2012-04-21",
     "rating": 2,
     "release_date": "2011-12-07",
@@ -2200,6 +2241,7 @@
   {
     "title": "Mission: Impossible - Ghost Protocol",
     "original_title": "Mission: Impossible - Ghost Protocol",
+    "original_language": "en",
     "watch_date": "2012-04-21",
     "rating": 8,
     "release_date": "2011-12-07",
@@ -2225,7 +2267,7 @@
       "Goran Navojec",
       "Pavel Bezděk",
       "Ladislav Beran",
-      "Jan Pavel Filipenský",
+      "Jan Filipenský",
       "Jiří Kraus",
       "Ales Putik",
       "Tomáš Valík",
@@ -2275,6 +2317,7 @@
   {
     "title": "The Guard",
     "original_title": "The Guard",
+    "original_language": "en",
     "watch_date": "2012-04-28",
     "rating": 6,
     "release_date": "2011-07-07",
@@ -2315,6 +2358,7 @@
   {
     "title": "The Hangover Part II",
     "original_title": "The Hangover Part II",
+    "original_language": "en",
     "watch_date": "2012-04-28",
     "rating": 6,
     "release_date": "2011-05-25",
@@ -2336,7 +2380,7 @@
       "Sasha Barrese",
       "Gillian Vigman",
       "Aroon Seeboonruang",
-      "Nirut Sirichanya",
+      "Nirut Sirijanya",
       "Yasmin Lee",
       "Nick Cassavetes",
       "Sondra Currie",
@@ -2358,6 +2402,7 @@
   {
     "title": "Contraband",
     "original_title": "Contraband",
+    "original_language": "en",
     "watch_date": "2012-04-30",
     "rating": 6,
     "release_date": "2012-01-12",
@@ -2437,6 +2482,7 @@
   {
     "title": "The Rum Diary",
     "original_title": "The Rum Diary",
+    "original_language": "en",
     "watch_date": "2012-05-02",
     "rating": 6,
     "release_date": "2011-10-13",
@@ -2468,6 +2514,7 @@
   {
     "title": "Beetlejuice",
     "original_title": "Beetlejuice",
+    "original_language": "en",
     "watch_date": "2012-05-05",
     "rating": 6,
     "release_date": "1988-03-30",
@@ -2513,6 +2560,7 @@
   {
     "title": "The Avengers",
     "original_title": "The Avengers",
+    "original_language": "en",
     "watch_date": "2012-05-06",
     "rating": 8,
     "release_date": "2012-04-25",
@@ -2644,6 +2692,7 @@
   {
     "title": "Sherlock Holmes: A Game of Shadows",
     "original_title": "Sherlock Holmes: A Game of Shadows",
+    "original_language": "en",
     "watch_date": "2012-05-09",
     "rating": 7,
     "release_date": "2011-11-22",
@@ -2700,7 +2749,8 @@
       "Laurentiu Possa",
       "Maitland Chandler",
       "Joe Egan",
-      "Clive Russell"
+      "Clive Russell",
+      "Sala Baker"
     ],
     "genres": [
       "Action",
@@ -2712,6 +2762,7 @@
   {
     "title": "Vengeance",
     "original_title": "復仇",
+    "original_language": "cn",
     "watch_date": "2012-05-13",
     "rating": 6,
     "release_date": "2009-05-20",
@@ -2723,7 +2774,7 @@
       "Johnny Hallyday",
       "Anthony Wong",
       "Gordon Lam",
-      "Suet Lam",
+      "Lam Suet",
       "Simon Yam",
       "Sylvie Testud",
       "Vincent Sze",
@@ -2733,11 +2784,14 @@
       "Berg Ng",
       "Maggie Shiu",
       "Stanley Fung",
-      "Farini Cheung Yui-Ling",
+      "Farini Cheung",
       "Karen Chan",
       "Elena Kong",
-      "Jo Kuk Cho-Lam",
-      "Chiu Chi-Shing"
+      "Jo Kuk",
+      "Chiu Chi-Shing",
+      "Conroy Chan",
+      "Terence Yin",
+      "Wai Lam"
     ],
     "genres": [
       "Action",
@@ -2747,6 +2801,7 @@
   {
     "title": "WALL·E",
     "original_title": "WALL·E",
+    "original_language": "en",
     "watch_date": "2012-05-13",
     "rating": 8,
     "release_date": "2008-06-22",
@@ -2758,6 +2813,7 @@
       "Ben Burtt",
       "Elissa Knight",
       "Jeff Garlin",
+      "MacInTalk",
       "Fred Willard",
       "John Ratzenberger",
       "Kathy Najimy",
@@ -2794,6 +2850,7 @@
   {
     "title": "Dark Shadows",
     "original_title": "Dark Shadows",
+    "original_language": "en",
     "watch_date": "2012-05-14",
     "rating": 7,
     "release_date": "2012-05-09",
@@ -2850,6 +2907,7 @@
   {
     "title": "Dream House",
     "original_title": "Dream House",
+    "original_language": "en",
     "watch_date": "2012-05-15",
     "rating": 6,
     "release_date": "2011-09-29",
@@ -2902,6 +2960,7 @@
   {
     "title": "The Grey",
     "original_title": "The Grey",
+    "original_language": "en",
     "watch_date": "2012-05-22",
     "rating": 8,
     "release_date": "2012-01-26",
@@ -2937,6 +2996,7 @@
   {
     "title": "Amores Perros",
     "original_title": "Amores perros",
+    "original_language": "es",
     "watch_date": "2012-05-23",
     "rating": 8,
     "release_date": "2000-06-16",
@@ -2979,6 +3039,7 @@
   {
     "title": "Safe House",
     "original_title": "Safe House",
+    "original_language": "en",
     "watch_date": "2012-05-26",
     "rating": 7,
     "release_date": "2012-02-09",
@@ -3021,6 +3082,7 @@
   {
     "title": "Goon",
     "original_title": "Goon",
+    "original_language": "en",
     "watch_date": "2012-06-03",
     "rating": 5,
     "release_date": "2012-01-06",
@@ -3100,6 +3162,7 @@
   {
     "title": "Chez Gino",
     "original_title": "Chez Gino",
+    "original_language": "fr",
     "watch_date": "2012-06-05",
     "rating": 3,
     "release_date": "2011-03-29",
@@ -3125,6 +3188,7 @@
   {
     "title": "John Carter",
     "original_title": "John Carter",
+    "original_language": "en",
     "watch_date": "2012-06-09",
     "rating": 7,
     "release_date": "2012-03-07",
@@ -3188,6 +3252,7 @@
   {
     "title": "Tell No One",
     "original_title": "Ne le dis à personne",
+    "original_language": "fr",
     "watch_date": "2012-06-13",
     "rating": 8,
     "release_date": "2006-11-01",
@@ -3243,6 +3308,7 @@
   {
     "title": "Snow White and the Huntsman",
     "original_title": "Snow White and the Huntsman",
+    "original_language": "en",
     "watch_date": "2012-06-19",
     "rating": 6,
     "release_date": "2012-05-30",
@@ -3301,6 +3367,7 @@
   {
     "title": "21 Jump Street",
     "original_title": "21 Jump Street",
+    "original_language": "en",
     "watch_date": "2012-06-27",
     "rating": 6,
     "release_date": "2012-03-14",
@@ -3352,6 +3419,7 @@
   {
     "title": "Safe",
     "original_title": "Safe",
+    "original_language": "en",
     "watch_date": "2012-07-07",
     "rating": 6,
     "release_date": "2012-04-16",
@@ -3419,6 +3487,7 @@
   {
     "title": "Bad Ass",
     "original_title": "Bad Ass",
+    "original_language": "en",
     "watch_date": "2012-07-08",
     "rating": 5,
     "release_date": "2012-04-12",
@@ -3496,6 +3565,7 @@
   {
     "title": "The Next Three Days",
     "original_title": "The Next Three Days",
+    "original_language": "en",
     "watch_date": "2012-07-09",
     "rating": 7,
     "release_date": "2010-11-18",
@@ -3563,6 +3633,7 @@
   {
     "title": "The Legend Is Born: Ip Man",
     "original_title": "葉問前傳",
+    "original_language": "cn",
     "watch_date": "2012-07-11",
     "rating": 7,
     "release_date": "2010-06-24",
@@ -3574,12 +3645,12 @@
       "Dennis To Yue-Hong",
       "Huang Yi",
       "Yuen Biao",
-      "Fan Siu-Wong",
+      "Fan Siu-wong",
       "Rose Chan Ka-Wun",
       "Sammo Hung",
       "Ip Chun",
       "Bernice Liu",
-      "Suet Lam",
+      "Lam Suet",
       "Xu Jiao",
       "Heman Leung",
       "Jun",
@@ -3606,6 +3677,7 @@
   {
     "title": "Tombstone",
     "original_title": "Tombstone",
+    "original_language": "en",
     "watch_date": "2012-07-14",
     "rating": 7,
     "release_date": "1993-12-25",
@@ -3676,6 +3748,7 @@
   {
     "title": "The Hunter",
     "original_title": "The Hunter",
+    "original_language": "en",
     "watch_date": "2012-07-16",
     "rating": 9,
     "release_date": "2011-10-06",
@@ -3707,6 +3780,7 @@
   {
     "title": "Daybreakers",
     "original_title": "Daybreakers",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 6,
     "release_date": "2009-10-01",
@@ -3746,6 +3820,7 @@
   {
     "title": "Doomsday",
     "original_title": "Doomsday",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 5,
     "release_date": "2008-03-14",
@@ -3789,7 +3864,7 @@
       "Lily Anderson",
       "Cokey Falkow",
       "John Carson",
-      "Henie Bosman",
+      "Hennie Bosman",
       "Martin Compston",
       "Az Abrahams",
       "Susan Danford",
@@ -3820,6 +3895,7 @@
   {
     "title": "From Paris with Love",
     "original_title": "From Paris with Love",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 4,
     "release_date": "2010-02-04",
@@ -3862,6 +3938,7 @@
   {
     "title": "Harry Brown",
     "original_title": "Harry Brown",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 7,
     "release_date": "2009-11-11",
@@ -3915,6 +3992,7 @@
   {
     "title": "Ong Bak 2",
     "original_title": "องค์บาก 2",
+    "original_language": "th",
     "watch_date": "2012-07-20",
     "rating": 6,
     "release_date": "2008-12-04",
@@ -3927,8 +4005,18 @@
       "Sarunyu Wongkrachang",
       "Sorapong Chatree",
       "Primorata Dejudom",
+      "Nirut Sirijanya",
+      "Petchtai Wongkamlao",
+      "Santisuk Promsiri",
+      "Patthama Panthong",
+      "Supakorn Kitsuwon",
+      "Natdanai Kongthong",
+      "Prarinya Karmkeaw",
+      "Akaradech Rodvinit",
+      "Jaran Ngamdee",
+      "Dan Chupong",
       "Tim Man",
-      "Dan Chupong"
+      "Kazu Patrick Tang"
     ],
     "genres": [
       "Action",
@@ -3939,6 +4027,7 @@
   {
     "title": "Spider-Man 2",
     "original_title": "Spider-Man 2",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 6,
     "release_date": "2004-06-25",
@@ -4047,6 +4136,7 @@
   {
     "title": "The Raid",
     "original_title": "Serbuan maut",
+    "original_language": "id",
     "watch_date": "2012-07-20",
     "rating": 7,
     "release_date": "2012-03-22",
@@ -4115,6 +4205,7 @@
   {
     "title": "Training Day",
     "original_title": "Training Day",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 7,
     "release_date": "2001-10-05",
@@ -4177,13 +4268,13 @@
     "genres": [
       "Action",
       "Crime",
-      "Drama",
-      "Thriller"
+      "Drama"
     ]
   },
   {
     "title": "War",
     "original_title": "War",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 6,
     "release_date": "2007-08-24",
@@ -4225,6 +4316,7 @@
   {
     "title": "Wild Hogs",
     "original_title": "Wild Hogs",
+    "original_language": "en",
     "watch_date": "2012-07-20",
     "rating": 4,
     "release_date": "2007-03-02",
@@ -4298,6 +4390,7 @@
   {
     "title": "American Reunion",
     "original_title": "American Reunion",
+    "original_language": "en",
     "watch_date": "2012-07-21",
     "rating": 6,
     "release_date": "2012-04-04",
@@ -4362,6 +4455,7 @@
   {
     "title": "Lockout",
     "original_title": "Lockout",
+    "original_language": "en",
     "watch_date": "2012-07-23",
     "rating": 6,
     "release_date": "2012-04-12",
@@ -4413,6 +4507,7 @@
   {
     "title": "Sleeping Beauty",
     "original_title": "Sleeping Beauty",
+    "original_language": "en",
     "watch_date": "2012-07-24",
     "rating": 7,
     "release_date": "2011-06-10",
@@ -4445,6 +4540,7 @@
   {
     "title": "The Dark Knight Rises",
     "original_title": "The Dark Knight Rises",
+    "original_language": "en",
     "watch_date": "2012-07-27",
     "rating": 8,
     "release_date": "2012-07-16",
@@ -4626,6 +4722,7 @@
   {
     "title": "Revolutionary Road",
     "original_title": "Revolutionary Road",
+    "original_language": "en",
     "watch_date": "2012-08-04",
     "rating": 8,
     "release_date": "2008-12-19",
@@ -4664,6 +4761,7 @@
   {
     "title": "Shame",
     "original_title": "Shame",
+    "original_language": "en",
     "watch_date": "2012-08-05",
     "rating": 5,
     "release_date": "2011-10-02",
@@ -4704,6 +4802,7 @@
   {
     "title": "The Dictator",
     "original_title": "The Dictator",
+    "original_language": "en",
     "watch_date": "2012-08-26",
     "rating": 5,
     "release_date": "2012-05-15",
@@ -4856,6 +4955,7 @@
   {
     "title": "The Expendables 2",
     "original_title": "The Expendables 2",
+    "original_language": "en",
     "watch_date": "2012-08-29",
     "rating": 7,
     "release_date": "2012-08-08",
@@ -4890,7 +4990,7 @@
       "Dimo Alexiev",
       "Velislav Pavlov",
       "Anton Trendafilov",
-      "Marii Rosen",
+      "Mariy Rosen",
       "Julian Stanishkov",
       "Velimir Velev",
       "Irina Sophia Krichely",
@@ -4917,6 +5017,7 @@
   {
     "title": "Wok the Kasbah",
     "original_title": "De l'huile sur le feu",
+    "original_language": "fr",
     "watch_date": "2012-09-04",
     "rating": 6,
     "release_date": "2011-12-13",
@@ -4927,7 +5028,7 @@
     "cast": [
       "Nader Boussandel",
       "Vincent Lacoste",
-      "Tien Shue",
+      "Tien Shué",
       "Alice Belaïdi",
       "Azeddine Benamara",
       "Claude Gensac",
@@ -4950,6 +5051,7 @@
   {
     "title": "Lawless",
     "original_title": "Lawless",
+    "original_language": "en",
     "watch_date": "2012-09-13",
     "rating": 6,
     "release_date": "2012-08-29",
@@ -5002,6 +5104,7 @@
   {
     "title": "Detachment",
     "original_title": "Detachment",
+    "original_language": "en",
     "watch_date": "2012-09-15",
     "rating": 7,
     "release_date": "2011-04-24",
@@ -5037,6 +5140,7 @@
   {
     "title": "The Bourne Legacy",
     "original_title": "The Bourne Legacy",
+    "original_language": "en",
     "watch_date": "2012-09-25",
     "rating": 7,
     "release_date": "2012-08-08",
@@ -5105,7 +5209,8 @@
       "Alexis Molnar",
       "David Leitch",
       "Jon Valera",
-      "Jonathan Eusebio"
+      "Jonathan Eusebio",
+      "Courtney Hart"
     ],
     "genres": [
       "Action",
@@ -5115,6 +5220,7 @@
   {
     "title": "Prometheus",
     "original_title": "Prometheus",
+    "original_language": "en",
     "watch_date": "2012-09-28",
     "rating": 7,
     "release_date": "2012-05-30",
@@ -5159,6 +5265,7 @@
   {
     "title": "The Cold Light of Day",
     "original_title": "The Cold Light of Day",
+    "original_language": "en",
     "watch_date": "2012-09-28",
     "rating": 3,
     "release_date": "2012-04-04",
@@ -5204,6 +5311,7 @@
   {
     "title": "EVA",
     "original_title": "EVA",
+    "original_language": "es",
     "watch_date": "2012-09-30",
     "rating": 7,
     "release_date": "2011-10-06",
@@ -5236,6 +5344,7 @@
   {
     "title": "The Cabin in the Woods",
     "original_title": "The Cabin in the Woods",
+    "original_language": "en",
     "watch_date": "2012-10-03",
     "rating": 8,
     "release_date": "2012-04-12",
@@ -5303,6 +5412,7 @@
   {
     "title": "Cyrus",
     "original_title": "Cyrus",
+    "original_language": "en",
     "watch_date": "2012-10-06",
     "rating": 4,
     "release_date": "2010-06-18",
@@ -5333,6 +5443,7 @@
   {
     "title": "The Lookout",
     "original_title": "The Lookout",
+    "original_language": "en",
     "watch_date": "2012-10-06",
     "rating": 7,
     "release_date": "2007-03-09",
@@ -5348,12 +5459,12 @@
       "Carla Gugino",
       "Bruce McGill",
       "Alberta Watson",
+      "Aaron Berg",
+      "Morgan Kelly",
+      "Greg Dunham",
       "Alex Borstein",
       "Sergio Di Zio",
       "David Huband",
-      "Greg Dunham",
-      "Morgan Kelly",
-      "Aaron Berg",
       "Tinsel Korey",
       "Suzanne Kelly",
       "Brian Edward Roach",
@@ -5387,6 +5498,7 @@
   {
     "title": "The Butterfly Effect",
     "original_title": "The Butterfly Effect",
+    "original_language": "en",
     "watch_date": "2012-10-08",
     "rating": 6,
     "release_date": "2004-01-22",
@@ -5423,7 +5535,8 @@
       "Kevan Ohtsji",
       "Daniel Spink",
       "Grant Thompson",
-      "Melanie Hall"
+      "Melanie Hall",
+      "Sam Easton"
     ],
     "genres": [
       "Science Fiction",
@@ -5433,6 +5546,7 @@
   {
     "title": "The Samaritan",
     "original_title": "The Samaritan",
+    "original_language": "en",
     "watch_date": "2012-10-13",
     "rating": 3,
     "release_date": "2012-03-02",
@@ -5462,6 +5576,7 @@
   {
     "title": "Savages",
     "original_title": "Savages",
+    "original_language": "en",
     "watch_date": "2012-10-16",
     "rating": 8,
     "release_date": "2012-07-06",
@@ -5533,6 +5648,7 @@
   {
     "title": "The Inbetweeners Movie",
     "original_title": "The Inbetweeners Movie",
+    "original_language": "en",
     "watch_date": "2012-10-20",
     "rating": 3,
     "release_date": "2011-08-19",
@@ -5599,6 +5715,7 @@
   {
     "title": "The Chronicles of Riddick",
     "original_title": "The Chronicles of Riddick",
+    "original_language": "en",
     "watch_date": "2012-10-21",
     "rating": 7,
     "release_date": "2004-06-11",
@@ -5635,6 +5752,7 @@
   {
     "title": "Abraham Lincoln: Vampire Hunter",
     "original_title": "Abraham Lincoln: Vampire Hunter",
+    "original_language": "en",
     "watch_date": "2012-10-26",
     "rating": 5,
     "release_date": "2012-06-20",
@@ -5684,6 +5802,7 @@
   {
     "title": "Frankenweenie",
     "original_title": "Frankenweenie",
+    "original_language": "en",
     "watch_date": "2012-11-01",
     "rating": 7,
     "release_date": "2012-10-04",
@@ -5716,6 +5835,7 @@
   {
     "title": "Skyfall",
     "original_title": "Skyfall",
+    "original_language": "en",
     "watch_date": "2012-11-01",
     "rating": 8,
     "release_date": "2012-10-25",
@@ -5787,6 +5907,7 @@
   {
     "title": "The Namesake",
     "original_title": "The Namesake",
+    "original_language": "en",
     "watch_date": "2012-11-01",
     "rating": 7,
     "release_date": "2006-09-02",
@@ -5815,6 +5936,7 @@
   {
     "title": "Wanderlust",
     "original_title": "Wanderlust",
+    "original_language": "en",
     "watch_date": "2012-11-01",
     "rating": 5,
     "release_date": "2012-02-23",
@@ -5833,7 +5955,7 @@
       "Kathryn Hahn",
       "Ken Marino",
       "Jordan Peele",
-      "Kerri Kenney-Silver",
+      "Kerri Kenney",
       "Michaela Watkins",
       "Patricia French",
       "Jessica St. Clair",
@@ -5883,6 +6005,7 @@
   {
     "title": "From Dusk Till Dawn",
     "original_title": "From Dusk Till Dawn",
+    "original_language": "en",
     "watch_date": "2012-11-02",
     "rating": 7,
     "release_date": "1996-01-19",
@@ -5941,6 +6064,7 @@
   {
     "title": "Gigantic",
     "original_title": "Gigantic",
+    "original_language": "en",
     "watch_date": "2012-11-03",
     "rating": 6,
     "release_date": "2008-09-09",
@@ -5996,6 +6120,7 @@
   {
     "title": "Looper",
     "original_title": "Looper",
+    "original_language": "en",
     "watch_date": "2012-11-07",
     "rating": 7,
     "release_date": "2012-09-26",
@@ -6040,7 +6165,15 @@
       "Lauren Alexandra",
       "D.J. Mills",
       "Brea Grant",
-      "Sam Medina"
+      "Sam Medina",
+      "Rhonda Floyd Aguillard",
+      "Jay Amor",
+      "Jaanika Kaarpalu",
+      "Amy Le",
+      "Cynthia LeBlanc",
+      "Elton LeBlanc",
+      "Wayne Douglas Morgan",
+      "Kristyl Dawn Tift"
     ],
     "genres": [
       "Action",
@@ -6051,6 +6184,7 @@
   {
     "title": "Sleepers",
     "original_title": "Sleepers",
+    "original_language": "en",
     "watch_date": "2012-11-07",
     "rating": 7,
     "release_date": "1996-10-18",
@@ -6117,6 +6251,7 @@
   {
     "title": "Martyrs",
     "original_title": "Martyrs",
+    "original_language": "fr",
     "watch_date": "2012-11-12",
     "rating": 7,
     "release_date": "2008-09-03",
@@ -6151,6 +6286,7 @@
   {
     "title": "Splinter",
     "original_title": "Splinter",
+    "original_language": "en",
     "watch_date": "2012-11-12",
     "rating": 5,
     "release_date": "2008-10-31",
@@ -6174,6 +6310,7 @@
   {
     "title": "Sinister",
     "original_title": "Sinister",
+    "original_language": "en",
     "watch_date": "2012-11-14",
     "rating": 7,
     "release_date": "2012-03-29",
@@ -6207,6 +6344,7 @@
   {
     "title": "Argo",
     "original_title": "Argo",
+    "original_language": "en",
     "watch_date": "2012-11-18",
     "rating": 7,
     "release_date": "2012-03-22",
@@ -6341,6 +6479,7 @@
   {
     "title": "Seven Pounds",
     "original_title": "Seven Pounds",
+    "original_language": "en",
     "watch_date": "2012-11-18",
     "rating": 8,
     "release_date": "2008-12-18",
@@ -6376,6 +6515,7 @@
   {
     "title": "The Impossible",
     "original_title": "The Impossible",
+    "original_language": "en",
     "watch_date": "2012-11-29",
     "rating": 5,
     "release_date": "2012-09-09",
@@ -6412,6 +6552,7 @@
   {
     "title": "Populaire",
     "original_title": "Populaire",
+    "original_language": "fr",
     "watch_date": "2012-12-04",
     "rating": 8,
     "release_date": "2012-11-27",
@@ -6461,6 +6602,7 @@
   {
     "title": "Anna Karenina",
     "original_title": "Anna Karenina",
+    "original_language": "en",
     "watch_date": "2012-12-12",
     "rating": 8,
     "release_date": "2012-09-06",
@@ -6541,6 +6683,7 @@
   {
     "title": "The Hobbit: An Unexpected Journey",
     "original_title": "The Hobbit: An Unexpected Journey",
+    "original_language": "en",
     "watch_date": "2012-12-15",
     "rating": 8,
     "release_date": "2012-11-26",

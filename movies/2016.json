@@ -2,6 +2,7 @@
   {
     "title": "Exodus: Gods and Kings",
     "original_title": "Exodus: Gods and Kings",
+    "original_language": "en",
     "watch_date": "2016-01-08",
     "rating": 3,
     "release_date": "2014-12-03",
@@ -57,6 +58,7 @@
   {
     "title": "Inside Out",
     "original_title": "Inside Out",
+    "original_language": "en",
     "watch_date": "2016-01-08",
     "rating": 8,
     "release_date": "2015-06-09",
@@ -142,6 +144,7 @@
   {
     "title": "Taken 3",
     "original_title": "Taken 3",
+    "original_language": "en",
     "watch_date": "2016-01-08",
     "rating": 5,
     "release_date": "2014-12-16",
@@ -219,6 +222,7 @@
   {
     "title": "The Martian",
     "original_title": "The Martian",
+    "original_language": "en",
     "watch_date": "2016-01-08",
     "rating": 8,
     "release_date": "2015-09-30",
@@ -291,6 +295,7 @@
   {
     "title": "The Salt of the Earth",
     "original_title": "Le sel de la terre",
+    "original_language": "fr",
     "watch_date": "2016-01-08",
     "rating": 8,
     "release_date": "2014-08-29",
@@ -318,6 +323,7 @@
   {
     "title": "The Transporter Refueled",
     "original_title": "The Transporter Refueled",
+    "original_language": "en",
     "watch_date": "2016-01-08",
     "rating": 3,
     "release_date": "2015-09-02",
@@ -366,6 +372,7 @@
   {
     "title": "Troll Hunter",
     "original_title": "Trolljegeren",
+    "original_language": "nb",
     "watch_date": "2016-01-08",
     "rating": 7,
     "release_date": "2010-10-29",
@@ -393,6 +400,7 @@
   {
     "title": "Wedding Crashers",
     "original_title": "Wedding Crashers",
+    "original_language": "en",
     "watch_date": "2016-01-08",
     "rating": 6,
     "release_date": "2005-07-13",
@@ -438,6 +446,7 @@
   {
     "title": "American Sniper",
     "original_title": "American Sniper",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 5,
     "release_date": "2014-12-25",
@@ -537,6 +546,7 @@
   {
     "title": "American Ultra",
     "original_title": "American Ultra",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 6,
     "release_date": "2015-08-19",
@@ -612,6 +622,7 @@
   {
     "title": "Ant-Man",
     "original_title": "Ant-Man",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 8,
     "release_date": "2015-07-14",
@@ -709,6 +720,7 @@
   {
     "title": "Blind Date",
     "original_title": "Un peu, beaucoup, aveuglément",
+    "original_language": "fr",
     "watch_date": "2016-02-10",
     "rating": 6,
     "release_date": "2015-05-06",
@@ -751,6 +763,7 @@
   {
     "title": "Evil",
     "original_title": "Ondskan",
+    "original_language": "sv",
     "watch_date": "2016-02-10",
     "rating": 8,
     "release_date": "2003-09-16",
@@ -785,6 +798,7 @@
   {
     "title": "Fargo",
     "original_title": "Fargo",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 8,
     "release_date": "1996-03-08",
@@ -814,7 +828,8 @@
       "Bain Boehlke",
       "Warren Keith",
       "Michelle LeDoux",
-      "Bruce Campbell"
+      "Bruce Campbell",
+      "Sharon Anderson"
     ],
     "genres": [
       "Crime",
@@ -825,6 +840,7 @@
   {
     "title": "How to Lose a Guy in 10 Days",
     "original_title": "How to Lose a Guy in 10 Days",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 6,
     "release_date": "2003-02-07",
@@ -875,6 +891,7 @@
   {
     "title": "I Love You, Man",
     "original_title": "I Love You, Man",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 7,
     "release_date": "2009-03-20",
@@ -940,6 +957,7 @@
   {
     "title": "On the Other Side of the Tracks",
     "original_title": "De l'autre côté du périph",
+    "original_language": "fr",
     "watch_date": "2016-02-10",
     "rating": 6,
     "release_date": "2012-12-15",
@@ -979,6 +997,7 @@
   {
     "title": "One Wild Moment",
     "original_title": "Un moment d'égarement",
+    "original_language": "fr",
     "watch_date": "2016-02-10",
     "rating": 6,
     "release_date": "2015-06-24",
@@ -1013,6 +1032,7 @@
   {
     "title": "Sicario",
     "original_title": "Sicario",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 9,
     "release_date": "2015-09-17",
@@ -1033,8 +1053,8 @@
       "Hank Rogerson",
       "Bernardo P. Saracino",
       "Maximiliano Hernández",
-      "Kevin Wiggins",
       "Edgar Arreola",
+      "Kevin Wiggins",
       "Kim Larrichio",
       "Jesus Nevarez-Castillo",
       "Dylan Kenin",
@@ -1077,6 +1097,7 @@
   {
     "title": "Sleeping with Other People",
     "original_title": "Sleeping with Other People",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 3,
     "release_date": "2015-06-26",
@@ -1123,6 +1144,7 @@
   {
     "title": "Ted 2",
     "original_title": "Ted 2",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 7,
     "release_date": "2015-06-25",
@@ -1247,6 +1269,7 @@
   {
     "title": "The Proposal",
     "original_title": "The Proposal",
+    "original_language": "en",
     "watch_date": "2016-02-10",
     "rating": 4,
     "release_date": "2009-06-01",
@@ -1303,6 +1326,7 @@
   {
     "title": "In Gold We Trust",
     "original_title": "600 kilos d'or pur",
+    "original_language": "fr",
     "watch_date": "2016-02-11",
     "rating": 4,
     "release_date": "2010-08-25",
@@ -1329,6 +1353,7 @@
   {
     "title": "Deadpool",
     "original_title": "Deadpool",
+    "original_language": "en",
     "watch_date": "2016-02-13",
     "rating": 9,
     "release_date": "2016-02-09",
@@ -1386,6 +1411,7 @@
   {
     "title": "The 5th Wave",
     "original_title": "The 5th Wave",
+    "original_language": "en",
     "watch_date": "2016-02-13",
     "rating": 5,
     "release_date": "2016-01-14",
@@ -1443,6 +1469,7 @@
   {
     "title": "El Mariachi",
     "original_title": "El Mariachi",
+    "original_language": "es",
     "watch_date": "2016-02-18",
     "rating": 7,
     "release_date": "1992-09-04",
@@ -1502,6 +1529,7 @@
   {
     "title": "Insidious: Chapter 3",
     "original_title": "Insidious: Chapter 3",
+    "original_language": "en",
     "watch_date": "2016-02-18",
     "rating": 3,
     "release_date": "2015-06-04",
@@ -1548,6 +1576,7 @@
   {
     "title": "The Ring",
     "original_title": "The Ring",
+    "original_language": "en",
     "watch_date": "2016-02-18",
     "rating": 7,
     "release_date": "2002-10-18",
@@ -1600,6 +1629,7 @@
   {
     "title": "The Godfather: Part II",
     "original_title": "The Godfather: Part II",
+    "original_language": "en",
     "watch_date": "2016-02-25",
     "rating": 6,
     "release_date": "1974-12-20",
@@ -1701,6 +1731,7 @@
   {
     "title": "Top Gun",
     "original_title": "Top Gun",
+    "original_language": "en",
     "watch_date": "2016-02-25",
     "rating": 6,
     "release_date": "1986-05-16",
@@ -1719,11 +1750,11 @@
       "Barry Tubb",
       "Rick Rossovich",
       "Tim Robbins",
-      "Meg Ryan",
-      "Whip Hubley",
-      "Adrian Pasdar",
-      "James Tolkan",
       "Clarence Gilyard Jr.",
+      "Whip Hubley",
+      "James Tolkan",
+      "Meg Ryan",
+      "Adrian Pasdar",
       "Randall Brady",
       "Duke Stroud",
       "Brian Sheehan",
@@ -1736,13 +1767,13 @@
     ],
     "genres": [
       "Action",
-      "Adventure",
       "Drama"
     ]
   },
   {
     "title": "The Last Witch Hunter",
     "original_title": "The Last Witch Hunter",
+    "original_language": "en",
     "watch_date": "2016-03-02",
     "rating": 3,
     "release_date": "2015-10-21",
@@ -1787,13 +1818,13 @@
     "genres": [
       "Action",
       "Adventure",
-      "Fantasy",
-      "Science Fiction"
+      "Fantasy"
     ]
   },
   {
     "title": "Standoff",
     "original_title": "Standoff",
+    "original_language": "en",
     "watch_date": "2016-03-03",
     "rating": 3,
     "release_date": "2016-01-04",
@@ -1822,6 +1853,7 @@
   {
     "title": "The Godfather: Part III",
     "original_title": "The Godfather: Part III",
+    "original_language": "en",
     "watch_date": "2016-03-03",
     "rating": 4,
     "release_date": "1990-12-25",
@@ -1917,7 +1949,8 @@
       "Pietro Torrisi",
       "Angelo Ragusa",
       "Claudio Zucchet",
-      "Gianluca Petrazzi"
+      "Gianluca Petrazzi",
+      "Omero Capanna"
     ],
     "genres": [
       "Crime",
@@ -1928,6 +1961,7 @@
   {
     "title": "Attack on Titan",
     "original_title": "進撃の巨人 ATTACK ON TITAN",
+    "original_language": "ja",
     "watch_date": "2016-03-04",
     "rating": 5,
     "release_date": "2015-08-01",
@@ -1964,6 +1998,7 @@
   {
     "title": "Ghostbusters",
     "original_title": "Ghostbusters",
+    "original_language": "en",
     "watch_date": "2016-03-04",
     "rating": 7,
     "release_date": "1984-06-08",
@@ -2058,6 +2093,7 @@
   {
     "title": "Amélie",
     "original_title": "Le Fabuleux Destin d'Amélie Poulain",
+    "original_language": "fr",
     "watch_date": "2016-03-08",
     "rating": 7,
     "release_date": "2001-04-25",
@@ -2154,6 +2190,7 @@
   {
     "title": "Dangerous Minds",
     "original_title": "Dangerous Minds",
+    "original_language": "en",
     "watch_date": "2016-03-10",
     "rating": 4,
     "release_date": "1995-08-11",
@@ -2189,6 +2226,7 @@
   {
     "title": "Serial (Bad) Weddings",
     "original_title": "Qu'est-ce qu'on a fait au Bon Dieu",
+    "original_language": "fr",
     "watch_date": "2016-03-16",
     "rating": 6,
     "release_date": "2014-04-16",
@@ -2245,6 +2283,7 @@
   {
     "title": "Zodiac",
     "original_title": "Zodiac",
+    "original_language": "en",
     "watch_date": "2016-03-19",
     "rating": 7,
     "release_date": "2007-03-02",
@@ -2353,6 +2392,7 @@
   {
     "title": "Daddy or Mommy",
     "original_title": "Papa ou maman",
+    "original_language": "fr",
     "watch_date": "2016-03-22",
     "rating": 1,
     "release_date": "2015-02-04",
@@ -2395,6 +2435,7 @@
   {
     "title": "Lolo",
     "original_title": "Lolo",
+    "original_language": "fr",
     "watch_date": "2016-03-22",
     "rating": 3,
     "release_date": "2015-09-03",
@@ -2432,6 +2473,7 @@
   {
     "title": "99 Homes",
     "original_title": "99 Homes",
+    "original_language": "en",
     "watch_date": "2016-04-08",
     "rating": 5,
     "release_date": "2015-09-25",
@@ -2492,6 +2534,7 @@
   {
     "title": "Allegiant",
     "original_title": "Allegiant",
+    "original_language": "en",
     "watch_date": "2016-04-10",
     "rating": 6,
     "release_date": "2016-03-09",
@@ -2531,11 +2574,13 @@
       "Thomas Blake Jr.",
       "Julie Ivey",
       "Kyle Clements",
-      "Hannah Alligood",
+      "Hannah Riley",
       "Autumn Dial",
       "Courtney Hope",
       "Ian Belgard",
-      "Timothy Carr"
+      "Timothy Carr",
+      "Conphidance",
+      "Anthony K. Hyatt"
     ],
     "genres": [
       "Action",
@@ -2547,6 +2592,7 @@
   {
     "title": "Batman v Superman: Dawn of Justice",
     "original_title": "Batman v Superman: Dawn of Justice",
+    "original_language": "en",
     "watch_date": "2016-04-10",
     "rating": 6,
     "release_date": "2016-03-23",
@@ -2701,6 +2747,7 @@
   {
     "title": "The Internship",
     "original_title": "The Internship",
+    "original_language": "en",
     "watch_date": "2016-04-11",
     "rating": 6,
     "release_date": "2013-06-07",
@@ -2833,6 +2880,7 @@
   {
     "title": "Magnum Force",
     "original_title": "Magnum Force",
+    "original_language": "en",
     "watch_date": "2016-04-12",
     "rating": 6,
     "release_date": "1973-12-23",
@@ -2859,7 +2907,8 @@
       "Jack Kosslyn",
       "John Mitchum",
       "Suzanne Somers",
-      "Carl Weathers"
+      "Carl Weathers",
+      "Edgy Lee"
     ],
     "genres": [
       "Action",
@@ -2870,6 +2919,7 @@
   {
     "title": "The Enforcer",
     "original_title": "The Enforcer",
+    "original_language": "en",
     "watch_date": "2016-04-14",
     "rating": 6,
     "release_date": "1976-12-20",
@@ -2910,6 +2960,7 @@
   {
     "title": "Babysitting 2",
     "original_title": "Babysitting 2",
+    "original_language": "fr",
     "watch_date": "2016-04-17",
     "rating": 8,
     "release_date": "2015-12-02",
@@ -2946,6 +2997,7 @@
   {
     "title": "Sudden Impact",
     "original_title": "Sudden Impact",
+    "original_language": "en",
     "watch_date": "2016-04-19",
     "rating": 6,
     "release_date": "1983-12-07",
@@ -2994,6 +3046,7 @@
   {
     "title": "Falling Down",
     "original_title": "Falling Down",
+    "original_language": "en",
     "watch_date": "2016-04-22",
     "rating": 7,
     "release_date": "1993-02-26",
@@ -3009,7 +3062,6 @@
       "Tuesday Weld",
       "Frederic Forrest",
       "Lois Smith",
-      "Joey Hope Singer",
       "Ebbe Roe Smith",
       "Michael Paul Chan",
       "Raymond J. Barry",
@@ -3051,7 +3103,8 @@
       "Abbey Barthel",
       "Susie Singer Carter",
       "Wayne Duvall",
-      "Valisha Jean Malin"
+      "Valisha Jean Malin",
+      "Joey Singer"
     ],
     "genres": [
       "Crime",
@@ -3062,6 +3115,7 @@
   {
     "title": "Burnt",
     "original_title": "Burnt",
+    "original_language": "en",
     "watch_date": "2016-04-23",
     "rating": 5,
     "release_date": "2015-10-02",
@@ -3105,6 +3159,7 @@
   {
     "title": "The Big Short",
     "original_title": "The Big Short",
+    "original_language": "en",
     "watch_date": "2016-04-23",
     "rating": 7,
     "release_date": "2015-12-11",
@@ -3205,7 +3260,8 @@
       "Nicole Barré",
       "Alicia Davis Johnson",
       "Delia Sheppard",
-      "Juliet Reeves London"
+      "Juliet Reeves London",
+      "Judd Lormand"
     ],
     "genres": [
       "Comedy",
@@ -3215,6 +3271,7 @@
   {
     "title": "The Scapegoat",
     "original_title": "Au bonheur des ogres",
+    "original_language": "fr",
     "watch_date": "2016-04-24",
     "rating": 6,
     "release_date": "2013-10-16",
@@ -3242,6 +3299,7 @@
   {
     "title": "Would I Lie to You?",
     "original_title": "La vérité si je mens !",
+    "original_language": "fr",
     "watch_date": "2016-04-25",
     "rating": 5,
     "release_date": "1997-04-01",
@@ -3294,6 +3352,7 @@
   {
     "title": "The Dead Pool",
     "original_title": "The Dead Pool",
+    "original_language": "en",
     "watch_date": "2016-04-25",
     "rating": 6,
     "release_date": "1988-04-14",
@@ -3342,6 +3401,7 @@
   {
     "title": "Captain America: Civil War",
     "original_title": "Captain America: Civil War",
+    "original_language": "en",
     "watch_date": "2016-05-01",
     "rating": 8,
     "release_date": "2016-04-27",
@@ -3463,6 +3523,7 @@
   {
     "title": "The Nice Guys",
     "original_title": "The Nice Guys",
+    "original_language": "en",
     "watch_date": "2016-05-22",
     "rating": 7,
     "release_date": "2016-05-15",
@@ -3471,8 +3532,8 @@
     "poster": "posters/290250.jpg",
     "runtime": 116,
     "cast": [
-      "Russell Crowe",
       "Ryan Gosling",
+      "Russell Crowe",
       "Angourie Rice",
       "Matt Bomer",
       "Margaret Qualley",
@@ -3540,6 +3601,7 @@
   {
     "title": "X-Men: Apocalypse",
     "original_title": "X-Men: Apocalypse",
+    "original_language": "en",
     "watch_date": "2016-05-22",
     "rating": 8,
     "release_date": "2016-05-18",
@@ -3549,14 +3611,14 @@
     "runtime": 144,
     "cast": [
       "James McAvoy",
-      "Michael Fassbender",
       "Jennifer Lawrence",
+      "Michael Fassbender",
       "Oscar Isaac",
       "Nicholas Hoult",
       "Rose Byrne",
-      "Evan Peters",
       "Tye Sheridan",
       "Sophie Turner",
+      "Evan Peters",
       "Olivia Munn",
       "Kodi Smit-McPhee",
       "Alexandra Shipp",
@@ -3654,6 +3716,7 @@
   {
     "title": "Homefront",
     "original_title": "Homefront",
+    "original_language": "en",
     "watch_date": "2016-05-31",
     "rating": 5,
     "release_date": "2013-11-12",
@@ -3704,6 +3767,7 @@
   {
     "title": "The World's End",
     "original_title": "The World's End",
+    "original_language": "en",
     "watch_date": "2016-06-04",
     "rating": 6,
     "release_date": "2013-07-18",
@@ -3779,6 +3843,7 @@
   {
     "title": "Alice Through the Looking Glass",
     "original_title": "Alice Through the Looking Glass",
+    "original_language": "en",
     "watch_date": "2016-06-18",
     "rating": 4,
     "release_date": "2016-05-25",
@@ -3873,6 +3938,7 @@
   {
     "title": "Hummingbird",
     "original_title": "Hummingbird",
+    "original_language": "en",
     "watch_date": "2016-06-23",
     "rating": 3,
     "release_date": "2013-05-07",
@@ -3922,6 +3988,7 @@
   {
     "title": "National Lampoon's Van Wilder",
     "original_title": "National Lampoon's Van Wilder",
+    "original_language": "en",
     "watch_date": "2016-07-15",
     "rating": 6,
     "release_date": "2002-03-29",
@@ -3994,6 +4061,7 @@
   {
     "title": "The Tuche Family: The American Dream",
     "original_title": "Les Tuche 2 : Le Rêve américain",
+    "original_language": "fr",
     "watch_date": "2016-07-16",
     "rating": 3,
     "release_date": "2016-02-03",
@@ -4075,6 +4143,7 @@
   {
     "title": "Zoolander 2",
     "original_title": "Zoolander 2",
+    "original_language": "en",
     "watch_date": "2016-07-22",
     "rating": 4,
     "release_date": "2016-02-06",
@@ -4104,7 +4173,7 @@
       "Olivia Munn",
       "Kanye West",
       "Justin Bieber",
-      "Mădălina Diana Ghenea",
+      "Mãdãlina Ghenea",
       "Kim Kardashian West",
       "Ariana Grande",
       "Lenny Kravitz",
@@ -4212,6 +4281,7 @@
   {
     "title": "Finding Dory",
     "original_title": "Finding Dory",
+    "original_language": "en",
     "watch_date": "2016-07-24",
     "rating": 7,
     "release_date": "2016-06-16",
@@ -4263,6 +4333,7 @@
   {
     "title": "Independence Day: Resurgence",
     "original_title": "Independence Day: Resurgence",
+    "original_language": "en",
     "watch_date": "2016-07-24",
     "rating": 4,
     "release_date": "2016-06-22",
@@ -4348,6 +4419,7 @@
   {
     "title": "Hail, Caesar!",
     "original_title": "Hail, Caesar!",
+    "original_language": "en",
     "watch_date": "2016-08-07",
     "rating": 2,
     "release_date": "2016-02-05",
@@ -4434,7 +4506,7 @@
       "Evan Kasprzak",
       "Patrick Lavallee",
       "Adam Perry",
-      "Ryan Vandenboom",
+      "Ryan VanDenBoom",
       "Alex Demkin",
       "Dax Hock",
       "Shesha Marvin",
@@ -4460,6 +4532,7 @@
   {
     "title": "Jason Bourne",
     "original_title": "Jason Bourne",
+    "original_language": "en",
     "watch_date": "2016-08-14",
     "rating": 6,
     "release_date": "2016-07-27",
@@ -4673,6 +4746,7 @@
   {
     "title": "Star Trek Beyond",
     "original_title": "Star Trek Beyond",
+    "original_language": "en",
     "watch_date": "2016-08-18",
     "rating": 6,
     "release_date": "2016-07-07",
@@ -4684,7 +4758,7 @@
       "Chris Pine",
       "Zachary Quinto",
       "Karl Urban",
-      "Zoe Saldana",
+      "Zoe Saldaña",
       "Simon Pegg",
       "John Cho",
       "Anton Yelchin",
@@ -4735,7 +4809,8 @@
       "Ian Nsenga",
       "Sara Forsberg",
       "Jeff Bezos",
-      "Christian Mandel"
+      "Christian Mandel",
+      "Carlo Ancelotti"
     ],
     "genres": [
       "Action",
@@ -4746,6 +4821,7 @@
   {
     "title": "Not Another Teen Movie",
     "original_title": "Not Another Teen Movie",
+    "original_language": "en",
     "watch_date": "2016-08-20",
     "rating": 6,
     "release_date": "2001-12-07",
@@ -4859,6 +4935,7 @@
   {
     "title": "Neighbors",
     "original_title": "Neighbors",
+    "original_language": "en",
     "watch_date": "2016-08-26",
     "rating": 5,
     "release_date": "2014-05-08",
@@ -4925,6 +5002,7 @@
   {
     "title": "10 Cloverfield Lane",
     "original_title": "10 Cloverfield Lane",
+    "original_language": "en",
     "watch_date": "2016-08-27",
     "rating": 3,
     "release_date": "2016-03-10",
@@ -4953,6 +5031,7 @@
   {
     "title": "13 Hours: The Secret Soldiers of Benghazi",
     "original_title": "13 Hours: The Secret Soldiers of Benghazi",
+    "original_language": "en",
     "watch_date": "2016-08-27",
     "rating": 4,
     "release_date": "2016-01-14",
@@ -5006,6 +5085,7 @@
   {
     "title": "The Conjuring 2",
     "original_title": "The Conjuring 2",
+    "original_language": "en",
     "watch_date": "2016-09-01",
     "rating": 6,
     "release_date": "2016-06-08",
@@ -5054,6 +5134,7 @@
   {
     "title": "Blood Father",
     "original_title": "Blood Father",
+    "original_language": "en",
     "watch_date": "2016-09-02",
     "rating": 4,
     "release_date": "2016-08-11",
@@ -5108,6 +5189,7 @@
   {
     "title": "Legend",
     "original_title": "Legend",
+    "original_language": "en",
     "watch_date": "2016-09-04",
     "rating": 6,
     "release_date": "2015-09-09",
@@ -5158,7 +5240,8 @@
       "John Carr",
       "Julia Papp",
       "Daniel Westwood",
-      "Jefferson King"
+      "Jefferson King",
+      "Tim Faraday"
     ],
     "genres": [
       "Crime",
@@ -5168,6 +5251,7 @@
   {
     "title": "The Perks of Being a Wallflower",
     "original_title": "The Perks of Being a Wallflower",
+    "original_language": "en",
     "watch_date": "2016-09-11",
     "rating": 8,
     "release_date": "2012-09-20",
@@ -5223,6 +5307,7 @@
   {
     "title": "Ip Man 3",
     "original_title": "葉問3",
+    "original_language": "cn",
     "watch_date": "2016-09-20",
     "rating": 7,
     "release_date": "2015-12-24",
@@ -5260,6 +5345,7 @@
   {
     "title": "Captain Phillips",
     "original_title": "Captain Phillips",
+    "original_language": "en",
     "watch_date": "2016-09-25",
     "rating": 6,
     "release_date": "2013-10-10",
@@ -5296,6 +5382,7 @@
   {
     "title": "The Huntsman: Winter's War",
     "original_title": "The Huntsman: Winter's War",
+    "original_language": "en",
     "watch_date": "2016-10-09",
     "rating": 4,
     "release_date": "2016-04-06",
@@ -5357,6 +5444,7 @@
   {
     "title": "White House Down",
     "original_title": "White House Down",
+    "original_language": "en",
     "watch_date": "2016-10-17",
     "rating": 3,
     "release_date": "2013-06-27",
@@ -5400,6 +5488,7 @@
   {
     "title": "Neighbors 2: Sorority Rising",
     "original_title": "Neighbors 2: Sorority Rising",
+    "original_language": "en",
     "watch_date": "2016-10-31",
     "rating": 5,
     "release_date": "2016-05-04",
@@ -5456,6 +5545,7 @@
   {
     "title": "Southbound",
     "original_title": "Southbound",
+    "original_language": "en",
     "watch_date": "2016-11-11",
     "rating": 3,
     "release_date": "2015-09-17",
@@ -5503,6 +5593,7 @@
   {
     "title": "Mechanic: Resurrection",
     "original_title": "Mechanic: Resurrection",
+    "original_language": "en",
     "watch_date": "2016-11-13",
     "rating": 6,
     "release_date": "2016-08-25",
@@ -5553,6 +5644,7 @@
   {
     "title": "War Dogs",
     "original_title": "War Dogs",
+    "original_language": "en",
     "watch_date": "2016-11-14",
     "rating": 6,
     "release_date": "2016-08-17",
@@ -5568,10 +5660,10 @@
       "Kevin Pollak",
       "Patrick St. Esprit",
       "Shaun Toub",
-      "J. B. Blanc",
+      "JB Blanc",
       "Gabriel Spahiu",
       "Julian Sergi",
-      "Andrei Finți",
+      "Andrei Finti",
       "Jeremy Tardy",
       "Barry Livingston",
       "Jeff Pierre",
@@ -5679,6 +5771,7 @@
   {
     "title": "The Purge: Anarchy",
     "original_title": "The Purge: Anarchy",
+    "original_language": "en",
     "watch_date": "2016-11-17",
     "rating": 5,
     "release_date": "2014-07-17",
@@ -5739,6 +5832,7 @@
   {
     "title": "The Purge: Election Year",
     "original_title": "The Purge: Election Year",
+    "original_language": "en",
     "watch_date": "2016-11-18",
     "rating": 5,
     "release_date": "2016-06-29",
@@ -5825,6 +5919,7 @@
   {
     "title": "Mike and Dave Need Wedding Dates",
     "original_title": "Mike and Dave Need Wedding Dates",
+    "original_language": "en",
     "watch_date": "2016-11-19",
     "rating": 6,
     "release_date": "2016-07-07",
@@ -5893,6 +5988,7 @@
   {
     "title": "47 Ronin",
     "original_title": "47 Ronin",
+    "original_language": "en",
     "watch_date": "2016-11-22",
     "rating": 6,
     "release_date": "2013-12-06",
@@ -5930,7 +6026,6 @@
     ],
     "genres": [
       "Action",
-      "Adventure",
       "Drama",
       "Fantasy"
     ]
@@ -5938,6 +6033,7 @@
   {
     "title": "Zootopia",
     "original_title": "Zootopia",
+    "original_language": "en",
     "watch_date": "2016-11-25",
     "rating": 8,
     "release_date": "2016-02-11",
@@ -6007,6 +6103,7 @@
   {
     "title": "La Chèvre",
     "original_title": "La Chèvre",
+    "original_language": "fr",
     "watch_date": "2016-11-26",
     "rating": 6,
     "release_date": "1981-12-09",
@@ -6041,7 +6138,8 @@
   },
   {
     "title": "The ComDads",
-    "original_title": "Les compères",
+    "original_title": "Les Compères",
+    "original_language": "fr",
     "watch_date": "2016-11-27",
     "rating": 6,
     "release_date": "1983-11-23",
@@ -6092,6 +6190,7 @@
   {
     "title": "It Boy",
     "original_title": "20 ans d'écart",
+    "original_language": "fr",
     "watch_date": "2016-12-01",
     "rating": 6,
     "release_date": "2013-03-06",
@@ -6151,6 +6250,7 @@
   {
     "title": "Roommates Wanted",
     "original_title": "Adopte un veuf",
+    "original_language": "fr",
     "watch_date": "2016-12-03",
     "rating": 5,
     "release_date": "2016-04-20",
@@ -6196,6 +6296,7 @@
   {
     "title": "Beauty and the Beast",
     "original_title": "La Belle et la Bête",
+    "original_language": "fr",
     "watch_date": "2016-12-12",
     "rating": 4,
     "release_date": "2014-02-12",
@@ -6236,6 +6337,7 @@
   {
     "title": "The Magnificent Seven",
     "original_title": "The Magnificent Seven",
+    "original_language": "en",
     "watch_date": "2016-12-17",
     "rating": 6,
     "release_date": "2016-09-14",
@@ -6305,6 +6407,7 @@
   {
     "title": "Fantastic Beasts and Where to Find Them",
     "original_title": "Fantastic Beasts and Where to Find Them",
+    "original_language": "en",
     "watch_date": "2016-12-18",
     "rating": 8,
     "release_date": "2016-11-16",
@@ -6471,6 +6574,7 @@
       "Cinta Laura Kiehl"
     ],
     "genres": [
+      "Action",
       "Adventure",
       "Fantasy"
     ]
@@ -6478,6 +6582,7 @@
   {
     "title": "Warcraft",
     "original_title": "Warcraft",
+    "original_language": "en",
     "watch_date": "2016-12-20",
     "rating": 5,
     "release_date": "2016-05-25",

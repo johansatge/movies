@@ -2,6 +2,7 @@
   {
     "title": "Coco",
     "original_title": "Coco",
+    "original_language": "en",
     "watch_date": "2021-01-01",
     "rating": 8,
     "release_date": "2017-10-27",
@@ -16,7 +17,7 @@
       "Alanna Ubach",
       "Renée Victor",
       "Jaime Camil",
-      "Alfonso Aráu",
+      "Alfonso Arau",
       "Herbert Siguenza",
       "Lombardo Boyar",
       "Ana Ofelia Murguía",
@@ -24,7 +25,7 @@
       "Dyana Ortelli",
       "Gabriel Iglesias",
       "Selene Luna",
-      "Natalia Córdova-Buckley",
+      "Natalia Cordova-Buckley",
       "Edward James Olmos",
       "Carla Medina",
       "Luis Valdez",
@@ -108,6 +109,7 @@
   {
     "title": "Wonder Woman 1984",
     "original_title": "Wonder Woman 1984",
+    "original_language": "en",
     "watch_date": "2021-01-01",
     "rating": 4,
     "release_date": "2020-12-16",
@@ -141,7 +143,7 @@
       "Betty Adewole",
       "Camilla Roholm",
       "Jessie Graff",
-      "Bronte Lavine",
+      "Brontë Lavine",
       "Briony Scarlett",
       "Jade Johnson",
       "Miranda Chambers",
@@ -273,6 +275,7 @@
   {
     "title": "School Life",
     "original_title": "La Vie scolaire",
+    "original_language": "fr",
     "watch_date": "2021-02-20",
     "rating": 7,
     "release_date": "2019-08-28",
@@ -291,11 +294,33 @@
       "Bakary Diombera",
       "Adèle Galloy",
       "Gaspard Gevin-Hié",
-      "Tamara Kozo",
-      "Grand Corps Malade",
       "Hocine Mokando",
-      "Camara Moryfère",
-      "Blandine Lenoir"
+      "Moryfère Camara",
+      "Blandine Lenoir",
+      "Ibrahim 'Facher' Dramé",
+      "Mahamadou Sangaré",
+      "Aboudou Sacko",
+      "Nadia Roz",
+      "Nicolas Gerout",
+      "Badr Iffach",
+      "Nicolas Chupin",
+      "Sheina Boudjema",
+      "Toussaint Polidori",
+      "Natalie Beder",
+      "Mohamed Ikharazen",
+      "Lamine Camara",
+      "Charlotte Talpaert",
+      "Zakaria-Tayeb Lazab",
+      "Enzo Lemartinet",
+      "Karidia Sanogo",
+      "Tewfiq Seghir",
+      "Fatima El Rhaffouli",
+      "Souad Flissi",
+      "Manasse Kashala",
+      "Vincent Doan",
+      "Aurélie Tessier",
+      "Hamid Bouffara",
+      "Georgina Elizabeth Okon"
     ],
     "genres": [
       "Comedy",
@@ -305,6 +330,7 @@
   {
     "title": "Snowden",
     "original_title": "Snowden",
+    "original_language": "en",
     "watch_date": "2021-04-03",
     "rating": 7,
     "release_date": "2016-09-15",
@@ -373,6 +399,7 @@
   {
     "title": "Alibi.com",
     "original_title": "Alibi.com",
+    "original_language": "fr",
     "watch_date": "2021-04-04",
     "rating": 7,
     "release_date": "2017-02-15",
@@ -446,6 +473,7 @@
   {
     "title": "The Marksman",
     "original_title": "The Marksman",
+    "original_language": "en",
     "watch_date": "2021-04-18",
     "rating": 4,
     "release_date": "2021-01-15",
@@ -477,14 +505,13 @@
     ],
     "genres": [
       "Action",
-      "Adventure",
-      "Crime",
       "Thriller"
     ]
   },
   {
     "title": "Nobody",
     "original_title": "Nobody",
+    "original_language": "en",
     "watch_date": "2021-04-24",
     "rating": 5,
     "release_date": "2021-03-18",
@@ -546,6 +573,7 @@
   {
     "title": "Extraction",
     "original_title": "Extraction",
+    "original_language": "en",
     "watch_date": "2021-04-25",
     "rating": 6,
     "release_date": "2020-04-24",
@@ -620,6 +648,7 @@
   {
     "title": "Army of the Dead",
     "original_title": "Army of the Dead",
+    "original_language": "en",
     "watch_date": "2021-05-30",
     "rating": 3,
     "release_date": "2021-05-14",
@@ -695,6 +724,7 @@
   {
     "title": "Three Identical Strangers",
     "original_title": "Three Identical Strangers",
+    "original_language": "en",
     "watch_date": "2021-06-05",
     "rating": 7,
     "release_date": "2018-06-29",
@@ -714,6 +744,7 @@
   {
     "title": "Wrath of Man",
     "original_title": "Wrath of Man",
+    "original_language": "en",
     "watch_date": "2021-06-07",
     "rating": 5,
     "release_date": "2021-04-22",
@@ -780,6 +811,7 @@
   {
     "title": "Luca",
     "original_title": "Luca",
+    "original_language": "en",
     "watch_date": "2021-06-23",
     "rating": 7,
     "release_date": "2021-06-17",
@@ -811,7 +843,6 @@
       "Arturo Sorino"
     ],
     "genres": [
-      "Adventure",
       "Animation",
       "Comedy",
       "Family",
@@ -821,6 +852,7 @@
   {
     "title": "Rurouni Kenshin: The Final",
     "original_title": "るろうに剣心 最終章 The Final",
+    "original_language": "ja",
     "watch_date": "2021-06-27",
     "rating": 6,
     "release_date": "2021-04-23",
@@ -848,7 +880,10 @@
       "Joey Iwanaga",
       "Eiki Narita",
       "Kasumi Arimura",
-      "Ryûnosuke Kamiki"
+      "Ryunosuke Kamiki",
+      "Ryuuma Hashido",
+      "Show Kasamatsu",
+      "Seigo Nishihara"
     ],
     "genres": [
       "Action",
@@ -859,6 +894,7 @@
   {
     "title": "Who Framed Roger Rabbit",
     "original_title": "Who Framed Roger Rabbit",
+    "original_language": "en",
     "watch_date": "2021-06-29",
     "rating": 8,
     "release_date": "1988-06-21",
@@ -868,9 +904,9 @@
     "runtime": 104,
     "cast": [
       "Bob Hoskins",
+      "Charles Fleischer",
       "Christopher Lloyd",
       "Joanna Cassidy",
-      "Charles Fleischer",
       "Kathleen Turner",
       "Stubby Kaye",
       "Alan Tilvern",
@@ -924,13 +960,13 @@
       "Animation",
       "Comedy",
       "Crime",
-      "Family",
       "Fantasy"
     ]
   },
   {
     "title": "Black Widow",
     "original_title": "Black Widow",
+    "original_language": "en",
     "watch_date": "2021-07-16",
     "rating": 7,
     "release_date": "2021-07-07",
@@ -987,7 +1023,7 @@
       "Noel Krisztian Kozak",
       "Martin Razpopov",
       "Olivier Richters",
-      "Dalibor Bajunović",
+      "Nina Novich",
       "Andrew Byron",
       "Ed Ashe",
       "Dawid Szatarski",
@@ -1004,7 +1040,6 @@
       "Caister Myung Choi",
       "David Turner",
       "Edward L. Oliver",
-      "Dale Liner",
       "Rob Horrocks",
       "Oliver Simms",
       "Yuuki Luna",
@@ -1044,6 +1079,7 @@
   {
     "title": "A Quiet Place Part II",
     "original_title": "A Quiet Place Part II",
+    "original_language": "en",
     "watch_date": "2021-07-29",
     "rating": 5,
     "release_date": "2021-05-21",
@@ -1088,6 +1124,7 @@
   {
     "title": "F9",
     "original_title": "F9",
+    "original_language": "en",
     "watch_date": "2021-08-12",
     "rating": 5,
     "release_date": "2021-05-19",
@@ -1159,7 +1196,6 @@
     ],
     "genres": [
       "Action",
-      "Adventure",
       "Crime",
       "Thriller"
     ]
@@ -1167,6 +1203,7 @@
   {
     "title": "Kaamelott: The First Chapter",
     "original_title": "Kaamelott - Premier volet",
+    "original_language": "fr",
     "watch_date": "2021-08-27",
     "rating": 7,
     "release_date": "2021-07-21",
@@ -1208,7 +1245,7 @@
       "Etienne Fague",
       "Carlo Brandt",
       "Pascal Vincent",
-      "Valerie Kéruzoré",
+      "Valérie Kéruzoré",
       "Mehdi Rahim-Silvioli",
       "David Ayala",
       "Jean-charles Simon",
@@ -1254,6 +1291,7 @@
   {
     "title": "Mulan",
     "original_title": "Mulan",
+    "original_language": "en",
     "watch_date": "2021-08-28",
     "rating": 5,
     "release_date": "2020-09-04",
@@ -1292,7 +1330,8 @@
       "Zhaidarbek Kunguzhinov",
       "Gary Young",
       "Wolf Chen",
-      "Owen Kwong"
+      "Owen Kwong",
+      "Radhesh Aria"
     ],
     "genres": [
       "Adventure",
@@ -1303,6 +1342,7 @@
   {
     "title": "The Suicide Squad",
     "original_title": "The Suicide Squad",
+    "original_language": "en",
     "watch_date": "2021-08-29",
     "rating": 8,
     "release_date": "2021-07-28",
@@ -1379,12 +1419,13 @@
     "genres": [
       "Action",
       "Adventure",
-      "Fantasy"
+      "Comedy"
     ]
   },
   {
     "title": "Vacation Friends",
     "original_title": "Vacation Friends",
+    "original_language": "en",
     "watch_date": "2021-09-04",
     "rating": 5,
     "release_date": "2021-08-27",
@@ -1403,7 +1444,7 @@
       "Tawny Newsome",
       "Kamal Angelo Bolden",
       "Carlos Santos",
-      "Travis Love",
+      "T. Love",
       "Chuck Cooper",
       "Sonny Charles",
       "Cristian Gonzalez",
@@ -1411,7 +1452,11 @@
       "Ramiro 'Ramir' Delgado Ruiz",
       "Chris TC Edge",
       "Julitza Berberena",
-      "Noelle Jackson"
+      "Noelle Jackson",
+      "TJ Jackson",
+      "Barry Rothbart",
+      "Anna Maria Horsford",
+      "Denise Burse"
     ],
     "genres": [
       "Comedy"
@@ -1420,6 +1465,7 @@
   {
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "original_title": "Shang-Chi and the Legend of the Ten Rings",
+    "original_language": "en",
     "watch_date": "2021-09-09",
     "rating": 8,
     "release_date": "2021-09-01",
@@ -1476,6 +1522,7 @@
   {
     "title": "Cruella",
     "original_title": "Cruella",
+    "original_language": "en",
     "watch_date": "2021-09-11",
     "rating": 7,
     "release_date": "2021-05-26",
@@ -1514,10 +1561,10 @@
       "Asmara Gabrielle",
       "Tom Turner",
       "Crystal Wingx",
-      "John Wolfe"
+      "John Wolfe",
+      "Haruka Abe"
     ],
     "genres": [
-      "Adventure",
       "Comedy",
       "Crime"
     ]
@@ -1525,9 +1572,10 @@
   {
     "title": "Dune",
     "original_title": "Dune",
+    "original_language": "en",
     "watch_date": "2021-09-22",
     "rating": 9,
-    "release_date": "2021-09-15",
+    "release_date": "2021-09-08",
     "director": "Denis Villeneuve",
     "tmdb_id": 438631,
     "poster": "posters/438631.jpg",
@@ -1564,7 +1612,7 @@
       "Gloria Obianyo",
       "Fehinti Balogun",
       "Dora Kápolnai-Schvab",
-      "Joelle Amery",
+      "Joelle",
       "Jimmy Walker",
       "Paul Bullion",
       "Milena Sidorova",
@@ -1581,6 +1629,7 @@
   {
     "title": "Tolkien",
     "original_title": "Tolkien",
+    "original_language": "en",
     "watch_date": "2021-09-22",
     "rating": 6,
     "release_date": "2019-05-03",
@@ -1644,6 +1693,7 @@
   {
     "title": "Candyman",
     "original_title": "Candyman",
+    "original_language": "en",
     "watch_date": "2021-09-25",
     "rating": 6,
     "release_date": "2021-08-25",
@@ -1691,7 +1741,8 @@
       "Guy Spencer",
       "Daejon Staeker",
       "Tony Todd",
-      "Virginia Madsen"
+      "Virginia Madsen",
+      "Ben Marten"
     ],
     "genres": [
       "Horror"
@@ -1700,6 +1751,7 @@
   {
     "title": "Old",
     "original_title": "Old",
+    "original_language": "en",
     "watch_date": "2021-09-25",
     "rating": 5,
     "release_date": "2021-07-21",
@@ -1746,6 +1798,7 @@
   {
     "title": "Doctor Sleep",
     "original_title": "Doctor Sleep",
+    "original_language": "en",
     "watch_date": "2021-09-27",
     "rating": 7,
     "release_date": "2019-10-30",
@@ -1822,6 +1875,7 @@
   {
     "title": "Triple Threat",
     "original_title": "Triple Threat",
+    "original_language": "en",
     "watch_date": "2021-10-05",
     "rating": 3,
     "release_date": "2019-03-19",
@@ -1862,6 +1916,7 @@
   {
     "title": "Free Guy",
     "original_title": "Free Guy",
+    "original_language": "en",
     "watch_date": "2021-11-20",
     "rating": 7,
     "release_date": "2021-08-11",
@@ -1942,7 +1997,6 @@
       "Emma Jonnz"
     ],
     "genres": [
-      "Action",
       "Adventure",
       "Comedy",
       "Science Fiction"
@@ -1951,6 +2005,7 @@
   {
     "title": "Primer",
     "original_title": "Primer",
+    "original_language": "en",
     "watch_date": "2021-12-05",
     "rating": 6,
     "release_date": "2004-10-08",

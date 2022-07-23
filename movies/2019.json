@@ -2,6 +2,7 @@
   {
     "title": "Self/less",
     "original_title": "Self/less",
+    "original_language": "en",
     "watch_date": "2019-01-01",
     "rating": 5,
     "release_date": "2015-07-10",
@@ -62,6 +63,7 @@
       "Ronn Surels"
     ],
     "genres": [
+      "Action",
       "Mystery",
       "Science Fiction",
       "Thriller"
@@ -70,9 +72,10 @@
   {
     "title": "Wreck-It Ralph",
     "original_title": "Wreck-It Ralph",
+    "original_language": "en",
     "watch_date": "2019-01-01",
     "rating": 7,
-    "release_date": "2012-01-01",
+    "release_date": "2011-11-24",
     "director": "Rich Moore",
     "tmdb_id": 82690,
     "poster": "posters/82690.jpg",
@@ -156,6 +159,7 @@
   {
     "title": "Bird Box",
     "original_title": "Bird Box",
+    "original_language": "en",
     "watch_date": "2019-01-05",
     "rating": 6,
     "release_date": "2018-12-13",
@@ -206,6 +210,7 @@
   {
     "title": "Welcome to Marwen",
     "original_title": "Welcome to Marwen",
+    "original_language": "en",
     "watch_date": "2019-01-08",
     "rating": 6,
     "release_date": "2018-12-21",
@@ -251,6 +256,7 @@
   {
     "title": "Daddy's Home",
     "original_title": "Daddy's Home",
+    "original_language": "en",
     "watch_date": "2019-01-13",
     "rating": 4,
     "release_date": "2015-12-25",
@@ -320,6 +326,7 @@
   {
     "title": "The Emperor of Paris",
     "original_title": "L'Empereur de Paris",
+    "original_language": "fr",
     "watch_date": "2019-01-13",
     "rating": 7,
     "release_date": "2018-12-19",
@@ -341,7 +348,7 @@
       "Fayçal Safi",
       "Antoine Lelandais",
       "Frédéric Fix",
-      "Nemo Schiffman",
+      "Némo Schiffman",
       "Lucien Belvès",
       "Maxime Lefrançois",
       "Antoine Basler",
@@ -382,6 +389,7 @@
   {
     "title": "Now You See Me 2",
     "original_title": "Now You See Me 2",
+    "original_language": "en",
     "watch_date": "2019-01-14",
     "rating": 5,
     "release_date": "2016-06-02",
@@ -432,12 +440,14 @@
     "genres": [
       "Action",
       "Comedy",
+      "Crime",
       "Thriller"
     ]
   },
   {
     "title": "The Commuter",
     "original_title": "The Commuter",
+    "original_language": "en",
     "watch_date": "2019-01-19",
     "rating": 4,
     "release_date": "2018-01-11",
@@ -515,6 +525,7 @@
   {
     "title": "Glass",
     "original_title": "Glass",
+    "original_language": "en",
     "watch_date": "2019-01-20",
     "rating": 8,
     "release_date": "2019-01-16",
@@ -566,7 +577,8 @@
       "Nathan Nauroth",
       "Ana Leonard",
       "Elijah Davis",
-      "Charles W Harris III"
+      "Charles W Harris III",
+      "Jesse Ridgway"
     ],
     "genres": [
       "Drama",
@@ -577,6 +589,7 @@
   {
     "title": "The Ritual",
     "original_title": "The Ritual",
+    "original_language": "en",
     "watch_date": "2019-01-22",
     "rating": 7,
     "release_date": "2017-10-11",
@@ -611,6 +624,7 @@
   {
     "title": "Hereditary",
     "original_title": "Hereditary",
+    "original_language": "en",
     "watch_date": "2019-01-23",
     "rating": 9,
     "release_date": "2018-06-07",
@@ -658,6 +672,7 @@
   {
     "title": "They Call Me Jeeg",
     "original_title": "Lo chiamavano Jeeg Robot",
+    "original_language": "it",
     "watch_date": "2019-01-24",
     "rating": 4,
     "release_date": "2016-02-25",
@@ -710,6 +725,7 @@
   {
     "title": "The Imitation Game",
     "original_title": "The Imitation Game",
+    "original_language": "en",
     "watch_date": "2019-01-26",
     "rating": 7,
     "release_date": "2014-11-14",
@@ -742,7 +758,7 @@
       "Andrew Havill",
       "Laurence Kennedy",
       "Tim van Eyken",
-      "Viv Weatherall",
+      "Will Bowden",
       "Miranda Bell",
       "Tim Steed",
       "Bartosz Wandrykow",
@@ -778,7 +794,6 @@
       "Adam Nowell",
       "Joseph Oliveira",
       "Harry Leonard Parkinson",
-      "John Redmann",
       "David G. Robinson",
       "Alice Tapfield",
       "Mark Underwood",
@@ -796,6 +811,7 @@
   {
     "title": "Velvet Buzzsaw",
     "original_title": "Velvet Buzzsaw",
+    "original_language": "en",
     "watch_date": "2019-02-02",
     "rating": 6,
     "release_date": "2019-02-01",
@@ -903,6 +919,7 @@
   {
     "title": "Enemy",
     "original_title": "Enemy",
+    "original_language": "en",
     "watch_date": "2019-02-03",
     "rating": 7,
     "release_date": "2013-12-31",
@@ -935,6 +952,7 @@
   {
     "title": "Mile 22",
     "original_title": "Mile 22",
+    "original_language": "en",
     "watch_date": "2019-02-09",
     "rating": 6,
     "release_date": "2018-08-16",
@@ -1009,6 +1027,7 @@
   {
     "title": "Sausage Party",
     "original_title": "Sausage Party",
+    "original_language": "en",
     "watch_date": "2019-02-14",
     "rating": 5,
     "release_date": "2016-07-11",
@@ -1050,7 +1069,8 @@
       "Ian Hanlin",
       "Maryke Hendrikse",
       "Nicole Oliver",
-      "Kelly Sheridan"
+      "Kelly Sheridan",
+      "Meat Loaf"
     ],
     "genres": [
       "Adventure",
@@ -1062,6 +1082,7 @@
   {
     "title": "Le Brio",
     "original_title": "Le Brio",
+    "original_language": "fr",
     "watch_date": "2019-02-16",
     "rating": 5,
     "release_date": "2017-11-22",
@@ -1111,6 +1132,7 @@
   {
     "title": "Polar",
     "original_title": "Polar",
+    "original_language": "en",
     "watch_date": "2019-02-16",
     "rating": 4,
     "release_date": "2019-01-25",
@@ -1177,6 +1199,7 @@
   {
     "title": "Just a Breath Away",
     "original_title": "Dans la brume",
+    "original_language": "fr",
     "watch_date": "2019-02-17",
     "rating": 5,
     "release_date": "2018-04-04",
@@ -1205,6 +1228,7 @@
   {
     "title": "Summer of 84",
     "original_title": "Summer of 84",
+    "original_language": "en",
     "watch_date": "2019-02-17",
     "rating": 7,
     "release_date": "2018-08-10",
@@ -1244,6 +1268,7 @@
   {
     "title": "Robin Hood",
     "original_title": "Robin Hood",
+    "original_language": "en",
     "watch_date": "2019-02-23",
     "rating": 4,
     "release_date": "2018-11-21",
@@ -1291,6 +1316,7 @@
   {
     "title": "Alita: Battle Angel",
     "original_title": "Alita: Battle Angel",
+    "original_language": "en",
     "watch_date": "2019-02-24",
     "rating": 7,
     "release_date": "2019-01-31",
@@ -1356,6 +1382,7 @@
   {
     "title": "Ralph Breaks the Internet",
     "original_title": "Ralph Breaks the Internet",
+    "original_language": "en",
     "watch_date": "2019-02-28",
     "rating": 8,
     "release_date": "2018-11-20",
@@ -1435,7 +1462,7 @@
       "Brittany Kikuchi",
       "Olivier Bénard",
       "Ben McKee",
-      "Daniel 'Z' Platzman",
+      "Daniel Platzman",
       "Dan Reynolds",
       "Wayne Sermon",
       "Mark Rhino Smith",
@@ -1458,8 +1485,9 @@
     ]
   },
   {
-    "title": "Ma famille t'adore déjà !",
-    "original_title": "Ma famille t'adore déjà !",
+    "title": "Ma famille t’adore déjà !",
+    "original_title": "Ma famille t’adore déjà !",
+    "original_language": "fr",
     "watch_date": "2019-03-07",
     "rating": 4,
     "release_date": "2016-11-09",
@@ -1475,7 +1503,8 @@
       "Valérie Karsenti",
       "Jérôme Commandeur",
       "Sabine Azéma",
-      "Éric Berger"
+      "Éric Berger",
+      "Alicia Endemann"
     ],
     "genres": [
       "Comedy"
@@ -1484,6 +1513,7 @@
   {
     "title": "Aquaman",
     "original_title": "Aquaman",
+    "original_language": "en",
     "watch_date": "2019-03-09",
     "rating": 5,
     "release_date": "2018-07-06",
@@ -1554,6 +1584,7 @@
   {
     "title": "Captain Marvel",
     "original_title": "Captain Marvel",
+    "original_language": "en",
     "watch_date": "2019-03-15",
     "rating": 7,
     "release_date": "2019-03-06",
@@ -1613,7 +1644,8 @@
       "Mark Ruffalo",
       "Kelly Sue DeConnick",
       "Vinny O'Brien",
-      "Joey Courteau"
+      "Joey Courteau",
+      "Anthony Molinari"
     ],
     "genres": [
       "Action",
@@ -1624,6 +1656,7 @@
   {
     "title": "Escape Room",
     "original_title": "Escape Room",
+    "original_language": "en",
     "watch_date": "2019-04-06",
     "rating": 3,
     "release_date": "2019-01-03",
@@ -1673,6 +1706,7 @@
   {
     "title": "The Nutcracker and the Four Realms",
     "original_title": "The Nutcracker and the Four Realms",
+    "original_language": "en",
     "watch_date": "2019-04-13",
     "rating": 3,
     "release_date": "2018-10-26",
@@ -1727,6 +1761,7 @@
   {
     "title": "Avengers: Endgame",
     "original_title": "Avengers: Endgame",
+    "original_language": "en",
     "watch_date": "2019-04-30",
     "rating": 8,
     "release_date": "2019-04-24",
@@ -1748,7 +1783,7 @@
       "Brie Larson",
       "Tom Holland",
       "Karen Gillan",
-      "Zoe Saldana",
+      "Zoe Saldaña",
       "Evangeline Lilly",
       "Tessa Thompson",
       "Rene Russo",
@@ -1837,7 +1872,16 @@
       "Ameenah Kaplan",
       "Olaniyan Thurmon",
       "Jennifer Elmore",
-      "Mike Lutz"
+      "Mike Lutz",
+      "Anele Lundborg",
+      "Khanya Mkhize",
+      "Justin Shaw",
+      "Tom Antonellis",
+      "Ron Bottitta",
+      "Danielle Hartnett",
+      "Jennifer Cain",
+      "Arthur Ortiz",
+      "Ben Pronsky"
     ],
     "genres": [
       "Action",
@@ -1848,6 +1892,7 @@
   {
     "title": "Crazy Rich Asians",
     "original_title": "Crazy Rich Asians",
+    "original_language": "en",
     "watch_date": "2019-05-11",
     "rating": 6,
     "release_date": "2018-08-15",
@@ -1911,6 +1956,7 @@
   {
     "title": "Green Book",
     "original_title": "Green Book",
+    "original_language": "en",
     "watch_date": "2019-05-18",
     "rating": 8,
     "release_date": "2018-11-16",
@@ -1993,6 +2039,7 @@
   {
     "title": "Love, Simon",
     "original_title": "Love, Simon",
+    "original_language": "en",
     "watch_date": "2019-05-19",
     "rating": 6,
     "release_date": "2018-02-16",
@@ -2068,6 +2115,7 @@
   {
     "title": "The Sisters Brothers",
     "original_title": "The Sisters Brothers",
+    "original_language": "en",
     "watch_date": "2019-05-25",
     "rating": 7,
     "release_date": "2018-09-19",
@@ -2121,6 +2169,7 @@
   {
     "title": "Aladdin",
     "original_title": "Aladdin",
+    "original_language": "en",
     "watch_date": "2019-05-28",
     "rating": 7,
     "release_date": "2019-05-22",
@@ -2137,11 +2186,8 @@
       "Nasim Pedrad",
       "Billy Magnussen",
       "Numan Acar",
-      "Nina Wadia",
-      "Alan Tudyk",
-      "Frank Welker",
-      "Taliyah Blair",
       "Jordan A. Nash",
+      "Taliyah Blair",
       "Aubrey Lin",
       "Amir Boutrous",
       "Omari Bernard",
@@ -2160,11 +2206,14 @@
       "Omar Abidi",
       "Stefan Kalipha",
       "Firas Waleed Al-Taybeh",
+      "Nina Wadia",
       "Elif Knight",
       "Saikat Ahamed",
       "Amed Hashimi",
       "Stefan Capper",
       "Jamal Sims",
+      "Alan Tudyk",
+      "Frank Welker",
       "Robby Haynes",
       "Bern Collaço",
       "Michael Herne",
@@ -2181,6 +2230,7 @@
   {
     "title": "Hot Rod",
     "original_title": "Hot Rod",
+    "original_language": "en",
     "watch_date": "2019-06-10",
     "rating": 6,
     "release_date": "2007-08-03",
@@ -2252,6 +2302,7 @@
   {
     "title": "Us",
     "original_title": "Us",
+    "original_language": "en",
     "watch_date": "2019-06-22",
     "rating": 7,
     "release_date": "2019-03-14",
@@ -2294,6 +2345,7 @@
   {
     "title": "First Man",
     "original_title": "First Man",
+    "original_language": "en",
     "watch_date": "2019-07-14",
     "rating": 7,
     "release_date": "2018-10-10",
@@ -2391,7 +2443,8 @@
       "Katelyn Davis",
       "George Linkenback",
       "Milton Saul",
-      "Aaron J. Brooks"
+      "Aaron J. Brooks",
+      "John F. Kennedy"
     ],
     "genres": [
       "Drama",
@@ -2401,34 +2454,35 @@
   {
     "title": "Bumblebee",
     "original_title": "Bumblebee",
+    "original_language": "en",
     "watch_date": "2019-07-15",
     "rating": 3,
     "release_date": "2018-12-15",
     "director": "Travis Knight",
     "tmdb_id": 424783,
     "poster": "posters/424783.jpg",
-    "runtime": 114,
+    "runtime": 113,
     "cast": [
       "Hailee Steinfeld",
       "John Cena",
       "Jorge Lendeborg Jr.",
+      "John Ortiz",
       "Jason Ian Drucker",
       "Pamela Adlon",
       "Stephen Schneider",
-      "Ricardo Hoyos",
-      "John Ortiz",
-      "Glynn Turman",
       "Len Cariou",
-      "Kollin Holtz",
+      "Glynn Turman",
       "Gracie Dzienny",
+      "Ricardo Hoyos",
+      "Lenny Jacobson",
+      "Megyn Price",
+      "Kollin Holtz",
       "Fred Dryer",
       "Isabelle Ellingson",
       "Mika Kubo",
       "Felicia Stiles",
       "George Anagnostou",
       "Brandon Wardle",
-      "Lenny Jacobson",
-      "Megyn Price",
       "Krystin Goodwin",
       "Nick Pilla",
       "Sachin Bhatt",
@@ -2473,6 +2527,7 @@
   {
     "title": "Pet Sematary",
     "original_title": "Pet Sematary",
+    "original_language": "en",
     "watch_date": "2019-07-16",
     "rating": 6,
     "release_date": "2019-04-04",
@@ -2518,6 +2573,7 @@
   {
     "title": "Anna",
     "original_title": "Anna",
+    "original_language": "fr",
     "watch_date": "2019-07-28",
     "rating": 5,
     "release_date": "2019-06-19",
@@ -2536,7 +2592,7 @@
       "Anna Krippa",
       "Aleksey Maslodudov",
       "Eric Godon",
-      "Ivan Franěk",
+      "Ivan Franek",
       "Jean-Baptiste Puech",
       "Adrian Can",
       "Alison Wheeler",
@@ -2610,6 +2666,7 @@
   {
     "title": "Spider-Man: Far From Home",
     "original_title": "Spider-Man: Far From Home",
+    "original_language": "en",
     "watch_date": "2019-07-29",
     "rating": 7,
     "release_date": "2019-06-28",
@@ -2788,6 +2845,7 @@
   {
     "title": "Shazam!",
     "original_title": "Shazam!",
+    "original_language": "en",
     "watch_date": "2019-08-03",
     "rating": 7,
     "release_date": "2019-03-29",
@@ -2873,6 +2931,7 @@
   {
     "title": "Once Upon a Time… in Hollywood",
     "original_title": "Once Upon a Time… in Hollywood",
+    "original_language": "en",
     "watch_date": "2019-08-20",
     "rating": 8,
     "release_date": "2019-07-24",
@@ -2990,6 +3049,7 @@
   {
     "title": "John Wick: Chapter 3 - Parabellum",
     "original_title": "John Wick: Chapter 3 - Parabellum",
+    "original_language": "en",
     "watch_date": "2019-08-23",
     "rating": 7,
     "release_date": "2019-05-15",
@@ -3049,6 +3109,7 @@
   {
     "title": "Parasite",
     "original_title": "기생충",
+    "original_language": "ko",
     "watch_date": "2019-08-24",
     "rating": 8,
     "release_date": "2019-05-30",
@@ -3107,6 +3168,7 @@
   {
     "title": "Patients",
     "original_title": "Patients",
+    "original_language": "fr",
     "watch_date": "2019-09-08",
     "rating": 7,
     "release_date": "2017-03-01",
@@ -3136,6 +3198,7 @@
   {
     "title": "Dark Phoenix",
     "original_title": "Dark Phoenix",
+    "original_language": "en",
     "watch_date": "2019-09-14",
     "rating": 5,
     "release_date": "2019-06-05",
@@ -3244,6 +3307,7 @@
   {
     "title": "The Shape of Water",
     "original_title": "The Shape of Water",
+    "original_language": "en",
     "watch_date": "2019-09-21",
     "rating": 7,
     "release_date": "2017-12-01",
@@ -3304,13 +3368,14 @@
   {
     "title": "Midsommar",
     "original_title": "Midsommar",
+    "original_language": "en",
     "watch_date": "2019-10-06",
     "rating": 8,
     "release_date": "2019-07-03",
     "director": "Ari Aster",
     "tmdb_id": 530385,
     "poster": "posters/530385.jpg",
-    "runtime": 148,
+    "runtime": 147,
     "cast": [
       "Florence Pugh",
       "Jack Reynor",
@@ -3360,9 +3425,10 @@
   {
     "title": "Joker",
     "original_title": "Joker",
+    "original_language": "en",
     "watch_date": "2019-10-12",
     "rating": 8,
-    "release_date": "2019-10-02",
+    "release_date": "2019-10-01",
     "director": "Todd Phillips",
     "tmdb_id": 475557,
     "poster": "posters/475557.jpg",
@@ -3447,7 +3513,8 @@
       "Ben Heyman",
       "Graham Maby",
       "Jolie Chan",
-      "Jesse Schratz"
+      "Jesse Schratz",
+      "Isabella Ferreira"
     ],
     "genres": [
       "Crime",
@@ -3458,6 +3525,7 @@
   {
     "title": "Maleficent",
     "original_title": "Maleficent",
+    "original_language": "en",
     "watch_date": "2019-10-13",
     "rating": 6,
     "release_date": "2014-05-28",
@@ -3503,7 +3571,6 @@
       "Liam McKenna",
       "Steven Cree",
       "Sandy Fox",
-      "Karen Anderson",
       "James Ayling",
       "Alfred Camp",
       "Raf Cross",
@@ -3553,6 +3620,7 @@
   {
     "title": "Gemini Man",
     "original_title": "Gemini Man",
+    "original_language": "en",
     "watch_date": "2019-10-19",
     "rating": 4,
     "release_date": "2019-10-02",
@@ -3622,6 +3690,7 @@
   {
     "title": "Fast & Furious Presents: Hobbs & Shaw",
     "original_title": "Fast & Furious Presents: Hobbs & Shaw",
+    "original_language": "en",
     "watch_date": "2019-10-26",
     "rating": 4,
     "release_date": "2019-08-01",
@@ -3709,7 +3778,7 @@
       "Daniel Eghan",
       "Viktorija Faith",
       "Francesca Fraser",
-      "Vickrem Gill",
+      "Vikrem Singh",
       "Michel Alexandre Gonzalez",
       "Mark Gooden",
       "Sonia Goswami",
@@ -3756,6 +3825,7 @@
   {
     "title": "In the Tall Grass",
     "original_title": "In the Tall Grass",
+    "original_language": "en",
     "watch_date": "2019-10-27",
     "rating": 4,
     "release_date": "2019-09-20",
@@ -3781,6 +3851,7 @@
   {
     "title": "Scary Stories to Tell in the Dark",
     "original_title": "Scary Stories to Tell in the Dark",
+    "original_language": "en",
     "watch_date": "2019-10-27",
     "rating": 5,
     "release_date": "2019-08-08",
@@ -3835,6 +3906,7 @@
   {
     "title": "The Dead Don't Die",
     "original_title": "The Dead Don't Die",
+    "original_language": "en",
     "watch_date": "2019-10-27",
     "rating": 5,
     "release_date": "2019-05-15",
@@ -3850,16 +3922,15 @@
       "Steve Buscemi",
       "Danny Glover",
       "Caleb Landry Jones",
+      "Selena Gomez",
+      "Austin Butler",
+      "Luka Sabbat",
       "Rosie Perez",
+      "Eszter Balint",
       "Iggy Pop",
       "Sara Driver",
       "RZA",
       "Carol Kane",
-      "Selena Gomez",
-      "Tom Waits",
-      "Austin Butler",
-      "Luka Sabbat",
-      "Eszter Balint",
       "Larry Fessenden",
       "Rosal Colon",
       "Sturgill Simpson",
@@ -3868,23 +3939,32 @@
       "Maya Delmont",
       "Taliyah Whitaker",
       "Jahi Di'Allo Winston",
-      "Sid O'Connell",
+      "Tom Waits",
       "Kevin McCormick",
+      "Sid O'Connell",
+      "Norman Aaronson",
       "Alyssa Maria App",
-      "Carl Arcilesli",
+      "Monica Ayres",
       "Lorenzo Beronilla",
       "Justin Clarke",
       "Mick Coleman",
-      "Joseph Davis",
-      "Tanya Garraghan",
+      "Vin Craig",
+      "Joseph Anthony Davis",
+      "Kimberly Michelle Doherty",
+      "Austin Ferris",
+      "Brad Groux",
       "Lexa Hayes",
       "David Hilfstein",
-      "Talia Khan",
+      "Ren Hsieh",
+      "Talha Khan",
+      "Michael Lanuto",
       "Anastasia Veronica Lee",
+      "Branden Marlowe",
       "Jonah Marshall",
       "Julia Morrison",
       "Deneane Niebergall",
       "Oliver Patnode",
+      "Paul Pesco",
       "Wayne Pyle",
       "Willoughby Pyle",
       "Thomas Racek",
@@ -3904,6 +3984,7 @@
   {
     "title": "The Art of Self-Defense",
     "original_title": "The Art of Self-Defense",
+    "original_language": "en",
     "watch_date": "2019-11-01",
     "rating": 7,
     "release_date": "2019-07-12",
@@ -3944,6 +4025,7 @@
   {
     "title": "Nicky Larson and the Cupid's Perfume",
     "original_title": "Nicky Larson et le parfum de Cupidon",
+    "original_language": "fr",
     "watch_date": "2019-11-23",
     "rating": 7,
     "release_date": "2019-02-06",
@@ -3979,7 +4061,9 @@
       "Gaëtan Piduch",
       "Stéphane Van Huffel",
       "Justine Le Pottier",
-      "Elisa Bachir Bey"
+      "Elisa Bachir Bey",
+      "Jarry",
+      "Jérôme Le Banner"
     ],
     "genres": [
       "Adventure",
@@ -3989,6 +4073,7 @@
   {
     "title": "Rambo: Last Blood",
     "original_title": "Rambo: Last Blood",
+    "original_language": "en",
     "watch_date": "2019-11-30",
     "rating": 3,
     "release_date": "2019-09-19",

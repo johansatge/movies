@@ -2,6 +2,7 @@
   {
     "title": "The Matrix Resurrections",
     "original_title": "The Matrix Resurrections",
+    "original_language": "en",
     "watch_date": "2022-01-08",
     "rating": 6,
     "release_date": "2021-12-16",
@@ -81,6 +82,7 @@
   {
     "title": "Palm Springs",
     "original_title": "Palm Springs",
+    "original_language": "en",
     "watch_date": "2022-01-16",
     "rating": 7,
     "release_date": "2020-07-10",
@@ -130,6 +132,7 @@
   {
     "title": "The Last Duel",
     "original_title": "The Last Duel",
+    "original_language": "en",
     "watch_date": "2022-01-23",
     "rating": 8,
     "release_date": "2021-10-13",
@@ -138,9 +141,9 @@
     "poster": "posters/617653.jpg",
     "runtime": 153,
     "cast": [
+      "Jodie Comer",
       "Matt Damon",
       "Adam Driver",
-      "Jodie Comer",
       "Harriet Walter",
       "Ben Affleck",
       "Alex Lawther",
@@ -177,7 +180,8 @@
       "Martin Vaughan Lewis",
       "Stephen Brennan",
       "Adam Goodwin",
-      "Sylvain Lablée"
+      "Sylvain Lablée",
+      "Chloé Lindau"
     ],
     "genres": [
       "Action",
@@ -188,6 +192,7 @@
   {
     "title": "Eternals",
     "original_title": "Eternals",
+    "original_language": "en",
     "watch_date": "2022-02-26",
     "rating": 3,
     "release_date": "2021-11-03",
@@ -236,12 +241,14 @@
     ],
     "genres": [
       "Action",
+      "Adventure",
       "Science Fiction"
     ]
   },
   {
     "title": "Riders of Justice",
     "original_title": "Retfærdighedens ryttere",
+    "original_language": "da",
     "watch_date": "2022-03-05",
     "rating": 8,
     "release_date": "2020-11-19",
@@ -271,7 +278,7 @@
       "Christina Ibsen Meyer",
       "Stine Lee Bruhn Schrøder",
       "Jesper Groth",
-      "Natalí Vallespir Sand",
+      "Natali Vallespir Sand",
       "Rigmor Ranthe",
       "Anders Nyborg",
       "Christian Hornhof",
@@ -283,7 +290,16 @@
       "Nadia Mhadhbi",
       "Kamal Krayti",
       "Veronica Verdugo",
-      "Christian Høgh Andersen"
+      "Christian Høgh Andersen",
+      "Mikkel Aarestrup",
+      "Alice E. Bier Zandén",
+      "Kenny Duerlund",
+      "Anne Fletting",
+      "Jakob Candy Kolborg",
+      "Nikolas Kouroumtzis",
+      "Pia Larsen",
+      "Ghita Lehrmann",
+      "Patrick Kweku Quansah Kværnø"
     ],
     "genres": [
       "Action",
@@ -294,6 +310,7 @@
   {
     "title": "Emma.",
     "original_title": "Emma.",
+    "original_language": "en",
     "watch_date": "2022-03-16",
     "rating": 7,
     "release_date": "2020-02-13",
@@ -361,6 +378,7 @@
   {
     "title": "Turning Red",
     "original_title": "Turning Red",
+    "original_language": "en",
     "watch_date": "2022-03-23",
     "rating": 8,
     "release_date": "2022-03-10",
@@ -372,8 +390,8 @@
       "Rosalie Chiang",
       "Sandra Oh",
       "Ava Morse",
-      "Hyein Park",
       "Maitreyi Ramakrishnan",
+      "Hyein Park",
       "Orion Lee",
       "Wai Ching Ho",
       "Lori Tan Chinn",
@@ -426,7 +444,6 @@
       "Maddix Robinson",
       "Zeno Robinson",
       "Vivienne Rutherford",
-      "Ethan Berger",
       "Violet Grace Schaffer",
       "Mariel Sheets",
       "Christian J. Simon",
@@ -447,6 +464,7 @@
   {
     "title": "15 Minutes of War",
     "original_title": "L'Intervention",
+    "original_language": "fr",
     "watch_date": "2022-03-25",
     "rating": 5,
     "release_date": "2019-01-30",
@@ -475,6 +493,7 @@
   {
     "title": "Coherence",
     "original_title": "Coherence",
+    "original_language": "en",
     "watch_date": "2022-03-25",
     "rating": 7,
     "release_date": "2013-09-19",
@@ -504,6 +523,7 @@
   {
     "title": "I Kill Giants",
     "original_title": "I Kill Giants",
+    "original_language": "en",
     "watch_date": "2022-03-26",
     "rating": 4,
     "release_date": "2018-01-21",
@@ -516,7 +536,7 @@
       "Imogen Poots",
       "Sydney Wade",
       "Rory Jackson",
-      "Zoe Saldana",
+      "Zoe Saldaña",
       "Art Parkinson",
       "Noel Clarke",
       "Jennifer Ehle",
@@ -534,6 +554,7 @@
   {
     "title": "The Adam Project",
     "original_title": "The Adam Project",
+    "original_language": "en",
     "watch_date": "2022-03-27",
     "rating": 5,
     "release_date": "2022-03-11",
@@ -546,7 +567,7 @@
       "Walker Scobell",
       "Mark Ruffalo",
       "Jennifer Garner",
-      "Zoe Saldana",
+      "Zoe Saldaña",
       "Catherine Keener",
       "Alex Mallari Jr.",
       "Braxton Bjerken",
@@ -568,6 +589,7 @@
   {
     "title": "Underwater",
     "original_title": "Underwater",
+    "original_language": "en",
     "watch_date": "2022-03-27",
     "rating": 5,
     "release_date": "2020-01-08",
@@ -596,6 +618,7 @@
   {
     "title": "OSS 117: From Africa with Love",
     "original_title": "OSS 117 : Alerte rouge en Afrique noire",
+    "original_language": "fr",
     "watch_date": "2022-04-14",
     "rating": 6,
     "release_date": "2021-08-04",
@@ -620,7 +643,13 @@
       "Frédéric Vallet",
       "Martial Courcier",
       "Marie-Gaëlle Cals",
-      "Emile Abossolo M'bo"
+      "Emile Abossolo M'bo",
+      "Ted Etienne",
+      "Balla Habib Dembélé",
+      "Christelle Cornil",
+      "Melodie Casta",
+      "Ibrahim Koma",
+      "Ivan Franek"
     ],
     "genres": [
       "Action",
@@ -631,6 +660,7 @@
   {
     "title": "The Ice Road",
     "original_title": "The Ice Road",
+    "original_language": "en",
     "watch_date": "2022-05-07",
     "rating": 5,
     "release_date": "2021-06-24",
@@ -660,14 +690,13 @@
     ],
     "genres": [
       "Action",
-      "Adventure",
-      "Drama",
       "Thriller"
     ]
   },
   {
     "title": "Spider-Man: No Way Home",
     "original_title": "Spider-Man: No Way Home",
+    "original_language": "en",
     "watch_date": "2022-05-08",
     "rating": 6,
     "release_date": "2021-12-15",
@@ -734,7 +763,8 @@
       "Clay Savage",
       "Tom Hardy",
       "Jake Gyllenhaal",
-      "Jay Karales"
+      "Jay Karales",
+      "John Barnes"
     ],
     "genres": [
       "Action",
@@ -745,6 +775,7 @@
   {
     "title": "Doctor Strange in the Multiverse of Madness",
     "original_title": "Doctor Strange in the Multiverse of Madness",
+    "original_language": "en",
     "watch_date": "2022-05-11",
     "rating": 6,
     "release_date": "2022-05-04",
@@ -819,6 +850,7 @@
   {
     "title": "The King's Man",
     "original_title": "The King's Man",
+    "original_language": "en",
     "watch_date": "2022-05-14",
     "rating": 7,
     "release_date": "2021-12-22",
@@ -893,7 +925,7 @@
       "Hal Hillman",
       "Tim Bruce",
       "Stefan Schiffer",
-      "Kristian Nekrasov",
+      "Kristian Wanzl Nekrasov",
       "Russell Balogh",
       "Ed Cooper Clarke",
       "Nigel Pilkington",
@@ -938,6 +970,7 @@
   {
     "title": "La Classe américaine",
     "original_title": "La Classe américaine",
+    "original_language": "fr",
     "watch_date": "2022-05-15",
     "rating": 7,
     "release_date": "1993-12-31",
@@ -1039,6 +1072,7 @@
   {
     "title": "Sexy Beast",
     "original_title": "Sexy Beast",
+    "original_language": "en",
     "watch_date": "2022-05-21",
     "rating": 7,
     "release_date": "2000-09-13",
@@ -1088,6 +1122,7 @@
   {
     "title": "Napoleon Dynamite",
     "original_title": "Napoleon Dynamite",
+    "original_language": "en",
     "watch_date": "2022-05-22",
     "rating": 7,
     "release_date": "2004-06-11",
@@ -1117,6 +1152,7 @@
   {
     "title": "No Time to Die",
     "original_title": "No Time to Die",
+    "original_language": "en",
     "watch_date": "2022-06-11",
     "rating": 6,
     "release_date": "2021-09-29",
@@ -1129,15 +1165,15 @@
       "Léa Seydoux",
       "Rami Malek",
       "Lashana Lynch",
+      "Ana de Armas",
       "Ralph Fiennes",
-      "Ben Whishaw",
-      "Naomie Harris",
-      "Rory Kinnear",
       "Jeffrey Wright",
       "Billy Magnussen",
+      "Ben Whishaw",
+      "Naomie Harris",
       "Christoph Waltz",
+      "Rory Kinnear",
       "David Dencik",
-      "Ana de Armas",
       "Dali Benssalah",
       "Lisa-Dorah Sonnet",
       "Coline Defaud",
@@ -1189,9 +1225,10 @@
   {
     "title": "The Outfit",
     "original_title": "The Outfit",
+    "original_language": "en",
     "watch_date": "2022-06-12",
     "rating": 7,
-    "release_date": "2022-02-25",
+    "release_date": "2022-03-03",
     "director": "Graham Moore",
     "tmdb_id": 799876,
     "poster": "posters/799876.jpg",
@@ -1226,6 +1263,7 @@
   {
     "title": "The Batman",
     "original_title": "The Batman",
+    "original_language": "en",
     "watch_date": "2022-06-18",
     "rating": 7,
     "release_date": "2022-03-01",
@@ -1325,6 +1363,7 @@
   {
     "title": "Sonatine",
     "original_title": "Sonatine",
+    "original_language": "ja",
     "watch_date": "2022-06-19",
     "rating": 6,
     "release_date": "1993-04-10",
@@ -1362,6 +1401,7 @@
   {
     "title": "My Cousin Vinny",
     "original_title": "My Cousin Vinny",
+    "original_language": "en",
     "watch_date": "2022-07-16",
     "rating": 7,
     "release_date": "1992-03-13",
@@ -1408,6 +1448,7 @@
   {
     "title": "The Tomorrow War",
     "original_title": "The Tomorrow War",
+    "original_language": "en",
     "watch_date": "2022-07-17",
     "rating": 3,
     "release_date": "2021-07-02",
@@ -1512,6 +1553,7 @@
   {
     "title": "Thor: Love and Thunder",
     "original_title": "Thor: Love and Thunder",
+    "original_language": "en",
     "watch_date": "2022-07-19",
     "rating": 7,
     "release_date": "2022-07-08",

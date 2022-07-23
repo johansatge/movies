@@ -5,6 +5,7 @@ const { log } = require('./helpers/log.js')
 
 ;(async () => {
   // const postersPath = path.join(__dirname, '../movies/posters')
+  const withPoster = process.argv.includes('--with-poster')
   const moviesPath = path.join(__dirname, '../movies')
   try {
     // await fsp.rm(postersPath, { recursive: true })
@@ -20,7 +21,12 @@ const { log } = require('./helpers/log.js')
     for (let movieIndex = 0; movieIndex < json.length; movieIndex += 1) {
       log(`Updating movie ${movieIndex} over ${json.length} (${files[fileIndex]})`)
       const oldData = json[movieIndex]
-      json[movieIndex] = await fetchFormattedMovieData(json[movieIndex].tmdb_id, oldData.rating, oldData.watch_date)
+      json[movieIndex] = await fetchFormattedMovieData(
+        json[movieIndex].tmdb_id,
+        oldData.rating,
+        oldData.watch_date,
+        withPoster
+      )
     }
     await fsp.writeFile(path.join(moviesPath, files[fileIndex]), JSON.stringify(json, null, 2))
   }

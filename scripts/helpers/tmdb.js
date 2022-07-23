@@ -16,13 +16,14 @@ m.fetchMovieSearch = async function (rawTerm) {
   return results.results
 }
 
-m.fetchFormattedMovieData = async function (movieId, rating, watchDate) {
+m.fetchFormattedMovieData = async function (movieId, rating, watchDate, withPoster = true) {
   const config = await getConfiguration()
   const details = await fetchApi(`/movie/${movieId}`)
   const credits = await fetchApi(`/movie/${movieId}/credits`)
   const movie = {
     title: details.title,
     original_title: details.original_title,
+    original_language: details.original_language,
     watch_date: watchDate && watchDate.length > 0 ? watchDate : null,
     rating,
     release_date: details.release_date,
@@ -33,9 +34,11 @@ m.fetchFormattedMovieData = async function (movieId, rating, watchDate) {
     cast: credits.cast.map((member) => member.name),
     genres: details.genres.map((genre) => genre.name).sort(),
   }
-  const posterSize = 'w342'
-  const posterUrl = `${config.images.secure_base_url}${posterSize}${details.poster_path}`
-  await fetchAndStorePoster(posterUrl, path.join(__dirname, '../../movies', movie.poster))
+  if (withPoster) {
+    const posterSize = 'w342'
+    const posterUrl = `${config.images.secure_base_url}${posterSize}${details.poster_path}`
+    await fetchAndStorePoster(posterUrl, path.join(__dirname, '../../movies', movie.poster))
+  }
   return movie
 }
 

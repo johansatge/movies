@@ -2,6 +2,7 @@
   {
     "title": "Rogue One: A Star Wars Story",
     "original_title": "Rogue One: A Star Wars Story",
+    "original_language": "en",
     "watch_date": "2017-01-01",
     "rating": 9,
     "release_date": "2016-12-14",
@@ -201,6 +202,7 @@
   {
     "title": "The Accountant",
     "original_title": "The Accountant",
+    "original_language": "en",
     "watch_date": "2017-01-12",
     "rating": 5,
     "release_date": "2016-10-13",
@@ -241,6 +243,7 @@
   {
     "title": "Nocturnal Animals",
     "original_title": "Nocturnal Animals",
+    "original_language": "en",
     "watch_date": "2017-01-22",
     "rating": 4,
     "release_date": "2016-11-04",
@@ -305,6 +308,7 @@
   {
     "title": "Passengers",
     "original_title": "Passengers",
+    "original_language": "en",
     "watch_date": "2017-01-22",
     "rating": 7,
     "release_date": "2016-12-21",
@@ -358,6 +362,7 @@
   {
     "title": "Jack Reacher: Never Go Back",
     "original_title": "Jack Reacher: Never Go Back",
+    "original_language": "en",
     "watch_date": "2017-02-11",
     "rating": 5,
     "release_date": "2016-10-19",
@@ -439,6 +444,7 @@
   {
     "title": "Last Call for Nowhere",
     "original_title": "Débarquement immédiat!",
+    "original_language": "fr",
     "watch_date": "2017-02-16",
     "rating": 3,
     "release_date": "2016-07-13",
@@ -489,6 +495,7 @@
   {
     "title": "Logan",
     "original_title": "Logan",
+    "original_language": "en",
     "watch_date": "2017-03-12",
     "rating": 8,
     "release_date": "2017-02-28",
@@ -547,6 +554,7 @@
       "Chester Rushing",
       "David Simpson",
       "Lauren Gros",
+      "John Raymond",
       "Vanessa Cloke",
       "Doris Morgado",
       "Katie Anne Mitchell",
@@ -587,9 +595,7 @@
       "Robert Vargas",
       "David Paris",
       "Gonzalo Robles",
-      "John Raymond",
-      "Tim Connolly",
-      "Juan Gaspard"
+      "Tim Connolly"
     ],
     "genres": [
       "Action",
@@ -600,9 +606,10 @@
   {
     "title": "Split",
     "original_title": "Split",
+    "original_language": "en",
     "watch_date": "2017-03-12",
     "rating": 8,
-    "release_date": "2017-01-19",
+    "release_date": "2016-11-15",
     "director": "M. Night Shyamalan",
     "tmdb_id": 381288,
     "poster": "posters/381288.jpg",
@@ -658,6 +665,7 @@
   {
     "title": "Miss Peregrine's Home for Peculiar Children",
     "original_title": "Miss Peregrine's Home for Peculiar Children",
+    "original_language": "en",
     "watch_date": "2017-03-18",
     "rating": 7,
     "release_date": "2016-09-27",
@@ -732,6 +740,7 @@
   {
     "title": "Knockaround Guys",
     "original_title": "Knockaround Guys",
+    "original_language": "en",
     "watch_date": "2017-03-21",
     "rating": 4,
     "release_date": "2001-09-07",
@@ -781,6 +790,7 @@
   {
     "title": "Doctor Strange",
     "original_title": "Doctor Strange",
+    "original_language": "en",
     "watch_date": "2017-03-25",
     "rating": 7,
     "release_date": "2016-10-25",
@@ -836,13 +846,13 @@
     "genres": [
       "Action",
       "Adventure",
-      "Fantasy",
-      "Science Fiction"
+      "Fantasy"
     ]
   },
   {
     "title": "Beauty and the Beast",
     "original_title": "Beauty and the Beast",
+    "original_language": "en",
     "watch_date": "2017-03-27",
     "rating": 8,
     "release_date": "2017-03-16",
@@ -996,6 +1006,7 @@
   {
     "title": "Ghost in the Shell",
     "original_title": "GHOST IN THE SHELL",
+    "original_language": "ja",
     "watch_date": "2017-04-08",
     "rating": 7,
     "release_date": "1995-11-18",
@@ -1037,6 +1048,7 @@
   {
     "title": "Your Name.",
     "original_title": "君の名は。",
+    "original_language": "ja",
     "watch_date": "2017-04-09",
     "rating": 8,
     "release_date": "2016-08-26",
@@ -1045,7 +1057,7 @@
     "poster": "posters/372058.jpg",
     "runtime": 106,
     "cast": [
-      "Ryûnosuke Kamiki",
+      "Ryunosuke Kamiki",
       "Mone Kamishiraishi",
       "Ryo Narita",
       "Aoi Yuki",
@@ -1097,6 +1109,7 @@
   {
     "title": "Scarface",
     "original_title": "Scarface",
+    "original_language": "en",
     "watch_date": "2017-04-15",
     "rating": 7,
     "release_date": "1983-12-09",
@@ -1180,13 +1193,13 @@
     "genres": [
       "Action",
       "Crime",
-      "Drama",
-      "Thriller"
+      "Drama"
     ]
   },
   {
     "title": "Office Christmas Party",
     "original_title": "Office Christmas Party",
+    "original_language": "en",
     "watch_date": "2017-04-17",
     "rating": 5,
     "release_date": "2016-11-25",
@@ -1253,6 +1266,7 @@
   {
     "title": "Arrival",
     "original_title": "Arrival",
+    "original_language": "en",
     "watch_date": "2017-04-29",
     "rating": 7,
     "release_date": "2016-11-10",
@@ -1343,6 +1357,7 @@
   {
     "title": "Why Him?",
     "original_title": "Why Him?",
+    "original_language": "en",
     "watch_date": "2017-04-30",
     "rating": 6,
     "release_date": "2016-12-22",
@@ -1415,6 +1430,7 @@
   {
     "title": "Pain & Gain",
     "original_title": "Pain & Gain",
+    "original_language": "en",
     "watch_date": "2017-05-05",
     "rating": 5,
     "release_date": "2013-04-18",
@@ -1436,7 +1452,7 @@
       "Keili Lefkovitz",
       "Vivi Pineda",
       "Christopher Jestin Langstaff",
-      "Gustavo Quiroz Jr.",
+      "Gustavo Escobar",
       "Corinne Ferrer",
       "Zack Moore",
       "Kory Getman",
@@ -1467,6 +1483,7 @@
   {
     "title": "Constantine",
     "original_title": "Constantine",
+    "original_language": "en",
     "watch_date": "2017-05-06",
     "rating": 5,
     "release_date": "2005-02-08",
@@ -1519,6 +1536,7 @@
   {
     "title": "Alien: Covenant",
     "original_title": "Alien: Covenant",
+    "original_language": "en",
     "watch_date": "2017-05-14",
     "rating": 7,
     "release_date": "2017-05-09",
@@ -1544,14 +1562,14 @@
       "Lorelei King",
       "Goran D. Kleut",
       "Andrew Crawford",
-      "Guy Pearce",
-      "James Franco",
-      "Noomi Rapace",
       "Javier Botet",
       "Benjamin Taylor",
       "Steve Doyle",
       "Juke Hardy",
-      "Billy Mansell"
+      "Billy Mansell",
+      "James Franco",
+      "Noomi Rapace",
+      "Guy Pearce"
     ],
     "genres": [
       "Horror",
@@ -1562,6 +1580,7 @@
   {
     "title": "Guardians of the Galaxy Vol. 2",
     "original_title": "Guardians of the Galaxy Vol. 2",
+    "original_language": "en",
     "watch_date": "2017-05-14",
     "rating": 8,
     "release_date": "2017-04-19",
@@ -1571,7 +1590,7 @@
     "runtime": 137,
     "cast": [
       "Chris Pratt",
-      "Zoe Saldana",
+      "Zoe Saldaña",
       "Dave Bautista",
       "Vin Diesel",
       "Bradley Cooper",
@@ -1619,7 +1638,6 @@
       "Ving Rhames",
       "Michelle Yeoh",
       "Mike Escamilla",
-      "Fred",
       "Miley Cyrus",
       "Jeff Goldblum",
       "Donny Carrington",
@@ -1642,6 +1660,7 @@
   {
     "title": "Brice 3",
     "original_title": "Brice 3",
+    "original_language": "fr",
     "watch_date": "2017-05-21",
     "rating": 4,
     "release_date": "2016-10-19",
@@ -1668,6 +1687,7 @@
   {
     "title": "King Arthur: Legend of the Sword",
     "original_title": "King Arthur: Legend of the Sword",
+    "original_language": "en",
     "watch_date": "2017-05-25",
     "rating": 8,
     "release_date": "2017-05-10",
@@ -1748,6 +1768,7 @@
   {
     "title": "The Fate of the Furious",
     "original_title": "The Fate of the Furious",
+    "original_language": "en",
     "watch_date": "2017-06-25",
     "rating": 7,
     "release_date": "2017-04-12",
@@ -1770,7 +1791,7 @@
       "Kristofer Hivju",
       "Scott Eastwood",
       "Corey Maher",
-      "Tego Calderón",
+      "Tego Calderon",
       "Don Omar",
       "Patrick St. Esprit",
       "Eden Estrella",
@@ -1830,7 +1851,7 @@
       "Ramona Schwalbach",
       "Jon Komp Shin",
       "Doug Stroup",
-      "Branislav R. Tatalovic",
+      "Branislav R. Tatalović",
       "Alan Tuskes",
       "Zachary Vazquez",
       "Gary Lee Vincent",
@@ -1851,6 +1872,7 @@
   {
     "title": "Max & Leon",
     "original_title": "La Folle Histoire de Max et Léon",
+    "original_language": "fr",
     "watch_date": "2017-07-05",
     "rating": 4,
     "release_date": "2016-11-01",
@@ -1889,7 +1911,11 @@
       "Stefan Cuvelier",
       "Thomas Vandenberghe",
       "Jérémie Graine",
-      "Renaud Rutten"
+      "Renaud Rutten",
+      "Pierre Ludig",
+      "Thomas Séraphine",
+      "Laure Falesse",
+      "Damien Gillard"
     ],
     "genres": [
       "Comedy",
@@ -1899,6 +1925,7 @@
   {
     "title": "Despicable Me 3",
     "original_title": "Despicable Me 3",
+    "original_language": "en",
     "watch_date": "2017-07-20",
     "rating": 6,
     "release_date": "2017-06-15",
@@ -1962,6 +1989,7 @@
   {
     "title": "Ghost in the Shell",
     "original_title": "Ghost in the Shell",
+    "original_language": "en",
     "watch_date": "2017-07-21",
     "rating": 6,
     "release_date": "2017-03-29",
@@ -2024,6 +2052,7 @@
   {
     "title": "Wonder Woman",
     "original_title": "Wonder Woman",
+    "original_language": "en",
     "watch_date": "2017-07-22",
     "rating": 4,
     "release_date": "2017-05-30",
@@ -2034,17 +2063,17 @@
     "cast": [
       "Gal Gadot",
       "Chris Pine",
-      "Robin Wright",
       "Connie Nielsen",
-      "David Thewlis",
+      "Robin Wright",
       "Danny Huston",
-      "Elena Anaya",
-      "Ewen Bremner",
-      "Lucy Davis",
-      "Lisa Loven Kongsli",
+      "David Thewlis",
       "Saïd Taghmaoui",
+      "Ewen Bremner",
       "Eugene Brave Rock",
+      "Lucy Davis",
+      "Elena Anaya",
       "Lilly Aspell",
+      "Lisa Loven Kongsli",
       "Ann Wolfe",
       "Ann Ogbomo",
       "Emily Carey",
@@ -2118,6 +2147,7 @@
   {
     "title": "La La Land",
     "original_title": "La La Land",
+    "original_language": "en",
     "watch_date": "2017-07-29",
     "rating": 6,
     "release_date": "2016-11-29",
@@ -2251,9 +2281,7 @@
       "Ali Arda Özdeniz",
       "Sasha Fine",
       "Eren Kayakıran",
-      "Corey Anderson",
-      "Ethan Berger",
-      "Joseph Harinsky"
+      "Corey Anderson"
     ],
     "genres": [
       "Comedy",
@@ -2265,6 +2293,7 @@
   {
     "title": "Dunkirk",
     "original_title": "Dunkirk",
+    "original_language": "en",
     "watch_date": "2017-08-13",
     "rating": 8,
     "release_date": "2017-07-19",
@@ -2332,6 +2361,7 @@
   {
     "title": "Baby Driver",
     "original_title": "Baby Driver",
+    "original_language": "en",
     "watch_date": "2017-09-24",
     "rating": 6,
     "release_date": "2017-06-28",
@@ -2415,6 +2445,7 @@
   {
     "title": "Killing Gunther",
     "original_title": "Killing Gunther",
+    "original_language": "en",
     "watch_date": "2017-09-24",
     "rating": 6,
     "release_date": "2017-09-22",
@@ -2470,9 +2501,10 @@
   {
     "title": "Kingsman: The Golden Circle",
     "original_title": "Kingsman: The Golden Circle",
+    "original_language": "en",
     "watch_date": "2017-10-14",
     "rating": 8,
-    "release_date": "2017-09-20",
+    "release_date": "2017-09-09",
     "director": "Matthew Vaughn",
     "tmdb_id": 343668,
     "poster": "posters/343668.jpg",
@@ -2544,6 +2576,7 @@
   {
     "title": "Spider-Man: Homecoming",
     "original_title": "Spider-Man: Homecoming",
+    "original_language": "en",
     "watch_date": "2017-10-22",
     "rating": 7,
     "release_date": "2017-07-05",
@@ -2642,6 +2675,7 @@
   {
     "title": "Atomic Blonde",
     "original_title": "Atomic Blonde",
+    "original_language": "en",
     "watch_date": "2017-11-18",
     "rating": 6,
     "release_date": "2017-07-26",
@@ -2653,10 +2687,10 @@
       "Charlize Theron",
       "James McAvoy",
       "John Goodman",
-      "Til Schweiger",
       "Eddie Marsan",
-      "Sofia Boutella",
       "Toby Jones",
+      "Til Schweiger",
+      "Sofia Boutella",
       "Roland Møller",
       "Jóhannes Haukur Jóhannesson",
       "James Faulkner",
@@ -2682,6 +2716,7 @@
   {
     "title": "Thor: Ragnarok",
     "original_title": "Thor: Ragnarok",
+    "original_language": "en",
     "watch_date": "2017-12-10",
     "rating": 7,
     "release_date": "2017-10-24",
@@ -2757,6 +2792,7 @@
   {
     "title": "The Jungle Book",
     "original_title": "The Jungle Book",
+    "original_language": "en",
     "watch_date": "2017-12-23",
     "rating": 7,
     "release_date": "2016-04-07",
@@ -2805,6 +2841,7 @@
   {
     "title": "Excalibur",
     "original_title": "Excalibur",
+    "original_language": "en",
     "watch_date": "2017-12-25",
     "rating": 4,
     "release_date": "1981-04-10",
@@ -2830,7 +2867,7 @@
       "Ciarán Hinds",
       "Niall O'Brien",
       "Charley Boorman",
-      "Bríd Brennan",
+      "Brid Brennan",
       "Michael Muldoon",
       "Liam O'Callaghan",
       "Garrett Keogh",
@@ -2845,6 +2882,7 @@
   {
     "title": "Star Wars: The Last Jedi",
     "original_title": "Star Wars: The Last Jedi",
+    "original_language": "en",
     "watch_date": "2017-12-17",
     "rating": 7,
     "release_date": "2017-12-13",
@@ -2975,9 +3013,10 @@
   {
     "title": "Baywatch",
     "original_title": "Baywatch",
+    "original_language": "en",
     "watch_date": "2017-12-31",
     "rating": 6,
-    "release_date": "2017-05-12",
+    "release_date": "2017-05-25",
     "director": "Seth Gordon",
     "tmdb_id": 339846,
     "poster": "posters/339846.jpg",
