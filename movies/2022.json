@@ -1899,5 +1899,55 @@
       "Fantasy",
       "Romance"
     ]
+  },
+  {
+    "title": "Nope",
+    "original_title": "Nope",
+    "original_language": "en",
+    "watch_date": "2022-09-11",
+    "rating": 6,
+    "release_date": "2022-07-20",
+    "director": "Jordan Peele",
+    "tmdb_id": 762504,
+    "poster": "posters/762504.jpg",
+    "runtime": 130,
+    "cast": [
+      "Daniel Kaluuya",
+      "Keke Palmer",
+      "Brandon Perea",
+      "Michael Wincott",
+      "Steven Yeun",
+      "Wrenn Schmidt",
+      "Barbie Ferreira",
+      "Terry Notary",
+      "Devon Graye",
+      "Donna Mills",
+      "Oz Perkins",
+      "Eddie Jemison",
+      "Keith David",
+      "Jacob Kim",
+      "Sophia Coto",
+      "Jennifer Lafleur",
+      "Andrew Patrick Ralston",
+      "Lincoln Lambert",
+      "Pierce Kang",
+      "Roman Gross",
+      "Ryan W. Garcia",
+      "Conor Kawalski",
+      "Alex Hyde-White",
+      "Evan Shafran",
+      "Mark Casimir Dyniewicz Jr.",
+      "Hetty Chang",
+      "Liza Treyger",
+      "Courtney Stephens",
+      "Caden J. Lovgren",
+      "Malcolm Jae O'Shea"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
