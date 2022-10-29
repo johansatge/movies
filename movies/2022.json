@@ -2116,5 +2116,43 @@
       "Comedy",
       "Thriller"
     ]
+  },
+  {
+    "title": "#Alive",
+    "original_title": "#살아있다",
+    "original_language": "ko",
+    "watch_date": "2022-10-22",
+    "rating": 5,
+    "release_date": "2020-06-24",
+    "director": "Cho Il",
+    "tmdb_id": 614696,
+    "poster": "posters/614696.jpg",
+    "runtime": 98,
+    "cast": [
+      "Yoo Ah-in",
+      "Park Shin-hye",
+      "Lee Hyun-wook",
+      "Jeon Bae-soo",
+      "Jin So-yeon",
+      "Oh Hye-won",
+      "Lee Chae-kyung",
+      "Jeon Woon-jong",
+      "Lee Kyu-ho",
+      "Son Kyoung-won",
+      "Kim Hak-sun",
+      "So Hee-jung",
+      "Joo Bo-bi",
+      "Jang Ji-gun",
+      "Yoo Yeon",
+      "Jang Eui-don",
+      "Kim Hyun-woo",
+      "Lee Seung-jin",
+      "Yang Mal-bok"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ]
   }
 ]
