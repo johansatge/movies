@@ -2154,5 +2154,49 @@
       "Horror",
       "Thriller"
     ]
+  },
+  {
+    "title": "Pride and Prejudice and Zombies",
+    "original_title": "Pride and Prejudice and Zombies",
+    "original_language": "en",
+    "watch_date": "2022-10-29",
+    "rating": 6,
+    "release_date": "2016-02-04",
+    "director": "Burr Steers",
+    "tmdb_id": 58431,
+    "poster": "posters/58431.jpg",
+    "runtime": 108,
+    "cast": [
+      "Lily James",
+      "Sam Riley",
+      "Jack Huston",
+      "Bella Heathcote",
+      "Douglas Booth",
+      "Matt Smith",
+      "Charles Dance",
+      "Lena Headey",
+      "Suki Waterhouse",
+      "Emma Greenwell",
+      "Aisling Loftus",
+      "Hermione Corfield",
+      "Sally Phillips",
+      "Dolly Wells",
+      "Ellie Bamber",
+      "Ryan Oliva",
+      "Millie Brady",
+      "Jess Radomska",
+      "Pooky Quesnel",
+      "Morfydd Clark",
+      "Janet Henfrey",
+      "Rebecca Scott",
+      "Rob Callender",
+      "Daniel Westwood"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Romance",
+      "Thriller"
+    ]
   }
 ]
