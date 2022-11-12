@@ -2198,5 +2198,40 @@
       "Romance",
       "Thriller"
     ]
+  },
+  {
+    "title": "Samaritan",
+    "original_title": "Samaritan",
+    "original_language": "en",
+    "watch_date": "2022-11-12",
+    "rating": 4,
+    "release_date": "2022-08-25",
+    "director": "Julius Avery",
+    "tmdb_id": 629176,
+    "poster": "posters/629176.jpg",
+    "runtime": 102,
+    "cast": [
+      "Javon Walton",
+      "Sylvester Stallone",
+      "Dascha Polanco",
+      "Moisés Arias",
+      "Pilou Asbæk",
+      "Sophia Tatum",
+      "Martin Starr",
+      "Henry G. Sanders",
+      "Jared Odrick",
+      "Abraham Clinkscales",
+      "Shameik Moore",
+      "Roger Payano",
+      "Frederick Williams",
+      "Dwayne Alistair Thomas",
+      "Michael Aaron Milligan",
+      "Kevin Mikal Curry"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Science Fiction"
+    ]
   }
 ]
