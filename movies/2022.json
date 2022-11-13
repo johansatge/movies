@@ -2292,5 +2292,57 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Witch",
+    "original_title": "The Witch",
+    "original_language": "en",
+    "watch_date": "2022-11-13",
+    "rating": 8,
+    "release_date": "2015-01-27",
+    "director": "Robert Eggers",
+    "tmdb_id": 310131,
+    "poster": "posters/310131.jpg",
+    "runtime": 92,
+    "cast": [
+      "Anya Taylor-Joy",
+      "Ralph Ineson",
+      "Kate Dickie",
+      "Harvey Scrimshaw",
+      "Ellie Grainger",
+      "Lucas Dawson",
+      "Bathsheba Garnett ",
+      "Sarah Stephens",
+      "Julian Richings",
+      "Daniel Malik",
+      "Axtun Henry Dube",
+      "Athan Conrad Dube",
+      "Vivien Moore",
+      "Karen Kaeja",
+      "Brandy Leary",
+      "R. Hope Terry",
+      "Carrie Eklund",
+      "Madlen Sopadzhiyan",
+      "Paul Kenworthy",
+      "Mark Millmna",
+      "Andy Volpe",
+      "Phillip Wynne",
+      "Annawon Weeden",
+      "Michael O'Hare",
+      "Chris Messier",
+      "Ron Young",
+      "Nora Messier",
+      "Bill Rudder",
+      "Grace Duffy",
+      "Sophie Bermudez",
+      "Corrine Manning",
+      "Heather Fisher"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Mystery"
+    ]
   }
 ]
