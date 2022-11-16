@@ -2525,5 +2525,58 @@
       "Drama",
       "Thriller"
     ]
+  },
+  {
+    "title": "T2 Trainspotting",
+    "original_title": "T2 Trainspotting",
+    "original_language": "en",
+    "watch_date": "2022-11-16",
+    "rating": 7,
+    "release_date": "2017-01-27",
+    "director": "Danny Boyle",
+    "tmdb_id": 180863,
+    "poster": "posters/180863.jpg",
+    "runtime": 117,
+    "cast": [
+      "Ewan McGregor",
+      "Jonny Lee Miller",
+      "Ewen Bremner",
+      "Robert Carlyle",
+      "Anjela Nedyalkova",
+      "Kelly Macdonald",
+      "Shirley Henderson",
+      "Irvine Welsh",
+      "James Cosmo",
+      "Eileen Nicholas",
+      "Karl Argue",
+      "Simon Weir",
+      "Pauline Turner",
+      "Scot Greenan",
+      "Gordon Kennedy",
+      "Steven Robertson",
+      "John Kazek",
+      "Bradley Welsh",
+      "Katie Leung",
+      "Tom Urie",
+      "Amy Manson",
+      "Christopher Douglas",
+      "James McElvar",
+      "Connor McIndoe",
+      "John Bell",
+      "Michael Shaw",
+      "Christopher Mullen",
+      "Elijah Wolf",
+      "Ben Skelton",
+      "Kyle Fitzpatrick",
+      "Tereza Duskova",
+      "Pauline Lynch",
+      "Svetla Yancheva",
+      "Kevin McKidd",
+      "Blair Flucker"
+    ],
+    "genres": [
+      "Crime",
+      "Drama"
+    ]
   }
 ]
