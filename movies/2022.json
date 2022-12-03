@@ -2676,5 +2676,41 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Run",
+    "original_title": "Run",
+    "original_language": "en",
+    "watch_date": "2022-12-03",
+    "rating": 6,
+    "release_date": "2020-11-20",
+    "director": "Aneesh Chaganty",
+    "tmdb_id": 546121,
+    "poster": "posters/546121.jpg",
+    "runtime": 90,
+    "cast": [
+      "Sarah Paulson",
+      "Kiera Allen",
+      "Pat Healy",
+      "Sara Sohn",
+      "Erik Athavale",
+      "B. J. Harrison",
+      "Sharon Bajer",
+      "Onalee Ames",
+      "Joanne Rodriguez",
+      "Ernie Foort",
+      "Bradley Sawatzky",
+      "Cory Wojcik",
+      "Tony Revolori",
+      "Carter Heintz",
+      "Steve Pacaud",
+      "Derek James Trapp",
+      "Emma Jonnz"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ]
   }
 ]
