@@ -2877,5 +2877,60 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "Glass Onion: A Knives Out Mystery",
+    "original_title": "Glass Onion: A Knives Out Mystery",
+    "original_language": "en",
+    "watch_date": "2022-12-31",
+    "rating": 8,
+    "release_date": "2022-11-23",
+    "director": "Rian Johnson",
+    "tmdb_id": 661374,
+    "poster": "posters/661374.jpg",
+    "runtime": 140,
+    "cast": [
+      "Daniel Craig",
+      "Edward Norton",
+      "Janelle Monáe",
+      "Kathryn Hahn",
+      "Leslie Odom Jr.",
+      "Kate Hudson",
+      "Dave Bautista",
+      "Jessica Henwick",
+      "Madelyn Cline",
+      "Noah Segan",
+      "Jackie Hoffman",
+      "Dallas Roberts",
+      "Ethan Hawke",
+      "Hugh Grant",
+      "Stephen Sondheim",
+      "Natasha Lyonne",
+      "Kareem Abdul-Jabbar",
+      "Serena Williams",
+      "Yo-Yo Ma",
+      "Joseph Gordon-Levitt",
+      "Adele Franck",
+      "Jacek Czajka",
+      "Dan Chariton",
+      "Eddie Gorodetsky",
+      "Coco Shinomiya",
+      "Dilcia Barrera",
+      "Mark Newman",
+      "Adam Davenport",
+      "Lauren Ivy",
+      "Momo Pićurić",
+      "N.J. Gentry",
+      "Ali Goksoy",
+      "James Payton",
+      "T. Florian Karnowski",
+      "Angela Lansbury",
+      "Jake Tapper"
+    ],
+    "genres": [
+      "Comedy",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
