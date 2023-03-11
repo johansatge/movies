@@ -32,5 +32,30 @@
       "Adventure",
       "Crime"
     ]
+  },
+  {
+    "title": "The Whale",
+    "original_title": "The Whale",
+    "original_language": "en",
+    "watch_date": "2023-03-12",
+    "rating": 7,
+    "release_date": "2022-12-09",
+    "director": "Darren Aronofsky",
+    "tmdb_id": 785084,
+    "poster": "posters/785084.jpg",
+    "runtime": 117,
+    "cast": [
+      "Brendan Fraser",
+      "Sadie Sink",
+      "Hong Chau",
+      "Ty Simpkins",
+      "Samantha Morton",
+      "Sathya Sridharan",
+      "Jacey Sink",
+      "Wilhelm Schalaudek"
+    ],
+    "genres": [
+      "Drama"
+    ]
   }
 ]
