@@ -101,5 +101,57 @@
     "genres": [
       "Drama"
     ]
+  },
+  {
+    "title": "John Wick: Chapter 4",
+    "original_title": "John Wick: Chapter 4",
+    "original_language": "en",
+    "watch_date": "2023-05-29",
+    "rating": 5,
+    "release_date": "2023-03-22",
+    "director": "Chad Stahelski",
+    "tmdb_id": 603692,
+    "poster": "posters/603692.jpg",
+    "runtime": 170,
+    "cast": [
+      "Keanu Reeves",
+      "Donnie Yen",
+      "Bill Skarsgård",
+      "Ian McShane",
+      "Laurence Fishburne",
+      "Lance Reddick",
+      "Clancy Brown",
+      "Hiroyuki Sanada",
+      "Rina Sawayama",
+      "Scott Adkins",
+      "Aimée Kwan",
+      "Marko Zaror",
+      "Natalia Tena",
+      "George Georgiou",
+      "Daiki Suzuki",
+      "Yoshinori Tashiro",
+      "Hiroki Sumi",
+      "Julia  Asuka Riedl",
+      "Milena Rendón",
+      "Ivy Quainoo",
+      "Irina Trifanov",
+      "Iryna Fedorova",
+      "Raicho Vasilev",
+      "Andrej Kaminsky",
+      "Sven Marquardt",
+      "Shamier Anderson",
+      "Marie Pierra Kakoma",
+      "Gina Aponte",
+      "Vhelma Richardson",
+      "Christoph Hofmann",
+      "Selman Iyi",
+      "Jackey Mishra",
+      "Mako San"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
