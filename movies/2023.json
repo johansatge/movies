@@ -210,5 +210,55 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "Fantastic Mr. Fox",
+    "original_title": "Fantastic Mr. Fox",
+    "original_language": "en",
+    "watch_date": "2023-06-03",
+    "rating": 6,
+    "release_date": "2009-10-23",
+    "director": "Wes Anderson",
+    "tmdb_id": 10315,
+    "poster": "posters/10315.jpg",
+    "runtime": 87,
+    "cast": [
+      "George Clooney",
+      "Meryl Streep",
+      "Jason Schwartzman",
+      "Bill Murray",
+      "Willem Dafoe",
+      "Owen Wilson",
+      "Wallace Wolodarsky",
+      "Eric Chase Anderson",
+      "Michael Gambon",
+      "Jarvis Cocker",
+      "Wes Anderson",
+      "Robin Hurlstone",
+      "Hugo Guinness",
+      "Helen McCrory",
+      "Juman Malouf",
+      "Karen Duffy",
+      "Roman Coppola",
+      "Jeremy Dawson",
+      "Garth Jennings",
+      "Brian Cox",
+      "Tristan Oliver",
+      "James Hamilton",
+      "Steven M. Rales",
+      "Rob Hersov",
+      "Jennifer Furches",
+      "Allison Abbate",
+      "Molly Cooper",
+      "Adrien Brody",
+      "Mario Batali",
+      "Martin Ballard"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
+    ]
   }
 ]
