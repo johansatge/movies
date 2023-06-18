@@ -384,5 +384,48 @@
       "Horror",
       "Thriller"
     ]
+  },
+  {
+    "title": "Knock at the Cabin",
+    "original_title": "Knock at the Cabin",
+    "original_language": "en",
+    "watch_date": "2023-06-18",
+    "rating": 6,
+    "release_date": "2023-02-01",
+    "director": "M. Night Shyamalan",
+    "tmdb_id": 631842,
+    "poster": "posters/631842.jpg",
+    "runtime": 100,
+    "cast": [
+      "Dave Bautista",
+      "Jonathan Groff",
+      "Ben Aldridge",
+      "Kristen Cui",
+      "Nikki Amuka-Bird",
+      "Rupert Grint",
+      "Abby Quinn",
+      "McKenna Kerrigan",
+      "Ian Merrill Peakes",
+      "Saria Chen",
+      "Clare Louise Frost",
+      "M. Night Shyamalan",
+      "Odera Adimorah",
+      "Rose Luardo",
+      "Kittson O'Neill",
+      "Denise Nakano",
+      "Satomi Hofmann",
+      "Lee Avant",
+      "Kelvin Leung",
+      "Billy Vargus",
+      "Kat Murphy",
+      "Lya Yanne",
+      "Hanna Gaffney",
+      "Monica Fleurette"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ]
   }
 ]
