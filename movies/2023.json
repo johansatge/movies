@@ -331,5 +331,58 @@
       "Drama",
       "Music"
     ]
+  },
+  {
+    "title": "The Menu",
+    "original_title": "The Menu",
+    "original_language": "en",
+    "watch_date": "2023-06-17",
+    "rating": 6,
+    "release_date": "2022-11-17",
+    "director": "Mark Mylod",
+    "tmdb_id": 593643,
+    "poster": "posters/593643.jpg",
+    "runtime": 107,
+    "cast": [
+      "Ralph Fiennes",
+      "Anya Taylor-Joy",
+      "Nicholas Hoult",
+      "Hong Chau",
+      "Janet McTeer",
+      "Reed Birney",
+      "Judith Light",
+      "John Leguizamo",
+      "Paul Adelstein",
+      "Aimee Carrero",
+      "Rebecca Koon",
+      "Rob Yang",
+      "Arturo Castro",
+      "Mark St. Cyr",
+      "Peter Grosz",
+      "Christina Brucato",
+      "Adam Aalderks",
+      "Jon Paul Allyn",
+      "Mel Fair",
+      "Cristian Gonzalez",
+      "Matthew Cornwell",
+      "John Wilkins III",
+      "John Cola",
+      "Michael A. Dean",
+      "Marcus Aveons Duncan",
+      "Alexander Goldstein",
+      "Grant Henley",
+      "Brandon Herron",
+      "Elbert Kim",
+      "Melisa Lopez",
+      "A. Jae Michele",
+      "Jay Shadix",
+      "Rachel Trautmann",
+      "Victor Zheng"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Thriller"
+    ]
   }
 ]
