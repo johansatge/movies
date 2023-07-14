@@ -38,7 +38,6 @@ const buildState = {
 
 const srcDir = path.join(__dirname, '../frontend')
 const outputDir = path.join(__dirname, '../.dist')
-const startTime = new Date().getTime()
 const htmlMinifyOptions = {
   caseSensitive: true,
   collapseWhitespace: true,
@@ -65,6 +64,7 @@ if (process.argv.includes('--watch')) {
 
 async function build() {
   try {
+    const startTime = Date.now()
     await cleanDist()
     await writeLogos()
     await writeFavicon()
@@ -79,7 +79,7 @@ async function build() {
     await renderMoviesHtml()
     await renderStatsHtml()
     await buildServiceWorker()
-    await outputBuildDuration()
+    log(`Built in ${(Date.now() - startTime) / 1000}s`)
   } catch (error) {
     log(error.message)
     log(error.stack)
@@ -349,8 +349,4 @@ function getServiceWorkerCacheTypes() {
       ],
     },
   ]
-}
-
-function outputBuildDuration() {
-  log(`Built in ${(new Date().getTime() - startTime) / 1000}s`)
 }

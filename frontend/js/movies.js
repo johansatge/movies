@@ -54,8 +54,10 @@ function onToggleSearchInput() {
 }
 
 function onResizeWindow() {
+  const prevScrollPercent = (document.documentElement.scrollTop / nodeMovies.offsetHeight) * 100
   currentMovieSize = getCurrentMovieSize()
   setMoviesGrid()
+  window.scroll({ top: (nodeMovies.offsetHeight / 100) * prevScrollPercent })
 }
 
 function onScrollWindow() {
@@ -133,7 +135,7 @@ function setMoviesGrid() {
 }
 
 function showMoviesInViewport() {
-  const minY = (document.documentElement.scrollTop || document.body.scrollTop) + nodeTopBar.clientHeight
+  const minY = document.documentElement.scrollTop + nodeTopBar.clientHeight
   const maxY = minY + window.innerHeight - nodeTopBar.clientHeight
   nodeMovies.innerHTML = '' // @todo remove only the irrelevant children
   Object.keys(currentLinesOfMovies).forEach((lineY) => {
