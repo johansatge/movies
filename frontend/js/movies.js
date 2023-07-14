@@ -66,9 +66,9 @@ function onScrollWindow() {
 
 function getCurrentMovieSize() {
   const targetWidth = 160
-  const windowWidth = window.innerWidth - 1
-  const perLine = parseInt(windowWidth / targetWidth)
-  const thumbWidth = windowWidth / perLine
+  const availableWidth = document.documentElement.clientWidth - 1
+  const perLine = parseInt(availableWidth / targetWidth)
+  const thumbWidth = availableWidth / perLine
   const thumbHeight = thumbWidth * 1.5
   return { perLine, thumbWidth, thumbHeight }
 }
