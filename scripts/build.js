@@ -7,7 +7,6 @@ const path = require('path')
 const { extractStats, getReadableRuntime } = require('./helpers/stats.js')
 const { log } = require('./helpers/log.js')
 const { checksumString, copyFileWithHash } = require('./helpers/checksum.js')
-const httpdir = require('/usr/local/lib/node_modules/httpdir')
 const languages = require('./helpers/languages.json')
 
 // State is populated in each build state, and forwarded to EJS
@@ -54,6 +53,7 @@ const htmlMinifyOptions = {
 
 build()
 if (process.argv.includes('--watch')) {
+  const httpdir = require('/usr/local/lib/node_modules/httpdir')
   const server = httpdir.createServer({ basePath: '.dist', httpPort: 5001 })
   server.onStart(({ urls }) => {
     console.log(urls.join('\n'))
