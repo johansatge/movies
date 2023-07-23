@@ -635,5 +635,49 @@
       "Thriller",
       "War"
     ]
+  },
+  {
+    "title": "Extraction 2",
+    "original_title": "Extraction 2",
+    "original_language": "en",
+    "watch_date": "2023-07-22",
+    "rating": 5,
+    "release_date": "2023-06-09",
+    "director": "Sam Hargrave",
+    "tmdb_id": 697843,
+    "poster": "posters/697843.jpg",
+    "runtime": 123,
+    "cast": [
+      "Chris Hemsworth",
+      "Golshifteh Farahani",
+      "Adam Bessa",
+      "Tornike Gogrichiani",
+      "Tornike Bziava",
+      "Tinatin Dalakishvili",
+      "Andro Japaridze",
+      "Justin Howell",
+      "Idris Elba",
+      "Olga Kurylenko",
+      "Sinéad Phelps",
+      "Patrick Newall",
+      "Daniel Bernhardt",
+      "Levan Saginashvili",
+      "George Lasha",
+      "Sam Hargrave",
+      "Miriam Kovziashvili",
+      "Marta Kovziashvili",
+      "Demetre Kavelashvili",
+      "Giga Shavadze",
+      "Dato Bakhtadze",
+      "Davit Chogovadze",
+      "Irakli Kvirikadze",
+      "Paul Maynard",
+      "Héctor Andreu",
+      "Tite Komakhidze"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
   }
 ]
