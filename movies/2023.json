@@ -866,5 +866,40 @@
       "Comedy",
       "Fantasy"
     ]
+  },
+  {
+    "title": "The Banshees of Inisherin",
+    "original_title": "The Banshees of Inisherin",
+    "original_language": "en",
+    "watch_date": "2023-07-29",
+    "rating": 7,
+    "release_date": "2022-10-20",
+    "director": "Martin McDonagh",
+    "tmdb_id": 674324,
+    "poster": "posters/674324.jpg",
+    "runtime": 114,
+    "cast": [
+      "Colin Farrell",
+      "Brendan Gleeson",
+      "Kerry Condon",
+      "Barry Keoghan",
+      "Gary Lydon",
+      "Pat Shortt",
+      "Jon Kenny",
+      "Sheila Flitton",
+      "David Pearse",
+      "Bríd Ní Neachtain",
+      "Aaron Monaghan",
+      "Lasairfhíona Ní Chonaola",
+      "James Carty",
+      "Conor Connolly",
+      "Ryan Owens",
+      "John Carty",
+      "Oliver Farrelly"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
   }
 ]
