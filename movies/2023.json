@@ -1060,5 +1060,51 @@
       "Adventure",
       "Fantasy"
     ]
+  },
+  {
+    "title": "Signs",
+    "original_title": "Signs",
+    "original_language": "en",
+    "watch_date": "2023-08-15",
+    "rating": 6,
+    "release_date": "2002-08-02",
+    "director": "M. Night Shyamalan",
+    "tmdb_id": 2675,
+    "poster": "posters/2675.jpg",
+    "runtime": 106,
+    "cast": [
+      "Mel Gibson",
+      "Joaquin Phoenix",
+      "Rory Culkin",
+      "Abigail Breslin",
+      "Cherry Jones",
+      "M. Night Shyamalan",
+      "Patricia Kalember",
+      "Ted Sutton",
+      "Merritt Wever",
+      "Lanny Flaherty",
+      "Marion McCorry",
+      "Michael Showalter",
+      "Kevin Pires",
+      "Clifford David",
+      "Rhonda Overby",
+      "Greg Wood",
+      "Paul L. Nolan",
+      "Ukee Washington",
+      "Babita Hariani",
+      "Adam Way",
+      "Angela Eckert",
+      "Jose L. Rodriguez",
+      "Paul Wilson",
+      "Thomas Griffin",
+      "Derek Mears",
+      "Chuck Pressler"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
