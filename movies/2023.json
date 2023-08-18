@@ -1106,5 +1106,50 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Three Musketeers: D'Artagnan",
+    "original_title": "Les Trois Mousquetaires : D'Artagnan",
+    "original_language": "fr",
+    "watch_date": "2023-08-18",
+    "rating": 7,
+    "release_date": "2023-04-05",
+    "director": "Martin Bourboulon",
+    "tmdb_id": 796185,
+    "poster": "posters/796185.jpg",
+    "runtime": 121,
+    "cast": [
+      "François Civil",
+      "Vincent Cassel",
+      "Romain Duris",
+      "Pio Marmaï",
+      "Eva Green",
+      "Louis Garrel",
+      "Vicky Krieps",
+      "Lyna Khoudri",
+      "Jacob Fortune-Lloyd",
+      "Eric Ruf",
+      "Marc Barbé",
+      "Patrick Mille",
+      "Julien Frison",
+      "Ralph Amoussou",
+      "Rachel Kwok",
+      "Alexis Michalik",
+      "Ivan Franěk",
+      "Thibault Vinçon",
+      "Nicolas Vaude",
+      "Dominique Valadié",
+      "Gabriel Almaer",
+      "Christophe Dimitri Réveille",
+      "Pascal Fonta",
+      "Charlotte Ranson",
+      "Stéphane Margot"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History"
+    ]
   }
 ]
