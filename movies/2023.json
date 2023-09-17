@@ -1307,5 +1307,43 @@
       "Fantasy",
       "Horror"
     ]
+  },
+  {
+    "title": "The Boogeyman",
+    "original_title": "The Boogeyman",
+    "original_language": "en",
+    "watch_date": "2023-09-17",
+    "rating": 5,
+    "release_date": "2023-05-31",
+    "director": "Rob Savage",
+    "tmdb_id": 532408,
+    "poster": "posters/532408.jpg",
+    "runtime": 99,
+    "cast": [
+      "Sophie Thatcher",
+      "Vivien Lyra Blair",
+      "Chris Messina",
+      "David Dastmalchian",
+      "Marin Ireland",
+      "Madison Hu",
+      "Maddie Nichols",
+      "Mabel Tyler",
+      "Leeann Ross",
+      "Rio Sarah Machado",
+      "Shauna Rappold",
+      "LisaGay Hamilton",
+      "Cristala Carter",
+      "Shayla Bagir",
+      "Han Soto",
+      "Seylan Baxter",
+      "Aadyn Encalarde",
+      "Ellie Bogert",
+      "Maisie Bogert",
+      "Noah Brand"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
+    ]
   }
 ]
