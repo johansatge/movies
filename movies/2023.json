@@ -1464,5 +1464,54 @@
       "Adventure",
       "Thriller"
     ]
+  },
+  {
+    "title": "Meg 2: The Trench",
+    "original_title": "Meg 2: The Trench",
+    "original_language": "en",
+    "watch_date": "2023-11-26",
+    "rating": 3,
+    "release_date": "2023-08-02",
+    "director": "Ben Wheatley",
+    "tmdb_id": 615656,
+    "poster": "posters/615656.jpg",
+    "runtime": 116,
+    "cast": [
+      "Jason Statham",
+      "Wu Jing",
+      "Shuya Sophia Cai",
+      "Page Kennedy",
+      "Sergio Peris-Mencheta",
+      "Sienna Guillory",
+      "Cliff Curtis",
+      "Skyler Samuels",
+      "Melissanthi Mahut",
+      "Whoopie van Raam",
+      "Kiran Sonia Sawar",
+      "Felix Mayr",
+      "Guo Tao",
+      "Robin Hill",
+      "Dai Lele",
+      "Sui Fong Ivy Tsui",
+      "Stewart Alexander",
+      "Able Wanamakok",
+      "Xiong Jinyi",
+      "Cai Jingjing",
+      "Li Xin",
+      "Kenneth Won",
+      "Longxi",
+      "Bai Narisu",
+      "Matthew Stirling",
+      "Richard Glover",
+      "Billy Clements",
+      "Jonny James",
+      "Enzo di Bonaventura",
+      "Sara Dee"
+    ],
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction"
+    ]
   }
 ]
