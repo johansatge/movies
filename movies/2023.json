@@ -1655,5 +1655,44 @@
       "Adventure",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Leave the World Behind",
+    "original_title": "Leave the World Behind",
+    "original_language": "en",
+    "watch_date": "2023-12-30",
+    "rating": 5,
+    "release_date": "2023-11-22",
+    "director": "Sam Esmail",
+    "tmdb_id": 726209,
+    "poster": "posters/726209.jpg",
+    "runtime": 141,
+    "cast": [
+      "Ethan Hawke",
+      "Julia Roberts",
+      "Mahershala Ali",
+      "Myha’la Herrold",
+      "Farrah Mackenzie",
+      "Charlie Evans",
+      "Kevin Bacon",
+      "Alexis Rae Forlenza",
+      "Vanessa Aspillaga",
+      "Josh Drennen",
+      "Erica Cho",
+      "Orli Gottesman",
+      "Pavel Frolov",
+      "Jesse King",
+      "Kevin Kenny",
+      "Stephanie Groves",
+      "Qiu Tonglan",
+      "Sam Esmail",
+      "Heather Lee"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
