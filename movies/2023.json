@@ -1694,5 +1694,44 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "Into the Woods",
+    "original_title": "Into the Woods",
+    "original_language": "en",
+    "watch_date": "2023-12-31",
+    "rating": 4,
+    "release_date": "2014-12-24",
+    "director": "Rob Marshall",
+    "tmdb_id": 224141,
+    "poster": "posters/224141.jpg",
+    "runtime": 125,
+    "cast": [
+      "Meryl Streep",
+      "Emily Blunt",
+      "Anna Kendrick",
+      "Chris Pine",
+      "Daniel Huttlestone",
+      "Tracey Ullman",
+      "James Corden",
+      "Christine Baranski",
+      "Lilla Crawford",
+      "Mackenzie Mauzy",
+      "Billy Magnussen",
+      "Richard Glover",
+      "Frances de la Tour",
+      "Tammy Blanchard",
+      "Lucy Punch",
+      "Simon Russell Beale",
+      "Joanna Riding",
+      "Annette Crosbie",
+      "Johnny Depp",
+      "Andy Hayes",
+      "Scott Plumridge"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ]
   }
 ]
