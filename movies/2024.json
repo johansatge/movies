@@ -92,5 +92,42 @@
       "Action",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Three Musketeers: Milady",
+    "original_title": "Les trois mousquetaires : Milady",
+    "original_language": "fr",
+    "watch_date": "2024-01-12",
+    "rating": 7,
+    "release_date": "2023-12-13",
+    "director": "Martin Bourboulon",
+    "tmdb_id": 845111,
+    "poster": "posters/845111.jpg",
+    "runtime": 114,
+    "cast": [
+      "François Civil",
+      "Vincent Cassel",
+      "Romain Duris",
+      "Pio Marmaï",
+      "Eva Green",
+      "Lyna Khoudri",
+      "Louis Garrel",
+      "Vicky Krieps",
+      "Jacob Fortune-Lloyd",
+      "Eric Ruf",
+      "Marc Barbé",
+      "Patrick Mille",
+      "Julien Frison",
+      "Ralph Amoussou",
+      "Alexis Michalik",
+      "Camille Rutherford",
+      "Dominique Valadié",
+      "Thibault Vinçon"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ]
   }
 ]
