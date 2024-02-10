@@ -193,5 +193,55 @@
       "Drama",
       "Thriller"
     ]
+  },
+  {
+    "title": "Uncharted",
+    "original_title": "Uncharted",
+    "original_language": "en",
+    "watch_date": "2024-02-09",
+    "rating": 5,
+    "release_date": "2022-02-10",
+    "director": "Ruben Fleischer",
+    "tmdb_id": 335787,
+    "poster": "posters/335787.jpg",
+    "runtime": 116,
+    "cast": [
+      "Tom Holland",
+      "Mark Wahlberg",
+      "Sophia Ali",
+      "Tati Gabrielle",
+      "Antonio Banderas",
+      "Steven Waddington",
+      "Rudy Pankow",
+      "Tiernan Jones",
+      "Pingi Moli",
+      "Jesús Evita",
+      "Georgia Goodman",
+      "Diarmaid Murtagh",
+      "Joseph Balderrama",
+      "Serena Posadino",
+      "Alana Boden",
+      "Jonathan Failla",
+      "Anthony Thomas",
+      "Peter Seaton-Clark",
+      "Robert Maaser",
+      "Eskindir Tesfay",
+      "Manuel de Blas",
+      "Carme Capdet",
+      "Julia Schunevitsch",
+      "Alois Knapps",
+      "Patricia Meeden",
+      "Nolan North",
+      "Matt Barkley",
+      "Jimmy Hart",
+      "Brett Praed",
+      "Carlo Kitzlinger",
+      "Pilou Asbæk",
+      "Rubén Doblas Gundersen"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
+    ]
   }
 ]
