@@ -68,6 +68,7 @@ async function build() {
     await cleanDist()
     await writeLogos()
     await writeFavicon()
+    await writeHeaders()
     await writeFonts()
     await writeManifest()
     await writeMovies()
@@ -131,6 +132,11 @@ async function writeFavicon() {
   log('Writing favicon')
   const filename = await copyFileWithHash(path.join(__dirname, '../frontend/favicon.png'), outputDir)
   buildState.appAssets.favicon = `/${filename}`
+}
+
+async function writeHeaders() {
+  log('Writing headers')
+  await fsp.copyFile(path.join(__dirname, '../_headers'), path.join(outputDir, '_headers'))
 }
 
 async function writeFonts() {

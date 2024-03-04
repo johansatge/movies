@@ -1,0 +1,8 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://gc.zgo.at
+  Referrer-Policy: same-origin
+/serviceworker.js
+  Cache-Control: no-cache, no-store, must-revalidate, max-age=0
