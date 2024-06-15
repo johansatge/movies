@@ -754,5 +754,35 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "Old Henry",
+    "original_title": "Old Henry",
+    "original_language": "en",
+    "watch_date": "2024-06-15",
+    "rating": 6,
+    "release_date": "2021-10-01",
+    "director": "Potsy Ponciroli",
+    "tmdb_id": 785663,
+    "poster": "posters/785663.jpg",
+    "runtime": 99,
+    "cast": [
+      "Tim Blake Nelson",
+      "Scott Haze",
+      "Gavin Lewis",
+      "Stephen Dorff",
+      "Trace Adkins",
+      "Richard Speight Jr.",
+      "Max Arciniega",
+      "Brad Carter",
+      "Kent Shelton"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Mystery",
+      "Thriller",
+      "Western"
+    ]
   }
 ]
