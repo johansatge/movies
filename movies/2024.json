@@ -784,5 +784,45 @@
       "Thriller",
       "Western"
     ]
+  },
+  {
+    "title": "The Ministry of Ungentlemanly Warfare",
+    "original_title": "The Ministry of Ungentlemanly Warfare",
+    "original_language": "en",
+    "watch_date": "2024-06-22",
+    "rating": 7,
+    "release_date": "2024-04-18",
+    "director": "Guy Ritchie",
+    "tmdb_id": 799583,
+    "poster": "posters/799583.jpg",
+    "runtime": 120,
+    "cast": [
+      "Henry Cavill",
+      "Eiza González",
+      "Alan Ritchson",
+      "Henry Golding",
+      "Cary Elwes",
+      "Alex Pettyfer",
+      "Hero Fiennes Tiffin",
+      "Babs Olusanmokun",
+      "Henry Zaga",
+      "Til Schweiger",
+      "Freddie Fox",
+      "Rory Kinnear",
+      "Danny Sapani",
+      "James Wilby",
+      "Matthew Hawksley",
+      "Simon Paisley Day",
+      "Mark Oosterveen",
+      "Roger Snipes",
+      "Ethel von Brixham",
+      "Carlos Bardem",
+      "Jonathan Keeble"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "War"
+    ]
   }
 ]
