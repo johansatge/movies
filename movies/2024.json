@@ -961,5 +961,42 @@
       "Comedy",
       "Romance"
     ]
+  },
+  {
+    "title": "The Count of Monte-Cristo",
+    "original_title": "Le Comte de Monte-Cristo",
+    "original_language": "fr",
+    "watch_date": "2024-07-20",
+    "rating": 7,
+    "release_date": "2024-06-28",
+    "director": "Alexandre de La Patellière",
+    "tmdb_id": 1084736,
+    "poster": "posters/1084736.jpg",
+    "runtime": 173,
+    "cast": [
+      "Pierre Niney",
+      "Bastien Bouillon",
+      "Anaïs Demoustier",
+      "Anamaria Vartolomei",
+      "Laurent Lafitte",
+      "Pierfrancesco Favino",
+      "Patrick Mille",
+      "Vassili Schneider",
+      "Julien de Saint Jean",
+      "Julie de Bona",
+      "Adèle Simphal",
+      "Stéphane Varupenne",
+      "Marie Narbonne",
+      "Bruno Raffaelli",
+      "Abde Maziane"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History",
+      "Romance",
+      "Thriller"
+    ]
   }
 ]
