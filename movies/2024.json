@@ -1049,5 +1049,52 @@
     "genres": [
       "Comedy"
     ]
+  },
+  {
+    "title": "Red Right Hand",
+    "original_title": "Red Right Hand",
+    "original_language": "en",
+    "watch_date": "2024-08-10",
+    "rating": 5,
+    "release_date": "2024-02-22",
+    "director": "Eshom Nelms",
+    "tmdb_id": 1227816,
+    "poster": "posters/1227816.jpg",
+    "runtime": 111,
+    "cast": [
+      "Orlando Bloom",
+      "Andie MacDowell",
+      "Scott Haze",
+      "Chapel Oaks",
+      "Garret Dillahunt",
+      "Mo McRae",
+      "Brian Geraghty",
+      "Kenneth Miller",
+      "Nicholas Logan",
+      "Daniel David Stewart",
+      "William McKinney",
+      "James Lafferty",
+      "Jeremy Ratchford",
+      "Jemuel Morris",
+      "Jared Wofford",
+      "Evan Gamble",
+      "Tom Fugedi",
+      "Patrick Roper",
+      "Alexandra Park",
+      "Steve Parnell",
+      "Zach Meiser",
+      "Harrison Stone",
+      "Ethan McDowell",
+      "Erik Schultz",
+      "Lauren Lebeouf",
+      "Aaron Christian Paderewski",
+      "Katie Campbell",
+      "Clark Harris"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
