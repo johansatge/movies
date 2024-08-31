@@ -1096,5 +1096,48 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "A Perfect Man",
+    "original_title": "Un Homme idéal",
+    "original_language": "fr",
+    "watch_date": "2024-08-31",
+    "rating": 7,
+    "release_date": "2015-03-18",
+    "director": "Yann Gozlan",
+    "tmdb_id": 322125,
+    "poster": "posters/322125.jpg",
+    "runtime": 103,
+    "cast": [
+      "Pierre Niney",
+      "Ana Girardot",
+      "André Marcon",
+      "Valéria Cavalli",
+      "Thibault Vinçon",
+      "Marc Barbé",
+      "Sacha Mijovic",
+      "Eric Savin",
+      "Luc Antoni",
+      "Soria Moufakkir",
+      "Olivier Antoine",
+      "Frédéric Pellegeay",
+      "Karina Orr",
+      "François Rabette",
+      "Serge Grünberg",
+      "Ludovic Berthillot",
+      "Morgane Lombard",
+      "Frédérique Farina",
+      "Laurent Grévill",
+      "Clémence Chatagnon",
+      "Michel Houellebecq",
+      "Yann Moix",
+      "Romain Gary",
+      "Véronique Delclos",
+      "Jean-Claude Boni"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
+    ]
   }
 ]
