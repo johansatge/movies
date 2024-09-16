@@ -1139,5 +1139,25 @@
       "Drama",
       "Thriller"
     ]
+  },
+  {
+    "title": "KAIZEN",
+    "original_title": "KAIZEN : 1 an pour gravir l'Everest !",
+    "original_language": "fr",
+    "watch_date": "2024-09-15",
+    "rating": 7,
+    "release_date": "2024-09-13",
+    "director": "Basile Monnot",
+    "tmdb_id": 1341552,
+    "poster": "posters/1341552.jpg",
+    "runtime": 160,
+    "cast": [
+      "Ines Benazzouz",
+      "Mathis Dumas",
+      "Manish Tamang"
+    ],
+    "genres": [
+      "Documentary"
+    ]
   }
 ]
