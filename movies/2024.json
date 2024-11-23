@@ -1788,5 +1788,37 @@
       "Comedy",
       "Science Fiction"
     ]
+  },
+  {
+    "title": "Alien: Romulus",
+    "original_title": "Alien: Romulus",
+    "original_language": "en",
+    "watch_date": "2024-11-23",
+    "rating": 7,
+    "release_date": "2024-08-13",
+    "director": "Fede Álvarez",
+    "tmdb_id": 945961,
+    "poster": "posters/945961.jpg",
+    "runtime": 119,
+    "cast": [
+      "Cailee Spaeny",
+      "David Jonsson",
+      "Archie Renaux",
+      "Isabela Merced",
+      "Spike Fearn",
+      "Aileen Wu",
+      "Rosie Ede",
+      "Soma Simon",
+      "Bence Okeke",
+      "Viktor Orizu",
+      "Robert Bobroczkyi",
+      "Trevor Newlin",
+      "Annemarie Griggs",
+      "Daniel Betts"
+    ],
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ]
   }
 ]
