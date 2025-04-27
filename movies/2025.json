@@ -106,5 +106,50 @@
     "genres": [
       "Drama"
     ]
+  },
+  {
+    "title": "Novocaine",
+    "original_title": "Novocaine",
+    "original_language": "en",
+    "watch_date": "2025-04-27",
+    "rating": 6,
+    "release_date": "2025-03-12",
+    "director": "Dan Berk",
+    "tmdb_id": 1195506,
+    "poster": "posters/1195506.jpg",
+    "runtime": 110,
+    "cast": [
+      "Jack Quaid",
+      "Amber Midthunder",
+      "Ray Nicholson",
+      "Jacob Batalon",
+      "Betty Gabriel",
+      "Matt Walsh",
+      "Conrad Kemp",
+      "Evan Hengst",
+      "Craig Jackson",
+      "Lou Beatty Jr.",
+      "Garth Collins",
+      "Tristan de Beer",
+      "Jessica Stanley",
+      "Chioma Antoinette Umeala",
+      "Margot Wood",
+      "Dylan Skews",
+      "Keeno Lee Hector",
+      "Maria Vos",
+      "Dominique Maher",
+      "DeVille Vannik",
+      "Lance Elliot",
+      "Motsi Tekateka",
+      "Toni Jean Erasmus",
+      "Steve Larter",
+      "Sage Van Niekerk",
+      "Drew Simon"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Thriller"
+    ]
   }
 ]
