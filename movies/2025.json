@@ -298,5 +298,57 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "Monkey Man",
+    "original_title": "Monkey Man",
+    "original_language": "en",
+    "watch_date": "2025-04-30",
+    "rating": 8,
+    "release_date": "2024-04-03",
+    "director": "Dev Patel",
+    "tmdb_id": 560016,
+    "poster": "posters/560016.jpg",
+    "runtime": 121,
+    "cast": [
+      "Dev Patel",
+      "Sikandar Kher",
+      "Makrand Deshpande",
+      "Pitobash",
+      "Vipin Sharma",
+      "Ashwini Kalsekar",
+      "Sobhita Dhulipala",
+      "Adithi Kalkunte",
+      "Sharlto Copley",
+      "Jatin Malik",
+      "Zakir Hussain",
+      "Brahim Achabbakhe",
+      "Jomon Thomas",
+      "Pehan Abdul",
+      "Suhaimi",
+      "Vijay Kumar",
+      "Jino A. Samuel",
+      "Kalih Dewantoro",
+      "Alan Jiraiya",
+      "Baby Tamba",
+      "Abhiram Reddam",
+      "Harshit Mahawar",
+      "Winai Wiangyangkung",
+      "Dayangku Zyana",
+      "Christopher Oba Warella",
+      "Fahad Scale",
+      "Reva Marchellin",
+      "Teddy Khannayan",
+      "Renren Subramany",
+      "Agus Mulana",
+      "Quraish Aattamimi",
+      "Joseph J.U. Taylor",
+      "Mathi Alagan"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
