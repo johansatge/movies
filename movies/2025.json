@@ -350,5 +350,37 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "The Breakfast Club",
+    "original_title": "The Breakfast Club",
+    "original_language": "en",
+    "watch_date": "2025-05-02",
+    "rating": 8,
+    "release_date": "1985-02-15",
+    "director": "John Hughes",
+    "tmdb_id": 2108,
+    "poster": "posters/2108.jpg",
+    "runtime": 98,
+    "cast": [
+      "Emilio Estevez",
+      "Judd Nelson",
+      "Molly Ringwald",
+      "Anthony Michael Hall",
+      "Ally Sheedy",
+      "Paul Gleason",
+      "John Kapelos",
+      "Perry Crawford",
+      "Mary Christian",
+      "Ron Dean",
+      "Tim Gamble",
+      "Fran Gargano",
+      "Mercedes Hall",
+      "John Hughes"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
   }
 ]
