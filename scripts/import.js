@@ -1,5 +1,5 @@
-const fsp = require('fs').promises
-const path = require('path')
+const fsp = require('node:fs').promises
+const path = require('node:path')
 const { fetchMovieSearch, fetchFormattedMovieData } = require('./helpers/tmdb.js')
 const { log } = require('./helpers/log.js')
 
@@ -9,11 +9,16 @@ async function importMovie() {
   try {
     const searchTerm = await readInput('Movie to import: ')
     const matchingMovies = await getAndShowMatchingMovies(searchTerm)
-    const selectedMovie = parseInt(await readInput('Select a movie: '))
+    const selectedMovie = Number.parseInt(await readInput('Select a movie: '))
     if (selectedMovie < 0 || selectedMovie > matchingMovies.length - 1) {
       throw new Error('Invalid selected movie')
     }
-    const rating = parseInt(await readInput('Rating (0-10): '))
+    const ratedMovies = await listRatedMovies()
+    const selectedMovieTmdbId = matchingMovies[selectedMovie].id
+    if (ratedMovies[selectedMovieTmdbId]) {
+      throw new Error(`Movie already rated (watched: ${ratedMovies[selectedMovieTmdbId]})`)
+    }
+    const rating = Number.parseInt(await readInput('Rating (0-10): '))
     if (rating < 0 || rating > 10) {
       throw new Error('Invalid rating')
     }
@@ -70,4 +75,19 @@ function readInput(message) {
       resolve(buffer.toString().trim())
     })
   })
+}
+
+async function listRatedMovies() {
+  const moviesDir = path.join(__dirname, '../movies')
+  const files = (await fsp.readdir(moviesDir)).filter((file) => file.endsWith('.json'))
+  const ratedMovies = {}
+
+  for (const file of files) {
+    const content = await fsp.readFile(path.join(moviesDir, file), 'utf8')
+    const json = JSON.parse(content)
+    for (const movie of json) {
+      ratedMovies[movie.tmdb_id] = movie.watch_date
+    }
+  }
+  return ratedMovies
 }
