@@ -382,5 +382,32 @@
       "Comedy",
       "Drama"
     ]
+  },
+  {
+    "title": "The Autopsy of Jane Doe",
+    "original_title": "The Autopsy of Jane Doe",
+    "original_language": "en",
+    "watch_date": "2025-05-07",
+    "rating": 7,
+    "release_date": "2016-12-21",
+    "director": "André Øvredal",
+    "tmdb_id": 397243,
+    "poster": "posters/397243.jpg",
+    "runtime": 86,
+    "cast": [
+      "Emile Hirsch",
+      "Brian Cox",
+      "Ophelia Lovibond",
+      "Olwen Catherine Kelly",
+      "Michael McElhatton",
+      "Parker Sawyers",
+      "Jane Perry",
+      "Mark Phoenix",
+      "Mary Duddy"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
+    ]
   }
 ]
