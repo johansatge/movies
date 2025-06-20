@@ -755,5 +755,55 @@
       "Mystery",
       "Thriller"
     ]
+  },
+  {
+    "title": "Prey",
+    "original_title": "Prey",
+    "original_language": "en",
+    "watch_date": "2025-06-20",
+    "rating": 7,
+    "release_date": "2022-08-02",
+    "director": "Dan Trachtenberg",
+    "tmdb_id": 766507,
+    "poster": "posters/766507.jpg",
+    "runtime": 100,
+    "cast": [
+      "Amber Midthunder",
+      "Dakota Beavers",
+      "Michelle Thrush",
+      "Stormee Kipp",
+      "Julian Black Antelope",
+      "Dane DiLiegro",
+      "Stefany Mathias",
+      "Bennett Taylor",
+      "Mike Paterson",
+      "Nelson Leis",
+      "Tymon Carter",
+      "Skye Pelletier",
+      "Harlan Blayne Kytwayhat",
+      "Corvin Mack",
+      "Samuel Marty",
+      "Ginger Cattleman",
+      "Seanna Eagletail",
+      "Samiyah Crowfoot",
+      "Cody Big Tobacco",
+      "Troy Mundle",
+      "Curtis Vinish",
+      "Stephane Legault",
+      "Stephan Schroeder",
+      "Eric Beaudoin",
+      "Kyle Strauts",
+      "Tom Woodruff Jr.",
+      "Alec Gillis",
+      "David Penikas",
+      "Jon K. Miller",
+      "Kirk Caouette",
+      "Kyle Legere"
+    ],
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Thriller"
+    ]
   }
 ]
