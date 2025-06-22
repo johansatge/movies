@@ -805,5 +805,47 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "Full Speed",
+    "original_title": "À fond",
+    "original_language": "fr",
+    "watch_date": "2025-06-21",
+    "rating": 4,
+    "release_date": "2016-11-11",
+    "director": "Nicolas Benamou",
+    "tmdb_id": 382598,
+    "poster": "posters/382598.jpg",
+    "runtime": 91,
+    "cast": [
+      "José Garcia",
+      "André Dussollier",
+      "Caroline Vigneaux",
+      "Charlotte Gabris",
+      "Vincent Desagnat",
+      "Josephine Callies",
+      "Stylane Lecaille",
+      "Jérôme Commandeur",
+      "Ingrid Donnadieu",
+      "Vladimir Houbart",
+      "Florence Foresti",
+      "Harrison Arevalo",
+      "Philippe Laudenbach",
+      "Béatrice Costantini",
+      "Jérôme Lenôtre",
+      "Sissi Duparc",
+      "Mathieu Barbet",
+      "Bernard Cherqui",
+      "Christian Hening",
+      "Anne Ferrier",
+      "Béatrice Michel",
+      "Louiza Arriouache",
+      "Hortense Gelinet"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Family"
+    ]
   }
 ]
