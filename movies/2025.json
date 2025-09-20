@@ -1418,5 +1418,55 @@
       "Action",
       "Thriller"
     ]
+  },
+  {
+    "title": "Weapons",
+    "original_title": "Weapons",
+    "original_language": "en",
+    "watch_date": "2025-09-20",
+    "rating": 8,
+    "release_date": "2025-08-04",
+    "director": "Zach Cregger",
+    "tmdb_id": 1078605,
+    "poster": "posters/1078605.jpg",
+    "runtime": 129,
+    "cast": [
+      "Julia Garner",
+      "Josh Brolin",
+      "Alden Ehrenreich",
+      "Austin Abrams",
+      "Benedict Wong",
+      "Amy Madigan",
+      "Cary Christopher",
+      "Toby Huss",
+      "Whitmer Thomas",
+      "Callie Schuttera",
+      "June Diane Raphael",
+      "Scarlett Sher",
+      "Jason Turner",
+      "Anny Jules",
+      "Ali Burch",
+      "Michael Gene Conti",
+      "Eric Jepson",
+      "Ronny Mathew",
+      "Melissa Ponzio",
+      "Luke Speakman",
+      "Aaron Quick Nelson",
+      "Sara Paxton",
+      "Justin Long",
+      "Mohammed Fahmy",
+      "Clayton Farris",
+      "Carrie Gibson",
+      "Ashley Ames",
+      "Fidelus Singleton",
+      "Sarah Kopkin",
+      "Arya Posey",
+      "Carl Kennedy",
+      "Robert Hendren"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
+    ]
   }
 ]
