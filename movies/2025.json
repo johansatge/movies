@@ -1743,5 +1743,51 @@
       "Comedy",
       "Family"
     ]
+  },
+  {
+    "title": "The Great Flood",
+    "original_title": "대홍수",
+    "original_language": "ko",
+    "watch_date": "2025-31-12",
+    "rating": 5,
+    "release_date": "2025-09-18",
+    "director": "Kim Byung-woo",
+    "tmdb_id": 982843,
+    "poster": "posters/982843.jpg",
+    "runtime": 109,
+    "cast": [
+      "Kim Da-mi",
+      "Park Hae-soo",
+      "Kwon Eun-seong",
+      "Jeon Hye-jin",
+      "Park Byung-eun",
+      "Lee Hak-ju",
+      "Yuna",
+      "Park Mi-hyeon",
+      "Lee Dong-chan",
+      "Kwon Min-kyung",
+      "Kim Dong-young",
+      "Kim Kang-bin",
+      "Eun Su",
+      "Ahn Hyun-ho",
+      "Lee Jun-hyeok",
+      "Kim Su-kyung",
+      "Seo Suk-kyu",
+      "Cho Seung-yeon",
+      "Park Ji-won",
+      "Choi Sung-hyuk",
+      "Jeong Hyeon-cheol",
+      "Lim Jae-min",
+      "Kim Baek-ri",
+      "Byeon Gyeong-rok",
+      "Kim Kyu-na",
+      "Jeong Min-jun",
+      "Kim Byung-nam"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Science Fiction"
+    ]
   }
 ]
