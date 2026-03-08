@@ -135,5 +135,55 @@
       "Science Fiction",
       "Thriller"
     ]
+  },
+  {
+    "title": "Ballerina",
+    "original_title": "Ballerina",
+    "original_language": "en",
+    "watch_date": "2026-03-07",
+    "rating": 7,
+    "release_date": "2025-06-04",
+    "director": "Len Wiseman",
+    "tmdb_id": 541671,
+    "poster": "posters/541671.jpg",
+    "runtime": 125,
+    "cast": [
+      "Ana de Armas",
+      "Keanu Reeves",
+      "Ian McShane",
+      "Anjelica Huston",
+      "Gabriel Byrne",
+      "Catalina Sandino Moreno",
+      "Ava McCarthy",
+      "Juliet Doherty",
+      "Norman Reedus",
+      "Lance Reddick",
+      "Sharon Duncan-Brewster",
+      "David Castañeda",
+      "Victoria Comte",
+      "Robert Maaser",
+      "Sooyoung Choi",
+      "Jung Doo-hong",
+      "Anne Parillaud",
+      "Marc Cram",
+      "Rila Fukushima",
+      "Abraham Popoola",
+      "Magdalena Šittová",
+      "Waris Ahluwalia",
+      "Daniel Bernhardt",
+      "Anna Schmidtmajerová",
+      "Emílie Páclová",
+      "Jackson Spidell",
+      "James Beaumont",
+      "Tracie Bennett",
+      "Stephanie Brush",
+      "Mirko Marchesi",
+      "Zac Ladkin"
+    ],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
   }
 ]
