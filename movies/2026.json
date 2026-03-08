@@ -185,5 +185,56 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "Smile",
+    "original_title": "Smile",
+    "original_language": "en",
+    "watch_date": "2026-03-08",
+    "rating": 7,
+    "release_date": "2022-09-23",
+    "director": "Parker Finn",
+    "tmdb_id": 882598,
+    "poster": "posters/882598.jpg",
+    "runtime": 115,
+    "cast": [
+      "Sosie Bacon",
+      "Kyle Gallner",
+      "Jessie T. Usher",
+      "Robin Weigert",
+      "Caitlin Stasey",
+      "Kal Penn",
+      "Rob Morgan",
+      "Gillian Zinser",
+      "Judy Reyes",
+      "Jack Sochet",
+      "Nick Arapoglou",
+      "Perry Strong",
+      "Matthew Lamb",
+      "Dora Kiss",
+      "Meghan Brown Pratt",
+      "Jared Johnston",
+      "Ura Yoana Sánchez",
+      "Vanessa Cozart",
+      "Shu Q",
+      "Shevy Gutierrez",
+      "Sara Kapner",
+      "Steven Strickland",
+      "Kevin Keppy",
+      "Marti Matulis",
+      "Scot Teller",
+      "Setty Brosevelt",
+      "Jerry Lobrow",
+      "Nadia Ramdass",
+      "Rachel Yong",
+      "Felix Melendez Jr.",
+      "Elaine Apruzzese",
+      "Shanea Lattimore",
+      "Anne Schmalzigan"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
+    ]
   }
 ]
