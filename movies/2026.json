@@ -236,5 +236,55 @@
       "Horror",
       "Mystery"
     ]
+  },
+  {
+    "title": "27 Dresses",
+    "original_title": "27 Dresses",
+    "original_language": "en",
+    "watch_date": "2026-03-14",
+    "rating": 6,
+    "release_date": "2008-01-10",
+    "director": "Anne Fletcher",
+    "tmdb_id": 6557,
+    "poster": "posters/6557.jpg",
+    "runtime": 111,
+    "cast": [
+      "Katherine Heigl",
+      "James Marsden",
+      "Malin Åkerman",
+      "Judy Greer",
+      "Edward Burns",
+      "Melora Hardin",
+      "Brian Kerwin",
+      "Maulik Pancholy",
+      "David Castro",
+      "Krysten Ritter",
+      "Michael Paul",
+      "Jennifer Lim",
+      "Danielle Skraastad",
+      "Yetta Gottesman",
+      "Erin Fogel",
+      "Bern Cohen",
+      "Brigitte Bourdeau",
+      "Peyton List",
+      "Charli Barcena",
+      "Jane Pfitsch",
+      "Laksh Singh",
+      "Lyralen Kaye",
+      "Ronald Guttman",
+      "Ron Simons",
+      "Robert Clohessy",
+      "Michael Mosley",
+      "Alyssa Bresnahan",
+      "Ellen H. Schwartz",
+      "Jennifer Bassey",
+      "Alexa Havins",
+      "Richard O'Rourke",
+      "Kathryn Weisbeck"
+    ],
+    "genres": [
+      "Comedy",
+      "Romance"
+    ]
   }
 ]
