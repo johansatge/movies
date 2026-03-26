@@ -286,5 +286,58 @@
       "Comedy",
       "Romance"
     ]
+  },
+  {
+    "title": "Smile 2",
+    "original_title": "Smile 2",
+    "original_language": "en",
+    "watch_date": "2026-03-26",
+    "rating": 6,
+    "release_date": "2024-10-16",
+    "director": "Parker Finn",
+    "tmdb_id": 1100782,
+    "poster": "posters/1100782.jpg",
+    "runtime": 127,
+    "cast": [
+      "Naomi Scott",
+      "Rosemarie DeWitt",
+      "Lukas Gage",
+      "Miles Gutierrez-Riley",
+      "Peter Jacobson",
+      "Ray Nicholson",
+      "Dylan Gelula",
+      "Raúl Castillo",
+      "Kyle Gallner",
+      "Drew Barrymore",
+      "Zebedee Row",
+      "Roberts Jekabsons",
+      "Sean Stolzen",
+      "Jon Rua",
+      "Vladimir Duthiers",
+      "Kristine Johnson",
+      "Margot Weintraub",
+      "Christopher Bailey",
+      "Xhloe Rice",
+      "Caitlyn Classey",
+      "Iván Carlo",
+      "Mila Falkof",
+      "Christopher Sky",
+      "Jarrett Austin Brown",
+      "Erika Chase",
+      "Micaela Lamas",
+      "Karma Jenkins",
+      "Daphne Zelle",
+      "Ken McGraw",
+      "Brandi Bravo",
+      "Delphi Harrington",
+      "Fredi Bernstein",
+      "Trevor Newlin",
+      "Parker Finn",
+      "Charlie Sarroff"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
+    ]
   }
 ]
