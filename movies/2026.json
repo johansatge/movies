@@ -723,5 +723,49 @@
       "Drama",
       "Romance"
     ]
+  },
+  {
+    "title": "Gambit",
+    "original_title": "Gambit",
+    "original_language": "en",
+    "watch_date": "2026-05-19",
+    "rating": 5,
+    "release_date": "2012-04-25",
+    "director": "Michael Hoffman",
+    "tmdb_id": 97434,
+    "poster": "posters/97434.jpg",
+    "runtime": 89,
+    "cast": [
+      "Colin Firth",
+      "Cameron Diaz",
+      "Alan Rickman",
+      "Tom Courtenay",
+      "Stanley Tucci",
+      "Cloris Leachman",
+      "Alex Macqueen",
+      "Joe Berryman",
+      "Anna Skellern",
+      "Lorna Brown",
+      "Pip Torrens",
+      "Julian Rhind-Tutt",
+      "Selina Cadell",
+      "Mike Noble",
+      "Sarah Goldberg",
+      "Obi Abili",
+      "Ross Gurney-Randall",
+      "Paul Leonard",
+      "Togo Igawa",
+      "Gerard Horan",
+      "Sadao Ueda",
+      "Masashi Fujimoto",
+      "Charlotte Eaton",
+      "Jon Wennington",
+      "Augustina Amoa",
+      "Kevin Hudson"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime"
+    ]
   }
 ]
