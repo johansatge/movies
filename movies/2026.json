@@ -868,5 +868,56 @@
       "Crime",
       "Thriller"
     ]
+  },
+  {
+    "title": "Mortal Kombat",
+    "original_title": "Mortal Kombat",
+    "original_language": "en",
+    "watch_date": "2026-06-17",
+    "rating": 5,
+    "release_date": "2021-04-07",
+    "director": "Simon McQuoid",
+    "tmdb_id": 460465,
+    "poster": "posters/460465.jpg",
+    "runtime": 110,
+    "cast": [
+      "Lewis Tan",
+      "Jessica McNamee",
+      "Mehcad Brooks",
+      "Josh Lawson",
+      "Ludi Lin",
+      "Max Huang",
+      "Tadanobu Asano",
+      "Chin Han",
+      "Hiroyuki Sanada",
+      "Joe Taslim",
+      "Sisi Stringer",
+      "Daniel Nelson",
+      "Matilda Kimber",
+      "Laura Brent",
+      "Mel Jarnson",
+      "Nathan Jones",
+      "Ian Streetz",
+      "Yukiko Shinohara",
+      "Ren Miyagawa",
+      "Mia Hall",
+      "David Field",
+      "Kris McQuade",
+      "Angus Sampson",
+      "Alice Nassery",
+      "Damon Herriman",
+      "Mike Foenander",
+      "Michael Coward",
+      "Garreth Hadfield",
+      "Bingchen Ye",
+      "Isaac Bernauer",
+      "David Chea",
+      "Yasushi Asaya"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ]
   }
 ]
