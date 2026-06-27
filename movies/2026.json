@@ -958,5 +958,41 @@
       "Horror",
       "Mystery"
     ]
+  },
+  {
+    "title": "The Descent",
+    "original_title": "The Descent",
+    "original_language": "en",
+    "watch_date": "2026-06-27",
+    "rating": 7,
+    "release_date": "2005-07-08",
+    "director": "Neil Marshall",
+    "tmdb_id": 9392,
+    "poster": "posters/9392.jpg",
+    "runtime": 100,
+    "cast": [
+      "Shauna Macdonald",
+      "Natalie Mendoza",
+      "Alex Reid",
+      "MyAnna Buring",
+      "Saskia Mulder",
+      "Nora-Jane Noone",
+      "Leslie Simpson",
+      "Oliver Milburn",
+      "Molly Kayll",
+      "Craig Conway",
+      "Tristan Matthiae",
+      "Mark Cronfield",
+      "Stephen Lamb",
+      "Catherine Dyson",
+      "Julie Ellis",
+      "Sophie Trott",
+      "Stuart Luis",
+      "Justin Hackney"
+    ],
+    "genres": [
+      "Adventure",
+      "Horror"
+    ]
   }
 ]
